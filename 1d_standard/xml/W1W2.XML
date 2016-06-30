@@ -1,0 +1,430 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="cansas1d.xsl" ?>
+<SASroot version="1.1"
+		xmlns="urn:cansas1d:1.1"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="urn:cansas1d:1.1 http://www.cansas.org/formats/1.1/cansas1d.xsd"
+		>
+	<SASentry name="W1">
+		<Title> standard can 12mm SANS   </Title>
+		<Run> 39068 </Run>
+		<SASdata>
+			<Idata><Q unit="1/A">0.009</Q><I unit="1/cm">65.112</I><Idev unit="1/cm">0.57</Idev></Idata>
+			<Idata><Q unit="1/A">0.011</Q><I unit="1/cm">57</I><Idev unit="1/cm">0.41</Idev></Idata>
+			<Idata><Q unit="1/A">0.013</Q><I unit="1/cm">50.785</I><Idev unit="1/cm">0.32</Idev></Idata>
+			<Idata><Q unit="1/A">0.015</Q><I unit="1/cm">45.317</I><Idev unit="1/cm">0.27</Idev></Idata>
+			<Idata><Q unit="1/A">0.017</Q><I unit="1/cm">41.31</I><Idev unit="1/cm">0.23</Idev></Idata>
+			<Idata><Q unit="1/A">0.019</Q><I unit="1/cm">37.242</I><Idev unit="1/cm">0.2</Idev></Idata>
+			<Idata><Q unit="1/A">0.021</Q><I unit="1/cm">33.622</I><Idev unit="1/cm">0.18</Idev></Idata>
+			<Idata><Q unit="1/A">0.023</Q><I unit="1/cm">30.353</I><Idev unit="1/cm">0.16</Idev></Idata>
+			<Idata><Q unit="1/A">0.025</Q><I unit="1/cm">27.552</I><Idev unit="1/cm">0.14</Idev></Idata>
+			<Idata><Q unit="1/A">0.027</Q><I unit="1/cm">24.833</I><Idev unit="1/cm">0.13</Idev></Idata>
+			<Idata><Q unit="1/A">0.029</Q><I unit="1/cm">22.281</I><Idev unit="1/cm">0.12</Idev></Idata>
+			<Idata><Q unit="1/A">0.031</Q><I unit="1/cm">20.077</I><Idev unit="1/cm">0.11</Idev></Idata>
+			<Idata><Q unit="1/A">0.033</Q><I unit="1/cm">18.363</I><Idev unit="1/cm">0.1</Idev></Idata>
+			<Idata><Q unit="1/A">0.035</Q><I unit="1/cm">16.655</I><Idev unit="1/cm">0.093</Idev></Idata>
+			<Idata><Q unit="1/A">0.037</Q><I unit="1/cm">15.341</I><Idev unit="1/cm">0.087</Idev></Idata>
+			<Idata><Q unit="1/A">0.039</Q><I unit="1/cm">13.884</I><Idev unit="1/cm">0.081</Idev></Idata>
+			<Idata><Q unit="1/A">0.041</Q><I unit="1/cm">12.856</I><Idev unit="1/cm">0.076</Idev></Idata>
+			<Idata><Q unit="1/A">0.043</Q><I unit="1/cm">11.782</I><Idev unit="1/cm">0.071</Idev></Idata>
+			<Idata><Q unit="1/A">0.045</Q><I unit="1/cm">10.871</I><Idev unit="1/cm">0.067</Idev></Idata>
+			<Idata><Q unit="1/A">0.047</Q><I unit="1/cm">10.178</I><Idev unit="1/cm">0.063</Idev></Idata>
+			<Idata><Q unit="1/A">0.049</Q><I unit="1/cm">9.4126</I><Idev unit="1/cm">0.06</Idev></Idata>
+			<Idata><Q unit="1/A">0.051</Q><I unit="1/cm">8.7554</I><Idev unit="1/cm">0.057</Idev></Idata>
+			<Idata><Q unit="1/A">0.053</Q><I unit="1/cm">8.1825</I><Idev unit="1/cm">0.054</Idev></Idata>
+			<Idata><Q unit="1/A">0.055</Q><I unit="1/cm">7.6668</I><Idev unit="1/cm">0.052</Idev></Idata>
+			<Idata><Q unit="1/A">0.057</Q><I unit="1/cm">7.1879</I><Idev unit="1/cm">0.05</Idev></Idata>
+			<Idata><Q unit="1/A">0.059</Q><I unit="1/cm">6.8382</I><Idev unit="1/cm">0.048</Idev></Idata>
+			<Idata><Q unit="1/A">0.061</Q><I unit="1/cm">6.4505</I><Idev unit="1/cm">0.046</Idev></Idata>
+			<Idata><Q unit="1/A">0.063</Q><I unit="1/cm">6.0324</I><Idev unit="1/cm">0.045</Idev></Idata>
+			<Idata><Q unit="1/A">0.065</Q><I unit="1/cm">5.6946</I><Idev unit="1/cm">0.043</Idev></Idata>
+			<Idata><Q unit="1/A">0.067</Q><I unit="1/cm">5.4278</I><Idev unit="1/cm">0.042</Idev></Idata>
+			<Idata><Q unit="1/A">0.069</Q><I unit="1/cm">5.1504</I><Idev unit="1/cm">0.041</Idev></Idata>
+			<Idata><Q unit="1/A">0.071</Q><I unit="1/cm">4.8734</I><Idev unit="1/cm">0.04</Idev></Idata>
+			<Idata><Q unit="1/A">0.073</Q><I unit="1/cm">4.6784</I><Idev unit="1/cm">0.04</Idev></Idata>
+			<Idata><Q unit="1/A">0.075</Q><I unit="1/cm">4.4744</I><Idev unit="1/cm">0.039</Idev></Idata>
+			<Idata><Q unit="1/A">0.077</Q><I unit="1/cm">4.2586</I><Idev unit="1/cm">0.038</Idev></Idata>
+			<Idata><Q unit="1/A">0.079</Q><I unit="1/cm">4.072</I><Idev unit="1/cm">0.038</Idev></Idata>
+			<Idata><Q unit="1/A">0.081</Q><I unit="1/cm">3.898</I><Idev unit="1/cm">0.037</Idev></Idata>
+			<Idata><Q unit="1/A">0.083</Q><I unit="1/cm">3.7315</I><Idev unit="1/cm">0.037</Idev></Idata>
+			<Idata><Q unit="1/A">0.085</Q><I unit="1/cm">3.5506</I><Idev unit="1/cm">0.036</Idev></Idata>
+			<Idata><Q unit="1/A">0.087</Q><I unit="1/cm">3.4106</I><Idev unit="1/cm">0.036</Idev></Idata>
+			<Idata><Q unit="1/A">0.089</Q><I unit="1/cm">3.3247</I><Idev unit="1/cm">0.036</Idev></Idata>
+			<Idata><Q unit="1/A">0.091</Q><I unit="1/cm">3.2125</I><Idev unit="1/cm">0.035</Idev></Idata>
+			<Idata><Q unit="1/A">0.093</Q><I unit="1/cm">3.0978</I><Idev unit="1/cm">0.035</Idev></Idata>
+			<Idata><Q unit="1/A">0.095</Q><I unit="1/cm">2.9927</I><Idev unit="1/cm">0.034</Idev></Idata>
+			<Idata><Q unit="1/A">0.097</Q><I unit="1/cm">2.8886</I><Idev unit="1/cm">0.034</Idev></Idata>
+			<Idata><Q unit="1/A">0.099</Q><I unit="1/cm">2.7556</I><Idev unit="1/cm">0.033</Idev></Idata>
+			<Idata><Q unit="1/A">0.101</Q><I unit="1/cm">2.6505</I><Idev unit="1/cm">0.033</Idev></Idata>
+			<Idata><Q unit="1/A">0.103</Q><I unit="1/cm">2.5565</I><Idev unit="1/cm">0.033</Idev></Idata>
+			<Idata><Q unit="1/A">0.105</Q><I unit="1/cm">2.4593</I><Idev unit="1/cm">0.032</Idev></Idata>
+			<Idata><Q unit="1/A">0.107</Q><I unit="1/cm">2.3641</I><Idev unit="1/cm">0.032</Idev></Idata>
+			<Idata><Q unit="1/A">0.109</Q><I unit="1/cm">2.2928</I><Idev unit="1/cm">0.032</Idev></Idata>
+			<Idata><Q unit="1/A">0.111</Q><I unit="1/cm">2.2198</I><Idev unit="1/cm">0.031</Idev></Idata>
+			<Idata><Q unit="1/A">0.113</Q><I unit="1/cm">2.1684</I><Idev unit="1/cm">0.031</Idev></Idata>
+			<Idata><Q unit="1/A">0.115</Q><I unit="1/cm">2.1259</I><Idev unit="1/cm">0.031</Idev></Idata>
+			<Idata><Q unit="1/A">0.117</Q><I unit="1/cm">2.0427</I><Idev unit="1/cm">0.031</Idev></Idata>
+			<Idata><Q unit="1/A">0.119</Q><I unit="1/cm">1.9864</I><Idev unit="1/cm">0.031</Idev></Idata>
+			<Idata><Q unit="1/A">0.121</Q><I unit="1/cm">1.9289</I><Idev unit="1/cm">0.03</Idev></Idata>
+			<Idata><Q unit="1/A">0.123</Q><I unit="1/cm">1.879</I><Idev unit="1/cm">0.03</Idev></Idata>
+			<Idata><Q unit="1/A">0.125</Q><I unit="1/cm">1.8277</I><Idev unit="1/cm">0.03</Idev></Idata>
+			<Idata><Q unit="1/A">0.127</Q><I unit="1/cm">1.7572</I><Idev unit="1/cm">0.03</Idev></Idata>
+			<Idata><Q unit="1/A">0.129</Q><I unit="1/cm">1.7124</I><Idev unit="1/cm">0.03</Idev></Idata>
+			<Idata><Q unit="1/A">0.131</Q><I unit="1/cm">1.6741</I><Idev unit="1/cm">0.03</Idev></Idata>
+			<Idata><Q unit="1/A">0.133</Q><I unit="1/cm">1.6317</I><Idev unit="1/cm">0.03</Idev></Idata>
+			<Idata><Q unit="1/A">0.135</Q><I unit="1/cm">1.5952</I><Idev unit="1/cm">0.03</Idev></Idata>
+			<Idata><Q unit="1/A">0.137</Q><I unit="1/cm">1.5484</I><Idev unit="1/cm">0.03</Idev></Idata>
+			<Idata><Q unit="1/A">0.139</Q><I unit="1/cm">1.5127</I><Idev unit="1/cm">0.03</Idev></Idata>
+			<Idata><Q unit="1/A">0.141</Q><I unit="1/cm">1.4798</I><Idev unit="1/cm">0.03</Idev></Idata>
+			<Idata><Q unit="1/A">0.143</Q><I unit="1/cm">1.4267</I><Idev unit="1/cm">0.03</Idev></Idata>
+			<Idata><Q unit="1/A">0.145</Q><I unit="1/cm">1.3961</I><Idev unit="1/cm">0.03</Idev></Idata>
+			<Idata><Q unit="1/A">0.147</Q><I unit="1/cm">1.3693</I><Idev unit="1/cm">0.03</Idev></Idata>
+			<Idata><Q unit="1/A">0.149</Q><I unit="1/cm">1.3562</I><Idev unit="1/cm">0.03</Idev></Idata>
+			<Idata><Q unit="1/A">0.151</Q><I unit="1/cm">1.3343</I><Idev unit="1/cm">0.031</Idev></Idata>
+			<Idata><Q unit="1/A">0.153</Q><I unit="1/cm">1.3118</I><Idev unit="1/cm">0.031</Idev></Idata>
+			<Idata><Q unit="1/A">0.155</Q><I unit="1/cm">1.2776</I><Idev unit="1/cm">0.031</Idev></Idata>
+			<Idata><Q unit="1/A">0.157</Q><I unit="1/cm">1.2487</I><Idev unit="1/cm">0.031</Idev></Idata>
+			<Idata><Q unit="1/A">0.159</Q><I unit="1/cm">1.2311</I><Idev unit="1/cm">0.031</Idev></Idata>
+			<Idata><Q unit="1/A">0.161</Q><I unit="1/cm">1.2025</I><Idev unit="1/cm">0.031</Idev></Idata>
+			<Idata><Q unit="1/A">0.163</Q><I unit="1/cm">1.1653</I><Idev unit="1/cm">0.031</Idev></Idata>
+			<Idata><Q unit="1/A">0.165</Q><I unit="1/cm">1.151</I><Idev unit="1/cm">0.031</Idev></Idata>
+			<Idata><Q unit="1/A">0.167</Q><I unit="1/cm">1.1403</I><Idev unit="1/cm">0.032</Idev></Idata>
+			<Idata><Q unit="1/A">0.169</Q><I unit="1/cm">1.1119</I><Idev unit="1/cm">0.032</Idev></Idata>
+			<Idata><Q unit="1/A">0.171</Q><I unit="1/cm">1.0858</I><Idev unit="1/cm">0.032</Idev></Idata>
+			<Idata><Q unit="1/A">0.173</Q><I unit="1/cm">1.0548</I><Idev unit="1/cm">0.032</Idev></Idata>
+			<Idata><Q unit="1/A">0.175</Q><I unit="1/cm">1.0422</I><Idev unit="1/cm">0.033</Idev></Idata>
+			<Idata><Q unit="1/A">0.177</Q><I unit="1/cm">1.014</I><Idev unit="1/cm">0.033</Idev></Idata>
+			<Idata><Q unit="1/A">0.179</Q><I unit="1/cm">1.012</I><Idev unit="1/cm">0.033</Idev></Idata>
+			<Idata><Q unit="1/A">0.181</Q><I unit="1/cm">1.0001</I><Idev unit="1/cm">0.034</Idev></Idata>
+			<Idata><Q unit="1/A">0.183</Q><I unit="1/cm">0.98622</I><Idev unit="1/cm">0.034</Idev></Idata>
+			<Idata><Q unit="1/A">0.185</Q><I unit="1/cm">0.96167</I><Idev unit="1/cm">0.034</Idev></Idata>
+			<Idata><Q unit="1/A">0.187</Q><I unit="1/cm">0.957</I><Idev unit="1/cm">0.035</Idev></Idata>
+			<Idata><Q unit="1/A">0.189</Q><I unit="1/cm">0.94736</I><Idev unit="1/cm">0.036</Idev></Idata>
+			<Idata><Q unit="1/A">0.191</Q><I unit="1/cm">0.9402</I><Idev unit="1/cm">0.036</Idev></Idata>
+			<Idata><Q unit="1/A">0.193</Q><I unit="1/cm">0.91511</I><Idev unit="1/cm">0.037</Idev></Idata>
+			<Idata><Q unit="1/A">0.195</Q><I unit="1/cm">0.89788</I><Idev unit="1/cm">0.037</Idev></Idata>
+			<Idata><Q unit="1/A">0.197</Q><I unit="1/cm">0.88404</I><Idev unit="1/cm">0.038</Idev></Idata>
+			<Idata><Q unit="1/A">0.199</Q><I unit="1/cm">0.86811</I><Idev unit="1/cm">0.039</Idev></Idata>
+			<Idata><Q unit="1/A">0.201</Q><I unit="1/cm">0.85679</I><Idev unit="1/cm">0.039</Idev></Idata>
+			<Idata><Q unit="1/A">0.203</Q><I unit="1/cm">0.85081</I><Idev unit="1/cm">0.04</Idev></Idata>
+			<Idata><Q unit="1/A">0.205</Q><I unit="1/cm">0.84224</I><Idev unit="1/cm">0.041</Idev></Idata>
+			<Idata><Q unit="1/A">0.207</Q><I unit="1/cm">0.84066</I><Idev unit="1/cm">0.043</Idev></Idata>
+			<Idata><Q unit="1/A">0.209</Q><I unit="1/cm">0.82768</I><Idev unit="1/cm">0.043</Idev></Idata>
+			<Idata><Q unit="1/A">0.211</Q><I unit="1/cm">0.81019</I><Idev unit="1/cm">0.044</Idev></Idata>
+			<Idata><Q unit="1/A">0.213</Q><I unit="1/cm">0.79739</I><Idev unit="1/cm">0.046</Idev></Idata>
+			<Idata><Q unit="1/A">0.215</Q><I unit="1/cm">0.77854</I><Idev unit="1/cm">0.047</Idev></Idata>
+			<Idata><Q unit="1/A">0.217</Q><I unit="1/cm">0.76424</I><Idev unit="1/cm">0.048</Idev></Idata>
+			<Idata><Q unit="1/A">0.219</Q><I unit="1/cm">0.77713</I><Idev unit="1/cm">0.05</Idev></Idata>
+			<Idata><Q unit="1/A">0.221</Q><I unit="1/cm">0.76163</I><Idev unit="1/cm">0.052</Idev></Idata>
+			<Idata><Q unit="1/A">0.223</Q><I unit="1/cm">0.75993</I><Idev unit="1/cm">0.054</Idev></Idata>
+			<Idata><Q unit="1/A">0.225</Q><I unit="1/cm">0.71626</I><Idev unit="1/cm">0.054</Idev></Idata>
+			<Idata><Q unit="1/A">0.227</Q><I unit="1/cm">0.68197</I><Idev unit="1/cm">0.055</Idev></Idata>
+			<Idata><Q unit="1/A">0.229</Q><I unit="1/cm">0.64369</I><Idev unit="1/cm">0.055</Idev></Idata>
+			<Idata><Q unit="1/A">0.231</Q><I unit="1/cm">0.60614</I><Idev unit="1/cm">0.056</Idev></Idata>
+			<Idata><Q unit="1/A">0.233</Q><I unit="1/cm">0.58443</I><Idev unit="1/cm">0.057</Idev></Idata>
+			<Idata><Q unit="1/A">0.235</Q><I unit="1/cm">0.57295</I><Idev unit="1/cm">0.059</Idev></Idata>
+			<Idata><Q unit="1/A">0.237</Q><I unit="1/cm">0.58123</I><Idev unit="1/cm">0.062</Idev></Idata>
+			<Idata><Q unit="1/A">0.239</Q><I unit="1/cm">0.59656</I><Idev unit="1/cm">0.065</Idev></Idata>
+			<Idata><Q unit="1/A">0.241</Q><I unit="1/cm">0.63864</I><Idev unit="1/cm">0.07</Idev></Idata>
+			<Idata><Q unit="1/A">0.243</Q><I unit="1/cm">0.63425</I><Idev unit="1/cm">0.074</Idev></Idata>
+			<Idata><Q unit="1/A">0.245</Q><I unit="1/cm">0.6235</I><Idev unit="1/cm">0.076</Idev></Idata>
+			<Idata><Q unit="1/A">0.247</Q><I unit="1/cm">0.60363</I><Idev unit="1/cm">0.079</Idev></Idata>
+			<Idata><Q unit="1/A">0.249</Q><I unit="1/cm">0.59533</I><Idev unit="1/cm">0.082</Idev></Idata>
+			<Idata><Q unit="1/A">0.251</Q><I unit="1/cm">0.56412</I><Idev unit="1/cm">0.084</Idev></Idata>
+			<Idata><Q unit="1/A">0.253</Q><I unit="1/cm">0.56046</I><Idev unit="1/cm">0.089</Idev></Idata>
+			<Idata><Q unit="1/A">0.255</Q><I unit="1/cm">0.576</I><Idev unit="1/cm">0.095</Idev></Idata>
+			<Idata><Q unit="1/A">0.257</Q><I unit="1/cm">0.5288</I><Idev unit="1/cm">0.097</Idev></Idata>
+			<Idata><Q unit="1/A">0.259</Q><I unit="1/cm">0.52137</I><Idev unit="1/cm">0.1</Idev></Idata>
+			<Idata><Q unit="1/A">0.261</Q><I unit="1/cm">0.54486</I><Idev unit="1/cm">0.11</Idev></Idata>
+			<Idata><Q unit="1/A">0.263</Q><I unit="1/cm">0.50969</I><Idev unit="1/cm">0.12</Idev></Idata>
+			<Idata><Q unit="1/A">0.265</Q><I unit="1/cm">0.50807</I><Idev unit="1/cm">0.12</Idev></Idata>
+			<Idata><Q unit="1/A">0.267</Q><I unit="1/cm">0.51708</I><Idev unit="1/cm">0.14</Idev></Idata>
+			<Idata><Q unit="1/A">0.269</Q><I unit="1/cm">0.50389</I><Idev unit="1/cm">0.15</Idev></Idata>
+			<Idata><Q unit="1/A">0.271</Q><I unit="1/cm">0.51915</I><Idev unit="1/cm">0.16</Idev></Idata>
+			<Idata><Q unit="1/A">0.273</Q><I unit="1/cm">0.48198</I><Idev unit="1/cm">0.18</Idev></Idata>
+			<Idata><Q unit="1/A">0.275</Q><I unit="1/cm">0.51762</I><Idev unit="1/cm">0.21</Idev></Idata>
+			<Idata><Q unit="1/A">0.277</Q><I unit="1/cm">0.46402</I><Idev unit="1/cm">0.23</Idev></Idata>
+			<Idata><Q unit="1/A">0.279</Q><I unit="1/cm">0.44694</I><Idev unit="1/cm">0.27</Idev></Idata>
+			<Idata><Q unit="1/A">0.281</Q><I unit="1/cm">0.47642</I><Idev unit="1/cm">0.33</Idev></Idata>
+			<Idata><Q unit="1/A">0.283</Q><I unit="1/cm">0.64654</I><Idev unit="1/cm">0.5</Idev></Idata>
+			<Idata><Q unit="1/A">0.285</Q><I unit="1/cm">0.38983</I><Idev unit="1/cm">0.61</Idev></Idata>
+			<Idata><Q unit="1/A">0.287</Q><I unit="1/cm">0.38983</I><Idev unit="1/cm">2</Idev></Idata>
+		</SASdata>
+		<SASsample>
+			<ID> standard can 12mm SANS                                               </ID>
+			<thickness unit="mm"> 1.03 </thickness>
+			<details> Perez-Mendez,Rodrigu </details>
+		</SASsample>
+		<SASinstrument>
+			<name> LOQ___ </name>
+			<SASsource>
+				<radiation> neutron </radiation>
+				<beam_size name="snout">
+					<x unit="mm"> 12.00 </x>
+					<y unit="mm"> 12.00 </y>
+				</beam_size>
+				<beam_shape> disc________ </beam_shape>
+				<wavelength_min unit="nm"> 0.22 </wavelength_min>
+				<wavelength_max unit="nm"> 1.00 </wavelength_max>
+			</SASsource>
+			<SAScollimation name="fixed">
+				<aperture name="A2" type="pinhole">
+					<size>
+						<x unit="mm"> 12.0 </x>
+						<y unit="mm"> 12.0 </y>
+					</size>
+					<distance unit="m"> 10.995 </distance>
+				</aperture>
+			</SAScollimation>
+			<SASdetector>
+				<name> ORDELA 2661N </name>
+				<SDD unit="m"> 4.155 </SDD>
+				<beam_center>
+					<x unit="mm"> 324.45 </x>
+					<y unit="mm"> 325.55 </y>
+				</beam_center>
+				<pixel_size>
+					<x unit="mm"> 5.00 </x>
+					<y unit="mm"> 5.00 </y>
+				</pixel_size>
+			</SASdetector>
+			<SASdetector>
+				<name> ISIS HAB </name>
+				<SDD unit="m"> 0.587 </SDD>
+				<beam_center>
+					<x unit="mm"> 324.45 </x>
+					<y unit="mm"> 325.55 </y>
+				</beam_center>
+				<pixel_size>
+					<x unit="mm"> 12.00 </x>
+					<y unit="mm"> 12.00 </y>
+				</pixel_size>
+			</SASdetector>
+		</SASinstrument>
+		<SASprocess>
+			<name> COLETTE </name>
+			<date> 09-MAR-2008 10:22:32 </date>
+			<term name="mask_file"> USER:MASK.COM                                      </term>
+			<term name="scale_factor" unit="a.u."> 1.7270 </term>
+			<term name="radius_min" unit="mm">  38.0 </term>
+			<term name="radius_max" unit="mm"> 419.0 </term>
+			<term name="radialstep" unit="mm">   3.0 </term>
+			<term name="sector_width" unit="degree"> 180.0 </term>
+			<term name="count_time" unit="frame">      21871 </term>
+			<SASprocessnote name="q_resolution"> estimate </SASprocessnote>
+			<SASprocessnote name="file_written"> 18-MAR-2008 10:47:10.16 </SASprocessnote>
+		</SASprocess>
+		<SASnote />
+	</SASentry>
+	<SASentry name="W2">
+		<Title> TK49 standard 12mm SANS  </Title>
+		<Run> 39067 </Run>
+		<SASdata>
+			<Idata><Q unit="1/A">0.009</Q><I unit="1/cm">13.346</I><Idev unit="1/cm">0.25</Idev></Idata>
+			<Idata><Q unit="1/A">0.011</Q><I unit="1/cm">6.5871</I><Idev unit="1/cm">0.14</Idev></Idata>
+			<Idata><Q unit="1/A">0.013</Q><I unit="1/cm">3.802</I><Idev unit="1/cm">0.086</Idev></Idata>
+			<Idata><Q unit="1/A">0.015</Q><I unit="1/cm">2.3066</I><Idev unit="1/cm">0.058</Idev></Idata>
+			<Idata><Q unit="1/A">0.017</Q><I unit="1/cm">1.6468</I><Idev unit="1/cm">0.044</Idev></Idata>
+			<Idata><Q unit="1/A">0.019</Q><I unit="1/cm">1.1841</I><Idev unit="1/cm">0.035</Idev></Idata>
+			<Idata><Q unit="1/A">0.021</Q><I unit="1/cm">0.96949</I><Idev unit="1/cm">0.029</Idev></Idata>
+			<Idata><Q unit="1/A">0.023</Q><I unit="1/cm">0.81839</I><Idev unit="1/cm">0.025</Idev></Idata>
+			<Idata><Q unit="1/A">0.025</Q><I unit="1/cm">0.65021</I><Idev unit="1/cm">0.021</Idev></Idata>
+			<Idata><Q unit="1/A">0.027</Q><I unit="1/cm">0.61196</I><Idev unit="1/cm">0.02</Idev></Idata>
+			<Idata><Q unit="1/A">0.029</Q><I unit="1/cm">0.54294</I><Idev unit="1/cm">0.018</Idev></Idata>
+			<Idata><Q unit="1/A">0.031</Q><I unit="1/cm">0.49066</I><Idev unit="1/cm">0.017</Idev></Idata>
+			<Idata><Q unit="1/A">0.033</Q><I unit="1/cm">0.51251</I><Idev unit="1/cm">0.016</Idev></Idata>
+			<Idata><Q unit="1/A">0.035</Q><I unit="1/cm">0.45101</I><Idev unit="1/cm">0.015</Idev></Idata>
+			<Idata><Q unit="1/A">0.037</Q><I unit="1/cm">0.43621</I><Idev unit="1/cm">0.014</Idev></Idata>
+			<Idata><Q unit="1/A">0.039</Q><I unit="1/cm">0.42786</I><Idev unit="1/cm">0.014</Idev></Idata>
+			<Idata><Q unit="1/A">0.041</Q><I unit="1/cm">0.40063</I><Idev unit="1/cm">0.013</Idev></Idata>
+			<Idata><Q unit="1/A">0.043</Q><I unit="1/cm">0.3857</I><Idev unit="1/cm">0.013</Idev></Idata>
+			<Idata><Q unit="1/A">0.045</Q><I unit="1/cm">0.38348</I><Idev unit="1/cm">0.012</Idev></Idata>
+			<Idata><Q unit="1/A">0.047</Q><I unit="1/cm">0.37941</I><Idev unit="1/cm">0.012</Idev></Idata>
+			<Idata><Q unit="1/A">0.049</Q><I unit="1/cm">0.37215</I><Idev unit="1/cm">0.012</Idev></Idata>
+			<Idata><Q unit="1/A">0.051</Q><I unit="1/cm">0.35647</I><Idev unit="1/cm">0.011</Idev></Idata>
+			<Idata><Q unit="1/A">0.053</Q><I unit="1/cm">0.34499</I><Idev unit="1/cm">0.011</Idev></Idata>
+			<Idata><Q unit="1/A">0.055</Q><I unit="1/cm">0.349</I><Idev unit="1/cm">0.011</Idev></Idata>
+			<Idata><Q unit="1/A">0.057</Q><I unit="1/cm">0.33555</I><Idev unit="1/cm">0.011</Idev></Idata>
+			<Idata><Q unit="1/A">0.059</Q><I unit="1/cm">0.33953</I><Idev unit="1/cm">0.011</Idev></Idata>
+			<Idata><Q unit="1/A">0.061</Q><I unit="1/cm">0.32742</I><Idev unit="1/cm">0.01</Idev></Idata>
+			<Idata><Q unit="1/A">0.063</Q><I unit="1/cm">0.32616</I><Idev unit="1/cm">0.01</Idev></Idata>
+			<Idata><Q unit="1/A">0.065</Q><I unit="1/cm">0.31904</I><Idev unit="1/cm">0.01</Idev></Idata>
+			<Idata><Q unit="1/A">0.067</Q><I unit="1/cm">0.32293</I><Idev unit="1/cm">0.01</Idev></Idata>
+			<Idata><Q unit="1/A">0.069</Q><I unit="1/cm">0.3173</I><Idev unit="1/cm">0.01</Idev></Idata>
+			<Idata><Q unit="1/A">0.071</Q><I unit="1/cm">0.31458</I><Idev unit="1/cm">0.01</Idev></Idata>
+			<Idata><Q unit="1/A">0.073</Q><I unit="1/cm">0.31025</I><Idev unit="1/cm">0.01</Idev></Idata>
+			<Idata><Q unit="1/A">0.075</Q><I unit="1/cm">0.3113</I><Idev unit="1/cm">0.01</Idev></Idata>
+			<Idata><Q unit="1/A">0.077</Q><I unit="1/cm">0.31237</I><Idev unit="1/cm">0.01</Idev></Idata>
+			<Idata><Q unit="1/A">0.079</Q><I unit="1/cm">0.29781</I><Idev unit="1/cm">0.01</Idev></Idata>
+			<Idata><Q unit="1/A">0.081</Q><I unit="1/cm">0.30674</I><Idev unit="1/cm">0.01</Idev></Idata>
+			<Idata><Q unit="1/A">0.083</Q><I unit="1/cm">0.2953</I><Idev unit="1/cm">0.01</Idev></Idata>
+			<Idata><Q unit="1/A">0.085</Q><I unit="1/cm">0.29468</I><Idev unit="1/cm">0.01</Idev></Idata>
+			<Idata><Q unit="1/A">0.087</Q><I unit="1/cm">0.29842</I><Idev unit="1/cm">0.011</Idev></Idata>
+			<Idata><Q unit="1/A">0.089</Q><I unit="1/cm">0.30452</I><Idev unit="1/cm">0.011</Idev></Idata>
+			<Idata><Q unit="1/A">0.091</Q><I unit="1/cm">0.30089</I><Idev unit="1/cm">0.011</Idev></Idata>
+			<Idata><Q unit="1/A">0.093</Q><I unit="1/cm">0.29577</I><Idev unit="1/cm">0.011</Idev></Idata>
+			<Idata><Q unit="1/A">0.095</Q><I unit="1/cm">0.30122</I><Idev unit="1/cm">0.011</Idev></Idata>
+			<Idata><Q unit="1/A">0.097</Q><I unit="1/cm">0.3014</I><Idev unit="1/cm">0.011</Idev></Idata>
+			<Idata><Q unit="1/A">0.099</Q><I unit="1/cm">0.29341</I><Idev unit="1/cm">0.011</Idev></Idata>
+			<Idata><Q unit="1/A">0.101</Q><I unit="1/cm">0.28113</I><Idev unit="1/cm">0.011</Idev></Idata>
+			<Idata><Q unit="1/A">0.103</Q><I unit="1/cm">0.2582</I><Idev unit="1/cm">0.01</Idev></Idata>
+			<Idata><Q unit="1/A">0.105</Q><I unit="1/cm">0.24728</I><Idev unit="1/cm">0.01</Idev></Idata>
+			<Idata><Q unit="1/A">0.107</Q><I unit="1/cm">0.22732</I><Idev unit="1/cm">0.0098</Idev></Idata>
+			<Idata><Q unit="1/A">0.109</Q><I unit="1/cm">0.21326</I><Idev unit="1/cm">0.0096</Idev></Idata>
+			<Idata><Q unit="1/A">0.111</Q><I unit="1/cm">0.2134</I><Idev unit="1/cm">0.0097</Idev></Idata>
+			<Idata><Q unit="1/A">0.113</Q><I unit="1/cm">0.2163</I><Idev unit="1/cm">0.0098</Idev></Idata>
+			<Idata><Q unit="1/A">0.115</Q><I unit="1/cm">0.2102</I><Idev unit="1/cm">0.0097</Idev></Idata>
+			<Idata><Q unit="1/A">0.117</Q><I unit="1/cm">0.1943</I><Idev unit="1/cm">0.0094</Idev></Idata>
+			<Idata><Q unit="1/A">0.119</Q><I unit="1/cm">0.1863</I><Idev unit="1/cm">0.0093</Idev></Idata>
+			<Idata><Q unit="1/A">0.121</Q><I unit="1/cm">0.18506</I><Idev unit="1/cm">0.0094</Idev></Idata>
+			<Idata><Q unit="1/A">0.123</Q><I unit="1/cm">0.19027</I><Idev unit="1/cm">0.0096</Idev></Idata>
+			<Idata><Q unit="1/A">0.125</Q><I unit="1/cm">0.19471</I><Idev unit="1/cm">0.0099</Idev></Idata>
+			<Idata><Q unit="1/A">0.127</Q><I unit="1/cm">0.18727</I><Idev unit="1/cm">0.0098</Idev></Idata>
+			<Idata><Q unit="1/A">0.129</Q><I unit="1/cm">0.17679</I><Idev unit="1/cm">0.0096</Idev></Idata>
+			<Idata><Q unit="1/A">0.131</Q><I unit="1/cm">0.1662</I><Idev unit="1/cm">0.0094</Idev></Idata>
+			<Idata><Q unit="1/A">0.133</Q><I unit="1/cm">0.15983</I><Idev unit="1/cm">0.0094</Idev></Idata>
+			<Idata><Q unit="1/A">0.135</Q><I unit="1/cm">0.15702</I><Idev unit="1/cm">0.0094</Idev></Idata>
+			<Idata><Q unit="1/A">0.137</Q><I unit="1/cm">0.16286</I><Idev unit="1/cm">0.0097</Idev></Idata>
+			<Idata><Q unit="1/A">0.139</Q><I unit="1/cm">0.16104</I><Idev unit="1/cm">0.0098</Idev></Idata>
+			<Idata><Q unit="1/A">0.141</Q><I unit="1/cm">0.15803</I><Idev unit="1/cm">0.0098</Idev></Idata>
+			<Idata><Q unit="1/A">0.143</Q><I unit="1/cm">0.15705</I><Idev unit="1/cm">0.0099</Idev></Idata>
+			<Idata><Q unit="1/A">0.145</Q><I unit="1/cm">0.16251</I><Idev unit="1/cm">0.01</Idev></Idata>
+			<Idata><Q unit="1/A">0.147</Q><I unit="1/cm">0.1638</I><Idev unit="1/cm">0.01</Idev></Idata>
+			<Idata><Q unit="1/A">0.149</Q><I unit="1/cm">0.16734</I><Idev unit="1/cm">0.011</Idev></Idata>
+			<Idata><Q unit="1/A">0.151</Q><I unit="1/cm">0.17087</I><Idev unit="1/cm">0.011</Idev></Idata>
+			<Idata><Q unit="1/A">0.153</Q><I unit="1/cm">0.16784</I><Idev unit="1/cm">0.011</Idev></Idata>
+			<Idata><Q unit="1/A">0.155</Q><I unit="1/cm">0.15632</I><Idev unit="1/cm">0.011</Idev></Idata>
+			<Idata><Q unit="1/A">0.157</Q><I unit="1/cm">0.1619</I><Idev unit="1/cm">0.011</Idev></Idata>
+			<Idata><Q unit="1/A">0.159</Q><I unit="1/cm">0.16646</I><Idev unit="1/cm">0.011</Idev></Idata>
+			<Idata><Q unit="1/A">0.161</Q><I unit="1/cm">0.17035</I><Idev unit="1/cm">0.012</Idev></Idata>
+			<Idata><Q unit="1/A">0.163</Q><I unit="1/cm">0.16264</I><Idev unit="1/cm">0.012</Idev></Idata>
+			<Idata><Q unit="1/A">0.165</Q><I unit="1/cm">0.16843</I><Idev unit="1/cm">0.012</Idev></Idata>
+			<Idata><Q unit="1/A">0.167</Q><I unit="1/cm">0.16715</I><Idev unit="1/cm">0.012</Idev></Idata>
+			<Idata><Q unit="1/A">0.169</Q><I unit="1/cm">0.1675</I><Idev unit="1/cm">0.012</Idev></Idata>
+			<Idata><Q unit="1/A">0.171</Q><I unit="1/cm">0.1676</I><Idev unit="1/cm">0.013</Idev></Idata>
+			<Idata><Q unit="1/A">0.173</Q><I unit="1/cm">0.16312</I><Idev unit="1/cm">0.013</Idev></Idata>
+			<Idata><Q unit="1/A">0.175</Q><I unit="1/cm">0.15858</I><Idev unit="1/cm">0.013</Idev></Idata>
+			<Idata><Q unit="1/A">0.177</Q><I unit="1/cm">0.15402</I><Idev unit="1/cm">0.013</Idev></Idata>
+			<Idata><Q unit="1/A">0.179</Q><I unit="1/cm">0.15695</I><Idev unit="1/cm">0.013</Idev></Idata>
+			<Idata><Q unit="1/A">0.181</Q><I unit="1/cm">0.16041</I><Idev unit="1/cm">0.013</Idev></Idata>
+			<Idata><Q unit="1/A">0.183</Q><I unit="1/cm">0.16546</I><Idev unit="1/cm">0.014</Idev></Idata>
+			<Idata><Q unit="1/A">0.185</Q><I unit="1/cm">0.1708</I><Idev unit="1/cm">0.014</Idev></Idata>
+			<Idata><Q unit="1/A">0.187</Q><I unit="1/cm">0.16808</I><Idev unit="1/cm">0.015</Idev></Idata>
+			<Idata><Q unit="1/A">0.189</Q><I unit="1/cm">0.16302</I><Idev unit="1/cm">0.015</Idev></Idata>
+			<Idata><Q unit="1/A">0.191</Q><I unit="1/cm">0.1635</I><Idev unit="1/cm">0.015</Idev></Idata>
+			<Idata><Q unit="1/A">0.193</Q><I unit="1/cm">0.16017</I><Idev unit="1/cm">0.015</Idev></Idata>
+			<Idata><Q unit="1/A">0.195</Q><I unit="1/cm">0.16556</I><Idev unit="1/cm">0.016</Idev></Idata>
+			<Idata><Q unit="1/A">0.197</Q><I unit="1/cm">0.1648</I><Idev unit="1/cm">0.016</Idev></Idata>
+			<Idata><Q unit="1/A">0.199</Q><I unit="1/cm">0.16281</I><Idev unit="1/cm">0.017</Idev></Idata>
+			<Idata><Q unit="1/A">0.201</Q><I unit="1/cm">0.16554</I><Idev unit="1/cm">0.017</Idev></Idata>
+			<Idata><Q unit="1/A">0.203</Q><I unit="1/cm">0.16221</I><Idev unit="1/cm">0.018</Idev></Idata>
+			<Idata><Q unit="1/A">0.205</Q><I unit="1/cm">0.16024</I><Idev unit="1/cm">0.018</Idev></Idata>
+			<Idata><Q unit="1/A">0.207</Q><I unit="1/cm">0.16394</I><Idev unit="1/cm">0.019</Idev></Idata>
+			<Idata><Q unit="1/A">0.209</Q><I unit="1/cm">0.16387</I><Idev unit="1/cm">0.019</Idev></Idata>
+			<Idata><Q unit="1/A">0.211</Q><I unit="1/cm">0.1546</I><Idev unit="1/cm">0.019</Idev></Idata>
+			<Idata><Q unit="1/A">0.213</Q><I unit="1/cm">0.16381</I><Idev unit="1/cm">0.021</Idev></Idata>
+			<Idata><Q unit="1/A">0.215</Q><I unit="1/cm">0.16527</I><Idev unit="1/cm">0.021</Idev></Idata>
+			<Idata><Q unit="1/A">0.217</Q><I unit="1/cm">0.16731</I><Idev unit="1/cm">0.022</Idev></Idata>
+			<Idata><Q unit="1/A">0.219</Q><I unit="1/cm">0.17469</I><Idev unit="1/cm">0.024</Idev></Idata>
+			<Idata><Q unit="1/A">0.221</Q><I unit="1/cm">0.16974</I><Idev unit="1/cm">0.024</Idev></Idata>
+			<Idata><Q unit="1/A">0.223</Q><I unit="1/cm">0.1643</I><Idev unit="1/cm">0.025</Idev></Idata>
+			<Idata><Q unit="1/A">0.225</Q><I unit="1/cm">0.16237</I><Idev unit="1/cm">0.026</Idev></Idata>
+			<Idata><Q unit="1/A">0.227</Q><I unit="1/cm">0.15734</I><Idev unit="1/cm">0.026</Idev></Idata>
+			<Idata><Q unit="1/A">0.229</Q><I unit="1/cm">0.15832</I><Idev unit="1/cm">0.027</Idev></Idata>
+			<Idata><Q unit="1/A">0.231</Q><I unit="1/cm">0.15923</I><Idev unit="1/cm">0.029</Idev></Idata>
+			<Idata><Q unit="1/A">0.233</Q><I unit="1/cm">0.16609</I><Idev unit="1/cm">0.03</Idev></Idata>
+			<Idata><Q unit="1/A">0.235</Q><I unit="1/cm">0.16868</I><Idev unit="1/cm">0.032</Idev></Idata>
+			<Idata><Q unit="1/A">0.237</Q><I unit="1/cm">0.17145</I><Idev unit="1/cm">0.033</Idev></Idata>
+			<Idata><Q unit="1/A">0.239</Q><I unit="1/cm">0.17418</I><Idev unit="1/cm">0.035</Idev></Idata>
+			<Idata><Q unit="1/A">0.241</Q><I unit="1/cm">0.16938</I><Idev unit="1/cm">0.036</Idev></Idata>
+			<Idata><Q unit="1/A">0.243</Q><I unit="1/cm">0.1571</I><Idev unit="1/cm">0.037</Idev></Idata>
+			<Idata><Q unit="1/A">0.245</Q><I unit="1/cm">0.1418</I><Idev unit="1/cm">0.036</Idev></Idata>
+			<Idata><Q unit="1/A">0.247</Q><I unit="1/cm">0.14631</I><Idev unit="1/cm">0.039</Idev></Idata>
+			<Idata><Q unit="1/A">0.249</Q><I unit="1/cm">0.14453</I><Idev unit="1/cm">0.041</Idev></Idata>
+			<Idata><Q unit="1/A">0.251</Q><I unit="1/cm">0.14863</I><Idev unit="1/cm">0.043</Idev></Idata>
+			<Idata><Q unit="1/A">0.253</Q><I unit="1/cm">0.15887</I><Idev unit="1/cm">0.047</Idev></Idata>
+			<Idata><Q unit="1/A">0.255</Q><I unit="1/cm">0.15439</I><Idev unit="1/cm">0.049</Idev></Idata>
+			<Idata><Q unit="1/A">0.257</Q><I unit="1/cm">0.14265</I><Idev unit="1/cm">0.05</Idev></Idata>
+			<Idata><Q unit="1/A">0.259</Q><I unit="1/cm">0.14133</I><Idev unit="1/cm">0.053</Idev></Idata>
+			<Idata><Q unit="1/A">0.261</Q><I unit="1/cm">0.14836</I><Idev unit="1/cm">0.058</Idev></Idata>
+			<Idata><Q unit="1/A">0.263</Q><I unit="1/cm">0.14399</I><Idev unit="1/cm">0.061</Idev></Idata>
+			<Idata><Q unit="1/A">0.265</Q><I unit="1/cm">0.13736</I><Idev unit="1/cm">0.065</Idev></Idata>
+			<Idata><Q unit="1/A">0.267</Q><I unit="1/cm">0.13838</I><Idev unit="1/cm">0.07</Idev></Idata>
+			<Idata><Q unit="1/A">0.269</Q><I unit="1/cm">0.1434</I><Idev unit="1/cm">0.078</Idev></Idata>
+			<Idata><Q unit="1/A">0.271</Q><I unit="1/cm">0.13481</I><Idev unit="1/cm">0.083</Idev></Idata>
+			<Idata><Q unit="1/A">0.273</Q><I unit="1/cm">0.11736</I><Idev unit="1/cm">0.087</Idev></Idata>
+			<Idata><Q unit="1/A">0.275</Q><I unit="1/cm">0.12235</I><Idev unit="1/cm">0.1</Idev></Idata>
+			<Idata><Q unit="1/A">0.277</Q><I unit="1/cm">0.14533</I><Idev unit="1/cm">0.13</Idev></Idata>
+			<Idata><Q unit="1/A">0.279</Q><I unit="1/cm">0.15779</I><Idev unit="1/cm">0.16</Idev></Idata>
+			<Idata><Q unit="1/A">0.281</Q><I unit="1/cm">0.21629</I><Idev unit="1/cm">0.23</Idev></Idata>
+			<Idata><Q unit="1/A">0.283</Q><I unit="1/cm">0.34239</I><Idev unit="1/cm">0.37</Idev></Idata>
+			<Idata><Q unit="1/A">0.285</Q><I unit="1/cm">0.46885</I><Idev unit="1/cm">0.67</Idev></Idata>
+			<Idata><Q unit="1/A">0.287</Q><I unit="1/cm">0.46885</I><Idev unit="1/cm">2.2</Idev></Idata>
+		</SASdata>
+		<SASsample>
+			<ID> TK49 standard 12mm SANS                                              </ID>
+			<thickness unit="mm"> 1.03 </thickness>
+			<details> Perez-Mendez,Rodrigu </details>
+		</SASsample>
+		<SASinstrument>
+			<name> LOQ___ </name>
+			<SASsource>
+				<radiation> neutron </radiation>
+				<beam_size name="snout">
+					<x unit="mm"> 12.00 </x>
+					<y unit="mm"> 12.00 </y>
+				</beam_size>
+				<beam_shape> disc________ </beam_shape>
+				<wavelength_min unit="nm"> 0.22 </wavelength_min>
+				<wavelength_max unit="nm"> 1.00 </wavelength_max>
+			</SASsource>
+			<SAScollimation name="fixed">
+				<aperture name="A2" type="pinhole">
+					<size>
+						<x unit="mm"> 12.0 </x>
+						<y unit="mm"> 12.0 </y>
+					</size>
+					<distance unit="m"> 10.995 </distance>
+				</aperture>
+			</SAScollimation>
+			<SASdetector>
+				<name> ORDELA 2661N </name>
+				<SDD unit="m"> 4.155 </SDD>
+				<beam_center>
+					<x unit="mm"> 324.45 </x>
+					<y unit="mm"> 325.55 </y>
+				</beam_center>
+				<pixel_size>
+					<x unit="mm"> 5.00 </x>
+					<y unit="mm"> 5.00 </y>
+				</pixel_size>
+			</SASdetector>
+			<SASdetector>
+				<name> ISIS HAB </name>
+				<SDD unit="m"> 0.587 </SDD>
+				<beam_center>
+					<x unit="mm"> 324.45 </x>
+					<y unit="mm"> 325.55 </y>
+				</beam_center>
+				<pixel_size>
+					<x unit="mm"> 12.00 </x>
+					<y unit="mm"> 12.00 </y>
+				</pixel_size>
+			</SASdetector>
+		</SASinstrument>
+		<SASprocess>
+			<name> COLETTE </name>
+			<date> 09-MAR-2008 10:07:30 </date>
+			<term name="mask_file"> USER:MASK.COM                                      </term>
+			<term name="scale_factor" unit="a.u."> 1.7270 </term>
+			<term name="radius_min" unit="mm">  38.0 </term>
+			<term name="radius_max" unit="mm"> 419.0 </term>
+			<term name="radialstep" unit="mm">   3.0 </term>
+			<term name="sector_width" unit="degree"> 180.0 </term>
+			<term name="count_time" unit="frame">      21871 </term>
+			<SASprocessnote name="q_resolution"> estimate </SASprocessnote>
+			<SASprocessnote name="file_written"> 18-MAR-2008 10:47:10.16 </SASprocessnote>
+		</SASprocess>
+		<SASnote />
+	</SASentry>
+</SASroot>

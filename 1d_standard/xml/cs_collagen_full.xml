@@ -1,0 +1,373 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="cansas1d.xsl" ?>
+<SASroot version="1.1"
+		xmlns="urn:cansas1d:1.1"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="urn:cansas1d:1.1 http://www.cansas.org/formats/1.1/cansas1d.xsd"
+		>
+	<SASentry>
+		<Title>dry chick collagen, d = 673 A, 6531 eV, X6B</Title>
+		<Run>Sep 19 1994     01:41:02 am</Run>
+		<SASdata>
+			<!--  
+			-   converted to cansas1d/1.1 XML within Excel spreadsheet using user macro commands such as
+			-    =IDATA_tag(A5,$A$4,0.00055,$A$4,B5,$B$4,C5,$C$4)
+			-   where
+			-      Idata_tag(Q, Q_unit, I, I_unit, Qdev, Qdev_unit, Idev, Idev_unit)
+			-->
+			<Idata><Q unit="1/A">0.022756</Q><I unit="a.u.">1107.6</I><Idev unit="a.u.">8.586</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.023296</Q><I unit="a.u.">1038.9</I><Idev unit="a.u.">7.6445</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.023837</Q><I unit="a.u.">1071</I><Idev unit="a.u.">7.919</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.024377</Q><I unit="a.u.">1054.7</I><Idev unit="a.u.">8.0684</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.024917</Q><I unit="a.u.">1061.3</I><Idev unit="a.u.">8.2971</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.025457</Q><I unit="a.u.">1115.1</I><Idev unit="a.u.">8.3305</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.025998</Q><I unit="a.u.">1276.1</I><Idev unit="a.u.">8.5378</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.026538</Q><I unit="a.u.">1499.2</I><Idev unit="a.u.">9.0048</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.027078</Q><I unit="a.u.">1738.2</I><Idev unit="a.u.">10.172</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.027619</Q><I unit="a.u.">1802.5</I><Idev unit="a.u.">10.335</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.02816</Q><I unit="a.u.">1728.5</I><Idev unit="a.u.">10.12</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.0287</Q><I unit="a.u.">1571.7</I><Idev unit="a.u.">8.9096</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.029241</Q><I unit="a.u.">1437.5</I><Idev unit="a.u.">8.7863</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.029782</Q><I unit="a.u.">1162.4</I><Idev unit="a.u.">8.2171</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.030322</Q><I unit="a.u.">939.98</I><Idev unit="a.u.">7.7143</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.030863</Q><I unit="a.u.">906.78</I><Idev unit="a.u.">7.4716</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.031404</Q><I unit="a.u.">856.24</I><Idev unit="a.u.">7.0677</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.031945</Q><I unit="a.u.">813.36</I><Idev unit="a.u.">6.8031</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.032486</Q><I unit="a.u.">771</I><Idev unit="a.u.">7.0596</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.033027</Q><I unit="a.u.">772.45</I><Idev unit="a.u.">7.0557</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.033568</Q><I unit="a.u.">786.66</I><Idev unit="a.u.">7.0839</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.03411</Q><I unit="a.u.">823.33</I><Idev unit="a.u.">6.6235</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.034651</Q><I unit="a.u.">927.45</I><Idev unit="a.u.">7.1564</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.035192</Q><I unit="a.u.">1091.7</I><Idev unit="a.u.">7.9016</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.035734</Q><I unit="a.u.">1442.7</I><Idev unit="a.u.">9.2056</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.036275</Q><I unit="a.u.">1706.3</I><Idev unit="a.u.">9.7983</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.036817</Q><I unit="a.u.">1853.9</I><Idev unit="a.u.">9.8893</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.037358</Q><I unit="a.u.">1876.8</I><Idev unit="a.u.">9.7876</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.0379</Q><I unit="a.u.">1747</I><Idev unit="a.u.">10.032</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.038441</Q><I unit="a.u.">1517.1</I><Idev unit="a.u.">9.3961</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.038983</Q><I unit="a.u.">1499.7</I><Idev unit="a.u.">9.3252</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.039525</Q><I unit="a.u.">1130.1</I><Idev unit="a.u.">7.5461</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.040067</Q><I unit="a.u.">920.03</I><Idev unit="a.u.">7.063</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.040609</Q><I unit="a.u.">722.21</I><Idev unit="a.u.">6.5364</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.041151</Q><I unit="a.u.">680.68</I><Idev unit="a.u.">6.5557</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.041693</Q><I unit="a.u.">653.1</I><Idev unit="a.u.">6.3218</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.042235</Q><I unit="a.u.">682.98</I><Idev unit="a.u.">6.2458</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.042777</Q><I unit="a.u.">666.44</I><Idev unit="a.u.">6.1228</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.043319</Q><I unit="a.u.">687.15</I><Idev unit="a.u.">6.5607</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.043861</Q><I unit="a.u.">772.79</I><Idev unit="a.u.">6.8899</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.044404</Q><I unit="a.u.">831.62</I><Idev unit="a.u.">7.1313</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.044946</Q><I unit="a.u.">1068.8</I><Idev unit="a.u.">7.3185</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.045489</Q><I unit="a.u.">1286.1</I><Idev unit="a.u.">8.1847</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.046031</Q><I unit="a.u.">1561.5</I><Idev unit="a.u.">9.1768</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.046574</Q><I unit="a.u.">1705.2</I><Idev unit="a.u.">9.8435</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.047116</Q><I unit="a.u.">1661.8</I><Idev unit="a.u.">9.5893</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.047659</Q><I unit="a.u.">1700</I><Idev unit="a.u.">9.4128</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.048202</Q><I unit="a.u.">1649.4</I><Idev unit="a.u.">9.1399</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.048745</Q><I unit="a.u.">1415.4</I><Idev unit="a.u.">9.0171</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.049287</Q><I unit="a.u.">1046.4</I><Idev unit="a.u.">7.8308</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.04983</Q><I unit="a.u.">971.87</I><Idev unit="a.u.">7.5672</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.050373</Q><I unit="a.u.">831.44</I><Idev unit="a.u.">6.4806</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.050916</Q><I unit="a.u.">825.09</I><Idev unit="a.u.">6.6425</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.051459</Q><I unit="a.u.">906.13</I><Idev unit="a.u.">7.1134</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.052003</Q><I unit="a.u.">1107.9</I><Idev unit="a.u.">8.0383</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.052546</Q><I unit="a.u.">1418.4</I><Idev unit="a.u.">8.8637</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.053089</Q><I unit="a.u.">1848.7</I><Idev unit="a.u.">9.7624</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.054176</Q><I unit="a.u.">4488.3</I><Idev unit="a.u.">15.654</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.054719</Q><I unit="a.u.">6621.4</I><Idev unit="a.u.">18.959</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.055263</Q><I unit="a.u.">7222.1</I><Idev unit="a.u.">19.776</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.055806</Q><I unit="a.u.">7978.7</I><Idev unit="a.u.">19.116</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.05635</Q><I unit="a.u.">8765.9</I><Idev unit="a.u.">20.568</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.056893</Q><I unit="a.u.">8127.5</I><Idev unit="a.u.">20.356</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.057437</Q><I unit="a.u.">5563.5</I><Idev unit="a.u.">17.398</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.057981</Q><I unit="a.u.">4807</I><Idev unit="a.u.">15.948</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.058525</Q><I unit="a.u.">2857.8</I><Idev unit="a.u.">12.017</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.059069</Q><I unit="a.u.">1695.3</I><Idev unit="a.u.">9.2211</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.059613</Q><I unit="a.u.">1009.4</I><Idev unit="a.u.">7.641</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.060157</Q><I unit="a.u.">676.03</I><Idev unit="a.u.">6.3701</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.060701</Q><I unit="a.u.">632.65</I><Idev unit="a.u.">6.1921</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.061245</Q><I unit="a.u.">567.81</I><Idev unit="a.u.">5.4243</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.061789</Q><I unit="a.u.">594.02</I><Idev unit="a.u.">5.6918</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.062333</Q><I unit="a.u.">680.81</I><Idev unit="a.u.">6.2001</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.062878</Q><I unit="a.u.">870.55</I><Idev unit="a.u.">7.1424</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.063422</Q><I unit="a.u.">1109.1</I><Idev unit="a.u.">7.8497</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.063967</Q><I unit="a.u.">1277.2</I><Idev unit="a.u.">8.1591</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.064511</Q><I unit="a.u.">1402.1</I><Idev unit="a.u.">8.4027</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.065056</Q><I unit="a.u.">1410.2</I><Idev unit="a.u.">8.9306</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.0656</Q><I unit="a.u.">1356.9</I><Idev unit="a.u.">8.7422</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.066145</Q><I unit="a.u.">1318.5</I><Idev unit="a.u.">8.6404</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.06669</Q><I unit="a.u.">1080.4</I><Idev unit="a.u.">7.2339</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.067234</Q><I unit="a.u.">894.74</I><Idev unit="a.u.">6.8117</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.067779</Q><I unit="a.u.">641.97</I><Idev unit="a.u.">6.0053</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.068324</Q><I unit="a.u.">463.24</I><Idev unit="a.u.">5.3458</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.068869</Q><I unit="a.u.">450.9</I><Idev unit="a.u.">5.2166</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.069414</Q><I unit="a.u.">402.47</I><Idev unit="a.u.">4.8343</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.069959</Q><I unit="a.u.">372.02</I><Idev unit="a.u.">4.5973</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.070504</Q><I unit="a.u.">376.83</I><Idev unit="a.u.">4.8965</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.071049</Q><I unit="a.u.">411.75</I><Idev unit="a.u.">5.0593</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.071595</Q><I unit="a.u.">438.73</I><Idev unit="a.u.">5.2162</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.07214</Q><I unit="a.u.">536.13</I><Idev unit="a.u.">5.235</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.072685</Q><I unit="a.u.">655.45</I><Idev unit="a.u.">5.893</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.073231</Q><I unit="a.u.">836.69</I><Idev unit="a.u.">6.7759</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.073776</Q><I unit="a.u.">997.45</I><Idev unit="a.u.">7.5455</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.074322</Q><I unit="a.u.">1028.4</I><Idev unit="a.u.">7.5489</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.074868</Q><I unit="a.u.">1052.4</I><Idev unit="a.u.">7.4162</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.075413</Q><I unit="a.u.">1070.2</I><Idev unit="a.u.">7.3716</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.075959</Q><I unit="a.u.">985.79</I><Idev unit="a.u.">7.5071</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.076505</Q><I unit="a.u.">758.76</I><Idev unit="a.u.">6.626</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.077051</Q><I unit="a.u.">712.01</I><Idev unit="a.u.">6.4339</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.077596</Q><I unit="a.u.">528.53</I><Idev unit="a.u.">5.1904</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.078142</Q><I unit="a.u.">475.16</I><Idev unit="a.u.">5.0759</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.078688</Q><I unit="a.u.">456.37</I><Idev unit="a.u.">5.1325</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.079234</Q><I unit="a.u.">468.25</I><Idev unit="a.u.">5.3377</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.079781</Q><I unit="a.u.">545.19</I><Idev unit="a.u.">5.6419</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.080327</Q><I unit="a.u.">622.07</I><Idev unit="a.u.">5.8079</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.080873</Q><I unit="a.u.">805.98</I><Idev unit="a.u.">6.4454</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.081419</Q><I unit="a.u.">1169.5</I><Idev unit="a.u.">8.116</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.081966</Q><I unit="a.u.">1688.1</I><Idev unit="a.u.">9.6851</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.082512</Q><I unit="a.u.">2143.5</I><Idev unit="a.u.">10.871</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.083059</Q><I unit="a.u.">2646.2</I><Idev unit="a.u.">11.079</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.083605</Q><I unit="a.u.">2957.7</I><Idev unit="a.u.">12.016</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.084152</Q><I unit="a.u.">3193.4</I><Idev unit="a.u.">12.825</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.084698</Q><I unit="a.u.">2887.1</I><Idev unit="a.u.">12.564</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.085245</Q><I unit="a.u.">2660.7</I><Idev unit="a.u.">11.899</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.085792</Q><I unit="a.u.">2252</I><Idev unit="a.u.">10.663</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.086339</Q><I unit="a.u.">1557.2</I><Idev unit="a.u.">8.7926</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.086886</Q><I unit="a.u.">962.69</I><Idev unit="a.u.">7.4052</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.087433</Q><I unit="a.u.">551.34</I><Idev unit="a.u.">5.7114</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.08798</Q><I unit="a.u.">460.54</I><Idev unit="a.u.">5.2721</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.088527</Q><I unit="a.u.">339.2</I><Idev unit="a.u.">4.2368</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.089074</Q><I unit="a.u.">298.03</I><Idev unit="a.u.">4.1142</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.089621</Q><I unit="a.u.">280.61</I><Idev unit="a.u.">4.142</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.090168</Q><I unit="a.u.">287.28</I><Idev unit="a.u.">4.2991</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.090716</Q><I unit="a.u.">328.25</I><Idev unit="a.u.">4.479</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.091263</Q><I unit="a.u.">345.37</I><Idev unit="a.u.">4.4394</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.09181</Q><I unit="a.u.">380.06</I><Idev unit="a.u.">4.5498</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.092358</Q><I unit="a.u.">422.4</I><Idev unit="a.u.">5.0806</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.092905</Q><I unit="a.u.">426.19</I><Idev unit="a.u.">5.0813</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.093453</Q><I unit="a.u.">451.46</I><Idev unit="a.u.">5.2011</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.094001</Q><I unit="a.u.">432.71</I><Idev unit="a.u.">4.7007</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.094548</Q><I unit="a.u.">432.45</I><Idev unit="a.u.">4.8225</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.095096</Q><I unit="a.u.">374.91</I><Idev unit="a.u.">4.6316</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.095644</Q><I unit="a.u.">295.3</I><Idev unit="a.u.">4.3491</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.096192</Q><I unit="a.u.">276.78</I><Idev unit="a.u.">4.1402</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.09674</Q><I unit="a.u.">245.17</I><Idev unit="a.u.">3.8196</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.097288</Q><I unit="a.u.">238.26</I><Idev unit="a.u.">3.7314</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.097836</Q><I unit="a.u.">248.86</I><Idev unit="a.u.">4.0103</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.098384</Q><I unit="a.u.">281.98</I><Idev unit="a.u.">4.232</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.098932</Q><I unit="a.u.">317.57</I><Idev unit="a.u.">4.4343</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.09948</Q><I unit="a.u.">428.08</I><Idev unit="a.u.">4.6581</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.10003</Q><I unit="a.u.">547.66</I><Idev unit="a.u.">5.3462</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.10058</Q><I unit="a.u.">771.32</I><Idev unit="a.u.">6.4563</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.10113</Q><I unit="a.u.">1043.1</I><Idev unit="a.u.">7.6661</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.10167</Q><I unit="a.u.">1188.3</I><Idev unit="a.u.">8.0287</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.10222</Q><I unit="a.u.">1244</I><Idev unit="a.u.">7.967</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.10277</Q><I unit="a.u.">1333.1</I><Idev unit="a.u.">8.1331</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.10332</Q><I unit="a.u.">1347.7</I><Idev unit="a.u.">8.6505</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.10387</Q><I unit="a.u.">1190.2</I><Idev unit="a.u.">8.1481</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.10442</Q><I unit="a.u.">1139.9</I><Idev unit="a.u.">7.9798</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.10497</Q><I unit="a.u.">758.23</I><Idev unit="a.u.">6.0508</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.10551</Q><I unit="a.u.">537.66</I><Idev unit="a.u.">5.3064</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.10606</Q><I unit="a.u.">335.51</I><Idev unit="a.u.">4.4197</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.10661</Q><I unit="a.u.">225.93</I><Idev unit="a.u.">3.8379</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.10716</Q><I unit="a.u.">212.1</I><Idev unit="a.u.">3.706</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.10771</Q><I unit="a.u.">191.99</I><Idev unit="a.u.">3.4189</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.10826</Q><I unit="a.u.">178.89</I><Idev unit="a.u.">3.2912</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.10881</Q><I unit="a.u.">195.66</I><Idev unit="a.u.">3.6092</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.10936</Q><I unit="a.u.">227.68</I><Idev unit="a.u.">3.8319</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.10991</Q><I unit="a.u.">259.5</I><Idev unit="a.u.">4.0416</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.11046</Q><I unit="a.u.">310.78</I><Idev unit="a.u.">4.0225</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.11101</Q><I unit="a.u.">335.8</I><Idev unit="a.u.">4.2946</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.11156</Q><I unit="a.u.">387.51</I><Idev unit="a.u.">4.6945</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.11211</Q><I unit="a.u.">391.73</I><Idev unit="a.u.">4.8588</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.11266</Q><I unit="a.u.">383.53</I><Idev unit="a.u.">4.727</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.11321</Q><I unit="a.u.">371.59</I><Idev unit="a.u.">4.5309</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.11376</Q><I unit="a.u.">328.41</I><Idev unit="a.u.">4.2371</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.1143</Q><I unit="a.u.">257.4</I><Idev unit="a.u.">4.0253</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.11485</Q><I unit="a.u.">190.14</I><Idev unit="a.u.">3.5508</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.1154</Q><I unit="a.u.">173.26</I><Idev unit="a.u.">3.4271</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.11595</Q><I unit="a.u.">136.07</I><Idev unit="a.u.">2.844</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.1165</Q><I unit="a.u.">123.61</I><Idev unit="a.u.">2.8498</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.11705</Q><I unit="a.u.">110.68</I><Idev unit="a.u.">2.8167</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.11761</Q><I unit="a.u.">106.93</I><Idev unit="a.u.">2.8509</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.11816</Q><I unit="a.u.">106.59</I><Idev unit="a.u.">2.7769</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.11871</Q><I unit="a.u.">103.74</I><Idev unit="a.u.">2.7204</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.11926</Q><I unit="a.u.">106.96</I><Idev unit="a.u.">2.6951</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.11981</Q><I unit="a.u.">118.97</I><Idev unit="a.u.">2.9515</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.12036</Q><I unit="a.u.">121.98</I><Idev unit="a.u.">2.9701</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.12091</Q><I unit="a.u.">123.48</I><Idev unit="a.u.">2.9673</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.12146</Q><I unit="a.u.">131.25</I><Idev unit="a.u.">2.7746</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.12201</Q><I unit="a.u.">130.2</I><Idev unit="a.u.">2.8792</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.12256</Q><I unit="a.u.">128.4</I><Idev unit="a.u.">2.9435</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.12311</Q><I unit="a.u.">113.08</I><Idev unit="a.u.">2.8854</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.12366</Q><I unit="a.u.">109.2</I><Idev unit="a.u.">2.8152</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.12421</Q><I unit="a.u.">103.9</I><Idev unit="a.u.">2.6836</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.12476</Q><I unit="a.u.">95.265</I><Idev unit="a.u.">2.5735</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.12531</Q><I unit="a.u.">98.858</I><Idev unit="a.u.">2.725</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.12586</Q><I unit="a.u.">95.644</I><Idev unit="a.u.">2.7012</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.12642</Q><I unit="a.u.">103.15</I><Idev unit="a.u.">2.7603</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.12697</Q><I unit="a.u.">104.77</I><Idev unit="a.u.">2.5591</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.12752</Q><I unit="a.u.">111.58</I><Idev unit="a.u.">2.7045</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.12807</Q><I unit="a.u.">133.44</I><Idev unit="a.u.">2.9744</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.12862</Q><I unit="a.u.">159.7</I><Idev unit="a.u.">3.2952</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.12917</Q><I unit="a.u.">188.5</I><Idev unit="a.u.">3.474</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.12972</Q><I unit="a.u.">197</I><Idev unit="a.u.">3.4111</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.13028</Q><I unit="a.u.">216.31</I><Idev unit="a.u.">3.4941</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.13083</Q><I unit="a.u.">223</I><Idev unit="a.u.">3.7551</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.13138</Q><I unit="a.u.">207.63</I><Idev unit="a.u.">3.645</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.13193</Q><I unit="a.u.">193.68</I><Idev unit="a.u.">3.5285</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.13248</Q><I unit="a.u.">163.11</I><Idev unit="a.u.">3.0332</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.13303</Q><I unit="a.u.">126.4</I><Idev unit="a.u.">2.8352</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.13359</Q><I unit="a.u.">93.934</I><Idev unit="a.u.">2.6089</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.13414</Q><I unit="a.u.">74.061</I><Idev unit="a.u.">2.4651</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.13469</Q><I unit="a.u.">70.566</I><Idev unit="a.u.">2.4098</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.13524</Q><I unit="a.u.">60.017</I><Idev unit="a.u.">2.2194</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.13579</Q><I unit="a.u.">54.618</I><Idev unit="a.u.">2.1053</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.13635</Q><I unit="a.u.">49.752</I><Idev unit="a.u.">2.1715</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.1369</Q><I unit="a.u.">57.824</I><Idev unit="a.u.">2.2593</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.13745</Q><I unit="a.u.">57.875</I><Idev unit="a.u.">2.2478</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.138</Q><I unit="a.u.">60.647</I><Idev unit="a.u.">2.1282</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.13856</Q><I unit="a.u.">69.628</I><Idev unit="a.u.">2.2724</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.13911</Q><I unit="a.u.">73.475</I><Idev unit="a.u.">2.4132</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.13966</Q><I unit="a.u.">84.373</I><Idev unit="a.u.">2.5493</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.14021</Q><I unit="a.u.">84.97</I><Idev unit="a.u.">2.5449</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.14077</Q><I unit="a.u.">72.91</I><Idev unit="a.u.">2.3548</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.14132</Q><I unit="a.u.">68.782</I><Idev unit="a.u.">2.2609</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.14187</Q><I unit="a.u.">59.897</I><Idev unit="a.u.">2.2565</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.14242</Q><I unit="a.u.">54.849</I><Idev unit="a.u.">2.2475</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.14298</Q><I unit="a.u.">50.784</I><Idev unit="a.u.">2.1371</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.14353</Q><I unit="a.u.">42.441</I><Idev unit="a.u.">1.8823</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.14408</Q><I unit="a.u.">40.44</I><Idev unit="a.u.">1.9154</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.14464</Q><I unit="a.u.">35.364</I><Idev unit="a.u.">1.9304</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.14519</Q><I unit="a.u.">38.181</I><Idev unit="a.u.">1.9935</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.14574</Q><I unit="a.u.">39.809</I><Idev unit="a.u.">1.9775</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.14629</Q><I unit="a.u.">38.231</I><Idev unit="a.u.">1.8797</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.14685</Q><I unit="a.u.">37.59</I><Idev unit="a.u.">1.9</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.1474</Q><I unit="a.u.">43.121</I><Idev unit="a.u.">2.0521</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.14795</Q><I unit="a.u.">52.089</I><Idev unit="a.u.">2.1669</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.14851</Q><I unit="a.u.">46.029</I><Idev unit="a.u.">2.1103</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.14906</Q><I unit="a.u.">52.451</I><Idev unit="a.u.">1.9819</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.14962</Q><I unit="a.u.">53.688</I><Idev unit="a.u.">2.0471</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.15017</Q><I unit="a.u.">53.75</I><Idev unit="a.u.">2.1276</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.15072</Q><I unit="a.u.">47.3</I><Idev unit="a.u.">2.1089</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.15128</Q><I unit="a.u.">41.469</I><Idev unit="a.u.">1.997</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.15183</Q><I unit="a.u.">32.444</I><Idev unit="a.u.">1.8499</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.15238</Q><I unit="a.u.">31.595</I><Idev unit="a.u.">1.7908</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.15294</Q><I unit="a.u.">31.324</I><Idev unit="a.u.">1.849</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.15349</Q><I unit="a.u.">31.467</I><Idev unit="a.u.">1.852</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.15405</Q><I unit="a.u.">27.175</I><Idev unit="a.u.">1.7974</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.1546</Q><I unit="a.u.">27.823</I><Idev unit="a.u.">1.6971</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.15515</Q><I unit="a.u.">33.657</I><Idev unit="a.u.">1.7893</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.15571</Q><I unit="a.u.">38.414</I><Idev unit="a.u.">1.9011</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.15626</Q><I unit="a.u.">45.638</I><Idev unit="a.u.">2.0786</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.15682</Q><I unit="a.u.">58.723</I><Idev unit="a.u.">2.1657</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.15737</Q><I unit="a.u.">60.364</I><Idev unit="a.u.">2.1103</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.15793</Q><I unit="a.u.">65.977</I><Idev unit="a.u.">2.1547</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.15848</Q><I unit="a.u.">70.96</I><Idev unit="a.u.">2.3637</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.15904</Q><I unit="a.u.">73.128</I><Idev unit="a.u.">2.3678</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.15959</Q><I unit="a.u.">56.716</I><Idev unit="a.u.">2.2056</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.16014</Q><I unit="a.u.">52.896</I><Idev unit="a.u.">1.9582</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.1607</Q><I unit="a.u.">42.797</I><Idev unit="a.u.">1.8822</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.16125</Q><I unit="a.u.">35.929</I><Idev unit="a.u.">1.8492</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.16181</Q><I unit="a.u.">26.081</I><Idev unit="a.u.">1.7733</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.16236</Q><I unit="a.u.">24.108</I><Idev unit="a.u.">1.7088</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.16292</Q><I unit="a.u.">17.21</I><Idev unit="a.u.">1.5637</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.16347</Q><I unit="a.u.">16.915</I><Idev unit="a.u.">1.5074</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.16403</Q><I unit="a.u.">17.958</I><Idev unit="a.u.">1.6409</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.16458</Q><I unit="a.u.">19.601</I><Idev unit="a.u.">1.651</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.16514</Q><I unit="a.u.">16.335</I><Idev unit="a.u.">1.629</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.16569</Q><I unit="a.u.">15.861</I><Idev unit="a.u.">1.4753</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.16625</Q><I unit="a.u.">20.555</I><Idev unit="a.u.">1.5927</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.16681</Q><I unit="a.u.">23.575</I><Idev unit="a.u.">1.653</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.16736</Q><I unit="a.u.">25.647</I><Idev unit="a.u.">1.7405</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.16792</Q><I unit="a.u.">26.254</I><Idev unit="a.u.">1.7681</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.16847</Q><I unit="a.u.">25.929</I><Idev unit="a.u.">1.677</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.16903</Q><I unit="a.u.">22.982</I><Idev unit="a.u.">1.5806</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.16958</Q><I unit="a.u.">21.238</I><Idev unit="a.u.">1.6757</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.17014</Q><I unit="a.u.">23.931</I><Idev unit="a.u.">1.7148</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.17069</Q><I unit="a.u.">21.552</I><Idev unit="a.u.">1.6478</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.17125</Q><I unit="a.u.">18.011</I><Idev unit="a.u.">1.472</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.17181</Q><I unit="a.u.">17.016</I><Idev unit="a.u.">1.511</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.17236</Q><I unit="a.u.">19.645</I><Idev unit="a.u.">1.5624</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.17292</Q><I unit="a.u.">21.575</I><Idev unit="a.u.">1.6273</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.17347</Q><I unit="a.u.">21.656</I><Idev unit="a.u.">1.616</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.17403</Q><I unit="a.u.">21.66</I><Idev unit="a.u.">1.569</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.17459</Q><I unit="a.u.">24.14</I><Idev unit="a.u.">1.5459</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.17514</Q><I unit="a.u.">28.849</I><Idev unit="a.u.">1.7662</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.1757</Q><I unit="a.u.">39.165</I><Idev unit="a.u.">1.9185</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.17626</Q><I unit="a.u.">42.726</I><Idev unit="a.u.">1.9851</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.17681</Q><I unit="a.u.">47.295</I><Idev unit="a.u.">1.8833</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.17737</Q><I unit="a.u.">50.776</I><Idev unit="a.u.">1.9629</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.17793</Q><I unit="a.u.">42.979</I><Idev unit="a.u.">1.9373</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.17848</Q><I unit="a.u.">41.937</I><Idev unit="a.u.">1.9665</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.17904</Q><I unit="a.u.">32.102</I><Idev unit="a.u.">1.7958</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.1796</Q><I unit="a.u.">22.996</I><Idev unit="a.u.">1.5773</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.18015</Q><I unit="a.u.">17.842</I><Idev unit="a.u.">1.518</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.18071</Q><I unit="a.u.">14.968</I><Idev unit="a.u.">1.5312</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.18127</Q><I unit="a.u.">19.84</I><Idev unit="a.u.">1.5636</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.18182</Q><I unit="a.u.">12.854</I><Idev unit="a.u.">1.4838</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.18238</Q><I unit="a.u.">13.667</I><Idev unit="a.u.">1.3628</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.18294</Q><I unit="a.u.">13.398</I><Idev unit="a.u.">1.4267</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.18349</Q><I unit="a.u.">14.164</I><Idev unit="a.u.">1.4712</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.18405</Q><I unit="a.u.">16.748</I><Idev unit="a.u.">1.6041</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.18461</Q><I unit="a.u.">22.159</I><Idev unit="a.u.">1.614</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.18517</Q><I unit="a.u.">22.27</I><Idev unit="a.u.">1.5433</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.18572</Q><I unit="a.u.">24.853</I><Idev unit="a.u.">1.5578</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.18628</Q><I unit="a.u.">30.535</I><Idev unit="a.u.">1.7559</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.18684</Q><I unit="a.u.">25.871</I><Idev unit="a.u.">1.723</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.1874</Q><I unit="a.u.">24.618</I><Idev unit="a.u.">1.6563</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.18795</Q><I unit="a.u.">19.557</I><Idev unit="a.u.">1.4302</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.18851</Q><I unit="a.u.">13.515</I><Idev unit="a.u.">1.4155</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.18907</Q><I unit="a.u.">10.99</I><Idev unit="a.u.">1.3953</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.18963</Q><I unit="a.u.">8.0292</I><Idev unit="a.u.">1.3836</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.19018</Q><I unit="a.u.">6.5255</I><Idev unit="a.u.">1.3692</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.19074</Q><I unit="a.u.">5.5261</I><Idev unit="a.u.">1.2858</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.1913</Q><I unit="a.u.">5.2906</I><Idev unit="a.u.">1.2088</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.19186</Q><I unit="a.u.">4.2094</I><Idev unit="a.u.">1.3156</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.19242</Q><I unit="a.u.">5.0586</I><Idev unit="a.u.">1.293</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.19297</Q><I unit="a.u.">5.4369</I><Idev unit="a.u.">1.3049</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.19353</Q><I unit="a.u.">6.5045</I><Idev unit="a.u.">1.1837</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.19409</Q><I unit="a.u.">7.4303</I><Idev unit="a.u.">1.1957</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.19465</Q><I unit="a.u.">8.5408</I><Idev unit="a.u.">1.3336</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.19521</Q><I unit="a.u.">9.622</I><Idev unit="a.u.">1.3711</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.19577</Q><I unit="a.u.">12.078</I><Idev unit="a.u.">1.4096</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.19632</Q><I unit="a.u.">7.4976</I><Idev unit="a.u.">1.2365</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.19688</Q><I unit="a.u.">9.4535</I><Idev unit="a.u.">1.2905</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.19744</Q><I unit="a.u.">9.9705</I><Idev unit="a.u.">1.3705</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.198</Q><I unit="a.u.">6.0817</I><Idev unit="a.u.">1.2894</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.19856</Q><I unit="a.u.">4.5901</I><Idev unit="a.u.">1.2703</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.19912</Q><I unit="a.u.">3.3685</I><Idev unit="a.u.">1.1573</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.19968</Q><I unit="a.u.">4.0073</I><Idev unit="a.u.">1.1586</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.20024</Q><I unit="a.u.">1.7974</I><Idev unit="a.u.">1.1852</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.20191</Q><I unit="a.u.">2.2216</I><Idev unit="a.u.">1.1664</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.20247</Q><I unit="a.u.">2.3356</I><Idev unit="a.u.">1.1228</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.20303</Q><I unit="a.u.">3.4933</I><Idev unit="a.u.">1.2376</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.20359</Q><I unit="a.u.">4.9365</I><Idev unit="a.u.">1.2624</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.20415</Q><I unit="a.u.">4.3557</I><Idev unit="a.u.">1.2245</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.20471</Q><I unit="a.u.">2.3631</I><Idev unit="a.u.">1.1202</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.20527</Q><I unit="a.u.">3.9917</I><Idev unit="a.u.">1.1764</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+			<Idata><Q unit="1/A">0.20583</Q><I unit="a.u.">5.0493</I><Idev unit="a.u.">1.223</Idev><Qdev unit="1/A">0.00055</Qdev></Idata>
+		</SASdata>
+		<SASsample>
+			<ID>dry chick collagen, d = 673 A, 6531 eV, X6B</ID>
+		</SASsample>
+		<SASinstrument>
+			<name>X6B, NSLS, BNL</name>
+			<SASsource>
+				<radiation>X-ray synchrotron</radiation>
+				<wavelength unit="A">	1.898 <!-- = 12398/6531 --> </wavelength>
+			</SASsource>
+			<SAScollimation />
+			<SASdetector>
+				<name>X6B PSD</name>
+			</SASdetector>
+		</SASinstrument>
+		<SASnote>
+			Sep 19 1994     01:41:02 am     Elt: 00090 Seconds 
+			ID: No spectrum identifier defined
+			Memory Size: 8192 Chls  Conversion Gain: 1024  Adc Offset: 0000 Chls
+
+			dry chick collagen, d = 673 A
+			6531 eV, X6B
+		</SASnote>
+	</SASentry>
+</SASroot>

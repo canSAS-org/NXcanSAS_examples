@@ -1,0 +1,321 @@
+<?xml version="1.0"?>
+ <?xml-stylesheet type="text/xsl" href="cansas1d.xsl" ?>
+<SASroot version="1.1"
+          xmlns="urn:cansas1d:1.1"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="urn:cansas1d:1.1 http://www.cansas.org/formats/1.1/cansas1d.xsd"
+      >
+	<SASentry name="13444rear_1D_1.75_12.5">
+		<Title>PS3 0.025% Sample C_1mm_SANS/TRANS</Title>
+		<Run>13432</Run>
+		<SASdata>
+			<Idata><Q unit="1/A">0.00159011</Q><I unit="1/cm">510.769</I><Idev unit="1/cm">180.007</Idev><Qdev unit="1/A">0</Qdev></Idata>
+			<Idata><Q unit="1/A">0.00166962</Q><I unit="1/cm">623.231</I><Idev unit="1/cm">117.358</Idev><Qdev unit="1/A">0</Qdev></Idata>
+			<Idata><Q unit="1/A">0.0017531</Q><I unit="1/cm">440.001</I><Idev unit="1/cm">75.0723</Idev><Qdev unit="1/A">0</Qdev></Idata>
+			<Idata><Q unit="1/A">0.00184075</Q><I unit="1/cm">576.519</I><Idev unit="1/cm">61.4461</Idev><Qdev unit="1/A">0</Qdev></Idata>
+			<Idata><Q unit="1/A">0.00193279</Q><I unit="1/cm">411.917</I><Idev unit="1/cm">45.0782</Idev><Qdev unit="1/A">0</Qdev></Idata>
+			<Idata><Q unit="1/A">0.00202943</Q><I unit="1/cm">513.302</I><Idev unit="1/cm">39.7012</Idev><Qdev unit="1/A">0</Qdev></Idata>
+			<Idata><Q unit="1/A">0.0021309</Q><I unit="1/cm">444.058</I><Idev unit="1/cm">29.9695</Idev><Qdev unit="1/A">0</Qdev></Idata>
+			<Idata><Q unit="1/A">0.00223745</Q><I unit="1/cm">433.739</I><Idev unit="1/cm">24.5526</Idev><Qdev unit="1/A">0</Qdev></Idata>
+			<Idata><Q unit="1/A">0.00234932</Q><I unit="1/cm">378.054</I><Idev unit="1/cm">20.1716</Idev><Qdev unit="1/A">0</Qdev></Idata>
+			<Idata><Q unit="1/A">0.00246678</Q><I unit="1/cm">357.048</I><Idev unit="1/cm">16.372</Idev><Qdev unit="1/A">0</Qdev></Idata>
+			<Idata><Q unit="1/A">0.00259012</Q><I unit="1/cm">346.305</I><Idev unit="1/cm">14.0323</Idev><Qdev unit="1/A">0</Qdev></Idata>
+			<Idata><Q unit="1/A">0.00271963</Q><I unit="1/cm">313.192</I><Idev unit="1/cm">11.8186</Idev><Qdev unit="1/A">0</Qdev></Idata>
+			<Idata><Q unit="1/A">0.00285561</Q><I unit="1/cm">301.85</I><Idev unit="1/cm">10.3109</Idev><Qdev unit="1/A">0</Qdev></Idata>
+			<Idata><Q unit="1/A">0.00299839</Q><I unit="1/cm">277.911</I><Idev unit="1/cm">8.76152</Idev><Qdev unit="1/A">0</Qdev></Idata>
+			<Idata><Q unit="1/A">0.00314831</Q><I unit="1/cm">244.126</I><Idev unit="1/cm">7.33633</Idev><Qdev unit="1/A">0</Qdev></Idata>
+			<Idata><Q unit="1/A">0.00330573</Q><I unit="1/cm">219.036</I><Idev unit="1/cm">6.27746</Idev><Qdev unit="1/A">0</Qdev></Idata>
+			<Idata><Q unit="1/A">0.00347101</Q><I unit="1/cm">199.421</I><Idev unit="1/cm">5.6272</Idev><Qdev unit="1/A">0</Qdev></Idata>
+			<Idata><Q unit="1/A">0.00364456</Q><I unit="1/cm">164.165</I><Idev unit="1/cm">4.75748</Idev><Qdev unit="1/A">0</Qdev></Idata>
+			<Idata><Q unit="1/A">0.00382679</Q><I unit="1/cm">142.587</I><Idev unit="1/cm">4.12244</Idev><Qdev unit="1/A">0</Qdev></Idata>
+			<Idata><Q unit="1/A">0.00401813</Q><I unit="1/cm">116.413</I><Idev unit="1/cm">3.52057</Idev><Qdev unit="1/A">0</Qdev></Idata>
+			<Idata><Q unit="1/A">0.00421904</Q><I unit="1/cm">92.8907</I><Idev unit="1/cm">2.98135</Idev><Qdev unit="1/A">0</Qdev></Idata>
+			<Idata><Q unit="1/A">0.00442999</Q><I unit="1/cm">75.0248</I><Idev unit="1/cm">2.54183</Idev><Qdev unit="1/A">0</Qdev></Idata>
+			<Idata><Q unit="1/A">0.00465149</Q><I unit="1/cm">57.8754</I><Idev unit="1/cm">2.10187</Idev><Qdev unit="1/A">0</Qdev></Idata>
+			<Idata><Q unit="1/A">0.00488407</Q><I unit="1/cm">43.4327</I><Idev unit="1/cm">1.70041</Idev><Qdev unit="1/A">0</Qdev></Idata>
+			<Idata><Q unit="1/A">0.00512827</Q><I unit="1/cm">31.6961</I><Idev unit="1/cm">1.40211</Idev><Qdev unit="1/A">0</Qdev></Idata>
+			<Idata><Q unit="1/A">0.00538468</Q><I unit="1/cm">19.414</I><Idev unit="1/cm">1.04463</Idev><Qdev unit="1/A">0</Qdev></Idata>
+			<Idata><Q unit="1/A">0.00565392</Q><I unit="1/cm">10.5832</I><Idev unit="1/cm">0.754961</Idev><Qdev unit="1/A">0</Qdev></Idata>
+			<Idata><Q unit="1/A">0.00593661</Q><I unit="1/cm">7.04738</I><Idev unit="1/cm">0.609734</Idev><Qdev unit="1/A">0</Qdev></Idata>
+			<Idata><Q unit="1/A">0.00623344</Q><I unit="1/cm">4.1981</I><Idev unit="1/cm">0.460222</Idev><Qdev unit="1/A">0</Qdev></Idata>
+			<Idata><Q unit="1/A">0.00654511</Q><I unit="1/cm">3.70064</I><Idev unit="1/cm">0.391859</Idev><Qdev unit="1/A">0</Qdev></Idata>
+			<Idata><Q unit="1/A">0.00687237</Q><I unit="1/cm">3.36674</I><Idev unit="1/cm">0.353874</Idev><Qdev unit="1/A">0</Qdev></Idata>
+			<Idata><Q unit="1/A">0.00721599</Q><I unit="1/cm">3.97137</I><Idev unit="1/cm">0.352737</Idev><Qdev unit="1/A">0</Qdev></Idata>
+			<Idata><Q unit="1/A">0.00757679</Q><I unit="1/cm">4.73917</I><Idev unit="1/cm">0.348762</Idev><Qdev unit="1/A">0</Qdev></Idata>
+			<Idata><Q unit="1/A">0.00795563</Q><I unit="1/cm">4.94792</I><Idev unit="1/cm">0.331224</Idev><Qdev unit="1/A">0</Qdev></Idata>
+			<Idata><Q unit="1/A">0.00835341</Q><I unit="1/cm">4.66627</I><Idev unit="1/cm">0.308402</Idev><Qdev unit="1/A">0</Qdev></Idata>
+			<Idata><Q unit="1/A">0.00877108</Q><I unit="1/cm">4.07481</I><Idev unit="1/cm">0.272378</Idev><Qdev unit="1/A">0</Qdev></Idata>
+			<Idata><Q unit="1/A">0.00920963</Q><I unit="1/cm">3.28312</I><Idev unit="1/cm">0.235971</Idev><Qdev unit="1/A">0</Qdev></Idata>
+			<Idata><Q unit="1/A">0.00967011</Q><I unit="1/cm">1.84116</I><Idev unit="1/cm">0.180966</Idev><Qdev unit="1/A">0</Qdev></Idata>
+			<Idata><Q unit="1/A">0.0101536</Q><I unit="1/cm">1.1203</I><Idev unit="1/cm">0.148304</Idev><Qdev unit="1/A">0</Qdev></Idata>
+			<Idata><Q unit="1/A">0.0106613</Q><I unit="1/cm">0.617658</I><Idev unit="1/cm">0.117751</Idev><Qdev unit="1/A">0</Qdev></Idata>
+			<Idata><Q unit="1/A">0.0111944</Q><I unit="1/cm">0.551564</I><Idev unit="1/cm">0.106306</Idev><Qdev unit="1/A">0</Qdev></Idata>
+			<Idata><Q unit="1/A">0.0117541</Q><I unit="1/cm">0.648521</I><Idev unit="1/cm">0.102246</Idev><Qdev unit="1/A">0</Qdev></Idata>
+			<Idata><Q unit="1/A">0.0123418</Q><I unit="1/cm">0.741698</I><Idev unit="1/cm">0.0995721</Idev><Qdev unit="1/A">0</Qdev></Idata>
+			<Idata><Q unit="1/A">0.0129589</Q><I unit="1/cm">0.81915</I><Idev unit="1/cm">0.0945608</Idev><Qdev unit="1/A">0</Qdev></Idata>
+			<Idata><Q unit="1/A">0.0136068</Q><I unit="1/cm">0.556661</I><Idev unit="1/cm">0.0803178</Idev><Qdev unit="1/A">0</Qdev></Idata>
+			<Idata><Q unit="1/A">0.0142872</Q><I unit="1/cm">0.391557</I><Idev unit="1/cm">0.071913</Idev><Qdev unit="1/A">0</Qdev></Idata>
+			<Idata><Q unit="1/A">0.0150015</Q><I unit="1/cm">0.222301</I><Idev unit="1/cm">0.0640387</Idev><Qdev unit="1/A">0</Qdev></Idata>
+			<Idata><Q unit="1/A">0.0157516</Q><I unit="1/cm">0.213603</I><Idev unit="1/cm">0.0560244</Idev><Qdev unit="1/A">0</Qdev></Idata>
+			<Idata><Q unit="1/A">0.0165392</Q><I unit="1/cm">0.26659</I><Idev unit="1/cm">0.0546554</Idev><Qdev unit="1/A">0</Qdev></Idata>
+			<Idata><Q unit="1/A">0.0173661</Q><I unit="1/cm">0.303909</I><Idev unit="1/cm">0.0508563</Idev><Qdev unit="1/A">0</Qdev></Idata>
+			<Idata><Q unit="1/A">0.0182344</Q><I unit="1/cm">0.206472</I><Idev unit="1/cm">0.0453071</Idev><Qdev unit="1/A">0</Qdev></Idata>
+			<Idata><Q unit="1/A">0.0191462</Q><I unit="1/cm">0.141084</I><Idev unit="1/cm">0.0407963</Idev><Qdev unit="1/A">0</Qdev></Idata>
+			<Idata><Q unit="1/A">0.0201035</Q><I unit="1/cm">0.119471</I><Idev unit="1/cm">0.0378563</Idev><Qdev unit="1/A">0</Qdev></Idata>
+			<Idata><Q unit="1/A">0.0211086</Q><I unit="1/cm">0.10299</I><Idev unit="1/cm">0.0367217</Idev><Qdev unit="1/A">0</Qdev></Idata>
+			<Idata><Q unit="1/A">0.0221641</Q><I unit="1/cm">0.0945382</I><Idev unit="1/cm">0.0348071</Idev><Qdev unit="1/A">0</Qdev></Idata>
+			<Idata><Q unit="1/A">0.0232723</Q><I unit="1/cm">0.0477899</I><Idev unit="1/cm">0.0298797</Idev><Qdev unit="1/A">0</Qdev></Idata>
+			<Idata><Q unit="1/A">0.0244359</Q><I unit="1/cm">0.073834</I><Idev unit="1/cm">0.0292528</Idev><Qdev unit="1/A">0</Qdev></Idata>
+			<Idata><Q unit="1/A">0.0256577</Q><I unit="1/cm">0.0770694</I><Idev unit="1/cm">0.0278579</Idev><Qdev unit="1/A">0</Qdev></Idata>
+			<Idata><Q unit="1/A">0.0269406</Q><I unit="1/cm">0.0451744</I><Idev unit="1/cm">0.0262443</Idev><Qdev unit="1/A">0</Qdev></Idata>
+			<Idata><Q unit="1/A">0.0282876</Q><I unit="1/cm">0.0554978</I><Idev unit="1/cm">0.0253424</Idev><Qdev unit="1/A">0</Qdev></Idata>
+			<Idata><Q unit="1/A">0.029702</Q><I unit="1/cm">0.0666034</I><Idev unit="1/cm">0.024283</Idev><Qdev unit="1/A">0</Qdev></Idata>
+			<Idata><Q unit="1/A">0.0311871</Q><I unit="1/cm">0.0597474</I><Idev unit="1/cm">0.0217879</Idev><Qdev unit="1/A">0</Qdev></Idata>
+			<Idata><Q unit="1/A">0.0327464</Q><I unit="1/cm">0.0314594</I><Idev unit="1/cm">0.0215633</Idev><Qdev unit="1/A">0</Qdev></Idata>
+			<Idata><Q unit="1/A">0.0343838</Q><I unit="1/cm">0.0481628</I><Idev unit="1/cm">0.0202369</Idev><Qdev unit="1/A">0</Qdev></Idata>
+			<Idata><Q unit="1/A">0.036103</Q><I unit="1/cm">0.00909707</I><Idev unit="1/cm">0.0192212</Idev><Qdev unit="1/A">0</Qdev></Idata>
+			<Idata><Q unit="1/A">0.0379081</Q><I unit="1/cm">0.00373224</I><Idev unit="1/cm">0.0180826</Idev><Qdev unit="1/A">0</Qdev></Idata>
+			<Idata><Q unit="1/A">0.0398035</Q><I unit="1/cm">0.0420344</I><Idev unit="1/cm">0.0178834</Idev><Qdev unit="1/A">0</Qdev></Idata>
+			<Idata><Q unit="1/A">0.0417937</Q><I unit="1/cm">0.00730849</I><Idev unit="1/cm">0.0168564</Idev><Qdev unit="1/A">0</Qdev></Idata>
+			<Idata><Q unit="1/A">0.0438834</Q><I unit="1/cm">-0.00420325</I><Idev unit="1/cm">0.016081</Idev><Qdev unit="1/A">0</Qdev></Idata>
+			<Idata><Q unit="1/A">0.0460775</Q><I unit="1/cm">0.0156682</I><Idev unit="1/cm">0.0154364</Idev><Qdev unit="1/A">0</Qdev></Idata>
+			<Idata><Q unit="1/A">0.0483814</Q><I unit="1/cm">0.023569</I><Idev unit="1/cm">0.0146889</Idev><Qdev unit="1/A">0</Qdev></Idata>
+			<Idata><Q unit="1/A">0.0508005</Q><I unit="1/cm">0.0195809</I><Idev unit="1/cm">0.014286</Idev><Qdev unit="1/A">0</Qdev></Idata>
+			<Idata><Q unit="1/A">0.0533405</Q><I unit="1/cm">0.00867028</I><Idev unit="1/cm">0.0139422</Idev><Qdev unit="1/A">0</Qdev></Idata>
+			<Idata><Q unit="1/A">0.0560075</Q><I unit="1/cm">0.0401886</I><Idev unit="1/cm">0.013986</Idev><Qdev unit="1/A">0</Qdev></Idata>
+			<Idata><Q unit="1/A">0.0588079</Q><I unit="1/cm">0.0167035</I><Idev unit="1/cm">0.0137996</Idev><Qdev unit="1/A">0</Qdev></Idata>
+			<Idata><Q unit="1/A">0.0617483</Q><I unit="1/cm">0.028881</I><Idev unit="1/cm">0.0140613</Idev><Qdev unit="1/A">0</Qdev></Idata>
+			<Idata><Q unit="1/A">0.0648357</Q><I unit="1/cm">0.00970697</I><Idev unit="1/cm">0.0132946</Idev><Qdev unit="1/A">0</Qdev></Idata>
+			<Idata><Q unit="1/A">0.0680775</Q><I unit="1/cm">0.00897039</I><Idev unit="1/cm">0.013507</Idev><Qdev unit="1/A">0</Qdev></Idata>
+			<Idata><Q unit="1/A">0.0714814</Q><I unit="1/cm">6.09183e-05</I><Idev unit="1/cm">0.013709</Idev><Qdev unit="1/A">0</Qdev></Idata>
+			<Idata><Q unit="1/A">0.0750554</Q><I unit="1/cm">0.0110914</I><Idev unit="1/cm">0.0135459</Idev><Qdev unit="1/A">0</Qdev></Idata>
+			<Idata><Q unit="1/A">0.0788082</Q><I unit="1/cm">0.00612987</I><Idev unit="1/cm">0.013684</Idev><Qdev unit="1/A">0</Qdev></Idata>
+			<Idata><Q unit="1/A">0.0827486</Q><I unit="1/cm">0.00243384</I><Idev unit="1/cm">0.0138523</Idev><Qdev unit="1/A">0</Qdev></Idata>
+			<Idata><Q unit="1/A">0.0868861</Q><I unit="1/cm">0.0259741</I><Idev unit="1/cm">0.0143506</Idev><Qdev unit="1/A">0</Qdev></Idata>
+			<Idata><Q unit="1/A">0.0912304</Q><I unit="1/cm">-0.030608</I><Idev unit="1/cm">0.0143119</Idev><Qdev unit="1/A">0</Qdev></Idata>
+			<Idata><Q unit="1/A">0.0957919</Q><I unit="1/cm">-0.0137422</I><Idev unit="1/cm">0.0143823</Idev><Qdev unit="1/A">0</Qdev></Idata>
+			<Idata><Q unit="1/A">0.100581</Q><I unit="1/cm">0.0096112</I><Idev unit="1/cm">0.0150787</Idev><Qdev unit="1/A">0</Qdev></Idata>
+			<Idata><Q unit="1/A">0.105611</Q><I unit="1/cm">-0.0198935</I><Idev unit="1/cm">0.0149323</Idev><Qdev unit="1/A">0</Qdev></Idata>
+			<Idata><Q unit="1/A">0.110891</Q><I unit="1/cm">-0.0207346</I><Idev unit="1/cm">0.0155785</Idev><Qdev unit="1/A">0</Qdev></Idata>
+			<Idata><Q unit="1/A">0.116436</Q><I unit="1/cm">0.00365707</I><Idev unit="1/cm">0.0164847</Idev><Qdev unit="1/A">0</Qdev></Idata>
+			<Idata><Q unit="1/A">0.122257</Q><I unit="1/cm">0.00593694</I><Idev unit="1/cm">0.0184182</Idev><Qdev unit="1/A">0</Qdev></Idata>
+			<Idata><Q unit="1/A">0.12837</Q><I unit="1/cm">0.00920076</I><Idev unit="1/cm">0.021556</Idev><Qdev unit="1/A">0</Qdev></Idata>
+			<Idata><Q unit="1/A">0.134789</Q><I unit="1/cm">-0.032073</I><Idev unit="1/cm">0.0231747</Idev><Qdev unit="1/A">0</Qdev></Idata>
+			<Idata><Q unit="1/A">0.141528</Q><I unit="1/cm">-0.0275159</I><Idev unit="1/cm">0.0245606</Idev><Qdev unit="1/A">0</Qdev></Idata>
+			<Idata><Q unit="1/A">0.148605</Q><I unit="1/cm">-0.0472863</I><Idev unit="1/cm">0.0280413</Idev><Qdev unit="1/A">0</Qdev></Idata>
+			<Idata><Q unit="1/A">0.156035</Q><I unit="1/cm">0.016575</I><Idev unit="1/cm">0.030352</Idev><Qdev unit="1/A">0</Qdev></Idata>
+			<Idata><Q unit="1/A">0.163837</Q><I unit="1/cm">0.0556718</I><Idev unit="1/cm">0.0325156</Idev><Qdev unit="1/A">0</Qdev></Idata>
+			<Idata><Q unit="1/A">0.172028</Q><I unit="1/cm">0.0305049</I><Idev unit="1/cm">0.0359019</Idev><Qdev unit="1/A">0</Qdev></Idata>
+			<Idata><Q unit="1/A">0.18063</Q><I unit="1/cm">-0.0188148</I><Idev unit="1/cm">0.0434229</Idev><Qdev unit="1/A">0</Qdev></Idata>
+			<Idata><Q unit="1/A">0.189661</Q><I unit="1/cm">-0.0839494</I><Idev unit="1/cm">0.0491546</Idev><Qdev unit="1/A">0</Qdev></Idata>
+			<Idata><Q unit="1/A">0.199144</Q><I unit="1/cm">0.0105756</I><Idev unit="1/cm">0.060399</Idev><Qdev unit="1/A">0</Qdev></Idata>
+			<Idata><Q unit="1/A">0.209102</Q><I unit="1/cm">-0.0505248</I><Idev unit="1/cm">0.0614931</Idev><Qdev unit="1/A">0</Qdev></Idata>
+			<Idata><Q unit="1/A">0.219557</Q><I unit="1/cm">0.0652671</I><Idev unit="1/cm">0.10742</Idev><Qdev unit="1/A">0</Qdev></Idata>
+			<Idata><Q unit="1/A">0.230535</Q><I unit="1/cm">-0.108032</I><Idev unit="1/cm">0.117709</Idev><Qdev unit="1/A">0</Qdev></Idata>
+			<Idata><Q unit="1/A">0.242061</Q><I unit="1/cm">0.000725506</I><Idev unit="1/cm">0.166188</Idev><Qdev unit="1/A">0</Qdev></Idata>
+			<Idata><Q unit="1/A">0.254164</Q><I unit="1/cm">0</I><Idev unit="1/cm">0</Idev><Qdev unit="1/A">0</Qdev></Idata>
+			<Idata><Q unit="1/A">0.266873</Q><I unit="1/cm">0</I><Idev unit="1/cm">0</Idev><Qdev unit="1/A">0</Qdev></Idata>
+		</SASdata>
+  <SAStransmission_spectrum name="sample">
+     <Tdata><Lambda unit="A">  1.81250 </Lambda><T unit="none"> 0.89590E+00 </T><Tdev unit="none"> 0.722E-02 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  1.93750 </Lambda><T unit="none"> 0.89355E+00 </T><Tdev unit="none"> 0.653E-02 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  2.06250 </Lambda><T unit="none"> 0.89677E+00 </T><Tdev unit="none"> 0.597E-02 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  2.18750 </Lambda><T unit="none"> 0.89072E+00 </T><Tdev unit="none"> 0.532E-02 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  2.31250 </Lambda><T unit="none"> 0.89806E+00 </T><Tdev unit="none"> 0.481E-02 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  2.43750 </Lambda><T unit="none"> 0.89527E+00 </T><Tdev unit="none"> 0.441E-02 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  2.56250 </Lambda><T unit="none"> 0.89062E+00 </T><Tdev unit="none"> 0.416E-02 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  2.68750 </Lambda><T unit="none"> 0.89575E+00 </T><Tdev unit="none"> 0.422E-02 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  2.81250 </Lambda><T unit="none"> 0.89829E+00 </T><Tdev unit="none"> 0.415E-02 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  2.93750 </Lambda><T unit="none"> 0.89079E+00 </T><Tdev unit="none"> 0.408E-02 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  3.06250 </Lambda><T unit="none"> 0.88317E+00 </T><Tdev unit="none"> 0.408E-02 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  3.18750 </Lambda><T unit="none"> 0.88297E+00 </T><Tdev unit="none"> 0.412E-02 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  3.31250 </Lambda><T unit="none"> 0.89050E+00 </T><Tdev unit="none"> 0.420E-02 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  3.43750 </Lambda><T unit="none"> 0.88798E+00 </T><Tdev unit="none"> 0.426E-02 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  3.56250 </Lambda><T unit="none"> 0.88453E+00 </T><Tdev unit="none"> 0.443E-02 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  3.68750 </Lambda><T unit="none"> 0.87726E+00 </T><Tdev unit="none"> 0.459E-02 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  3.81250 </Lambda><T unit="none"> 0.88294E+00 </T><Tdev unit="none"> 0.456E-02 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  3.93750 </Lambda><T unit="none"> 0.87771E+00 </T><Tdev unit="none"> 0.455E-02 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  4.06250 </Lambda><T unit="none"> 0.87808E+00 </T><Tdev unit="none"> 0.466E-02 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  4.18750 </Lambda><T unit="none"> 0.87575E+00 </T><Tdev unit="none"> 0.463E-02 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  4.31250 </Lambda><T unit="none"> 0.88244E+00 </T><Tdev unit="none"> 0.464E-02 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  4.43750 </Lambda><T unit="none"> 0.88359E+00 </T><Tdev unit="none"> 0.468E-02 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  4.56250 </Lambda><T unit="none"> 0.87817E+00 </T><Tdev unit="none"> 0.474E-02 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  4.68750 </Lambda><T unit="none"> 0.88069E+00 </T><Tdev unit="none"> 0.476E-02 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  4.81250 </Lambda><T unit="none"> 0.87923E+00 </T><Tdev unit="none"> 0.482E-02 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  4.93750 </Lambda><T unit="none"> 0.87426E+00 </T><Tdev unit="none"> 0.489E-02 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  5.06250 </Lambda><T unit="none"> 0.87019E+00 </T><Tdev unit="none"> 0.498E-02 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  5.18750 </Lambda><T unit="none"> 0.87576E+00 </T><Tdev unit="none"> 0.512E-02 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  5.31250 </Lambda><T unit="none"> 0.87593E+00 </T><Tdev unit="none"> 0.522E-02 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  5.43750 </Lambda><T unit="none"> 0.86692E+00 </T><Tdev unit="none"> 0.531E-02 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  5.56250 </Lambda><T unit="none"> 0.87687E+00 </T><Tdev unit="none"> 0.548E-02 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  5.68750 </Lambda><T unit="none"> 0.87353E+00 </T><Tdev unit="none"> 0.559E-02 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  5.81250 </Lambda><T unit="none"> 0.86318E+00 </T><Tdev unit="none"> 0.566E-02 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  5.93750 </Lambda><T unit="none"> 0.86973E+00 </T><Tdev unit="none"> 0.583E-02 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  6.06250 </Lambda><T unit="none"> 0.86144E+00 </T><Tdev unit="none"> 0.590E-02 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  6.18750 </Lambda><T unit="none"> 0.86814E+00 </T><Tdev unit="none"> 0.609E-02 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  6.31250 </Lambda><T unit="none"> 0.86580E+00 </T><Tdev unit="none"> 0.624E-02 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  6.43750 </Lambda><T unit="none"> 0.87166E+00 </T><Tdev unit="none"> 0.642E-02 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  6.56250 </Lambda><T unit="none"> 0.87962E+00 </T><Tdev unit="none"> 0.661E-02 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  6.68750 </Lambda><T unit="none"> 0.87683E+00 </T><Tdev unit="none"> 0.675E-02 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  6.81250 </Lambda><T unit="none"> 0.86982E+00 </T><Tdev unit="none"> 0.683E-02 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  6.93750 </Lambda><T unit="none"> 0.86640E+00 </T><Tdev unit="none"> 0.698E-02 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  7.06250 </Lambda><T unit="none"> 0.85616E+00 </T><Tdev unit="none"> 0.708E-02 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  7.18750 </Lambda><T unit="none"> 0.85878E+00 </T><Tdev unit="none"> 0.726E-02 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  7.31250 </Lambda><T unit="none"> 0.87986E+00 </T><Tdev unit="none"> 0.756E-02 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  7.43750 </Lambda><T unit="none"> 0.86344E+00 </T><Tdev unit="none"> 0.759E-02 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  7.56250 </Lambda><T unit="none"> 0.89001E+00 </T><Tdev unit="none"> 0.798E-02 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  7.68750 </Lambda><T unit="none"> 0.87705E+00 </T><Tdev unit="none"> 0.803E-02 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  7.81250 </Lambda><T unit="none"> 0.87114E+00 </T><Tdev unit="none"> 0.815E-02 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  7.93750 </Lambda><T unit="none"> 0.88206E+00 </T><Tdev unit="none"> 0.843E-02 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  8.06250 </Lambda><T unit="none"> 0.88689E+00 </T><Tdev unit="none"> 0.863E-02 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  8.18750 </Lambda><T unit="none"> 0.87973E+00 </T><Tdev unit="none"> 0.877E-02 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  8.31250 </Lambda><T unit="none"> 0.88471E+00 </T><Tdev unit="none"> 0.895E-02 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  8.43750 </Lambda><T unit="none"> 0.88344E+00 </T><Tdev unit="none"> 0.913E-02 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  8.56250 </Lambda><T unit="none"> 0.89355E+00 </T><Tdev unit="none"> 0.944E-02 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  8.68750 </Lambda><T unit="none"> 0.89129E+00 </T><Tdev unit="none"> 0.956E-02 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  8.81250 </Lambda><T unit="none"> 0.87737E+00 </T><Tdev unit="none"> 0.963E-02 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  8.93750 </Lambda><T unit="none"> 0.89022E+00 </T><Tdev unit="none"> 0.995E-02 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  9.06250 </Lambda><T unit="none"> 0.89650E+00 </T><Tdev unit="none"> 0.102E-01 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  9.18750 </Lambda><T unit="none"> 0.88276E+00 </T><Tdev unit="none"> 0.103E-01 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  9.31250 </Lambda><T unit="none"> 0.88340E+00 </T><Tdev unit="none"> 0.105E-01 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  9.43750 </Lambda><T unit="none"> 0.90568E+00 </T><Tdev unit="none"> 0.109E-01 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  9.56250 </Lambda><T unit="none"> 0.87858E+00 </T><Tdev unit="none"> 0.109E-01 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  9.68750 </Lambda><T unit="none"> 0.90199E+00 </T><Tdev unit="none"> 0.113E-01 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  9.81250 </Lambda><T unit="none"> 0.89674E+00 </T><Tdev unit="none"> 0.116E-01 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  9.93750 </Lambda><T unit="none"> 0.91993E+00 </T><Tdev unit="none"> 0.121E-01 </Tdev></Tdata>
+     <Tdata><Lambda unit="A"> 10.06250 </Lambda><T unit="none"> 0.90502E+00 </T><Tdev unit="none"> 0.122E-01 </Tdev></Tdata>
+     <Tdata><Lambda unit="A"> 10.18750 </Lambda><T unit="none"> 0.91179E+00 </T><Tdev unit="none"> 0.125E-01 </Tdev></Tdata>
+     <Tdata><Lambda unit="A"> 10.31250 </Lambda><T unit="none"> 0.89956E+00 </T><Tdev unit="none"> 0.127E-01 </Tdev></Tdata>
+     <Tdata><Lambda unit="A"> 10.43750 </Lambda><T unit="none"> 0.90731E+00 </T><Tdev unit="none"> 0.130E-01 </Tdev></Tdata>
+     <Tdata><Lambda unit="A"> 10.56250 </Lambda><T unit="none"> 0.89386E+00 </T><Tdev unit="none"> 0.131E-01 </Tdev></Tdata>
+     <Tdata><Lambda unit="A"> 10.68750 </Lambda><T unit="none"> 0.89897E+00 </T><Tdev unit="none"> 0.135E-01 </Tdev></Tdata>
+     <Tdata><Lambda unit="A"> 10.81250 </Lambda><T unit="none"> 0.87906E+00 </T><Tdev unit="none"> 0.136E-01 </Tdev></Tdata>
+     <Tdata><Lambda unit="A"> 10.93750 </Lambda><T unit="none"> 0.90293E+00 </T><Tdev unit="none"> 0.140E-01 </Tdev></Tdata>
+     <Tdata><Lambda unit="A"> 11.06250 </Lambda><T unit="none"> 0.88084E+00 </T><Tdev unit="none"> 0.141E-01 </Tdev></Tdata>
+     <Tdata><Lambda unit="A"> 11.18750 </Lambda><T unit="none"> 0.88421E+00 </T><Tdev unit="none"> 0.145E-01 </Tdev></Tdata>
+     <Tdata><Lambda unit="A"> 11.31250 </Lambda><T unit="none"> 0.90674E+00 </T><Tdev unit="none"> 0.153E-01 </Tdev></Tdata>
+     <Tdata><Lambda unit="A"> 11.43750 </Lambda><T unit="none"> 0.89897E+00 </T><Tdev unit="none"> 0.154E-01 </Tdev></Tdata>
+     <Tdata><Lambda unit="A"> 11.56250 </Lambda><T unit="none"> 0.91915E+00 </T><Tdev unit="none"> 0.161E-01 </Tdev></Tdata>
+     <Tdata><Lambda unit="A"> 11.68750 </Lambda><T unit="none"> 0.89126E+00 </T><Tdev unit="none"> 0.162E-01 </Tdev></Tdata>
+     <Tdata><Lambda unit="A"> 11.81250 </Lambda><T unit="none"> 0.88306E+00 </T><Tdev unit="none"> 0.163E-01 </Tdev></Tdata>
+     <Tdata><Lambda unit="A"> 11.93750 </Lambda><T unit="none"> 0.89782E+00 </T><Tdev unit="none"> 0.171E-01 </Tdev></Tdata>
+     <Tdata><Lambda unit="A"> 12.06250 </Lambda><T unit="none"> 0.89176E+00 </T><Tdev unit="none"> 0.174E-01 </Tdev></Tdata>
+     <Tdata><Lambda unit="A"> 12.18750 </Lambda><T unit="none"> 0.90549E+00 </T><Tdev unit="none"> 0.181E-01 </Tdev></Tdata>
+     <Tdata><Lambda unit="A"> 12.31250 </Lambda><T unit="none"> 0.91089E+00 </T><Tdev unit="none"> 0.187E-01 </Tdev></Tdata>
+     <Tdata><Lambda unit="A"> 12.43750 </Lambda><T unit="none"> 0.88819E+00 </T><Tdev unit="none"> 0.189E-01 </Tdev></Tdata>
+  </SAStransmission_spectrum>
+  <SAStransmission_spectrum name="can">
+     <Tdata><Lambda unit="A">  1.81250 </Lambda><T unit="none"> 0.90546E+00 </T><Tdev unit="none"> 0.728E-02 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  1.93750 </Lambda><T unit="none"> 0.91161E+00 </T><Tdev unit="none"> 0.663E-02 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  2.06250 </Lambda><T unit="none"> 0.90267E+00 </T><Tdev unit="none"> 0.601E-02 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  2.18750 </Lambda><T unit="none"> 0.89810E+00 </T><Tdev unit="none"> 0.536E-02 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  2.31250 </Lambda><T unit="none"> 0.90154E+00 </T><Tdev unit="none"> 0.483E-02 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  2.43750 </Lambda><T unit="none"> 0.90047E+00 </T><Tdev unit="none"> 0.443E-02 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  2.56250 </Lambda><T unit="none"> 0.89621E+00 </T><Tdev unit="none"> 0.418E-02 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  2.68750 </Lambda><T unit="none"> 0.90118E+00 </T><Tdev unit="none"> 0.423E-02 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  2.81250 </Lambda><T unit="none"> 0.89537E+00 </T><Tdev unit="none"> 0.414E-02 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  2.93750 </Lambda><T unit="none"> 0.89146E+00 </T><Tdev unit="none"> 0.408E-02 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  3.06250 </Lambda><T unit="none"> 0.89077E+00 </T><Tdev unit="none"> 0.410E-02 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  3.18750 </Lambda><T unit="none"> 0.89007E+00 </T><Tdev unit="none"> 0.415E-02 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  3.31250 </Lambda><T unit="none"> 0.89514E+00 </T><Tdev unit="none"> 0.422E-02 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  3.43750 </Lambda><T unit="none"> 0.89383E+00 </T><Tdev unit="none"> 0.428E-02 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  3.56250 </Lambda><T unit="none"> 0.89402E+00 </T><Tdev unit="none"> 0.447E-02 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  3.68750 </Lambda><T unit="none"> 0.88924E+00 </T><Tdev unit="none"> 0.463E-02 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  3.81250 </Lambda><T unit="none"> 0.88860E+00 </T><Tdev unit="none"> 0.458E-02 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  3.93750 </Lambda><T unit="none"> 0.88565E+00 </T><Tdev unit="none"> 0.458E-02 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  4.06250 </Lambda><T unit="none"> 0.89218E+00 </T><Tdev unit="none"> 0.471E-02 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  4.18750 </Lambda><T unit="none"> 0.88361E+00 </T><Tdev unit="none"> 0.466E-02 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  4.31250 </Lambda><T unit="none"> 0.89256E+00 </T><Tdev unit="none"> 0.468E-02 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  4.43750 </Lambda><T unit="none"> 0.89383E+00 </T><Tdev unit="none"> 0.472E-02 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  4.56250 </Lambda><T unit="none"> 0.88274E+00 </T><Tdev unit="none"> 0.475E-02 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  4.68750 </Lambda><T unit="none"> 0.88128E+00 </T><Tdev unit="none"> 0.476E-02 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  4.81250 </Lambda><T unit="none"> 0.88386E+00 </T><Tdev unit="none"> 0.483E-02 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  4.93750 </Lambda><T unit="none"> 0.88149E+00 </T><Tdev unit="none"> 0.492E-02 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  5.06250 </Lambda><T unit="none"> 0.88448E+00 </T><Tdev unit="none"> 0.503E-02 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  5.18750 </Lambda><T unit="none"> 0.88495E+00 </T><Tdev unit="none"> 0.516E-02 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  5.31250 </Lambda><T unit="none"> 0.88206E+00 </T><Tdev unit="none"> 0.525E-02 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  5.43750 </Lambda><T unit="none"> 0.87963E+00 </T><Tdev unit="none"> 0.536E-02 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  5.56250 </Lambda><T unit="none"> 0.87388E+00 </T><Tdev unit="none"> 0.547E-02 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  5.68750 </Lambda><T unit="none"> 0.88323E+00 </T><Tdev unit="none"> 0.563E-02 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  5.81250 </Lambda><T unit="none"> 0.87647E+00 </T><Tdev unit="none"> 0.572E-02 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  5.93750 </Lambda><T unit="none"> 0.87668E+00 </T><Tdev unit="none"> 0.586E-02 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  6.06250 </Lambda><T unit="none"> 0.86002E+00 </T><Tdev unit="none"> 0.589E-02 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  6.18750 </Lambda><T unit="none"> 0.86779E+00 </T><Tdev unit="none"> 0.609E-02 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  6.31250 </Lambda><T unit="none"> 0.87594E+00 </T><Tdev unit="none"> 0.628E-02 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  6.43750 </Lambda><T unit="none"> 0.88495E+00 </T><Tdev unit="none"> 0.648E-02 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  6.56250 </Lambda><T unit="none"> 0.88123E+00 </T><Tdev unit="none"> 0.662E-02 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  6.68750 </Lambda><T unit="none"> 0.88223E+00 </T><Tdev unit="none"> 0.677E-02 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  6.81250 </Lambda><T unit="none"> 0.87299E+00 </T><Tdev unit="none"> 0.685E-02 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  6.93750 </Lambda><T unit="none"> 0.87620E+00 </T><Tdev unit="none"> 0.703E-02 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  7.06250 </Lambda><T unit="none"> 0.87497E+00 </T><Tdev unit="none"> 0.719E-02 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  7.18750 </Lambda><T unit="none"> 0.88155E+00 </T><Tdev unit="none"> 0.739E-02 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  7.31250 </Lambda><T unit="none"> 0.89001E+00 </T><Tdev unit="none"> 0.762E-02 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  7.43750 </Lambda><T unit="none"> 0.87272E+00 </T><Tdev unit="none"> 0.762E-02 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  7.56250 </Lambda><T unit="none"> 0.87788E+00 </T><Tdev unit="none"> 0.789E-02 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  7.68750 </Lambda><T unit="none"> 0.88218E+00 </T><Tdev unit="none"> 0.805E-02 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  7.81250 </Lambda><T unit="none"> 0.87681E+00 </T><Tdev unit="none"> 0.819E-02 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  7.93750 </Lambda><T unit="none"> 0.90520E+00 </T><Tdev unit="none"> 0.858E-02 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  8.06250 </Lambda><T unit="none"> 0.89864E+00 </T><Tdev unit="none"> 0.873E-02 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  8.18750 </Lambda><T unit="none"> 0.90991E+00 </T><Tdev unit="none"> 0.899E-02 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  8.31250 </Lambda><T unit="none"> 0.90522E+00 </T><Tdev unit="none"> 0.912E-02 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  8.43750 </Lambda><T unit="none"> 0.90499E+00 </T><Tdev unit="none"> 0.929E-02 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  8.56250 </Lambda><T unit="none"> 0.90257E+00 </T><Tdev unit="none"> 0.953E-02 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  8.68750 </Lambda><T unit="none"> 0.90758E+00 </T><Tdev unit="none"> 0.969E-02 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  8.81250 </Lambda><T unit="none"> 0.88561E+00 </T><Tdev unit="none"> 0.970E-02 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  8.93750 </Lambda><T unit="none"> 0.89497E+00 </T><Tdev unit="none"> 0.997E-02 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  9.06250 </Lambda><T unit="none"> 0.89930E+00 </T><Tdev unit="none"> 0.102E-01 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  9.18750 </Lambda><T unit="none"> 0.90574E+00 </T><Tdev unit="none"> 0.105E-01 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  9.31250 </Lambda><T unit="none"> 0.89529E+00 </T><Tdev unit="none"> 0.106E-01 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  9.43750 </Lambda><T unit="none"> 0.91293E+00 </T><Tdev unit="none"> 0.110E-01 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  9.56250 </Lambda><T unit="none"> 0.90205E+00 </T><Tdev unit="none"> 0.111E-01 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  9.68750 </Lambda><T unit="none"> 0.89511E+00 </T><Tdev unit="none"> 0.113E-01 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  9.81250 </Lambda><T unit="none"> 0.91719E+00 </T><Tdev unit="none"> 0.117E-01 </Tdev></Tdata>
+     <Tdata><Lambda unit="A">  9.93750 </Lambda><T unit="none"> 0.89867E+00 </T><Tdev unit="none"> 0.119E-01 </Tdev></Tdata>
+     <Tdata><Lambda unit="A"> 10.06250 </Lambda><T unit="none"> 0.91801E+00 </T><Tdev unit="none"> 0.123E-01 </Tdev></Tdata>
+     <Tdata><Lambda unit="A"> 10.18750 </Lambda><T unit="none"> 0.91468E+00 </T><Tdev unit="none"> 0.125E-01 </Tdev></Tdata>
+     <Tdata><Lambda unit="A"> 10.31250 </Lambda><T unit="none"> 0.93333E+00 </T><Tdev unit="none"> 0.130E-01 </Tdev></Tdata>
+     <Tdata><Lambda unit="A"> 10.43750 </Lambda><T unit="none"> 0.91900E+00 </T><Tdev unit="none"> 0.131E-01 </Tdev></Tdata>
+     <Tdata><Lambda unit="A"> 10.56250 </Lambda><T unit="none"> 0.93194E+00 </T><Tdev unit="none"> 0.135E-01 </Tdev></Tdata>
+     <Tdata><Lambda unit="A"> 10.68750 </Lambda><T unit="none"> 0.90813E+00 </T><Tdev unit="none"> 0.136E-01 </Tdev></Tdata>
+     <Tdata><Lambda unit="A"> 10.81250 </Lambda><T unit="none"> 0.91338E+00 </T><Tdev unit="none"> 0.139E-01 </Tdev></Tdata>
+     <Tdata><Lambda unit="A"> 10.93750 </Lambda><T unit="none"> 0.89148E+00 </T><Tdev unit="none"> 0.139E-01 </Tdev></Tdata>
+     <Tdata><Lambda unit="A"> 11.06250 </Lambda><T unit="none"> 0.87804E+00 </T><Tdev unit="none"> 0.141E-01 </Tdev></Tdata>
+     <Tdata><Lambda unit="A"> 11.18750 </Lambda><T unit="none"> 0.88807E+00 </T><Tdev unit="none"> 0.145E-01 </Tdev></Tdata>
+     <Tdata><Lambda unit="A"> 11.31250 </Lambda><T unit="none"> 0.92566E+00 </T><Tdev unit="none"> 0.155E-01 </Tdev></Tdata>
+     <Tdata><Lambda unit="A"> 11.43750 </Lambda><T unit="none"> 0.91436E+00 </T><Tdev unit="none"> 0.156E-01 </Tdev></Tdata>
+     <Tdata><Lambda unit="A"> 11.56250 </Lambda><T unit="none"> 0.91966E+00 </T><Tdev unit="none"> 0.161E-01 </Tdev></Tdata>
+     <Tdata><Lambda unit="A"> 11.68750 </Lambda><T unit="none"> 0.89665E+00 </T><Tdev unit="none"> 0.162E-01 </Tdev></Tdata>
+     <Tdata><Lambda unit="A"> 11.81250 </Lambda><T unit="none"> 0.90460E+00 </T><Tdev unit="none"> 0.165E-01 </Tdev></Tdata>
+     <Tdata><Lambda unit="A"> 11.93750 </Lambda><T unit="none"> 0.91064E+00 </T><Tdev unit="none"> 0.172E-01 </Tdev></Tdata>
+     <Tdata><Lambda unit="A"> 12.06250 </Lambda><T unit="none"> 0.91591E+00 </T><Tdev unit="none"> 0.177E-01 </Tdev></Tdata>
+     <Tdata><Lambda unit="A"> 12.18750 </Lambda><T unit="none"> 0.91796E+00 </T><Tdev unit="none"> 0.183E-01 </Tdev></Tdata>
+     <Tdata><Lambda unit="A"> 12.31250 </Lambda><T unit="none"> 0.92300E+00 </T><Tdev unit="none"> 0.189E-01 </Tdev></Tdata>
+     <Tdata><Lambda unit="A"> 12.43750 </Lambda><T unit="none"> 0.91326E+00 </T><Tdev unit="none"> 0.193E-01 </Tdev></Tdata>
+  </SAStransmission_spectrum>
+		<SASsample>
+			<ID>PS3 0.025% Sample C_1mm_SANS/TRANS</ID>
+		</SASsample>
+		<SASinstrument>
+			<name>SANS2D</name>
+			<SASsource>
+				<radiation>Spallation Neutron Source</radiation>
+			</SASsource>
+			<SAScollimation/>
+           <SASdetector>
+				<name>Rear:  ORDELA 21000N</name>
+           </SASdetector>
+           <SASdetector>
+				<name>Front: ORDELA 21000N</name>
+           </SASdetector>
+		</SASinstrument>
+		<SASprocess>
+			<name>Mantid generated CanSAS1D XML</name>
+			<date>12-Jun-2012 17:08:43</date>
+			<term name="svn">2.1.493</term>
+			<term name="user_file">Z:/Masks/MASKSANS2D_121T_12m_M1.txt</term>
+            <SASprocessnote/>
+		</SASprocess>
+		<SASnote>
+		</SASnote>
+	</SASentry>
+</SASroot>

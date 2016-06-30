@@ -1,0 +1,145 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="cansas1d.xsl" ?>
+<SASroot version="1.1"
+		xmlns="urn:cansas1d:1.1"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="urn:cansas1d:1.1 http://www.cansas.org/formats/1.1/cansas1d.xsd"
+		>
+	<SASentry>
+		<Title>det corrn 5m</Title>
+		<Run>009036</Run>
+		<Run_extension xmlns="ILL-data">001</Run_extension>
+		<SASdata>
+			<Idata><Q unit="1/A">0.000E+00</Q><I unit="1/cm">0.0000E+00</I><Idev unit="1/cm-1">0.000E+00</Idev><Qdev unit="1/A" >0.00E+00</Qdev></Idata>
+			<Idata><Q unit="1/A">0.126E-02</Q><I unit="1/cm">0.0000E+00</I><Idev unit="1/cm-1">0.000E+00</Idev><Qdev unit="1/A" >0.17E-02</Qdev></Idata>
+			<Idata><Q unit="1/A">0.251E-02</Q><I unit="1/cm">0.0000E+00</I><Idev unit="1/cm-1">0.000E+00</Idev><Qdev unit="1/A" >0.17E-02</Qdev></Idata>
+			<Idata><Q unit="1/A">0.377E-02</Q><I unit="1/cm">0.0000E+00</I><Idev unit="1/cm-1">0.000E+00</Idev><Qdev unit="1/A" >0.17E-02</Qdev></Idata>
+			<Idata><Q unit="1/A">0.557E-02</Q><I unit="1/cm">0.1450E+01</I><Idev unit="1/cm-1">0.104E+00</Idev><Qdev unit="1/A" >0.17E-02</Qdev></Idata>
+			<Idata><Q unit="1/A">0.645E-02</Q><I unit="1/cm">0.1501E+01</I><Idev unit="1/cm-1">0.302E-01</Idev><Qdev unit="1/A" >0.17E-02</Qdev></Idata>
+			<Idata><Q unit="1/A">0.760E-02</Q><I unit="1/cm">0.1563E+01</I><Idev unit="1/cm-1">0.189E-01</Idev><Qdev unit="1/A" >0.17E-02</Qdev></Idata>
+			<Idata><Q unit="1/A">0.880E-02</Q><I unit="1/cm">0.1596E+01</I><Idev unit="1/cm-1">0.155E-01</Idev><Qdev unit="1/A" >0.17E-02</Qdev></Idata>
+			<Idata><Q unit="1/A">0.101E-01</Q><I unit="1/cm">0.1608E+01</I><Idev unit="1/cm-1">0.132E-01</Idev><Qdev unit="1/A" >0.17E-02</Qdev></Idata>
+			<Idata><Q unit="1/A">0.113E-01</Q><I unit="1/cm">0.1607E+01</I><Idev unit="1/cm-1">0.126E-01</Idev><Qdev unit="1/A" >0.18E-02</Qdev></Idata>
+			<Idata><Q unit="1/A">0.126E-01</Q><I unit="1/cm">0.1594E+01</I><Idev unit="1/cm-1">0.112E-01</Idev><Qdev unit="1/A" >0.18E-02</Qdev></Idata>
+			<Idata><Q unit="1/A">0.138E-01</Q><I unit="1/cm">0.1606E+01</I><Idev unit="1/cm-1">0.103E-01</Idev><Qdev unit="1/A" >0.18E-02</Qdev></Idata>
+			<Idata><Q unit="1/A">0.151E-01</Q><I unit="1/cm">0.1610E+01</I><Idev unit="1/cm-1">0.100E-01</Idev><Qdev unit="1/A" >0.18E-02</Qdev></Idata>
+			<Idata><Q unit="1/A">0.164E-01</Q><I unit="1/cm">0.1618E+01</I><Idev unit="1/cm-1">0.953E-02</Idev><Qdev unit="1/A" >0.18E-02</Qdev></Idata>
+			<Idata><Q unit="1/A">0.176E-01</Q><I unit="1/cm">0.1605E+01</I><Idev unit="1/cm-1">0.899E-02</Idev><Qdev unit="1/A" >0.18E-02</Qdev></Idata>
+			<Idata><Q unit="1/A">0.189E-01</Q><I unit="1/cm">0.1596E+01</I><Idev unit="1/cm-1">0.889E-02</Idev><Qdev unit="1/A" >0.19E-02</Qdev></Idata>
+			<Idata><Q unit="1/A">0.201E-01</Q><I unit="1/cm">0.1586E+01</I><Idev unit="1/cm-1">0.836E-02</Idev><Qdev unit="1/A" >0.19E-02</Qdev></Idata>
+			<Idata><Q unit="1/A">0.214E-01</Q><I unit="1/cm">0.1599E+01</I><Idev unit="1/cm-1">0.803E-02</Idev><Qdev unit="1/A" >0.19E-02</Qdev></Idata>
+			<Idata><Q unit="1/A">0.226E-01</Q><I unit="1/cm">0.1601E+01</I><Idev unit="1/cm-1">0.794E-02</Idev><Qdev unit="1/A" >0.19E-02</Qdev></Idata>
+			<Idata><Q unit="1/A">0.239E-01</Q><I unit="1/cm">0.1596E+01</I><Idev unit="1/cm-1">0.772E-02</Idev><Qdev unit="1/A" >0.20E-02</Qdev></Idata>
+			<Idata><Q unit="1/A">0.251E-01</Q><I unit="1/cm">0.1584E+01</I><Idev unit="1/cm-1">0.727E-02</Idev><Qdev unit="1/A" >0.20E-02</Qdev></Idata>
+			<Idata><Q unit="1/A">0.264E-01</Q><I unit="1/cm">0.1576E+01</I><Idev unit="1/cm-1">0.719E-02</Idev><Qdev unit="1/A" >0.20E-02</Qdev></Idata>
+			<Idata><Q unit="1/A">0.277E-01</Q><I unit="1/cm">0.1571E+01</I><Idev unit="1/cm-1">0.696E-02</Idev><Qdev unit="1/A" >0.21E-02</Qdev></Idata>
+			<Idata><Q unit="1/A">0.289E-01</Q><I unit="1/cm">0.1575E+01</I><Idev unit="1/cm-1">0.679E-02</Idev><Qdev unit="1/A" >0.21E-02</Qdev></Idata>
+			<Idata><Q unit="1/A">0.302E-01</Q><I unit="1/cm">0.1597E+01</I><Idev unit="1/cm-1">0.676E-02</Idev><Qdev unit="1/A" >0.21E-02</Qdev></Idata>
+			<Idata><Q unit="1/A">0.314E-01</Q><I unit="1/cm">0.1584E+01</I><Idev unit="1/cm-1">0.651E-02</Idev><Qdev unit="1/A" >0.21E-02</Qdev></Idata>
+			<Idata><Q unit="1/A">0.327E-01</Q><I unit="1/cm">0.1581E+01</I><Idev unit="1/cm-1">0.630E-02</Idev><Qdev unit="1/A" >0.22E-02</Qdev></Idata>
+			<Idata><Q unit="1/A">0.339E-01</Q><I unit="1/cm">0.1585E+01</I><Idev unit="1/cm-1">0.630E-02</Idev><Qdev unit="1/A" >0.22E-02</Qdev></Idata>
+			<Idata><Q unit="1/A">0.352E-01</Q><I unit="1/cm">0.1561E+01</I><Idev unit="1/cm-1">0.607E-02</Idev><Qdev unit="1/A" >0.23E-02</Qdev></Idata>
+			<Idata><Q unit="1/A">0.364E-01</Q><I unit="1/cm">0.1572E+01</I><Idev unit="1/cm-1">0.597E-02</Idev><Qdev unit="1/A" >0.23E-02</Qdev></Idata>
+			<Idata><Q unit="1/A">0.377E-01</Q><I unit="1/cm">0.1578E+01</I><Idev unit="1/cm-1">0.592E-02</Idev><Qdev unit="1/A" >0.23E-02</Qdev></Idata>
+			<Idata><Q unit="1/A">0.390E-01</Q><I unit="1/cm">0.1560E+01</I><Idev unit="1/cm-1">0.576E-02</Idev><Qdev unit="1/A" >0.24E-02</Qdev></Idata>
+			<Idata><Q unit="1/A">0.402E-01</Q><I unit="1/cm">0.1560E+01</I><Idev unit="1/cm-1">0.559E-02</Idev><Qdev unit="1/A" >0.24E-02</Qdev></Idata>
+			<Idata><Q unit="1/A">0.415E-01</Q><I unit="1/cm">0.1545E+01</I><Idev unit="1/cm-1">0.564E-02</Idev><Qdev unit="1/A" >0.24E-02</Qdev></Idata>
+			<Idata><Q unit="1/A">0.427E-01</Q><I unit="1/cm">0.1559E+01</I><Idev unit="1/cm-1">0.547E-02</Idev><Qdev unit="1/A" >0.25E-02</Qdev></Idata>
+			<Idata><Q unit="1/A">0.440E-01</Q><I unit="1/cm">0.1573E+01</I><Idev unit="1/cm-1">0.541E-02</Idev><Qdev unit="1/A" >0.25E-02</Qdev></Idata>
+			<Idata><Q unit="1/A">0.452E-01</Q><I unit="1/cm">0.1555E+01</I><Idev unit="1/cm-1">0.543E-02</Idev><Qdev unit="1/A" >0.26E-02</Qdev></Idata>
+			<Idata><Q unit="1/A">0.465E-01</Q><I unit="1/cm">0.1544E+01</I><Idev unit="1/cm-1">0.518E-02</Idev><Qdev unit="1/A" >0.26E-02</Qdev></Idata>
+			<Idata><Q unit="1/A">0.478E-01</Q><I unit="1/cm">0.1544E+01</I><Idev unit="1/cm-1">0.509E-02</Idev><Qdev unit="1/A" >0.26E-02</Qdev></Idata>
+			<Idata><Q unit="1/A">0.490E-01</Q><I unit="1/cm">0.1546E+01</I><Idev unit="1/cm-1">0.515E-02</Idev><Qdev unit="1/A" >0.27E-02</Qdev></Idata>
+			<Idata><Q unit="1/A">0.503E-01</Q><I unit="1/cm">0.1530E+01</I><Idev unit="1/cm-1">0.501E-02</Idev><Qdev unit="1/A" >0.27E-02</Qdev></Idata>
+			<Idata><Q unit="1/A">0.515E-01</Q><I unit="1/cm">0.1535E+01</I><Idev unit="1/cm-1">0.487E-02</Idev><Qdev unit="1/A" >0.28E-02</Qdev></Idata>
+			<Idata><Q unit="1/A">0.528E-01</Q><I unit="1/cm">0.1526E+01</I><Idev unit="1/cm-1">0.498E-02</Idev><Qdev unit="1/A" >0.28E-02</Qdev></Idata>
+			<Idata><Q unit="1/A">0.540E-01</Q><I unit="1/cm">0.1530E+01</I><Idev unit="1/cm-1">0.488E-02</Idev><Qdev unit="1/A" >0.28E-02</Qdev></Idata>
+			<Idata><Q unit="1/A">0.553E-01</Q><I unit="1/cm">0.1531E+01</I><Idev unit="1/cm-1">0.501E-02</Idev><Qdev unit="1/A" >0.29E-02</Qdev></Idata>
+			<Idata><Q unit="1/A">0.566E-01</Q><I unit="1/cm">0.1525E+01</I><Idev unit="1/cm-1">0.489E-02</Idev><Qdev unit="1/A" >0.29E-02</Qdev></Idata>
+			<Idata><Q unit="1/A">0.578E-01</Q><I unit="1/cm">0.1542E+01</I><Idev unit="1/cm-1">0.479E-02</Idev><Qdev unit="1/A" >0.30E-02</Qdev></Idata>
+			<Idata><Q unit="1/A">0.590E-01</Q><I unit="1/cm">0.1543E+01</I><Idev unit="1/cm-1">0.483E-02</Idev><Qdev unit="1/A" >0.30E-02</Qdev></Idata>
+			<Idata><Q unit="1/A">0.603E-01</Q><I unit="1/cm">0.1539E+01</I><Idev unit="1/cm-1">0.536E-02</Idev><Qdev unit="1/A" >0.31E-02</Qdev></Idata>
+			<Idata><Q unit="1/A">0.616E-01</Q><I unit="1/cm">0.1528E+01</I><Idev unit="1/cm-1">0.577E-02</Idev><Qdev unit="1/A" >0.31E-02</Qdev></Idata>
+			<Idata><Q unit="1/A">0.628E-01</Q><I unit="1/cm">0.1515E+01</I><Idev unit="1/cm-1">0.604E-02</Idev><Qdev unit="1/A" >0.32E-02</Qdev></Idata>
+			<Idata><Q unit="1/A">0.641E-01</Q><I unit="1/cm">0.1502E+01</I><Idev unit="1/cm-1">0.636E-02</Idev><Qdev unit="1/A" >0.32E-02</Qdev></Idata>
+			<Idata><Q unit="1/A">0.653E-01</Q><I unit="1/cm">0.1501E+01</I><Idev unit="1/cm-1">0.664E-02</Idev><Qdev unit="1/A" >0.32E-02</Qdev></Idata>
+			<Idata><Q unit="1/A">0.666E-01</Q><I unit="1/cm">0.1507E+01</I><Idev unit="1/cm-1">0.708E-02</Idev><Qdev unit="1/A" >0.33E-02</Qdev></Idata>
+			<Idata><Q unit="1/A">0.679E-01</Q><I unit="1/cm">0.1509E+01</I><Idev unit="1/cm-1">0.757E-02</Idev><Qdev unit="1/A" >0.33E-02</Qdev></Idata>
+			<Idata><Q unit="1/A">0.691E-01</Q><I unit="1/cm">0.1498E+01</I><Idev unit="1/cm-1">0.787E-02</Idev><Qdev unit="1/A" >0.34E-02</Qdev></Idata>
+			<Idata><Q unit="1/A">0.704E-01</Q><I unit="1/cm">0.1500E+01</I><Idev unit="1/cm-1">0.833E-02</Idev><Qdev unit="1/A" >0.34E-02</Qdev></Idata>
+			<Idata><Q unit="1/A">0.716E-01</Q><I unit="1/cm">0.1508E+01</I><Idev unit="1/cm-1">0.897E-02</Idev><Qdev unit="1/A" >0.35E-02</Qdev></Idata>
+			<Idata><Q unit="1/A">0.729E-01</Q><I unit="1/cm">0.1506E+01</I><Idev unit="1/cm-1">0.953E-02</Idev><Qdev unit="1/A" >0.35E-02</Qdev></Idata>
+			<Idata><Q unit="1/A">0.741E-01</Q><I unit="1/cm">0.1478E+01</I><Idev unit="1/cm-1">0.102E-01</Idev><Qdev unit="1/A" >0.36E-02</Qdev></Idata>
+			<Idata><Q unit="1/A">0.754E-01</Q><I unit="1/cm">0.1473E+01</I><Idev unit="1/cm-1">0.111E-01</Idev><Qdev unit="1/A" >0.36E-02</Qdev></Idata>
+			<Idata><Q unit="1/A">0.766E-01</Q><I unit="1/cm">0.1495E+01</I><Idev unit="1/cm-1">0.124E-01</Idev><Qdev unit="1/A" >0.37E-02</Qdev></Idata>
+			<Idata><Q unit="1/A">0.779E-01</Q><I unit="1/cm">0.1527E+01</I><Idev unit="1/cm-1">0.142E-01</Idev><Qdev unit="1/A" >0.37E-02</Qdev></Idata>
+			<Idata><Q unit="1/A">0.791E-01</Q><I unit="1/cm">0.1534E+01</I><Idev unit="1/cm-1">0.165E-01</Idev><Qdev unit="1/A" >0.38E-02</Qdev></Idata>
+			<Idata><Q unit="1/A">0.804E-01</Q><I unit="1/cm">0.1523E+01</I><Idev unit="1/cm-1">0.185E-01</Idev><Qdev unit="1/A" >0.38E-02</Qdev></Idata>
+			<Idata><Q unit="1/A">0.817E-01</Q><I unit="1/cm">0.1381E+01</I><Idev unit="1/cm-1">0.221E-01</Idev><Qdev unit="1/A" >0.39E-02</Qdev></Idata>
+			<Idata><Q unit="1/A">0.828E-01</Q><I unit="1/cm">0.1047E+01</I><Idev unit="1/cm-1">0.400E-01</Idev><Qdev unit="1/A" >0.39E-02</Qdev></Idata>
+			<Idata><Q unit="1/A">0.842E-01</Q><I unit="1/cm">0.0000E+00</I><Idev unit="1/cm-1">0.000E+00</Idev><Qdev unit="1/A" >0.40E-02</Qdev></Idata>
+		</SASdata>
+		<Source_file xmlns="ILL-data">"g009036.001"</Source_file>
+		<Flux_monitor xmlns="ILL-data">1.00</Flux_monitor>
+		<Count_time_secs xmlns="ILL-data">886.200</Count_time_secs>
+		<Q_resolution xmlns="ILL-data">"estimated"</Q_resolution>
+		<SASsample>
+			<ID />
+			<thickness unit="mm">0.00</thickness>
+			<transmission>0.0000</transmission>
+			<temperature unit="C">0.0000</temperature>
+			<orientation>
+				<yaw unit="degree">-0.100</yaw>
+			</orientation>
+		</SASsample>
+		<SASinstrument>
+			<name>D22</name>
+			<SASsource>
+				<radiation>neutron</radiation>
+				<wavelength unit="A">10.00</wavelength>
+				<wavelength_spread unit="percent">0.10</wavelength_spread>
+			</SASsource>
+			<SAScollimation>
+				<aperture name="source" type="disc">
+					<size>
+						<x unit="mm">3.00</x>
+						<y unit="mm">0.00</y>
+					</size>
+					<distance unit="m">5.60</distance>
+				</aperture>
+				<aperture name="sample" type="disc">
+					<size>
+						<x unit="mm">0.80</x>
+						<y unit="mm">0.00</y>
+					</size>
+					<distance unit="m">0</distance>
+				</aperture>
+			</SAScollimation>
+			<SASdetector>
+				<name />
+				<SDD unit="m">5.000</SDD>
+				<orientation>
+					<yaw unit="degree">0.00</yaw>
+				</orientation>
+				<beam_center>
+					<x unit="mm">473.63</x>
+					<y unit="mm">478.88</y>
+				</beam_center>
+				<pixel_size>
+					<x unit="mm">0.75</x>
+					<y unit="mm">0.75</y>
+				</pixel_size>
+			</SASdetector>
+		</SASinstrument>
+		<SASprocess name="spol">
+			<date>23-Apr-1999 11:40:24</date>
+			<term name="radialstep" unit="mm"></term>
+			<term name="sector_width" unit="deg"></term>
+			<term name="sector_orient" unit="deg"></term>
+			<SASprocessnote> AvA1 0.0000E+00 AsA2 4.6060E-01 XvA3 0.0000E+00 XsA4 1.0000E+00 XfA5 0.0000E+00</SASprocessnote>
+			<SASprocessnote>S...  9036  0  2.00E+02 H2O             Sbak  9035  0  2.00E+02 cellule vide    </SASprocessnote>
+			<SASprocessnote>Cd/E  9034  0  1.00E+02 B4C                                                     </SASprocessnote>
+		</SASprocess>
+		<SASnote />
+	</SASentry>
+</SASroot>

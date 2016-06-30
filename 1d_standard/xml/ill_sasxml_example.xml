@@ -1,0 +1,139 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="cansas1d.xsl" ?>
+<SASroot version="1.1"
+		xmlns="urn:cansas1d:1.1"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="urn:cansas1d:1.1 http://www.cansas.org/formats/1.1/cansas1d.xsd"
+		>
+	<SASentry>
+		<Title>ILL-D22 example: 7D1 2mm             </Title>
+		<Run>g009346.001</Run>
+		<SASdata>
+			<Idata><Q unit="1/A">   0.000000E+00 </Q><I unit="1/cm">   0.000000E+00 </I><Idev unit="1/cm">   0.000000E+00 </Idev><Qdev unit="1/A">   0.000000E+00 </Qdev></Idata>
+			<Idata><Q unit="1/A">   7.853982E-04 </Q><I unit="1/cm">   0.000000E+00 </I><Idev unit="1/cm">   0.000000E+00 </Idev><Qdev unit="1/A">   5.290519E-04 </Qdev></Idata>
+			<Idata><Q unit="1/A">   1.570796E-03 </Q><I unit="1/cm">   0.000000E+00 </I><Idev unit="1/cm">   0.000000E+00 </Idev><Qdev unit="1/A">   5.462641E-04 </Qdev></Idata>
+			<Idata><Q unit="1/A">   2.356194E-03 </Q><I unit="1/cm">   0.000000E+00 </I><Idev unit="1/cm">   0.000000E+00 </Idev><Qdev unit="1/A">   5.738046E-04 </Qdev></Idata>
+			<Idata><Q unit="1/A">   3.423113E-03 </Q><I unit="1/cm">  -1.013887E+01 </I><Idev unit="1/cm">  -1.595304E+01 </Idev><Qdev unit="1/A">   6.252376E-04 </Qdev></Idata>
+			<Idata><Q unit="1/A">   3.986425E-03 </Q><I unit="1/cm">  -1.040687E+02 </I><Idev unit="1/cm">  -6.040934E+02 </Idev><Qdev unit="1/A">   6.577747E-04 </Qdev></Idata>
+			<Idata><Q unit="1/A">   4.747937E-03 </Q><I unit="1/cm">   2.803847E+01 </I><Idev unit="1/cm">   2.178166E+01 </Idev><Qdev unit="1/A">   7.065347E-04 </Qdev></Idata>
+			<Idata><Q unit="1/A">   5.511106E-03 </Q><I unit="1/cm">   1.305283E+01 </I><Idev unit="1/cm">   2.717132E+00 </Idev><Qdev unit="1/A">   7.599326E-04 </Qdev></Idata>
+			<Idata><Q unit="1/A">   6.312272E-03 </Q><I unit="1/cm">   9.199719E+00 </I><Idev unit="1/cm">   1.025447E+00 </Idev><Qdev unit="1/A">   8.199009E-04 </Qdev></Idata>
+			<Idata><Q unit="1/A">   7.085647E-03 </Q><I unit="1/cm">   8.427243E+00 </I><Idev unit="1/cm">   7.807953E-01 </Idev><Qdev unit="1/A">   8.808349E-04 </Qdev></Idata>
+			<Idata><Q unit="1/A">   7.858813E-03 </Q><I unit="1/cm">   7.684547E+00 </I><Idev unit="1/cm">   5.645913E-01 </Idev><Qdev unit="1/A">   9.441578E-04 </Qdev></Idata>
+			<Idata><Q unit="1/A">   8.645013E-03 </Q><I unit="1/cm">   7.676375E+00 </I><Idev unit="1/cm">   5.031449E-01 </Idev><Qdev unit="1/A">   1.010548E-03 </Qdev></Idata>
+			<Idata><Q unit="1/A">   9.420658E-03 </Q><I unit="1/cm">   7.693844E+00 </I><Idev unit="1/cm">   4.735692E-01 </Idev><Qdev unit="1/A">   1.077662E-03 </Qdev></Idata>
+			<Idata><Q unit="1/A">   1.021134E-02 </Q><I unit="1/cm">   7.626715E+00 </I><Idev unit="1/cm">   4.288891E-01 </Idev><Qdev unit="1/A">   1.147435E-03 </Qdev></Idata>
+			<Idata><Q unit="1/A">   1.100320E-02 </Q><I unit="1/cm">   7.296264E+00 </I><Idev unit="1/cm">   3.833572E-01 </Idev><Qdev unit="1/A">   1.218451E-03 </Qdev></Idata>
+			<Idata><Q unit="1/A">   1.178024E-02 </Q><I unit="1/cm">   7.506202E+00 </I><Idev unit="1/cm">   3.720536E-01 </Idev><Qdev unit="1/A">   1.289065E-03 </Qdev></Idata>
+			<Idata><Q unit="1/A">   1.257099E-02 </Q><I unit="1/cm">   7.551725E+00 </I><Idev unit="1/cm">   3.677744E-01 </Idev><Qdev unit="1/A">   1.361718E-03 </Qdev></Idata>
+			<Idata><Q unit="1/A">   1.335339E-02 </Q><I unit="1/cm">   7.271583E+00 </I><Idev unit="1/cm">   3.373113E-01 </Idev><Qdev unit="1/A">   1.434273E-03 </Qdev></Idata>
+			<Idata><Q unit="1/A">   1.412778E-02 </Q><I unit="1/cm">   6.848637E+00 </I><Idev unit="1/cm">   2.879251E-01 </Idev><Qdev unit="1/A">   1.506647E-03 </Qdev></Idata>
+			<Idata><Q unit="1/A">   1.492401E-02 </Q><I unit="1/cm">   7.045397E+00 </I><Idev unit="1/cm">   2.919511E-01 </Idev><Qdev unit="1/A">   1.581563E-03 </Qdev></Idata>
+			<Idata><Q unit="1/A">   1.571944E-02 </Q><I unit="1/cm">   7.026912E+00 </I><Idev unit="1/cm">   2.918268E-01 </Idev><Qdev unit="1/A">   1.656843E-03 </Qdev></Idata>
+			<Idata><Q unit="1/A">   1.649774E-02 </Q><I unit="1/cm">   6.872463E+00 </I><Idev unit="1/cm">   2.736902E-01 </Idev><Qdev unit="1/A">   1.730871E-03 </Qdev></Idata>
+			<Idata><Q unit="1/A">   1.728140E-02 </Q><I unit="1/cm">   6.941207E+00 </I><Idev unit="1/cm">   2.709793E-01 </Idev><Qdev unit="1/A">   1.805732E-03 </Qdev></Idata>
+			<Idata><Q unit="1/A">   1.806783E-02 </Q><I unit="1/cm">   6.562048E+00 </I><Idev unit="1/cm">   2.402111E-01 </Idev><Qdev unit="1/A">   1.881146E-03 </Qdev></Idata>
+			<Idata><Q unit="1/A">   1.884779E-02 </Q><I unit="1/cm">   6.836144E+00 </I><Idev unit="1/cm">   2.528365E-01 </Idev><Qdev unit="1/A">   1.956191E-03 </Qdev></Idata>
+			<Idata><Q unit="1/A">   1.963466E-02 </Q><I unit="1/cm">   6.386352E+00 </I><Idev unit="1/cm">   2.171626E-01 </Idev><Qdev unit="1/A">   2.032127E-03 </Qdev></Idata>
+			<Idata><Q unit="1/A">   2.042139E-02 </Q><I unit="1/cm">   6.515014E+00 </I><Idev unit="1/cm">   2.278526E-01 </Idev><Qdev unit="1/A">   2.108251E-03 </Qdev></Idata>
+			<Idata><Q unit="1/A">   2.119991E-02 </Q><I unit="1/cm">   6.375016E+00 </I><Idev unit="1/cm">   2.100200E-01 </Idev><Qdev unit="1/A">   2.183759E-03 </Qdev></Idata>
+			<Idata><Q unit="1/A">   2.199290E-02 </Q><I unit="1/cm">   6.398082E+00 </I><Idev unit="1/cm">   2.083693E-01 </Idev><Qdev unit="1/A">   2.260834E-03 </Qdev></Idata>
+			<Idata><Q unit="1/A">   2.278407E-02 </Q><I unit="1/cm">   6.315217E+00 </I><Idev unit="1/cm">   2.081712E-01 </Idev><Qdev unit="1/A">   2.337881E-03 </Qdev></Idata>
+			<Idata><Q unit="1/A">   2.355685E-02 </Q><I unit="1/cm">   5.986359E+00 </I><Idev unit="1/cm">   1.865450E-01 </Idev><Qdev unit="1/A">   2.413268E-03 </Qdev></Idata>
+			<Idata><Q unit="1/A">   2.434466E-02 </Q><I unit="1/cm">   6.410161E+00 </I><Idev unit="1/cm">   2.058192E-01 </Idev><Qdev unit="1/A">   2.490239E-03 </Qdev></Idata>
+			<Idata><Q unit="1/A">   2.513471E-02 </Q><I unit="1/cm">   5.729372E+00 </I><Idev unit="1/cm">   1.735024E-01 </Idev><Qdev unit="1/A">   2.567541E-03 </Qdev></Idata>
+			<Idata><Q unit="1/A">   2.591523E-02 </Q><I unit="1/cm">   5.719833E+00 </I><Idev unit="1/cm">   1.728524E-01 </Idev><Qdev unit="1/A">   2.644009E-03 </Qdev></Idata>
+			<Idata><Q unit="1/A">   2.670370E-02 </Q><I unit="1/cm">   5.742700E+00 </I><Idev unit="1/cm">   1.680129E-01 </Idev><Qdev unit="1/A">   2.721348E-03 </Qdev></Idata>
+			<Idata><Q unit="1/A">   2.748693E-02 </Q><I unit="1/cm">   5.453211E+00 </I><Idev unit="1/cm">   1.571413E-01 </Idev><Qdev unit="1/A">   2.798256E-03 </Qdev></Idata>
+			<Idata><Q unit="1/A">   2.826735E-02 </Q><I unit="1/cm">   5.355177E+00 </I><Idev unit="1/cm">   1.509180E-01 </Idev><Qdev unit="1/A">   2.874966E-03 </Qdev></Idata>
+			<Idata><Q unit="1/A">   2.905969E-02 </Q><I unit="1/cm">   5.403429E+00 </I><Idev unit="1/cm">   1.522365E-01 </Idev><Qdev unit="1/A">   2.952918E-03 </Qdev></Idata>
+			<Idata><Q unit="1/A">   2.984972E-02 </Q><I unit="1/cm">   4.932916E+00 </I><Idev unit="1/cm">   1.346002E-01 </Idev><Qdev unit="1/A">   3.030709E-03 </Qdev></Idata>
+			<Idata><Q unit="1/A">   3.062632E-02 </Q><I unit="1/cm">   4.896323E+00 </I><Idev unit="1/cm">   1.331449E-01 </Idev><Qdev unit="1/A">   3.107239E-03 </Qdev></Idata>
+			<Idata><Q unit="1/A">   3.141591E-02 </Q><I unit="1/cm">   4.899223E+00 </I><Idev unit="1/cm">   1.320771E-01 </Idev><Qdev unit="1/A">   3.185104E-03 </Qdev></Idata>
+			<Idata><Q unit="1/A">   3.220949E-02 </Q><I unit="1/cm">   4.635206E+00 </I><Idev unit="1/cm">   1.227799E-01 </Idev><Qdev unit="1/A">   3.263416E-03 </Qdev></Idata>
+			<Idata><Q unit="1/A">   3.298980E-02 </Q><I unit="1/cm">   4.451303E+00 </I><Idev unit="1/cm">   1.151127E-01 </Idev><Qdev unit="1/A">   3.340468E-03 </Qdev></Idata>
+			<Idata><Q unit="1/A">   3.377144E-02 </Q><I unit="1/cm">   4.535063E+00 </I><Idev unit="1/cm">   1.195334E-01 </Idev><Qdev unit="1/A">   3.417695E-03 </Qdev></Idata>
+			<Idata><Q unit="1/A">   3.455361E-02 </Q><I unit="1/cm">   4.148833E+00 </I><Idev unit="1/cm">   1.055833E-01 </Idev><Qdev unit="1/A">   3.495017E-03 </Qdev></Idata>
+			<Idata><Q unit="1/A">   3.533949E-02 </Q><I unit="1/cm">   4.134597E+00 </I><Idev unit="1/cm">   1.044251E-01 </Idev><Qdev unit="1/A">   3.572745E-03 </Qdev></Idata>
+			<Idata><Q unit="1/A">   3.612345E-02 </Q><I unit="1/cm">   3.928159E+00 </I><Idev unit="1/cm">   1.000084E-01 </Idev><Qdev unit="1/A">   3.650320E-03 </Qdev></Idata>
+			<Idata><Q unit="1/A">   3.689906E-02 </Q><I unit="1/cm">   3.948881E+00 </I><Idev unit="1/cm">   1.095183E-01 </Idev><Qdev unit="1/A">   3.727103E-03 </Qdev></Idata>
+			<Idata><Q unit="1/A">   3.768547E-02 </Q><I unit="1/cm">   3.732991E+00 </I><Idev unit="1/cm">   1.125003E-01 </Idev><Qdev unit="1/A">   3.804988E-03 </Qdev></Idata>
+			<Idata><Q unit="1/A">   3.847295E-02 </Q><I unit="1/cm">   3.538576E+00 </I><Idev unit="1/cm">   1.091457E-01 </Idev><Qdev unit="1/A">   3.883009E-03 </Qdev></Idata>
+			<Idata><Q unit="1/A">   3.926152E-02 </Q><I unit="1/cm">   3.421592E+00 </I><Idev unit="1/cm">   1.153038E-01 </Idev><Qdev unit="1/A">   3.961167E-03 </Qdev></Idata>
+			<Idata><Q unit="1/A">   4.005116E-02 </Q><I unit="1/cm">   3.155872E+00 </I><Idev unit="1/cm">   1.091997E-01 </Idev><Qdev unit="1/A">   4.039459E-03 </Qdev></Idata>
+			<Idata><Q unit="1/A">   4.083731E-02 </Q><I unit="1/cm">   2.918833E+00 </I><Idev unit="1/cm">   1.044780E-01 </Idev><Qdev unit="1/A">   4.117431E-03 </Qdev></Idata>
+			<Idata><Q unit="1/A">   4.160304E-02 </Q><I unit="1/cm">   3.016789E+00 </I><Idev unit="1/cm">   1.216358E-01 </Idev><Qdev unit="1/A">   4.193400E-03 </Qdev></Idata>
+			<Idata><Q unit="1/A">   4.238020E-02 </Q><I unit="1/cm">   2.918326E+00 </I><Idev unit="1/cm">   1.229637E-01 </Idev><Qdev unit="1/A">   4.270526E-03 </Qdev></Idata>
+			<Idata><Q unit="1/A">   4.318456E-02 </Q><I unit="1/cm">   2.855160E+00 </I><Idev unit="1/cm">   1.254312E-01 </Idev><Qdev unit="1/A">   4.350374E-03 </Qdev></Idata>
+			<Idata><Q unit="1/A">   4.398574E-02 </Q><I unit="1/cm">   2.591346E+00 </I><Idev unit="1/cm">   1.200769E-01 </Idev><Qdev unit="1/A">   4.429927E-03 </Qdev></Idata>
+			<Idata><Q unit="1/A">   4.476441E-02 </Q><I unit="1/cm">   2.564399E+00 </I><Idev unit="1/cm">   1.287962E-01 </Idev><Qdev unit="1/A">   4.507265E-03 </Qdev></Idata>
+			<Idata><Q unit="1/A">   4.554401E-02 </Q><I unit="1/cm">   2.333560E+00 </I><Idev unit="1/cm">   1.212806E-01 </Idev><Qdev unit="1/A">   4.584712E-03 </Qdev></Idata>
+			<Idata><Q unit="1/A">   4.632942E-02 </Q><I unit="1/cm">   2.224146E+00 </I><Idev unit="1/cm">   1.278781E-01 </Idev><Qdev unit="1/A">   4.662756E-03 </Qdev></Idata>
+			<Idata><Q unit="1/A">   4.711189E-02 </Q><I unit="1/cm">   2.332195E+00 </I><Idev unit="1/cm">   1.505235E-01 </Idev><Qdev unit="1/A">   4.740523E-03 </Qdev></Idata>
+			<Idata><Q unit="1/A">   4.791620E-02 </Q><I unit="1/cm">   2.059419E+00 </I><Idev unit="1/cm">   1.392801E-01 </Idev><Qdev unit="1/A">   4.820477E-03 </Qdev></Idata>
+			<Idata><Q unit="1/A">   4.868990E-02 </Q><I unit="1/cm">   2.123561E+00 </I><Idev unit="1/cm">   1.882716E-01 </Idev><Qdev unit="1/A">   4.897404E-03 </Qdev></Idata>
+			<Idata><Q unit="1/A">   4.941605E-02 </Q><I unit="1/cm">   1.770578E+00 </I><Idev unit="1/cm">   1.647465E-01 </Idev><Qdev unit="1/A">   4.969614E-03 </Qdev></Idata>
+			<Idata><Q unit="1/A">   5.018928E-02 </Q><I unit="1/cm">   2.132738E+00 </I><Idev unit="1/cm">   2.599679E-01 </Idev><Qdev unit="1/A">   5.046520E-03 </Qdev></Idata>
+			<Idata><Q unit="1/A">   5.095456E-02 </Q><I unit="1/cm">   1.576560E+00 </I><Idev unit="1/cm">   2.831447E-01 </Idev><Qdev unit="1/A">   5.122649E-03 </Qdev></Idata>
+			<Idata><Q unit="1/A">   5.156558E-02 </Q><I unit="1/cm">   4.056215E+00 </I><Idev unit="1/cm">   3.662568E+00 </Idev><Qdev unit="1/A">   5.183439E-03 </Qdev></Idata>
+			<Idata><Q unit="1/A">   5.262168E-02 </Q><I unit="1/cm">   0.000000E+00 </I><Idev unit="1/cm">   0.000000E+00 </Idev><Qdev unit="1/A">   5.288529E-03 </Qdev></Idata>
+			<Idata><Q unit="1/A">   5.340708E-02 </Q><I unit="1/cm">   0.000000E+00 </I><Idev unit="1/cm">   0.000000E+00 </Idev><Qdev unit="1/A">   5.366696E-03 </Qdev></Idata>
+		</SASdata>
+		<SASsample>
+			<ID>7D1 2mm</ID>
+			<thickness unit="mm">    0.00 </thickness>
+			<transmission>   0.0000 </transmission>
+			<temperature unit="C">     0.0000 </temperature>
+			<position>
+				<x unit="mm">    8.00 </x>
+				<y unit="mm">    0.00 </y>
+			</position>
+			<sample_offset_angle_deg xmlns="urn:ILL:D22">      0.000 </sample_offset_angle_deg>
+		</SASsample>
+		<SASinstrument>
+			<name>D22</name>
+			<SASsource>
+				<radiation>neutron</radiation>
+				<beam_size>
+					<x unit="mm">30.00</x>
+					<y unit="mm">0.00</y>
+				</beam_size>
+				<wavelength unit="A">8.00</wavelength>
+				<wavelength_spread unit="fraction ">0.10</wavelength_spread>
+			</SASsource>
+			<SAScollimation>
+				<length unit="m">11.200</length>
+			</SAScollimation>
+			<SASdetector>
+				<name />
+				<SDD unit="m">10.000</SDD>
+				<orientation>
+					<roll unit="degree">0.00<!-- was: offset_angle_deg --></roll>
+				</orientation>
+				<beam_center>
+					<x unit="cm">47.03</x>
+					<y unit="cm">47.78</y>
+				</beam_center>
+				<pixel_size>
+					<x unit="mm">7.50</x>
+					<y unit="mm">7.50</y>
+				</pixel_size>
+			</SASdetector>
+		</SASinstrument>
+		<SASprocess name="spol" >
+			<name>spol</name>
+			<date>  1-Jul-1998 14:57:37 </date>
+			<term name="Flux_monitor" unit="none">1.00</term>
+			<term name="Count_time" unit="s">100.000</term>
+			<term name="Q_resolution">estimated</term>
+			<term name="radialstep" unit="cm">1.000</term>
+			<term name="sector_width" unit="deg">180.0</term>
+			<term name="sector_orient" unit="deg">0.0</term>
+			<SASprocessnote name="01">  AvA1 4.8700E-01 AsA2 9.2700E-01 XvA3 4.3800E-02 XsA4 1.6360E-01 XfA5 0.0000E+00 </SASprocessnote>
+			<SASprocessnote name="02"> S...  9346  0  2.23E+01 7D1 2mm         Sbak  9345  0  2.23E+01 D2O 2mm          </SASprocessnote>
+			<SASprocessnote name="03"> Vbak  9343  0  2.23E+01 Empty Qtz Cell  V...  9342  0  2.23E+01 H2O 1mm          </SASprocessnote>
+			<SASprocessnote name="04"> Cd/E  9340  0  2.23E+01 Cd - Bgd                                                 </SASprocessnote>
+		</SASprocess>
+		<SASnote/>
+	</SASentry>
+</SASroot>
