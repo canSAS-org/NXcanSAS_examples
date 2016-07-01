@@ -2,7 +2,7 @@
 
 '''Extended example use of cansas1d reader'''
 
-# Copyright (c) 2013, UChicago Argonne, LLC
+# Copyright (c) 2013-2016, UChicago Argonne, LLC
 # This file is distributed subject to a Software License Agreement found
 # in the file LICENSE that is included with this distribution. 
 
@@ -10,9 +10,7 @@
 import os
 import sys
 import cansas1d
-
-__svn_id__ = "$Id$"
-
+from spec2nexus import eznx
 
 
 def indra_metadata(SASentry):
@@ -94,18 +92,23 @@ def columnsToText(columns):
     return '\n'.join(result)
 
 
+def ingest(xmlFile):
+    '''read a canSAS1D XML data file and return a gnosis object'''
+    if not os.path.exists(xmlFile):
+        raise IOError('file not found: ' + xmlFile)
+    return cansas1d.readCanSasFile(xmlFile)
+
+
 def demo(xmlFile):
     print '#---------------------------------------------------'
     print 'XML:', xmlFile
     # read in the XML file
     try:
-        sasxml = cansas1d.readCanSasFile(xmlFile)
+        sasxml = ingest(xmlFile)
     except cansas1d.Exception_canSAS_namespace, answer:
-        print "wrong XML namespace:", answer
-        return
+        raise ValueError("wrong XML namespace:" + answer)
     except cansas1d.Exception_canSAS_version, answer:
-        print "wrong version string:", answer
-        return
+        raise ValueError("wrong version string:" + answer)
     print 'namespace:', sasxml.xmlns
     print 'version:', sasxml.version
     SASentry = sasxml.SASentry                  # just the first one
@@ -122,9 +125,44 @@ def demo(xmlFile):
     print_SASdata(SASentry.SASdata)
 
 
+def nested(node):
+    if isinstance(node, unicode):
+        return
+    if node is None:
+        return
+    if isinstance(node, SASentry):
+        print 'SASentry --------'
+    else:
+        print node
+    if node._seq is None:
+        return
+    for item in node._seq:
+        nested(item)
+
+def convert(xmlFile, hdf5File):
+    '''read the canSAS1D XML file and write a NXcanSAS HDF5 file'''
+    try:
+        sasxml = ingest(xmlFile)
+    except cansas1d.Exception_canSAS_namespace, answer:
+        raise ValueError("wrong XML namespace:" + answer)
+    except cansas1d.Exception_canSAS_version, answer:
+        raise ValueError("wrong version string:" + answer)
+
+    nx_root = eznx.makeFile(hdf5File)
+    eznx.addAttributes(nx_root, creator='canSAS1d_to_NXcanSAS.py')
+    nested(sasxml)
+
+
 if __name__ == "__main__":
     if len(sys.argv) == 2:
         demo(sys.argv[1])
     else:
-        demo(os.path.join('..', 'examples', 'bimodal-test1.xml'))
-        demo(os.path.join('..', 'examples', 's81-polyurea.xml'))
+        filelist = '''
+        bimodal-test1.xml
+        s81-polyurea.xml
+        '''.strip().split()
+        for fname in filelist:
+            xmlFile = os.path.join('..', 'xml', 'bimodal-test1.xml')
+            # demo(xmlFile)
+            hdf5File = os.path.join('..', os.path.splitext(fname)[0] + '.h5')
+            convert(xmlFile, hdf5File)

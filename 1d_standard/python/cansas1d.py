@@ -24,15 +24,6 @@ in the file LICENSE that is included with this distribution.
 '''
 
 
-########### SVN repository information ###################
-# $Date$
-# $Author$
-# $Revision$
-# $URL$
-# $Id$
-########### SVN repository information ###################
-
-
 import os
 import sys
 import gnosis.xml.objectify     # easy_install -U gnosis
@@ -70,11 +61,9 @@ def readCanSasFile(xmlFile):
 
 class Exception_canSAS_namespace(Exception):
     '''canSAS XML file namespace'''
-    pass
 
 class Exception_canSAS_version(Exception):
     '''version string of the canSAS standard'''
-    pass
 
 if __name__ == "__main__":
     '''just for demonstration using example data files'''
