@@ -13,10 +13,12 @@ SaveNXcanSAS v.1
 
 
 =====
+
 Mantid reduction parameters:
-Cycle 15_3
-SANS2D_TUBES
-USER_SANS2D_153P_2p4_4m_M3_Hollamby_4mm_17TCryomagnet.txt
-33837     33838     33742
-No can subtraction
+ - Cycle 15_3
+ - SANS2D_TUBES
+ - USER_SANS2D_153P_2p4_4m_M3_Hollamby_4mm_17TCryomagnet.txt
+ - 33837     33838     33742
+ - No can subtraction
+
 =====
