@@ -53,29 +53,52 @@ class canSAS1D_to_NXcanSAS(object):
         write the HDF5 file while parsing the XML file
         '''
         nx_root = eznx.makeFile(hdf5File)
-        eznx.addAttributes(nx_root, creator='canSAS1d_to_NXcanSAS.py')
+        eznx.addAttributes(nx_root, 
+                           creator='xml_2_hdf5.py')
         print self.xmlFile
-        x_sasentries = self.root.findall('cs:SASentry', self.ns)
-        default = None
-        for i, x_sasentry in enumerate(x_sasentries):
-            nm = safename(x_sasentry.attrib.get('name', 'sasentry_'+str(i)))
-            print nm
-            if default is None:
-                default = nm
-                eznx.addAttributes(nx_root, default=nm)
-            nx_sasdata = eznx.makeGroup(nx_root, 
-                                        nm, 'NXentry',
-                                        canSAS_class='SASentry')
+        group_list = self.process_sasentry(self.root, nx_root)
+        if len(group_list) > 0:
+            default = group_list[0].name.split('/')[-1]
+            eznx.addAttributes(nx_root, default=default)
         nx_root.close()
 
-#         for node in self.root:
-#             if node.tag.endswith('}SASentry'):
-#                 node_name = node.attrib.get('name', 'x_sasentry')
-#                 print node_name
+    def process_sasentry(self, xml_parent, nx_parent):
+        '''
+        process any SASentry groups
+        '''
+        nx_entries = []
+        x_groups = xml_parent.findall('cs:SASentry', self.ns)
+        for i, x_sasentry in enumerate(x_groups):
+            nm = safename(x_sasentry.attrib.get('name', 
+                                                'sasentry_'+str(i)))
+            print nm
+            nxentry = eznx.makeGroup(nx_parent, 
+                                        nm, 'NXentry',
+                                        canSAS_class='SASentry')
+            nx_entries.append(nxentry)
 
-    def p_sasentry(self):
+            group_list = self.process_sasdata(x_sasentry, nxentry)
+            if len(group_list) > 0:
+                default = group_list[0].name.split('/')[-1]
+                eznx.addAttributes(nxentry, default=default)
+
+        return nx_entries
+
+    def process_sasdata(self, xml_parent, nx_parent):
         '''
+        process any SASdata groups
         '''
+        nx_group_list = []
+        x_groups = xml_parent.findall('cs:SASdata', self.ns)
+        for i, x_sasentry in enumerate(x_groups):
+            nm = safename(x_sasentry.attrib.get('name', 
+                                                'sasdata_'+str(i)))
+            print nm
+            nxdata = eznx.makeGroup(nx_parent, 
+                                    nm, 'NXdata',
+                                    canSAS_class='SASdata')
+            nx_group_list.append(nxdata)
+        return nx_group_list
 
 
 def developer():
