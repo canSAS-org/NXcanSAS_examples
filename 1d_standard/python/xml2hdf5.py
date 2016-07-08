@@ -80,21 +80,29 @@ class canSAS1D_to_NXcanSAS(object):
                                         canSAS_class='SASentry')
             nx_entries.append(nxentry)
             eznx.makeDataset(nxentry, 'definition', 'NXcanSAS')
-            
-            for xmlnode in sasentry:
-                if xmlnode.tag.endswith('}Title'):
-                    eznx.makeDataset(nxentry, 'title', xmlnode.text)
-                if xmlnode.tag.endswith('}Run'):
-                    eznx.makeDataset(nxentry, 'run', xmlnode.text)
-            # TODO: SASsample
-            # TODO: SASinstrument
-            # TODO: SASnote
-            # TODO: SASprocess
 
             group_list = self.process_sasdata(sasentry, nxentry)
             if len(group_list) > 0:
                 default = group_list[0].name.split('/')[-1]
                 eznx.addAttributes(nxentry, default=default)
+            
+            for xmlnode in sasentry:
+                if xmlnode.tag.endswith('}Title'):
+                    eznx.makeDataset(nxentry, 'title', xmlnode.text)
+                elif xmlnode.tag.endswith('}Run'):
+                    eznx.makeDataset(nxentry, 'run', xmlnode.text)  # TODO: AF1410 has two: Run@name
+                elif xmlnode.tag.endswith('}SASsample'):
+                    pass            # TODO: SASsample
+                elif xmlnode.tag.endswith('}SASinstrument'):
+                    pass            # TODO: SASinstrument
+                elif xmlnode.tag.endswith('}SASnote'):
+                    pass            # TODO: SASnote
+                elif xmlnode.tag.endswith('}SASprocess'):
+                    pass            # TODO: SASprocess
+                elif xmlnode.tag.endswith('}SASdata'):
+                    pass            # already handled above
+                else:
+                    raise KeyError('unexpected SASentry tag: ' + xmlnode.tag)
 
         return nx_entries
 
@@ -104,12 +112,47 @@ class canSAS1D_to_NXcanSAS(object):
         '''
         nx_group_list = []
         x_groups = xml_parent.findall('cs:SASdata', self.ns)
-        for i, sasentry in enumerate(x_groups):
-            nm = sasentry.attrib.get('name', 'sasdata_'+str(i))
+        for i, sasdata in enumerate(x_groups):
+            nm = sasdata.attrib.get('name', 'sasdata_'+str(i))
             nxdata = eznx.makeGroup(nx_parent, 
                                     utils.clean_name(nm), 'NXdata',
                                     canSAS_class='SASdata')
             nx_group_list.append(nxdata)
+            
+            # collect the SAS data arrays
+            data = {}
+            units = {}
+            for xmlnode in sasdata:
+                if xmlnode.tag.endswith('}Idata'):
+                    for xmldata in xmlnode:
+                        try:
+                            tag = xmldata.tag.split('}')[-1]
+                        except AttributeError, _exc:
+                            continue        # an XML comment triggered this
+                        if tag not in data:
+                            data[tag] = []
+                            units[tag] = xmldata.get('unit', None)
+                        data[tag].append(xmldata.text)
+                else:
+                    raise KeyError('unexpected SASdata tag: ' + xmlnode.tag)
+            
+            # write the data arrays
+            nx_obj = {}
+            for nm, arr in data.items():
+                try:
+                    nx_obj[nm] = eznx.makeDataset(nxdata, nm, map(float, data[nm]), units=units[nm])
+                except TypeError, _exc:
+                    pass
+            
+            # set the NeXus plottable data attributes
+            if 'I' in data:
+                eznx.addAttributes(nxdata, signal='I')
+                if 'Q' in data:
+                    eznx.addAttributes(nxdata, I_axes='Q')        # NeXus
+                if 'Idev' in data:
+                    eznx.addAttributes(nxdata, I_uncertainty='Idev')        # canSAS
+                    eznx.addAttributes(nx_obj['I'], uncertainty='Idev')     # NeXus
+
         return nx_group_list
 
 
@@ -122,6 +165,10 @@ def developer():
     '''.strip().split()
     # filelist = os.listdir(os.path.join('..', 'xml'))
     for fname in filelist:
+        if fname.find('cansas1d-template.xml') >= 0:
+            continue
+        if fname.find('cansas1d.xml') >= 0:
+            continue
         if fname.endswith('.xml'):
             xmlFile = os.path.join('..', 'xml', fname)
             converter = canSAS1D_to_NXcanSAS()
