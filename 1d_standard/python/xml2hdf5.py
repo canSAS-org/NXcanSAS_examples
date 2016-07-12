@@ -100,7 +100,7 @@ class canSAS1D_to_NXcanSAS(object):
                 elif xmlnode.tag.endswith('}SASdata'):
                     pass            # already handled above
                 elif xmlnode.tag.endswith('}SASsample'):
-                    pass            # TODO: SASsample
+                    self.process_SASsample(xmlnode, nxentry)
                 elif xmlnode.tag.endswith('}SASinstrument'):
                     pass            # TODO: SASinstrument
                 elif xmlnode.tag.endswith('}SASnote'):
@@ -124,7 +124,7 @@ class canSAS1D_to_NXcanSAS(object):
             if len(xml_node_list) > 0:
                 nm += '_' + str(i)
             eznx.makeDataset(nx_parent, nm, xmlnode.text)
-            eznx.addAttributes(nx_parent, **{k: v for k, v in xmlnode.attrib.items()})
+            self.copy_attributes(xml_parent, nx_parent)
 
     def process_SASdata(self, xml_parent, nx_parent):
         '''
@@ -187,6 +187,8 @@ class canSAS1D_to_NXcanSAS(object):
         process any SAStransmission_spectrum groups
         
         These are handled similar to SASdata with different nouns
+        
+        Shouldn't this be located (in NeXus) at /NXentry/NXsample/transmission?
         '''
         nx_node_list = []
         xml_node_list = xml_parent.findall('cs:SAStransmission_spectrum', self.ns)
@@ -244,6 +246,67 @@ class canSAS1D_to_NXcanSAS(object):
 
         return nx_node_list
 
+    def process_SASsample(self, xml_parent, nx_parent):
+        '''
+        process the SASsample group, should be ONLY one
+        '''
+        nxsample = eznx.makeGroup(nx_parent, 
+                                    'sassample', 'NXsample',
+                                    canSAS_class='SASsample',
+                                    )
+        self.copy_attributes(xml_parent, nx_parent)
+        
+        details = []
+        for xmlnode in xml_parent:
+            if xmlnode.tag.endswith('}ID'):
+                if xmlnode.text is None:
+                    text = ''
+                else:
+                    text = xmlnode.text.strip()
+                eznx.makeDataset(nxsample, 'ID', text)
+            elif xmlnode.tag.endswith('}details'):
+                details.append(xmlnode.text)
+            elif xmlnode.tag.endswith('}orientation'):
+                for xml_axis_node in xmlnode:
+                    axis_name = xml_axis_node.tag.split('}')[-1]
+                    axis_value = float(xml_axis_node.text)
+                    axis_units = xml_axis_node.attrib.get('unit', 'unknown')
+                    nxpos = eznx.makeGroup(nxsample, axis_name, 'NXposition')
+                    eznx.makeDataset(nxpos, 'value', axis_value, units=axis_units)
+                    description = 'rotation about the '
+                    description += dict(roll='z', pitch='x', yaw='y')[axis_name]
+                    description += ' axis'
+                    eznx.makeDataset(nxpos, 'description', description)
+            elif xmlnode.tag.endswith('}position'):
+                for xml_axis_node in xmlnode:
+                    axis_name = xml_axis_node.tag.split('}')[-1]
+                    axis_value = float(xml_axis_node.text)
+                    axis_units = xml_axis_node.attrib.get('unit', 'unknown')
+                    nxpos = eznx.makeGroup(nxsample, axis_name, 'NXposition')
+                    eznx.makeDataset(nxpos, 'value', axis_value, units=axis_units)
+                    description = 'translation along the ' + axis_name + ' axis'
+                    eznx.makeDataset(nxpos, 'description', description)
+            elif xmlnode.tag.endswith('}thickness'):
+                eznx.makeDataset(nxsample, 
+                                 'thickness', 
+                                 float(xmlnode.text),
+                                 units=xmlnode.attrib.get('unit', 'none'))
+            elif xmlnode.tag.endswith('}transmission'):
+                eznx.makeDataset(nxsample, 
+                                 'transmission', 
+                                 float(xmlnode.text),
+                                 units=xmlnode.attrib.get('unit', 'dimensionless'))
+            elif xmlnode.tag.endswith('}temperature'):
+                eznx.makeDataset(nxsample, 
+                                 'temperature', 
+                                 float(xmlnode.text),
+                                 units=xmlnode.attrib.get('unit', 'unknown'))
+            else:
+                self.process_unexpected_xml_element(xmlnode, nxsample)
+        
+        if len(details) > 0:
+            eznx.makeDataset(nxsample, 'details', '\n'.join(details))
+
     def process_unexpected_xml_element(self, xml_parent, nx_parent):
         '''
         process any unexpected XML element
@@ -257,6 +320,12 @@ class canSAS1D_to_NXcanSAS(object):
         # But what about complexContent?  (i.e. text content AND element content?
         ns, nm = xml_parent.tag[1:].split('}')
         ds = eznx.makeDataset(nx_parent, nm, xml_parent.text, xml_namespace=ns)
+        self.copy_attributes(xml_parent, nx_parent)
+    
+    def copy_attributes(self, xml_parent, nx_parent):
+        '''
+        copy any XML attributes to the HDF5 object
+        '''
         eznx.addAttributes(nx_parent, **{k: v for k, v in xml_parent.attrib.items()})
 
 
