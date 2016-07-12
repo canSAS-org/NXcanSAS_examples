@@ -102,7 +102,7 @@ class canSAS1D_to_NXcanSAS(object):
                 elif xmlnode.tag.endswith('}SASsample'):
                     self.process_SASsample(xmlnode, nxentry)
                 elif xmlnode.tag.endswith('}SASinstrument'):
-                    pass            # TODO: SASinstrument
+                    self.process_SASinstrument(xmlnode, nxentry)
                 elif xmlnode.tag.endswith('}SASnote'):
                     pass            # TODO: SASnote
                 elif xmlnode.tag.endswith('}SASprocess'):
@@ -266,22 +266,8 @@ class canSAS1D_to_NXcanSAS(object):
                 eznx.makeDataset(nxsample, 'ID', text)
             elif xmlnode.tag.endswith('}details'):
                 details.append(xmlnode.text)
-            elif xmlnode.tag.endswith('}orientation'):
-                for xml_axis_node in xmlnode:
-                    axis_name = xml_axis_node.tag.split('}')[-1]
-                    nxpos = eznx.makeGroup(nxsample, axis_name, 'NXposition')
-                    self.field_float(xml_axis_node, nxpos, node_name='value')
-                    description = 'rotation about the '
-                    description += dict(roll='z', pitch='x', yaw='y')[axis_name]
-                    description += ' axis'
-                    eznx.makeDataset(nxpos, 'description', description)
-            elif xmlnode.tag.endswith('}position'):
-                for xml_axis_node in xmlnode:
-                    axis_name = xml_axis_node.tag.split('}')[-1]
-                    nxpos = eznx.makeGroup(nxsample, axis_name, 'NXposition')
-                    self.field_float(xml_axis_node, nxpos, node_name='value')
-                    description = 'translation along the ' + axis_name + ' axis'
-                    eznx.makeDataset(nxpos, 'description', description)
+            elif xmlnode.tag.endswith('}orientation') or xmlnode.tag.endswith('}position'):
+                self.position_or_orientation(xmlnode, nxsample)
             elif xmlnode.tag.endswith('}thickness'):
                 self.field_float(xmlnode, nxsample, default_units='none')
             elif xmlnode.tag.endswith('}transmission'):
@@ -293,6 +279,15 @@ class canSAS1D_to_NXcanSAS(object):
         
         if len(details) > 0:
             eznx.makeDataset(nxsample, 'details', '\n'.join(details))
+
+    def process_SASinstrument(self, xmlnode, nx_parent):
+        '''
+        process the SASinstrument group, should be ONLY one
+        '''
+        nxinstrument = eznx.makeGroup(nx_parent, 
+                                'sasinstrument', 'NXinstrument',
+                                canSAS_class='SASinstrument')
+        # TODO:
 
     def process_unexpected_xml_element(self, xml_parent, nx_parent):
         '''
@@ -324,19 +319,37 @@ class canSAS1D_to_NXcanSAS(object):
             nm, 
             float(xmlnode.text),
             units=xmlnode.attrib.get('unit', default_units))
+    
+    def position_or_orientation(self, xml_group, nx_parent):
+        '''
+        process a canSAS1d position or orientation group and write it to nxparent
+        '''
+        kind = xml_group.tag.split('}')[-1]
+        for xml_axis_node in xml_group:
+            axis_name = xml_axis_node.tag.split('}')[-1]
+            nxpos = eznx.makeGroup(nx_parent, axis_name, 'NXposition')
+            self.field_float(xml_axis_node, nxpos, node_name='value')
+
+            if kind == 'orientation':
+                description = 'rotation about the '
+                description += dict(roll='z', pitch='x', yaw='y')[axis_name]
+                description += ' axis'
+            else:   
+                description = 'translation along the ' + axis_name + ' axis'
+            eznx.makeDataset(nxpos, 'description', description)
 
 
 def developer():
     from spec2nexus import h5toText
     filelist = '''
-    bimodal-test1.xml
-    s81-polyurea.xml
-    1998spheres.xml
+        bimodal-test1.xml
+        s81-polyurea.xml
+        1998spheres.xml
     '''.strip().split()
-    filelist = os.listdir(os.path.join('..', 'xml'))    # TODO: what about .XML?
+    # filelist = os.listdir(os.path.join('..', 'xml'))    # TODO: what about .XML?
     # filelist = '''
-    # GLASSYC_C4G8G9_w_TL.xml
-    # samdata_WITHTX.xml
+    #     GLASSYC_C4G8G9_w_TL.xml
+    #     samdata_WITHTX.xml
     # '''.strip().split()
     for fname in filelist:
         if fname.find('cansas1d-template.xml') >= 0:
