@@ -81,12 +81,17 @@ class canSAS1D_to_NXcanSAS(object):
             nx_node_list.append(nxentry)
             eznx.makeDataset(nxentry, 'definition', 'NXcanSAS')
 
+            # process the groups that may appear more than once
             group_list = self.process_SASdata(sasentry, nxentry)
             if len(group_list) > 0:
                 default = group_list[0].name.split('/')[-1]
                 eznx.addAttributes(nxentry, default=default)
+
             self.process_Run(sasentry, nxentry)
             
+            self.process_SAStransmission_spectrum(sasentry, nxentry)
+            
+            # process any other items
             for xmlnode in sasentry:
                 if xmlnode.tag.endswith('}Title'):
                     eznx.makeDataset(nxentry, 'title', xmlnode.text)
@@ -103,16 +108,8 @@ class canSAS1D_to_NXcanSAS(object):
                 elif xmlnode.tag.endswith('}SASprocess'):
                     pass            # TODO: SASprocess
                 elif xmlnode.tag.endswith('}SAStransmission_spectrum'):
-                    pass            # TODO: SAStransmission_spectrum
+                    pass            # already handled above
                 else:
-                    # such as:
-                    '''
-                    <Run_extension xmlns="ILL-data">001</Run_extension>
-                    <Source_file xmlns="ILL-data">"g009036.001"</Source_file>
-                    <Flux_monitor xmlns="ILL-data">1.00</Flux_monitor>
-                    <Count_time_secs xmlns="ILL-data">886.200</Count_time_secs>
-                    <Q_resolution xmlns="ILL-data">"estimated"</Q_resolution>
-                    '''
                     self.process_unexpected_xml_element(xmlnode, nxentry)
 
         return nx_node_list
@@ -142,7 +139,8 @@ class canSAS1D_to_NXcanSAS(object):
             nm = sasdata.attrib.get('name', nm)
             nxdata = eznx.makeGroup(nx_parent, 
                                     utils.clean_name(nm), 'NXdata',
-                                    canSAS_class='SASdata')
+                                    canSAS_class='SASdata',
+                                    canSAS_name=nm)
             nx_node_list.append(nxdata)
             
             # collect the SAS data arrays
@@ -158,7 +156,7 @@ class canSAS1D_to_NXcanSAS(object):
                                 continue        # an XML comment triggered this
                             if tag not in data:
                                 data[tag] = []
-                                units[tag] = xmldata.get('unit', None)
+                                units[tag] = xmldata.get('unit', 'none')
                             data[tag].append(xmldata.text)
                     else:
                         raise KeyError('unexpected SASdata tag: ' + xmlnode.tag)
@@ -181,6 +179,68 @@ class canSAS1D_to_NXcanSAS(object):
                 if 'Idev' in data:
                     eznx.addAttributes(nxdata, I_uncertainty='Idev')        # canSAS
                     eznx.addAttributes(nx_obj['I'], uncertainty='Idev')     # NeXus
+
+        return nx_node_list
+
+    def process_SAStransmission_spectrum(self, xml_parent, nx_parent):
+        '''
+        process any SAStransmission_spectrum groups
+        
+        These are handled similar to SASdata with different nouns
+        '''
+        nx_node_list = []
+        xml_node_list = xml_parent.findall('cs:SAStransmission_spectrum', self.ns)
+        for i, sas_ts in enumerate(xml_node_list):
+            nm = 'transmission_spectrum'
+            if len(xml_node_list) > 1:
+                nm += '_' + str(i)
+            if nm in nx_parent:
+                print nm, ' already used!'
+            nxdata = eznx.makeGroup(nx_parent, 
+                                    utils.clean_name(nm), 'NXdata',
+                                    canSAS_class='SAStransmission_spectrum',
+                                    )
+            nm = sas_ts.attrib.get('name')
+            if nm is not None:
+                eznx.addAttributes(nxdata, name=nm)
+            nx_node_list.append(nxdata)
+
+            # collect the data arrays
+            data = {}
+            units = {}
+            for xmlnode in sas_ts:
+                try:
+                    if xmlnode.tag.endswith('}Tdata'):
+                        for xmldata in xmlnode:
+                            try:
+                                tag = xmldata.tag.split('}')[-1]
+                            except AttributeError, _exc:
+                                continue        # an XML comment triggered this
+                            if tag not in data:
+                                data[tag] = []
+                                units[tag] = xmldata.get('unit', 'none')
+                            data[tag].append(xmldata.text)
+                    else:
+                        raise KeyError('unexpected SAStransmission_spectrum tag: ' + xmlnode.tag)
+                except AttributeError, _exc:
+                    continue        # XML Comment
+            
+            # write the data arrays
+            nx_obj = {}
+            for nm, arr in data.items():
+                try:
+                    nx_obj[nm] = eznx.makeDataset(nxdata, nm, map(float, data[nm]), units=units[nm])
+                except TypeError, _exc:
+                    pass
+            
+            # set the NeXus plottable data attributes
+            if 'T' in data:
+                eznx.addAttributes(nxdata, signal='T')
+                if 'Lambda' in data:
+                    eznx.addAttributes(nxdata, T_axes='Lambda')        # NeXus
+                if 'Tdev' in data:
+                    eznx.addAttributes(nxdata, T_uncertainty='Tdev')        # canSAS
+                    eznx.addAttributes(nx_obj['T'], uncertainty='Tdev')     # NeXus
 
         return nx_node_list
 
@@ -208,6 +268,10 @@ def developer():
     1998spheres.xml
     '''.strip().split()
     filelist = os.listdir(os.path.join('..', 'xml'))    # TODO: what about .XML?
+    filelist = '''
+    GLASSYC_C4G8G9_w_TL.xml
+    samdata_WITHTX.xml
+    '''.strip().split()
     for fname in filelist:
         if fname.find('cansas1d-template.xml') >= 0:
             continue
