@@ -159,7 +159,7 @@ class canSAS1D_to_NXcanSAS(object):
                                 units[tag] = xmldata.get('unit', 'none')
                             data[tag].append(xmldata.text)
                     else:
-                        raise KeyError('unexpected SASdata tag: ' + xmlnode.tag)
+                        self.process_unexpected_xml_element(xmlnode, nxdata)
                 except AttributeError, _exc:
                     continue        # XML Comment
             
@@ -221,7 +221,7 @@ class canSAS1D_to_NXcanSAS(object):
                                 units[tag] = xmldata.get('unit', 'none')
                             data[tag].append(xmldata.text)
                     else:
-                        raise KeyError('unexpected SAStransmission_spectrum tag: ' + xmlnode.tag)
+                        self.process_unexpected_xml_element(xmlnode, nxdata)
                 except AttributeError, _exc:
                     continue        # XML Comment
             
@@ -268,10 +268,10 @@ def developer():
     1998spheres.xml
     '''.strip().split()
     filelist = os.listdir(os.path.join('..', 'xml'))    # TODO: what about .XML?
-    filelist = '''
-    GLASSYC_C4G8G9_w_TL.xml
-    samdata_WITHTX.xml
-    '''.strip().split()
+    # filelist = '''
+    # GLASSYC_C4G8G9_w_TL.xml
+    # samdata_WITHTX.xml
+    # '''.strip().split()
     for fname in filelist:
         if fname.find('cansas1d-template.xml') >= 0:
             continue
