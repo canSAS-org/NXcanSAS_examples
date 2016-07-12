@@ -272,9 +272,8 @@ class canSAS1D_to_NXcanSAS(object):
             elif xmlnode.tag.endswith('}details'):
                 details.append(xmlnode.text)
             elif xmlnode.tag.endswith('}orientation'):
-                self.axis_values(xmlnode, nxsample, '%s_axis_rotation')
+                self.axis_values(xmlnode, nxsample)
             elif xmlnode.tag.endswith('}position'):
-                # TODO: not a standard canSAS or NeXus term
                 self.axis_values(xmlnode, nxsample, '%s_position')
             elif xmlnode.tag.endswith('}thickness'):
                 self.field_float(xmlnode, nxsample, default_units='none')
@@ -356,7 +355,6 @@ class canSAS1D_to_NXcanSAS(object):
         
         Should these be NXslit instead?
         '''
-        nx_node_list = []
         xml_node_list = xml_parent.findall('cs:SAScollimation', self.ns)
         for i, sas_group in enumerate(xml_node_list):
             if isinstance(sas_group.tag, str):    # avoid XML Comments
@@ -371,21 +369,25 @@ class canSAS1D_to_NXcanSAS(object):
                                         canSAS_class='SAScollimation',
                                         canSAS_name=nm)
                 
+                # note: canSAS aperture does not map well into NXcollimator
+                # might be better under SASinstrument but this is the defined location
+                self.process_aperture(sas_group, nxcoll)
+                
                 for xmlnode in sas_group:
                     if isinstance(xmlnode.tag, str):    # avoid XML Comments
                         if xmlnode.tag.endswith('}length'):
                             ds = self.field_float(xmlnode, nxcoll)
                             comment = 'Amount/length of collimation inserted (on a SANS instrument)'
                             eznx.addAttributes(ds, comment=comment)
-                        elif xmlnode.tag.endswith('}aperture'): # 0..inf
-                            # note: canSAS aperture does not map well into NXcollimator
-                            pass    # TODO: could be NXpinhole, NXslit, or NXaperture
+                        elif xmlnode.tag.endswith('}aperture'):
+                            pass    # handled above
+                        else:
+                            self.process_unexpected_xml_element(xmlnode, nxcoll)
 
     def process_SASdetector(self, xml_parent, nx_parent):
         '''
         process any SASdetector groups
         '''
-        nx_node_list = []
         xml_node_list = xml_parent.findall('cs:SASdetector', self.ns)
         for i, sas_group in enumerate(xml_node_list):
             if isinstance(sas_group.tag, str):    # avoid XML Comments
@@ -410,7 +412,7 @@ class canSAS1D_to_NXcanSAS(object):
                         elif xmlnode.tag.endswith('}offset'):
                             self.axis_values(xmlnode, nxdetector, '%s_pixel_offset')
                         elif xmlnode.tag.endswith('}orientation'):
-                            self.axis_values(xmlnode, nxdetector, '%s_axis_rotation')
+                            self.axis_values(xmlnode, nxdetector)
                         elif xmlnode.tag.endswith('}beam_center'):
                             self.axis_values(xmlnode, nxdetector, 'beam_center_%s')
                         elif xmlnode.tag.endswith('}pixel_size'):
@@ -420,6 +422,42 @@ class canSAS1D_to_NXcanSAS(object):
                             comment = 'Slit length of the instrument for this detector, '
                             comment += 'expressed in the same units as Q'
                             eznx.addAttributes(ds, comment=comment)
+                        else:
+                            self.process_unexpected_xml_element(xmlnode, nxdetector)
+
+    def process_aperture(self, xml_parent, nx_parent):
+        '''
+        process an aperture XML element
+        '''
+        # note: canSAS aperture does not map well into NXcollimator
+        # could be NXpinhole, NXslit, or NXaperture
+        xml_node_list = xml_parent.findall('cs:aperture', self.ns)
+        for i, xml_group in enumerate(xml_node_list):
+            if isinstance(xml_group.tag, str):    # avoid XML Comments
+                nm = xml_group.attrib.get('name')
+                if nm is None:
+                    nm = 'aperture'
+                    if len(xml_node_list) > 1:
+                        nm += '_' + str(i)
+
+                # treat ALL as generic NXaperture
+                nxaperture = eznx.makeGroup(nx_parent, 
+                                        utils.clean_name(nm), 
+                                        'NXaperture', 
+                                        canSAS_class='aperture',
+                                        canSAS_name=nm)
+
+                ap_type = xml_group.attrib.get('type', 'not specified')
+                eznx.makeDataset(nxaperture, 'description', ap_type)
+
+                for xmlnode in xml_group:
+                    if isinstance(xmlnode.tag, str):
+                        if xmlnode.tag.endswith('}size'):
+                            self.axis_values(xmlnode, nxaperture, '%s_gap')
+                        elif xmlnode.tag.endswith('}distance'):
+                            self.field_float(xmlnode, nxaperture)
+                        else:
+                            self.process_unexpected_xml_element(xmlnode, nxaperture)
 
     def process_unexpected_xml_element(self, xml_parent, nx_parent):
         '''
