@@ -103,7 +103,7 @@ class canSAS1D_to_NXcanSAS(object):
                 elif xmlnode.tag.endswith('}SASprocess'):
                     pass            # TODO: SASprocess
                 elif xmlnode.tag.endswith('}SAStransmission_spectrum'):
-                    pass            # TODO: SASprocess
+                    pass            # TODO: SAStransmission_spectrum
                 else:
                     # such as:
                     '''
@@ -113,7 +113,7 @@ class canSAS1D_to_NXcanSAS(object):
                     <Count_time_secs xmlns="ILL-data">886.200</Count_time_secs>
                     <Q_resolution xmlns="ILL-data">"estimated"</Q_resolution>
                     '''
-                    raise KeyError('unexpected SASentry tag: ' + xmlnode.tag)
+                    self.process_unexpected_xml_element(xmlnode, nxentry)
 
         return nx_node_list
 
@@ -183,6 +183,21 @@ class canSAS1D_to_NXcanSAS(object):
                     eznx.addAttributes(nx_obj['I'], uncertainty='Idev')     # NeXus
 
         return nx_node_list
+
+    def process_unexpected_xml_element(self, xml_parent, nx_parent):
+        '''
+        process any unexpected XML element
+        '''
+        # TODO: is it a group or a field?  Assume field, at first.  
+        # Expected coverage>90% of usage.  This will eventually fail.
+        # BUT, need examples to show usage that to be handled.
+        # If it is a group, it should be in an NXnote
+        _field_or_group_trigger_ = xml_parent.text
+        # If _field_or_group_trigger_ is None, then xml_parent MUST be a group?
+        # But what about complexContent?  (i.e. text content AND element content?
+        ns, nm = xml_parent.tag[1:].split('}')
+        ds = eznx.makeDataset(nx_parent, nm, xml_parent.text, xml_namespace=ns)
+        eznx.addAttributes(nx_parent, **{k: v for k, v in xml_parent.attrib.items()})
 
 
 def developer():
