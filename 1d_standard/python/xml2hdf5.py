@@ -269,10 +269,8 @@ class canSAS1D_to_NXcanSAS(object):
             elif xmlnode.tag.endswith('}orientation'):
                 for xml_axis_node in xmlnode:
                     axis_name = xml_axis_node.tag.split('}')[-1]
-                    axis_value = float(xml_axis_node.text)
-                    axis_units = xml_axis_node.attrib.get('unit', 'unknown')
                     nxpos = eznx.makeGroup(nxsample, axis_name, 'NXposition')
-                    eznx.makeDataset(nxpos, 'value', axis_value, units=axis_units)
+                    self.field_float(xml_axis_node, nxpos, node_name='value')
                     description = 'rotation about the '
                     description += dict(roll='z', pitch='x', yaw='y')[axis_name]
                     description += ' axis'
@@ -280,27 +278,16 @@ class canSAS1D_to_NXcanSAS(object):
             elif xmlnode.tag.endswith('}position'):
                 for xml_axis_node in xmlnode:
                     axis_name = xml_axis_node.tag.split('}')[-1]
-                    axis_value = float(xml_axis_node.text)
-                    axis_units = xml_axis_node.attrib.get('unit', 'unknown')
                     nxpos = eznx.makeGroup(nxsample, axis_name, 'NXposition')
-                    eznx.makeDataset(nxpos, 'value', axis_value, units=axis_units)
+                    self.field_float(xml_axis_node, nxpos, node_name='value')
                     description = 'translation along the ' + axis_name + ' axis'
                     eznx.makeDataset(nxpos, 'description', description)
             elif xmlnode.tag.endswith('}thickness'):
-                eznx.makeDataset(nxsample, 
-                                 'thickness', 
-                                 float(xmlnode.text),
-                                 units=xmlnode.attrib.get('unit', 'none'))
+                self.field_float(xmlnode, nxsample, default_units='none')
             elif xmlnode.tag.endswith('}transmission'):
-                eznx.makeDataset(nxsample, 
-                                 'transmission', 
-                                 float(xmlnode.text),
-                                 units=xmlnode.attrib.get('unit', 'dimensionless'))
+                self.field_float(xmlnode, nxsample, default_units='dimensionless')
             elif xmlnode.tag.endswith('}temperature'):
-                eznx.makeDataset(nxsample, 
-                                 'temperature', 
-                                 float(xmlnode.text),
-                                 units=xmlnode.attrib.get('unit', 'unknown'))
+                self.field_float(xmlnode, nxsample, default_units='unknown')
             else:
                 self.process_unexpected_xml_element(xmlnode, nxsample)
         
@@ -327,6 +314,16 @@ class canSAS1D_to_NXcanSAS(object):
         copy any XML attributes to the HDF5 object
         '''
         eznx.addAttributes(nx_parent, **{k: v for k, v in xml_parent.attrib.items()})
+    
+    def field_float(self, xmlnode, nx_parent, node_name=None, default_units='unknown'):
+        '''
+        get a float value from xmlnode and write it to nxparent
+        '''
+        nm = node_name or xmlnode.tag.split('}')[-1]
+        eznx.makeDataset(nx_parent, 
+            nm, 
+            float(xmlnode.text),
+            units=xmlnode.attrib.get('unit', default_units))
 
 
 def developer():
