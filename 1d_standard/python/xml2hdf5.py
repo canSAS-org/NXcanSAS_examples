@@ -272,7 +272,6 @@ class canSAS1D_to_NXcanSAS(object):
             elif xmlnode.tag.endswith('}details'):
                 details.append(xmlnode.text)
             elif xmlnode.tag.endswith('}orientation'):
-                # TODO: not a standard canSAS or NeXus term
                 self.axis_values(xmlnode, nxsample, '%s_axis_rotation')
             elif xmlnode.tag.endswith('}position'):
                 # TODO: not a standard canSAS or NeXus term
@@ -411,7 +410,6 @@ class canSAS1D_to_NXcanSAS(object):
                         elif xmlnode.tag.endswith('}offset'):
                             self.axis_values(xmlnode, nxdetector, '%s_pixel_offset')
                         elif xmlnode.tag.endswith('}orientation'):
-                            # TODO: not a standard canSAS or NeXus term
                             self.axis_values(xmlnode, nxdetector, '%s_axis_rotation')
                         elif xmlnode.tag.endswith('}beam_center'):
                             self.axis_values(xmlnode, nxdetector, 'beam_center_%s')
@@ -460,13 +458,16 @@ class canSAS1D_to_NXcanSAS(object):
         '''
         copy a set of x,y,z (or roll,pitch,yaw) as floats to nx_parent
         '''
-        rotations = dict(roll='z', pitch='x', yaw='y')
+        #rotations = dict(roll='z', pitch='x', yaw='y')
+        rotations = dict(roll='polar_angle', pitch='x_axis_rotation', yaw='azimuthal_angle')
         for axisnode in xml_parent:
             if isinstance(axisnode.tag, str):
                 nm = axisnode.tag.split('}')[-1]
                 if nm in rotations:
                     nm = rotations[nm]  # name substitution for roll, pitch, and yaw
-                self.field_float(axisnode, nx_parent, node_name=template%nm)
+                else:
+                    nm = template % nm
+                self.field_float(axisnode, nx_parent, node_name=nm)
 
 
 def developer():
