@@ -160,14 +160,12 @@ class canSAS1D_to_NXcanSAS(object):
                 if isinstance(xmlnode.tag, str):    # avoid XML Comments
                     if xmlnode.tag.endswith('}Idata'):
                         for xmldata in xmlnode:
-                            try:
+                            if isinstance(xmldata.tag, str):
                                 tag = ns_strip(xmldata)
-                            except AttributeError, _exc:
-                                continue        # an XML comment triggered this
-                            if tag not in data:
-                                data[tag] = []
-                                units[tag] = xmldata.get('unit', 'none')
-                            data[tag].append(xmldata.text)
+                                if tag not in data:
+                                    data[tag] = []
+                                    units[tag] = xmldata.get('unit', 'none')
+                                data[tag].append(xmldata.text)
                     else:
                         self.process_unexpected_xml_element(xmlnode, nxdata)
             
@@ -175,7 +173,10 @@ class canSAS1D_to_NXcanSAS(object):
             nx_obj = {}
             for nm, arr in data.items():
                 try:
-                    nx_obj[nm] = eznx.makeDataset(nxdata, nm, map(float, data[nm]), units=units[nm])
+                    nx_obj[nm] = eznx.makeDataset(nxdata, 
+                                                  nm, 
+                                                  map(float, data[nm]), 
+                                                  units=units[nm])
                 except TypeError, _exc:
                     pass
             
@@ -187,6 +188,39 @@ class canSAS1D_to_NXcanSAS(object):
                 if 'Idev' in data:
                     eznx.addAttributes(nxdata, I_uncertainty='Idev')        # canSAS
                     eznx.addAttributes(nx_obj['I'], uncertainty='Idev')     # NeXus
+                if 'Qdev' in data:
+                    eznx.addAttributes(nx_obj['Q'], uncertainty='Qdev')     # NeXus
+                if 'dQw' in data and 'dQl' in data: # not a common occurrence
+                    # consider: Qdev or dQw & dQl
+                    # http://cansas-org.github.io/canSAS2012/notation.html?highlight=uncertainty
+                    nx_components = eznx.makeGroup(nxdata, 
+                                                   'Q_uncertainties', 
+                                                   'NXparameters')
+                    eznx.makeDataset(nx_components, 
+                                                  'description', 
+                                                  'both dQw and dQl contribute to the Q uncertainty')
+                    if 'Qdev' in data:  # not very likely, the canSAS1d rules say no to this option
+                        ref = nx_obj['Qdev']
+                        del nx_obj['dQw']       # how to *move* instead?
+                        nx_obj['dQw'] = eznx.makeDataset(nx_components, 
+                                                  'dQw', 
+                                                  map(float, data['dQw']), 
+                                                  units=units['dQw'])
+                    else:
+                        # choose dQw or dQl at the top level
+                        # move the other to the "Q_uncertainties" subgroup
+                        ref = nx_obj['dQw']
+                    del nx_obj['dQl']           # how to *move* instead?
+                    nx_obj['dQl'] = eznx.makeDataset(nx_components, 
+                                              'dQl', 
+                                              map(float, data['dQl']), 
+                                              units=units['dQl'],
+                                              basis='as-reported',
+                                              used_with=nx_obj['dQw'].name)
+                    eznx.addAttributes(ref, components='Q_uncertainties')     # NeXus
+                    eznx.addAttributes(nx_obj['dQw'],                         # canSAS
+                                       basis='as-reported',
+                                       used_with=nx_obj['dQl'].name)
 
         return nx_node_list
 
@@ -264,7 +298,7 @@ class canSAS1D_to_NXcanSAS(object):
                                     )
         self.copy_attributes(xml_parent, nx_parent)
         
-        details = []
+        details = []    # report all *details* in a single multi-line string
         for xmlnode in xml_parent:
             if xmlnode.tag.endswith('}ID'):
                 if xmlnode.text is None:
@@ -272,18 +306,18 @@ class canSAS1D_to_NXcanSAS(object):
                 else:
                     text = xmlnode.text.strip()
                 eznx.makeDataset(nxsample, 'ID', text)
-            elif xmlnode.tag.endswith('}details'):
-                details.append(xmlnode.text)
-            elif xmlnode.tag.endswith('}orientation'):
-                self.axis_values(xmlnode, nxsample)
-            elif xmlnode.tag.endswith('}position'):
-                self.axis_values(xmlnode, nxsample, '%s_position')
             elif xmlnode.tag.endswith('}thickness'):
                 self.field_float(xmlnode, nxsample, default_units='none')
             elif xmlnode.tag.endswith('}transmission'):
                 self.field_float(xmlnode, nxsample, default_units='dimensionless')
             elif xmlnode.tag.endswith('}temperature'):
                 self.field_float(xmlnode, nxsample, default_units='unknown')
+            elif xmlnode.tag.endswith('}position'):
+                self.axis_values(xmlnode, nxsample, '%s_position')
+            elif xmlnode.tag.endswith('}orientation'):
+                self.axis_values(xmlnode, nxsample)
+            elif xmlnode.tag.endswith('}details'):
+                details.append(xmlnode.text)
             else:
                 self.process_unexpected_xml_element(xmlnode, nxsample)
         
@@ -301,7 +335,7 @@ class canSAS1D_to_NXcanSAS(object):
                                     canSAS_class='SASinstrument',
                                     canSAS_name=nm)
         
-        # multiple occurrences
+        # process the groups that may appear more than once
         self.process_SAScollimation(sasinstrument, nxinstrument)
         self.process_SASdetector(sasinstrument, nxinstrument)
         
@@ -327,6 +361,7 @@ class canSAS1D_to_NXcanSAS(object):
                                   'NXsource', 
                                   canSAS_class='SASsource',
                                   canSAS_name=nm)
+
         for xmlnode in sassource:
             if isinstance(xmlnode.tag, str):    # avoid XML Comments
                 if xmlnode.tag.endswith('}radiation'):
@@ -404,6 +439,7 @@ class canSAS1D_to_NXcanSAS(object):
                                         'NXdetector', 
                                         canSAS_class='SASdetector',
                                         canSAS_name=nm)
+
                 for xmlnode in sas_group:
                     if isinstance(xmlnode.tag, str):    # avoid XML Comments
                         if xmlnode.tag.endswith('}name'):
@@ -413,7 +449,7 @@ class canSAS1D_to_NXcanSAS(object):
                             comment = 'Distance between sample and detector'
                             eznx.addAttributes(ds, comment=comment)
                         elif xmlnode.tag.endswith('}offset'):
-                            self.axis_values(xmlnode, nxdetector, '%s_pixel_offset')
+                            self.axis_values(xmlnode, nxdetector, '%s_position')
                         elif xmlnode.tag.endswith('}orientation'):
                             self.axis_values(xmlnode, nxdetector)
                         elif xmlnode.tag.endswith('}beam_center'):
@@ -450,8 +486,8 @@ class canSAS1D_to_NXcanSAS(object):
                                         canSAS_class='aperture',
                                         canSAS_name=nm)
 
-                ap_type = xml_group.attrib.get('type', 'not specified')
-                eznx.makeDataset(nxaperture, 'description', ap_type)
+                shape = xml_group.attrib.get('type', 'not specified')
+                eznx.makeDataset(nxaperture, 'shape', shape)
 
                 for xmlnode in xml_group:
                     if isinstance(xmlnode.tag, str):
@@ -461,24 +497,6 @@ class canSAS1D_to_NXcanSAS(object):
                             self.field_float(xmlnode, nxaperture)
                         else:
                             self.process_unexpected_xml_element(xmlnode, nxaperture)
-
-    def process_SASnote(self, xml_parent, nx_parent):
-        '''
-        process any SASnote groups
-        '''
-        xml_node_list = xml_parent.findall('cs:SASnote', self.ns)
-        for i, xml_group in enumerate(xml_node_list):
-            nm = 'sasnote'
-            if len(xml_node_list) > 1:
-                nm += '_' + str(i)
-            nm = xml_group.attrib.get('name', nm)
-            nxnote = eznx.makeGroup(nx_parent, 
-                                    utils.clean_name(nm), 
-                                    'NXnote',
-                                    canSAS_class='SASnote',
-                                    canSAS_name=nm)
-            
-            self.process_collection_group(xml_group, nxnote)
 
     def process_SASprocess(self, xml_parent, nx_parent):
         '''
@@ -495,6 +513,7 @@ class canSAS1D_to_NXcanSAS(object):
                                     'NXprocess',
                                     canSAS_class='SASprocess',
                                     canSAS_name=nm)
+
             term_counter = 0
             for xmlnode in xml_group:
                 if isinstance(xmlnode.tag, str):
@@ -502,6 +521,16 @@ class canSAS1D_to_NXcanSAS(object):
                         self.field_text(xmlnode, nxprocess)
                     elif xmlnode.tag.endswith('}date'):
                         # TODO: test for ISO-8601?
+                        # need to convert from arbitrary representations
+                        # 01-DEC-2008 04:30:25
+                        # 1-Jul-1998 14:57:37
+                        # 04-Sep-2007 18:12:27
+                        # Tue, May 20, 2008  1:39:23 PM
+                        # Tue, Aug 21, 2007
+                        # 1999-01-04 20:15:45
+                        # 1999-01-04T20:15:45
+                        self.field_text(xmlnode, nxprocess)
+                    elif xmlnode.tag.endswith('}description'):
                         self.field_text(xmlnode, nxprocess)
                     elif xmlnode.tag.endswith('}term'):
                         nm = 'term_'+str(term_counter)
@@ -531,12 +560,31 @@ class canSAS1D_to_NXcanSAS(object):
             nm = xml_group.attrib.get('name', nm)
             nxprocessnote = eznx.makeGroup(nx_parent, 
                                     utils.clean_name(nm), 
-                                    'NXcollection',
+                                    'NXnote',
                                     canSAS_class='SASprocessnote',
                                     canSAS_name=nm)
+
             self.copy_attributes(xml_group, nxprocessnote)
             
             self.process_collection_group(xml_group, nxprocessnote)
+
+    def process_SASnote(self, xml_parent, nx_parent):
+        '''
+        process any SASnote groups
+        '''
+        xml_node_list = xml_parent.findall('cs:SASnote', self.ns)
+        for i, xml_group in enumerate(xml_node_list):
+            nm = 'sasnote'
+            if len(xml_node_list) > 1:
+                nm += '_' + str(i)
+            nm = xml_group.attrib.get('name', nm)
+            nxnote = eznx.makeGroup(nx_parent, 
+                                    utils.clean_name(nm), 
+                                    'NXnote',
+                                    canSAS_class='SASnote',
+                                    canSAS_name=nm)
+            
+            self.process_collection_group(xml_group, nxnote)
 
     def process_unexpected_xml_element(self, xml_parent, nx_parent):
         '''
