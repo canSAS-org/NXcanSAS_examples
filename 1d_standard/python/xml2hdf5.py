@@ -727,9 +727,18 @@ def developer():
 
 def main():
     '''
-    standard command line interface
+    simple command line interface
     '''
+    if len(sys.argv) == 1:
+        print 'usage: xml2hdf5 xmlfile [xmlfile [xmlfile [...]]]'
+    else:
+        for xmlFile in sys.argv[1:]:
+            converter = canSAS1D_to_NXcanSAS()
+            converter.open_XML(xmlFile)
+            hdf5File = os.path.splitext(xmlFile)[0] + '.h5'
+            converter.write_HDF5(hdf5File)
 
 
 if __name__ == "__main__":
-    developer()
+    #developer()
+    main()
