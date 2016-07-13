@@ -659,7 +659,6 @@ def ns_strip(xmlnode):
 def developer():
     from spec2nexus import h5toText
     filelist = os.listdir(os.path.join('..', 'xml'))
-    filelist += os.listdir(os.path.join('..', 'XML'))
     for fname in filelist:
         if fname.find('cansas1d-template.xml') >= 0:
             continue
