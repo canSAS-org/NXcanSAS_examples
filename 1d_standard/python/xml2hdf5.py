@@ -504,15 +504,14 @@ class canSAS1D_to_NXcanSAS(object):
                         # TODO: test for ISO-8601?
                         self.field_text(xmlnode, nxprocess)
                     elif xmlnode.tag.endswith('}term'):
-                        # nm = xmlnode.attrib.get('name', 'term_'+str(term_counter))
                         nm = 'term_'+str(term_counter)
+                        term_counter += 1
                         ds = self.field_text(xmlnode, nxprocess, node_name=nm)
                         self.copy_attributes(xmlnode, ds)
                         units = xmlnode.attrib.get('unit')
                         if units is not None:
                             eznx.addAttributes(ds, units=units)
                             del ds.attrs['unit']    # remove the canSAS singular name
-                        term_counter += 1
                     elif xmlnode.tag.endswith('}SASprocessnote'):
                         pass    # handled below
                     else:
@@ -566,7 +565,7 @@ class canSAS1D_to_NXcanSAS(object):
         get the text from xmlnode and write it to nxparent
         '''
         nm = node_name or ns_strip(xmlnode)
-        if nm not in nx_parent:     # TODO: need to ensure nm is unique (cs_af1410 "author" tags)
+        if nm not in nx_parent:
             ds = eznx.makeDataset(nx_parent, nm, (xmlnode.text or '').strip())
             return ds
     
@@ -608,33 +607,19 @@ class canSAS1D_to_NXcanSAS(object):
         '''
         if len(xml_parent) == 0: # just a text field, don't assume it is a number
             tag = ns_strip(xml_parent)
-            nm = tag
-            same_node_count = len(xml_parent.getparent().findall('cs:'+tag, self.ns))
-            if same_node_count > 1: # all names in an HDF5 group must be unique
-                for i in range(same_node_count):
-                    nm = tag + '_' + str(i)
-                    if nm not in nx_parent: # find a unique name
-                        break
-
+            nm = self.unique_hdf5_name(nx_parent, xml_parent, tag)
             ds = self.field_text(xml_parent, nx_parent, node_name=nm)
             if ds is not None:
                 eznx.addAttributes(ds, tag = tag)
                 self.copy_attributes(xml_parent, nx_parent)
         else:
-            counter = 0
             for xmlnode in xml_parent:
                 if len(xmlnode) == 0:
                     self.process_collection_group(xmlnode, nx_parent)
                 else:
                     tag = ns_strip(xmlnode)
-                    if tag not in nx_parent:
-                        nm = tag
-                    else:
-                        nm = 'item'
-                        if len(xml_parent) > 1:
-                            nm += '_' + str(counter)
-                            counter += 1
-                        nm = xmlnode.attrib.get('name', nm)
+                    nm = xmlnode.attrib.get('name', tag)
+                    nm = self.unique_hdf5_name(nx_parent, xmlnode, nm)
                     nxgroup = eznx.makeGroup(nx_parent, 
                                             utils.clean_name(nm), 
                                             'NXcollection',
@@ -642,6 +627,19 @@ class canSAS1D_to_NXcanSAS(object):
                     self.copy_attributes(xmlnode, nxgroup)
                     eznx.addAttributes(nxgroup, tag=tag)
                     self.process_collection_group(xmlnode, nxgroup)
+    
+    def unique_hdf5_name(self, nx_parent, xml_node, suggested_name):
+        '''
+        ensure a unique HDF5 name is chosen for use in the nx_parent group
+        '''
+        nm = suggested_name
+        same_node_count = len(xml_node.getparent().findall('cs:'+suggested_name, self.ns))
+        if same_node_count > 1: # all names in an HDF5 group must be unique
+            for i in range(same_node_count):
+                nm = suggested_name + '_' + str(i)
+                if nm not in nx_parent: # find a unique name
+                    break
+        return nm
 
 
 def ns_split(xmlnode):
