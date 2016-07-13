@@ -658,26 +658,14 @@ def ns_strip(xmlnode):
 
 def developer():
     from spec2nexus import h5toText
-    filelist = '''
-        bimodal-test1.xml
-        s81-polyurea.xml
-        1998spheres.xml
-    '''.strip().split()
-    filelist = os.listdir(os.path.join('..', 'xml'))    # TODO: what about .XML?
-    # filelist = '''
-    #     GLASSYC_C4G8G9_w_TL.xml
-    #     s81-polyurea.xml
-    # '''.strip().split()
-    # filelist = '''
-    #     bimodal-test1.xml
-    #     cs_af1410.xml
-    # '''.strip().split()
+    filelist = os.listdir(os.path.join('..', 'xml'))
+    filelist += os.listdir(os.path.join('..', 'XML'))
     for fname in filelist:
         if fname.find('cansas1d-template.xml') >= 0:
             continue
         if fname.find('cansas1d.xml') >= 0:
             continue
-        if fname.endswith('.xml'):
+        if fname.lower().endswith('.xml'):
             xmlFile = os.path.join('..', 'xml', fname)
             converter = canSAS1D_to_NXcanSAS()
             converter.open_XML(xmlFile)
