@@ -98,7 +98,7 @@ class canSAS1D_to_NXcanSAS(object):
             self.process_Run(sasentry, nxentry)
             self.process_SAStransmission_spectrum(sasentry, nxentry)
             self.process_SASprocess(sasentry, nxentry)
-            # TODO: self.process_SASnote(sasentry, nxentry)
+            self.process_SASnote(sasentry, nxentry)
             
             # process any other items
             for xmlnode in sasentry:
@@ -462,6 +462,22 @@ class canSAS1D_to_NXcanSAS(object):
                         else:
                             self.process_unexpected_xml_element(xmlnode, nxaperture)
 
+    def process_SASnote(self, xml_parent, nx_parent):
+        '''
+        process any SASnote groups
+        '''
+        xml_node_list = xml_parent.findall('cs:SASnote', self.ns)
+        for i, xml_group in enumerate(xml_node_list):
+            nm = 'sasnote'
+            if len(xml_node_list) > 1:
+                nm += '_' + str(i)
+            nm = xml_group.attrib.get('name', nm)
+            nxprocess = eznx.makeGroup(nx_parent, 
+                                    utils.clean_name(nm), 
+                                    'NXnote',
+                                    canSAS_class='SASnote',
+                                    canSAS_name=nm)
+
     def process_SASprocess(self, xml_parent, nx_parent):
         '''
         process any SASprocess groups
@@ -630,9 +646,13 @@ def developer():
         1998spheres.xml
     '''.strip().split()
     # filelist = os.listdir(os.path.join('..', 'xml'))    # TODO: what about .XML?
+    # filelist = '''
+    #     GLASSYC_C4G8G9_w_TL.xml
+    #     s81-polyurea.xml
+    # '''.strip().split()
     filelist = '''
-        GLASSYC_C4G8G9_w_TL.xml
-        s81-polyurea.xml
+        bimodal-test1.xml
+        cs_af1410.xml
     '''.strip().split()
     for fname in filelist:
         if fname.find('cansas1d-template.xml') >= 0:
