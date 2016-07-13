@@ -472,11 +472,13 @@ class canSAS1D_to_NXcanSAS(object):
             if len(xml_node_list) > 1:
                 nm += '_' + str(i)
             nm = xml_group.attrib.get('name', nm)
-            nxprocess = eznx.makeGroup(nx_parent, 
+            nxnote = eznx.makeGroup(nx_parent, 
                                     utils.clean_name(nm), 
                                     'NXnote',
                                     canSAS_class='SASnote',
                                     canSAS_name=nm)
+            
+            self.process_collection_group(xml_group, nxnote)
 
     def process_SASprocess(self, xml_parent, nx_parent):
         '''
@@ -564,8 +566,9 @@ class canSAS1D_to_NXcanSAS(object):
         get the text from xmlnode and write it to nxparent
         '''
         nm = node_name or ns_strip(xmlnode)
-        ds = eznx.makeDataset(nx_parent, nm, (xmlnode.text or '').strip())
-        return ds
+        if nm not in nx_parent:     # TODO: need to ensure nm is unique (cs_af1410 "author" tags)
+            ds = eznx.makeDataset(nx_parent, nm, (xmlnode.text or '').strip())
+            return ds
     
     def field_float(self, xmlnode, nx_parent, node_name=None, default_units='unknown'):
         '''
@@ -603,25 +606,42 @@ class canSAS1D_to_NXcanSAS(object):
         But, it's more consistent to stay in NeXus structures,
         so nest NXcollections.
         '''
-        # FIXME: too many nested levels for s81_polyurea
         if len(xml_parent) == 0: # just a text field, don't assume it is a number
-            ds = self.field_text(xml_parent, nx_parent, 'text')
-            eznx.addAttributes(ds, tag = ns_strip(xml_parent))
-            self.copy_attributes(xml_parent, nx_parent)
+            tag = ns_strip(xml_parent)
+            nm = tag
+            same_node_count = len(xml_parent.getparent().findall('cs:'+tag, self.ns))
+            if same_node_count > 1: # all names in an HDF5 group must be unique
+                for i in range(same_node_count):
+                    nm = tag + '_' + str(i)
+                    if nm not in nx_parent: # find a unique name
+                        break
+
+            ds = self.field_text(xml_parent, nx_parent, node_name=nm)
+            if ds is not None:
+                eznx.addAttributes(ds, tag = tag)
+                self.copy_attributes(xml_parent, nx_parent)
         else:
             counter = 0
             for xmlnode in xml_parent:
-                nm = 'item'
-                if len(xml_parent) > 1:
-                    nm += '_' + str(counter)
-                    counter += 1
-                nm = xmlnode.attrib.get('name', nm)
-                nxgroup = eznx.makeGroup(nx_parent, 
-                                        utils.clean_name(nm), 
-                                        'NXcollection',
-                                        canSAS_name=nm)
-                self.copy_attributes(xmlnode, nxgroup)
-                self.process_collection_group(xmlnode, nxgroup)
+                if len(xmlnode) == 0:
+                    self.process_collection_group(xmlnode, nx_parent)
+                else:
+                    tag = ns_strip(xmlnode)
+                    if tag not in nx_parent:
+                        nm = tag
+                    else:
+                        nm = 'item'
+                        if len(xml_parent) > 1:
+                            nm += '_' + str(counter)
+                            counter += 1
+                        nm = xmlnode.attrib.get('name', nm)
+                    nxgroup = eznx.makeGroup(nx_parent, 
+                                            utils.clean_name(nm), 
+                                            'NXcollection',
+                                            canSAS_name=nm)
+                    self.copy_attributes(xmlnode, nxgroup)
+                    eznx.addAttributes(nxgroup, tag=tag)
+                    self.process_collection_group(xmlnode, nxgroup)
 
 
 def ns_split(xmlnode):
@@ -645,15 +665,15 @@ def developer():
         s81-polyurea.xml
         1998spheres.xml
     '''.strip().split()
-    # filelist = os.listdir(os.path.join('..', 'xml'))    # TODO: what about .XML?
+    filelist = os.listdir(os.path.join('..', 'xml'))    # TODO: what about .XML?
     # filelist = '''
     #     GLASSYC_C4G8G9_w_TL.xml
     #     s81-polyurea.xml
     # '''.strip().split()
-    filelist = '''
-        bimodal-test1.xml
-        cs_af1410.xml
-    '''.strip().split()
+    # filelist = '''
+    #     bimodal-test1.xml
+    #     cs_af1410.xml
+    # '''.strip().split()
     for fname in filelist:
         if fname.find('cansas1d-template.xml') >= 0:
             continue
