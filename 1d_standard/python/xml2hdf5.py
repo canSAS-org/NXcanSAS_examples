@@ -78,9 +78,12 @@ class canSAS1D_to_NXcanSAS(object):
         process any SASentry groups
         '''
         nx_node_list = []
-        x_groups = xml_parent.findall('cs:SASentry', self.ns)
-        for i, sasentry in enumerate(x_groups):
-            nm = sasentry.attrib.get('name', 'sasentry_'+str(i))
+        xml_node_list = xml_parent.findall('cs:SASentry', self.ns)
+        for i, sasentry in enumerate(xml_node_list):
+            nm = 'sasentry'
+            if len(xml_node_list) > 1:
+                nm += '_' + str(i)
+            nm = sasentry.attrib.get('name', nm)
             nxentry = eznx.makeGroup(nx_parent, 
                                         utils.clean_name(nm), 
                                         'NXentry',
@@ -130,7 +133,7 @@ class canSAS1D_to_NXcanSAS(object):
         xml_node_list = xml_parent.findall('cs:Run', self.ns)
         for i, xmlnode in enumerate(xml_node_list):
             nm = 'run'
-            if len(xml_node_list) > 0:
+            if len(xml_node_list) > 1:
                 nm += '_' + str(i)
             ds = eznx.makeDataset(nx_parent, nm, xmlnode.text)
             self.copy_attributes(xml_parent, ds)
