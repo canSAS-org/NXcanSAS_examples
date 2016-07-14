@@ -196,34 +196,35 @@ class canSAS1D_to_NXcanSAS(object):
                 if 'dQw' in data and 'dQl' in data: # not a common occurrence
                     # consider: Qdev or dQw & dQl
                     # http://cansas-org.github.io/canSAS2012/notation.html?highlight=uncertainty
-                    nx_components = eznx.makeGroup(nxdata, 
-                                                   'Q_uncertainties', 
-                                                   'NXparameters')
-                    eznx.makeDataset(nx_components, 
-                                                  'description', 
-                                                  'both dQw and dQl contribute to the Q uncertainty')
-                    if 'Qdev' in data:  # not very likely, the canSAS1d rules say no to this option
-                        ref = nx_obj['Qdev']
-                        del nx_obj['dQw']       # how to *move* instead?
-                        nx_obj['dQw'] = eznx.makeDataset(nx_components, 
-                                                  'dQw', 
-                                                  map(float, data['dQw']), 
-                                                  units=units['dQw'])
-                    else:
-                        # choose dQw or dQl at the top level
-                        # move the other to the "Q_uncertainties" subgroup
-                        ref = nx_obj['dQw']
-                    del nx_obj['dQl']           # how to *move* instead?
-                    nx_obj['dQl'] = eznx.makeDataset(nx_components, 
-                                              'dQl', 
-                                              map(float, data['dQl']), 
-                                              units=units['dQl'],
-                                              basis='as-reported',
-                                              used_with=nx_obj['dQw'].name)
-                    eznx.addAttributes(ref, components='Q_uncertainties')     # NeXus
-                    eznx.addAttributes(nx_obj['dQw'],                         # canSAS
-                                       basis='as-reported',
-                                       used_with=nx_obj['dQl'].name)
+                    # ----------------------------------
+                    # skip this code, it is awkward and misleading
+                    # instead, leave dQw & dQl where they are and do not set "Q/@uncertainty attribute
+                    if False:
+                        eznx.makeDataset(nx_components, 
+                                                      'description', 
+                                                      'both dQw and dQl contribute to the Q uncertainty')
+                        if 'Qdev' in data:  # not very likely, the canSAS1d rules say no to this option
+                            ref = nx_obj['Qdev']
+                            del nx_obj['dQw']       # how to *move* instead?
+                            nx_obj['dQw'] = eznx.makeDataset(nx_components, 
+                                                      'dQw', 
+                                                      map(float, data['dQw']), 
+                                                      units=units['dQw'])
+                        else:
+                            # choose dQw or dQl at the top level
+                            # move the other to the "Q_uncertainties" subgroup
+                            ref = nx_obj['dQw']
+                        del nx_obj['dQl']           # how to *move* instead?
+                        nx_obj['dQl'] = eznx.makeDataset(nx_components, 
+                                                  'dQl', 
+                                                  map(float, data['dQl']), 
+                                                  units=units['dQl'],
+                                                  basis='as-reported',
+                                                  used_with=nx_obj['dQw'].name)
+                        eznx.addAttributes(ref, components='Q_uncertainties')     # NeXus
+                        eznx.addAttributes(nx_obj['dQw'],                         # canSAS
+                                           basis='as-reported',
+                                           used_with=nx_obj['dQl'].name)
 
         return nx_node_list
 
