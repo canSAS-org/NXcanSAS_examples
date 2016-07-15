@@ -257,8 +257,8 @@ class canSAS1D_to_NXcanSAS(object):
                 if 'Lambda' in data:
                     eznx.addAttributes(nxdata, T_axes='Lambda')        # NeXus
                 if 'Tdev' in data:
-                    eznx.addAttributes(nxdata, T_uncertainty='Tdev')        # canSAS
-                    eznx.addAttributes(nx_obj['T'], uncertainty='Tdev')     # NeXus
+                    eznx.addAttributes(nxdata, T_uncertainties='Tdev')        # canSAS
+                    eznx.addAttributes(nx_obj['T'], uncertainties='Tdev')     # NeXus
 
         return nx_node_list
 
