@@ -1,0 +1,967 @@
+C:\Users\Pete\Documents\eclipse\canSAS\NXcanSAS_examples\1d_standard\cs_af1410.h5 : NeXus data file
+  @creator = xml2hdf5.py
+  @default = AF1410_10
+  AF1410_10:NXentry
+    @NX_class = NXentry
+    @canSAS_name = AF1410:10
+    @canSAS_class = SASentry
+    @default = AF1410_a10
+    definition:NX_CHAR[8] = NXcanSAS
+    run_0:NX_CHAR[14] = nuclear sector
+      @name = AF1410:10
+    run_1:NX_CHAR[23] = nuclear+magnetic sector
+      @name = AF1410:10
+    title:NX_CHAR[34] = AF1410-10 (AF1410 steel aged 10 h)
+    AF1410_a10:NXdata
+      @NX_class = NXdata
+      @canSAS_name = AF1410-a10
+      @canSAS_class = SASdata
+      @signal = I
+      @I_axes = Q
+      @I_uncertainties = Idev
+      I:NX_FLOAT64[77] = [78.270004299999997, 64.069999699999997, 56.179996500000001, '...', 0.25723000000000001]
+        @units = 1/cm
+        @uncertainties = Idev
+      Idev:NX_FLOAT64[77] = [2.4307406, 1.930518, 1.2294164999999999, '...', 0.016974699999999999]
+        @units = 1/cm
+      Q:NX_FLOAT64[77] = [0.016514000000000001, 0.017675, 0.018964999999999999, '...', 0.10441]
+        @units = 1/A
+    AF1410_b10:NXdata
+      @NX_class = NXdata
+      @canSAS_name = AF1410-b10
+      @canSAS_class = SASdata
+      @signal = I
+      @I_axes = Q
+      @I_uncertainties = Idev
+      I:NX_FLOAT64[76] = [122.98999790000001, 100.8500061, 83.160003700000004, '...', 0.25972000000000001]
+        @units = 1/cm
+        @uncertainties = Idev
+      Idev:NX_FLOAT64[76] = [3.6677648999999999, 2.7151611, 1.930518, '...', 0.016640599999999998]
+        @units = 1/cm
+      Q:NX_FLOAT64[76] = [0.016514000000000001, 0.017675, 0.018964999999999999, '...', 0.10236000000000001]
+        @units = 1/A
+    sasinstrument:NXinstrument
+      @NX_class = NXinstrument
+      @canSAS_name = sasinstrument
+      @canSAS_class = SASinstrument
+      name:NX_CHAR[14] = NIST/CNRF SANS
+      sascollimation:NXcollimator
+        @NX_class = NXcollimator
+        @canSAS_name = sascollimation
+        @canSAS_class = SAScollimation
+      sasdetector:NXdetector
+        @NX_class = NXdetector
+        @canSAS_name = sasdetector
+        @canSAS_class = SASdetector
+        name:NX_CHAR[4] = area
+      sassource:NXsource
+        @NX_class = NXsource
+        @canSAS_name = sassource
+        @canSAS_class = SASsource
+        incident_wavelength:NX_FLOAT64 = 0.85
+          @units = nm
+        radiation:NX_CHAR[7] = neutron
+        wavelength_spread:NX_FLOAT64 = 25.0
+          @units = percent
+    sasnote:NXnote
+      @NX_class = NXnote
+      @canSAS_name = sasnote
+      @canSAS_class = SASnote
+      citation:NXcollection
+        @NX_class = NXcollection
+        @canSAS_name = citation
+        @tag = citation
+        journal:NX_CHAR[11] = Acta Metall
+          @tag = journal
+        pages:NX_CHAR[9] = 1869-1884
+          @tag = pages
+        title:NX_CHAR[92] = Small-Angle Neutron Scattering Studies of Carbide Precipitation in Ultrahigh-Strength Steels
+          @tag = title
+        volume:NX_CHAR[2] = 41
+          @tag = volume
+        year:NX_CHAR[4] = 1993
+          @tag = year
+        authors:NXcollection
+          @NX_class = NXcollection
+          @canSAS_name = authors
+          @tag = authors
+          author_0:NX_CHAR[10] = A.J. Allen
+            @tag = author
+          author_1:NX_CHAR[11] = D. Gavillet
+            @tag = author
+          author_2:NX_CHAR[13] = J.R. Weertman
+            @tag = author
+    sassample:NXsample
+      @NX_class = NXsample
+      @canSAS_name = sassample
+      @canSAS_class = SASsample
+      ID:NX_CHAR[34] = AF1410-10 (AF1410 steel aged 10 h)
+      details:NX_CHAR[128] = 
+        transverse saturation magnetic field (1.6 T) applied in horizontal direction to clear magnetic domain scattering
+      
+  AF1410_1h:NXentry
+    @NX_class = NXentry
+    @canSAS_name = AF1410:1h
+    @canSAS_class = SASentry
+    @default = AF1410_a1h
+    definition:NX_CHAR[8] = NXcanSAS
+    run_0:NX_CHAR[14] = nuclear sector
+      @name = AF1410:1h
+    run_1:NX_CHAR[23] = nuclear+magnetic sector
+      @name = AF1410:1h
+    title:NX_CHAR[33] = AF1410-1h (AF1410 steel aged 1 h)
+    AF1410_a1h:NXdata
+      @NX_class = NXdata
+      @canSAS_name = AF1410-a1h
+      @canSAS_class = SASdata
+      @signal = I
+      @I_axes = Q
+      @I_uncertainties = Idev
+      I:NX_FLOAT64[76] = [33.666000400000001, 28.5240002, 23.7290001, '...', 0.092268000000000003]
+        @units = 1/cm
+        @uncertainties = Idev
+      Idev:NX_FLOAT64[76] = [1.1689179000000001, 0.90444290000000005, 0.83530590000000005, '...', 0.028739600000000001]
+        @units = 1/cm
+      Q:NX_FLOAT64[76] = [0.016514000000000001, 0.017675, 0.018964999999999999, '...', 0.10634]
+        @units = 1/A
+    AF1410_b1h:NXdata
+      @NX_class = NXdata
+      @canSAS_name = AF1410-b1h
+      @canSAS_class = SASdata
+      @signal = I
+      @I_axes = Q
+      @I_uncertainties = Idev
+      I:NX_FLOAT64[70] = [67.240005499999995, 55.170001999999997, 44.450000799999998, '...', 0.19348000000000001]
+        @units = 1/cm
+        @uncertainties = Idev
+      Idev:NX_FLOAT64[70] = [1.8275404, 1.6515716, 0.92993119999999996, '...', 0.017546099999999999]
+        @units = 1/cm
+      Q:NX_FLOAT64[70] = [0.016514000000000001, 0.017675, 0.018964999999999999, '...', 0.098237000000000005]
+        @units = 1/A
+    sasinstrument:NXinstrument
+      @NX_class = NXinstrument
+      @canSAS_name = sasinstrument
+      @canSAS_class = SASinstrument
+      name:NX_CHAR[14] = NIST/CNRF SANS
+      sascollimation:NXcollimator
+        @NX_class = NXcollimator
+        @canSAS_name = sascollimation
+        @canSAS_class = SAScollimation
+      sasdetector:NXdetector
+        @NX_class = NXdetector
+        @canSAS_name = sasdetector
+        @canSAS_class = SASdetector
+        name:NX_CHAR[4] = area
+      sassource:NXsource
+        @NX_class = NXsource
+        @canSAS_name = sassource
+        @canSAS_class = SASsource
+        incident_wavelength:NX_FLOAT64 = 0.85
+          @units = nm
+        radiation:NX_CHAR[7] = neutron
+        wavelength_spread:NX_FLOAT64 = 25.0
+          @units = percent
+    sasnote:NXnote
+      @NX_class = NXnote
+      @canSAS_name = sasnote
+      @canSAS_class = SASnote
+      citation:NXcollection
+        @NX_class = NXcollection
+        @canSAS_name = citation
+        @tag = citation
+        journal:NX_CHAR[11] = Acta Metall
+          @tag = journal
+        pages:NX_CHAR[9] = 1869-1884
+          @tag = pages
+        title:NX_CHAR[92] = Small-Angle Neutron Scattering Studies of Carbide Precipitation in Ultrahigh-Strength Steels
+          @tag = title
+        volume:NX_CHAR[2] = 41
+          @tag = volume
+        year:NX_CHAR[4] = 1993
+          @tag = year
+        authors:NXcollection
+          @NX_class = NXcollection
+          @canSAS_name = authors
+          @tag = authors
+          author_0:NX_CHAR[10] = A.J. Allen
+            @tag = author
+          author_1:NX_CHAR[11] = D. Gavillet
+            @tag = author
+          author_2:NX_CHAR[13] = J.R. Weertman
+            @tag = author
+    sassample:NXsample
+      @NX_class = NXsample
+      @canSAS_name = sassample
+      @canSAS_class = SASsample
+      ID:NX_CHAR[33] = AF1410-1h (AF1410 steel aged 1 h)
+      details:NX_CHAR[128] = 
+        transverse saturation magnetic field (1.6 T) applied in horizontal direction to clear magnetic domain scattering
+      
+  AF1410_20:NXentry
+    @NX_class = NXentry
+    @canSAS_name = AF1410:20
+    @canSAS_class = SASentry
+    @default = AF1410_b20
+    definition:NX_CHAR[8] = NXcanSAS
+    run:NX_CHAR[23] = nuclear+magnetic sector
+      @name = AF1410:20
+    title:NX_CHAR[34] = AF1410-20 (AF1410 steel aged 20 h)
+    AF1410_b20:NXdata
+      @NX_class = NXdata
+      @canSAS_name = AF1410-b20
+      @canSAS_class = SASdata
+      @signal = I
+      @I_axes = Q
+      @I_uncertainties = Idev
+      I:NX_FLOAT64[73] = [100.68999479999999, 85.889999399999994, 68.6799927, '...', 0.2838]
+        @units = 1/cm
+        @uncertainties = Idev
+      Idev:NX_FLOAT64[73] = [5.4614463000000004, 3.9071728999999999, 2.8963771, '...', 0.026401500000000001]
+        @units = 1/cm
+      Q:NX_FLOAT64[73] = [0.017675, 0.018835999999999999, 0.019997000000000001, '...', 0.10441]
+        @units = 1/A
+    sasinstrument:NXinstrument
+      @NX_class = NXinstrument
+      @canSAS_name = sasinstrument
+      @canSAS_class = SASinstrument
+      name:NX_CHAR[14] = NIST/CNRF SANS
+      sascollimation:NXcollimator
+        @NX_class = NXcollimator
+        @canSAS_name = sascollimation
+        @canSAS_class = SAScollimation
+      sasdetector:NXdetector
+        @NX_class = NXdetector
+        @canSAS_name = sasdetector
+        @canSAS_class = SASdetector
+        name:NX_CHAR[4] = area
+      sassource:NXsource
+        @NX_class = NXsource
+        @canSAS_name = sassource
+        @canSAS_class = SASsource
+        incident_wavelength:NX_FLOAT64 = 0.85
+          @units = nm
+        radiation:NX_CHAR[7] = neutron
+        wavelength_spread:NX_FLOAT64 = 25.0
+          @units = percent
+    sasnote:NXnote
+      @NX_class = NXnote
+      @canSAS_name = sasnote
+      @canSAS_class = SASnote
+      citation:NXcollection
+        @NX_class = NXcollection
+        @canSAS_name = citation
+        @tag = citation
+        journal:NX_CHAR[11] = Acta Metall
+          @tag = journal
+        pages:NX_CHAR[9] = 1869-1884
+          @tag = pages
+        title:NX_CHAR[92] = Small-Angle Neutron Scattering Studies of Carbide Precipitation in Ultrahigh-Strength Steels
+          @tag = title
+        volume:NX_CHAR[2] = 41
+          @tag = volume
+        year:NX_CHAR[4] = 1993
+          @tag = year
+        authors:NXcollection
+          @NX_class = NXcollection
+          @canSAS_name = authors
+          @tag = authors
+          author_0:NX_CHAR[10] = A.J. Allen
+            @tag = author
+          author_1:NX_CHAR[11] = D. Gavillet
+            @tag = author
+          author_2:NX_CHAR[13] = J.R. Weertman
+            @tag = author
+    sassample:NXsample
+      @NX_class = NXsample
+      @canSAS_name = sassample
+      @canSAS_class = SASsample
+      ID:NX_CHAR[34] = AF1410-20 (AF1410 steel aged 20 h)
+      details:NX_CHAR[128] = 
+        transverse saturation magnetic field (1.6 T) applied in horizontal direction to clear magnetic domain scattering
+      
+  AF1410_2h:NXentry
+    @NX_class = NXentry
+    @canSAS_name = AF1410:2h
+    @canSAS_class = SASentry
+    @default = AF1410_a2h
+    definition:NX_CHAR[8] = NXcanSAS
+    run_0:NX_CHAR[14] = nuclear sector
+      @name = AF1410:2h
+    run_1:NX_CHAR[23] = nuclear+magnetic sector
+      @name = AF1410:2h
+    title:NX_CHAR[33] = AF1410-2h (AF1410 steel aged 2 h)
+    AF1410_a2h:NXdata
+      @NX_class = NXdata
+      @canSAS_name = AF1410-a2h
+      @canSAS_class = SASdata
+      @signal = I
+      @I_axes = Q
+      @I_uncertainties = Idev
+      I:NX_FLOAT64[73] = [32.823001900000001, 27.597002, 23.343000400000001, '...', 0.21879999999999999]
+        @units = 1/cm
+        @uncertainties = Idev
+      Idev:NX_FLOAT64[73] = [1.5526561000000001, 1.2889701, 1.0331022000000001, '...', 0.019425000000000001]
+        @units = 1/cm
+      Q:NX_FLOAT64[73] = [0.017675, 0.018835999999999999, 0.019997000000000001, '...', 0.10441]
+        @units = 1/A
+    AF1410_b2h:NXdata
+      @NX_class = NXdata
+      @canSAS_name = AF1410-b2h
+      @canSAS_class = SASdata
+      @signal = I
+      @I_axes = Q
+      @I_uncertainties = Idev
+      I:NX_FLOAT64[72] = [63.319999699999997, 51.869998899999999, 42.612999000000002, '...', 0.1981]
+        @units = 1/cm
+        @uncertainties = Idev
+      Idev:NX_FLOAT64[72] = [2.9753151, 2.3523817, 1.6304369999999999, '...', 0.020584700000000001]
+        @units = 1/cm
+      Q:NX_FLOAT64[72] = [0.017675, 0.018835999999999999, 0.019997000000000001, '...', 0.10236000000000001]
+        @units = 1/A
+    sasinstrument:NXinstrument
+      @NX_class = NXinstrument
+      @canSAS_name = sasinstrument
+      @canSAS_class = SASinstrument
+      name:NX_CHAR[14] = NIST/CNRF SANS
+      sascollimation:NXcollimator
+        @NX_class = NXcollimator
+        @canSAS_name = sascollimation
+        @canSAS_class = SAScollimation
+      sasdetector:NXdetector
+        @NX_class = NXdetector
+        @canSAS_name = sasdetector
+        @canSAS_class = SASdetector
+        name:NX_CHAR[4] = area
+      sassource:NXsource
+        @NX_class = NXsource
+        @canSAS_name = sassource
+        @canSAS_class = SASsource
+        incident_wavelength:NX_FLOAT64 = 0.85
+          @units = nm
+        radiation:NX_CHAR[7] = neutron
+        wavelength_spread:NX_FLOAT64 = 25.0
+          @units = percent
+    sasnote:NXnote
+      @NX_class = NXnote
+      @canSAS_name = sasnote
+      @canSAS_class = SASnote
+      citation:NXcollection
+        @NX_class = NXcollection
+        @canSAS_name = citation
+        @tag = citation
+        journal:NX_CHAR[11] = Acta Metall
+          @tag = journal
+        pages:NX_CHAR[9] = 1869-1884
+          @tag = pages
+        title:NX_CHAR[92] = Small-Angle Neutron Scattering Studies of Carbide Precipitation in Ultrahigh-Strength Steels
+          @tag = title
+        volume:NX_CHAR[2] = 41
+          @tag = volume
+        year:NX_CHAR[4] = 1993
+          @tag = year
+        authors:NXcollection
+          @NX_class = NXcollection
+          @canSAS_name = authors
+          @tag = authors
+          author_0:NX_CHAR[10] = A.J. Allen
+            @tag = author
+          author_1:NX_CHAR[11] = D. Gavillet
+            @tag = author
+          author_2:NX_CHAR[13] = J.R. Weertman
+            @tag = author
+    sassample:NXsample
+      @NX_class = NXsample
+      @canSAS_name = sassample
+      @canSAS_class = SASsample
+      ID:NX_CHAR[33] = AF1410-2h (AF1410 steel aged 2 h)
+      details:NX_CHAR[128] = 
+        transverse saturation magnetic field (1.6 T) applied in horizontal direction to clear magnetic domain scattering
+      
+  AF1410_50:NXentry
+    @NX_class = NXentry
+    @canSAS_name = AF1410:50
+    @canSAS_class = SASentry
+    @default = AF1410_a50
+    definition:NX_CHAR[8] = NXcanSAS
+    run_0:NX_CHAR[14] = nuclear sector
+      @name = AF1410:50
+    run_1:NX_CHAR[23] = nuclear+magnetic sector
+      @name = AF1410:50
+    title:NX_CHAR[34] = AF1410-50 (AF1410 steel aged 50 h)
+    AF1410_a50:NXdata
+      @NX_class = NXdata
+      @canSAS_name = AF1410-a50
+      @canSAS_class = SASdata
+      @signal = I
+      @I_axes = Q
+      @I_uncertainties = Idev
+      I:NX_FLOAT64[69] = [87.120002700000001, 74.5, 62.619998899999999, '...', 0.34989999999999999]
+        @units = 1/cm
+        @uncertainties = Idev
+      Idev:NX_FLOAT64[69] = [4.726521, 3.4513767, 2.7941546000000002, '...', 0.0219244]
+        @units = 1/cm
+      Q:NX_FLOAT64[69] = [0.017675, 0.018835999999999999, 0.019997000000000001, '...', 0.094245999999999996]
+        @units = 1/A
+    AF1410_b50:NXdata
+      @NX_class = NXdata
+      @canSAS_name = AF1410-b50
+      @canSAS_class = SASdata
+      @signal = I
+      @I_axes = Q
+      @I_uncertainties = Idev
+      I:NX_FLOAT64[71] = [102.609993, 88.260002099999994, 70.330001800000005, '...', 0.2364]
+        @units = 1/cm
+        @uncertainties = Idev
+      Idev:NX_FLOAT64[71] = [6.0144658, 4.6253327999999998, 3.3039369999999999, '...', 0.016624400000000001]
+        @units = 1/cm
+      Q:NX_FLOAT64[71] = [0.017675, 0.018835999999999999, 0.019997000000000001, '...', 0.1003]
+        @units = 1/A
+    sasinstrument:NXinstrument
+      @NX_class = NXinstrument
+      @canSAS_name = sasinstrument
+      @canSAS_class = SASinstrument
+      name:NX_CHAR[14] = NIST/CNRF SANS
+      sascollimation:NXcollimator
+        @NX_class = NXcollimator
+        @canSAS_name = sascollimation
+        @canSAS_class = SAScollimation
+      sasdetector:NXdetector
+        @NX_class = NXdetector
+        @canSAS_name = sasdetector
+        @canSAS_class = SASdetector
+        name:NX_CHAR[4] = area
+      sassource:NXsource
+        @NX_class = NXsource
+        @canSAS_name = sassource
+        @canSAS_class = SASsource
+        incident_wavelength:NX_FLOAT64 = 0.85
+          @units = nm
+        radiation:NX_CHAR[7] = neutron
+        wavelength_spread:NX_FLOAT64 = 25.0
+          @units = percent
+    sasnote:NXnote
+      @NX_class = NXnote
+      @canSAS_name = sasnote
+      @canSAS_class = SASnote
+      citation:NXcollection
+        @NX_class = NXcollection
+        @canSAS_name = citation
+        @tag = citation
+        journal:NX_CHAR[11] = Acta Metall
+          @tag = journal
+        pages:NX_CHAR[9] = 1869-1884
+          @tag = pages
+        title:NX_CHAR[92] = Small-Angle Neutron Scattering Studies of Carbide Precipitation in Ultrahigh-Strength Steels
+          @tag = title
+        volume:NX_CHAR[2] = 41
+          @tag = volume
+        year:NX_CHAR[4] = 1993
+          @tag = year
+        authors:NXcollection
+          @NX_class = NXcollection
+          @canSAS_name = authors
+          @tag = authors
+          author_0:NX_CHAR[10] = A.J. Allen
+            @tag = author
+          author_1:NX_CHAR[11] = D. Gavillet
+            @tag = author
+          author_2:NX_CHAR[13] = J.R. Weertman
+            @tag = author
+    sassample:NXsample
+      @NX_class = NXsample
+      @canSAS_name = sassample
+      @canSAS_class = SASsample
+      ID:NX_CHAR[34] = AF1410-50 (AF1410 steel aged 50 h)
+      details:NX_CHAR[128] = 
+        transverse saturation magnetic field (1.6 T) applied in horizontal direction to clear magnetic domain scattering
+      
+  AF1410_5h:NXentry
+    @NX_class = NXentry
+    @canSAS_name = AF1410:5h
+    @canSAS_class = SASentry
+    @default = AF1410_a5h
+    definition:NX_CHAR[8] = NXcanSAS
+    run_0:NX_CHAR[14] = nuclear sector
+      @name = AF1410:5h
+    run_1:NX_CHAR[23] = nuclear+magnetic sector
+      @name = AF1410:5h
+    title:NX_CHAR[33] = AF1410-5h (AF1410 steel aged 5 h)
+    AF1410_a5h:NXdata
+      @NX_class = NXdata
+      @canSAS_name = AF1410-a5h
+      @canSAS_class = SASdata
+      @signal = I
+      @I_axes = Q
+      @I_uncertainties = Idev
+      I:NX_FLOAT64[75] = [45.529998800000001, 37.548999799999997, 30.0680008, '...', 0.18108399999999999]
+        @units = 1/cm
+        @uncertainties = Idev
+      Idev:NX_FLOAT64[75] = [1.4678218000000001, 1.2650155000000001, 0.97824789999999995, '...', 0.0228819]
+        @units = 1/cm
+      Q:NX_FLOAT64[75] = [0.016514000000000001, 0.017675, 0.018964999999999999, '...', 0.10441]
+        @units = 1/A
+    AF1410_b5h:NXdata
+      @NX_class = NXdata
+      @canSAS_name = AF1410-b5h
+      @canSAS_class = SASdata
+      @signal = I
+      @I_axes = Q
+      @I_uncertainties = Idev
+      I:NX_FLOAT64[75] = [86.550003099999998, 71.159996000000007, 59.049999200000002, '...', 0.27856999999999998]
+        @units = 1/cm
+        @uncertainties = Idev
+      Idev:NX_FLOAT64[75] = [2.6370627999999998, 2.1135752000000001, 1.5469742, '...', 0.020000299999999999]
+        @units = 1/cm
+      Q:NX_FLOAT64[75] = [0.016514000000000001, 0.017675, 0.018964999999999999, '...', 0.10236000000000001]
+        @units = 1/A
+    sasinstrument:NXinstrument
+      @NX_class = NXinstrument
+      @canSAS_name = sasinstrument
+      @canSAS_class = SASinstrument
+      name:NX_CHAR[14] = NIST/CNRF SANS
+      sascollimation:NXcollimator
+        @NX_class = NXcollimator
+        @canSAS_name = sascollimation
+        @canSAS_class = SAScollimation
+      sasdetector:NXdetector
+        @NX_class = NXdetector
+        @canSAS_name = sasdetector
+        @canSAS_class = SASdetector
+        name:NX_CHAR[4] = area
+      sassource:NXsource
+        @NX_class = NXsource
+        @canSAS_name = sassource
+        @canSAS_class = SASsource
+        incident_wavelength:NX_FLOAT64 = 0.85
+          @units = nm
+        radiation:NX_CHAR[7] = neutron
+        wavelength_spread:NX_FLOAT64 = 25.0
+          @units = percent
+    sasnote:NXnote
+      @NX_class = NXnote
+      @canSAS_name = sasnote
+      @canSAS_class = SASnote
+      citation:NXcollection
+        @NX_class = NXcollection
+        @canSAS_name = citation
+        @tag = citation
+        journal:NX_CHAR[11] = Acta Metall
+          @tag = journal
+        pages:NX_CHAR[9] = 1869-1884
+          @tag = pages
+        title:NX_CHAR[92] = Small-Angle Neutron Scattering Studies of Carbide Precipitation in Ultrahigh-Strength Steels
+          @tag = title
+        volume:NX_CHAR[2] = 41
+          @tag = volume
+        year:NX_CHAR[4] = 1993
+          @tag = year
+        authors:NXcollection
+          @NX_class = NXcollection
+          @canSAS_name = authors
+          @tag = authors
+          author_0:NX_CHAR[10] = A.J. Allen
+            @tag = author
+          author_1:NX_CHAR[11] = D. Gavillet
+            @tag = author
+          author_2:NX_CHAR[13] = J.R. Weertman
+            @tag = author
+    sassample:NXsample
+      @NX_class = NXsample
+      @canSAS_name = sassample
+      @canSAS_class = SASsample
+      ID:NX_CHAR[33] = AF1410-5h (AF1410 steel aged 5 h)
+      details:NX_CHAR[128] = 
+        transverse saturation magnetic field (1.6 T) applied in horizontal direction to clear magnetic domain scattering
+      
+  AF1410_8h:NXentry
+    @NX_class = NXentry
+    @canSAS_name = AF1410:8h
+    @canSAS_class = SASentry
+    @default = AF1410_a8h
+    definition:NX_CHAR[8] = NXcanSAS
+    run_0:NX_CHAR[14] = nuclear sector
+      @name = AF1410:8h
+    run_1:NX_CHAR[23] = nuclear+magnetic sector
+      @name = AF1410:8h
+    title:NX_CHAR[33] = AF1410-8h (AF1410 steel aged 8 h)
+    AF1410_a8h:NXdata
+      @NX_class = NXdata
+      @canSAS_name = AF1410-a8h
+      @canSAS_class = SASdata
+      @signal = I
+      @I_axes = Q
+      @I_uncertainties = Idev
+      I:NX_FLOAT64[72] = [58.470001199999999, 50.510002100000001, 43.080001799999998, '...', 0.30530000000000002]
+        @units = 1/cm
+        @uncertainties = Idev
+      Idev:NX_FLOAT64[72] = [2.7457056, 1.9080094000000001, 1.5323591999999999, '...', 0.025456199999999998]
+        @units = 1/cm
+      Q:NX_FLOAT64[72] = [0.017675, 0.018835999999999999, 0.019997000000000001, '...', 0.10236000000000001]
+        @units = 1/A
+    AF1410_b8h:NXdata
+      @NX_class = NXdata
+      @canSAS_name = AF1410-b8h
+      @canSAS_class = SASdata
+      @signal = I
+      @I_axes = Q
+      @I_uncertainties = Idev
+      I:NX_FLOAT64[71] = [96.430000300000003, 81.470001199999999, 68.099998499999998, '...', 0.29849999999999999]
+        @units = 1/cm
+        @uncertainties = Idev
+      Idev:NX_FLOAT64[71] = [4.8397622, 3.7748642000000001, 2.7459242000000001, '...', 0.022633799999999999]
+        @units = 1/cm
+      Q:NX_FLOAT64[71] = [0.017675, 0.018835999999999999, 0.019997000000000001, '...', 0.1003]
+        @units = 1/A
+    sasinstrument:NXinstrument
+      @NX_class = NXinstrument
+      @canSAS_name = sasinstrument
+      @canSAS_class = SASinstrument
+      name:NX_CHAR[14] = NIST/CNRF SANS
+      sascollimation:NXcollimator
+        @NX_class = NXcollimator
+        @canSAS_name = sascollimation
+        @canSAS_class = SAScollimation
+      sasdetector:NXdetector
+        @NX_class = NXdetector
+        @canSAS_name = sasdetector
+        @canSAS_class = SASdetector
+        name:NX_CHAR[4] = area
+      sassource:NXsource
+        @NX_class = NXsource
+        @canSAS_name = sassource
+        @canSAS_class = SASsource
+        incident_wavelength:NX_FLOAT64 = 0.85
+          @units = nm
+        radiation:NX_CHAR[7] = neutron
+        wavelength_spread:NX_FLOAT64 = 25.0
+          @units = percent
+    sasnote:NXnote
+      @NX_class = NXnote
+      @canSAS_name = sasnote
+      @canSAS_class = SASnote
+      citation:NXcollection
+        @NX_class = NXcollection
+        @canSAS_name = citation
+        @tag = citation
+        journal:NX_CHAR[11] = Acta Metall
+          @tag = journal
+        pages:NX_CHAR[9] = 1869-1884
+          @tag = pages
+        title:NX_CHAR[92] = Small-Angle Neutron Scattering Studies of Carbide Precipitation in Ultrahigh-Strength Steels
+          @tag = title
+        volume:NX_CHAR[2] = 41
+          @tag = volume
+        year:NX_CHAR[4] = 1993
+          @tag = year
+        authors:NXcollection
+          @NX_class = NXcollection
+          @canSAS_name = authors
+          @tag = authors
+          author_0:NX_CHAR[10] = A.J. Allen
+            @tag = author
+          author_1:NX_CHAR[11] = D. Gavillet
+            @tag = author
+          author_2:NX_CHAR[13] = J.R. Weertman
+            @tag = author
+    sassample:NXsample
+      @NX_class = NXsample
+      @canSAS_name = sassample
+      @canSAS_class = SASsample
+      ID:NX_CHAR[33] = AF1410-8h (AF1410 steel aged 8 h)
+      details:NX_CHAR[128] = 
+        transverse saturation magnetic field (1.6 T) applied in horizontal direction to clear magnetic domain scattering
+      
+  AF1410_cc:NXentry
+    @NX_class = NXentry
+    @canSAS_name = AF1410:cc
+    @canSAS_class = SASentry
+    @default = AF1410_acc
+    definition:NX_CHAR[8] = NXcanSAS
+    run_0:NX_CHAR[14] = nuclear sector
+      @name = AF1410:cc
+    run_1:NX_CHAR[23] = nuclear+magnetic sector
+      @name = AF1410:cc
+    title:NX_CHAR[35] = AF1410-cc (AF1410 steel aged 100 h)
+    AF1410_acc:NXdata
+      @NX_class = NXdata
+      @canSAS_name = AF1410-acc
+      @canSAS_class = SASdata
+      @signal = I
+      @I_axes = Q
+      @I_uncertainties = Idev
+      I:NX_FLOAT64[71] = [90.940002399999997, 75.809997600000003, 62.009998299999999, '...', 0.22270000000000001]
+        @units = 1/cm
+        @uncertainties = Idev
+      Idev:NX_FLOAT64[71] = [4.7105836999999999, 3.6028460999999998, 2.6953478, '...', 0.024683]
+        @units = 1/cm
+      Q:NX_FLOAT64[71] = [0.017675, 0.018835999999999999, 0.019997000000000001, '...', 0.10236000000000001]
+        @units = 1/A
+    AF1410_bcc:NXdata
+      @NX_class = NXdata
+      @canSAS_name = AF1410-bcc
+      @canSAS_class = SASdata
+      @signal = I
+      @I_axes = Q
+      @I_uncertainties = Idev
+      I:NX_FLOAT64[71] = [103.1199951, 85.160003700000004, 71.480003400000001, '...', 0.23569999999999999]
+        @units = 1/cm
+        @uncertainties = Idev
+      Idev:NX_FLOAT64[71] = [5.3328509000000004, 4.2001071000000003, 2.9537263, '...', 0.021422699999999999]
+        @units = 1/cm
+      Q:NX_FLOAT64[71] = [0.017675, 0.018835999999999999, 0.019997000000000001, '...', 0.1003]
+        @units = 1/A
+    sasinstrument:NXinstrument
+      @NX_class = NXinstrument
+      @canSAS_name = sasinstrument
+      @canSAS_class = SASinstrument
+      name:NX_CHAR[14] = NIST/CNRF SANS
+      sascollimation:NXcollimator
+        @NX_class = NXcollimator
+        @canSAS_name = sascollimation
+        @canSAS_class = SAScollimation
+      sasdetector:NXdetector
+        @NX_class = NXdetector
+        @canSAS_name = sasdetector
+        @canSAS_class = SASdetector
+        name:NX_CHAR[4] = area
+      sassource:NXsource
+        @NX_class = NXsource
+        @canSAS_name = sassource
+        @canSAS_class = SASsource
+        incident_wavelength:NX_FLOAT64 = 0.85
+          @units = nm
+        radiation:NX_CHAR[7] = neutron
+        wavelength_spread:NX_FLOAT64 = 25.0
+          @units = percent
+    sasnote:NXnote
+      @NX_class = NXnote
+      @canSAS_name = sasnote
+      @canSAS_class = SASnote
+      citation:NXcollection
+        @NX_class = NXcollection
+        @canSAS_name = citation
+        @tag = citation
+        journal:NX_CHAR[11] = Acta Metall
+          @tag = journal
+        pages:NX_CHAR[9] = 1869-1884
+          @tag = pages
+        title:NX_CHAR[92] = Small-Angle Neutron Scattering Studies of Carbide Precipitation in Ultrahigh-Strength Steels
+          @tag = title
+        volume:NX_CHAR[2] = 41
+          @tag = volume
+        year:NX_CHAR[4] = 1993
+          @tag = year
+        authors:NXcollection
+          @NX_class = NXcollection
+          @canSAS_name = authors
+          @tag = authors
+          author_0:NX_CHAR[10] = A.J. Allen
+            @tag = author
+          author_1:NX_CHAR[11] = D. Gavillet
+            @tag = author
+          author_2:NX_CHAR[13] = J.R. Weertman
+            @tag = author
+    sassample:NXsample
+      @NX_class = NXsample
+      @canSAS_name = sassample
+      @canSAS_class = SASsample
+      ID:NX_CHAR[35] = AF1410-cc (AF1410 steel aged 100 h)
+      details:NX_CHAR[128] = 
+        transverse saturation magnetic field (1.6 T) applied in horizontal direction to clear magnetic domain scattering
+      
+  AF1410_hf:NXentry
+    @NX_class = NXentry
+    @canSAS_name = AF1410:hf
+    @canSAS_class = SASentry
+    @default = AF1410_ahf
+    definition:NX_CHAR[8] = NXcanSAS
+    run_0:NX_CHAR[14] = nuclear sector
+      @name = AF1410:hf
+    run_1:NX_CHAR[23] = nuclear+magnetic sector
+      @name = AF1410:hf
+    title:NX_CHAR[35] = AF1410-hf (AF1410 steel aged 0.5 h)
+    AF1410_ahf:NXdata
+      @NX_class = NXdata
+      @canSAS_name = AF1410-ahf
+      @canSAS_class = SASdata
+      @signal = I
+      @I_axes = Q
+      @I_uncertainties = Idev
+      I:NX_FLOAT64[73] = [25.817998899999999, 21.6040001, 18.263999900000002, '...', 0.068455500000000002]
+        @units = 1/cm
+        @uncertainties = Idev
+      Idev:NX_FLOAT64[73] = [1.3120309000000001, 0.95406550000000001, 0.70583640000000003, '...', 0.0123903]
+        @units = 1/cm
+      Q:NX_FLOAT64[73] = [0.017675, 0.018835999999999999, 0.019997000000000001, '...', 0.10236000000000001]
+        @units = 1/A
+    AF1410_bhf:NXdata
+      @NX_class = NXdata
+      @canSAS_name = AF1410-bhf
+      @canSAS_class = SASdata
+      @signal = I
+      @I_axes = Q
+      @I_uncertainties = Idev
+      I:NX_FLOAT64[70] = [44.669998200000002, 37.715000199999999, 30.600997899999999, '...', 0.1178]
+        @units = 1/cm
+        @uncertainties = Idev
+      Idev:NX_FLOAT64[70] = [2.2078269000000001, 1.5930108999999999, 1.1292781000000001, '...', 0.011323]
+        @units = 1/cm
+      Q:NX_FLOAT64[70] = [0.017675, 0.018835999999999999, 0.019997000000000001, '...', 0.1003]
+        @units = 1/A
+    sasinstrument:NXinstrument
+      @NX_class = NXinstrument
+      @canSAS_name = sasinstrument
+      @canSAS_class = SASinstrument
+      name:NX_CHAR[14] = NIST/CNRF SANS
+      sascollimation:NXcollimator
+        @NX_class = NXcollimator
+        @canSAS_name = sascollimation
+        @canSAS_class = SAScollimation
+      sasdetector:NXdetector
+        @NX_class = NXdetector
+        @canSAS_name = sasdetector
+        @canSAS_class = SASdetector
+        name:NX_CHAR[4] = area
+      sassource:NXsource
+        @NX_class = NXsource
+        @canSAS_name = sassource
+        @canSAS_class = SASsource
+        incident_wavelength:NX_FLOAT64 = 0.85
+          @units = nm
+        radiation:NX_CHAR[7] = neutron
+        wavelength_spread:NX_FLOAT64 = 25.0
+          @units = percent
+    sasnote:NXnote
+      @NX_class = NXnote
+      @canSAS_name = sasnote
+      @canSAS_class = SASnote
+      citation:NXcollection
+        @NX_class = NXcollection
+        @canSAS_name = citation
+        @tag = citation
+        journal:NX_CHAR[11] = Acta Metall
+          @tag = journal
+        pages:NX_CHAR[9] = 1869-1884
+          @tag = pages
+        title:NX_CHAR[92] = Small-Angle Neutron Scattering Studies of Carbide Precipitation in Ultrahigh-Strength Steels
+          @tag = title
+        volume:NX_CHAR[2] = 41
+          @tag = volume
+        year:NX_CHAR[4] = 1993
+          @tag = year
+        authors:NXcollection
+          @NX_class = NXcollection
+          @canSAS_name = authors
+          @tag = authors
+          author_0:NX_CHAR[10] = A.J. Allen
+            @tag = author
+          author_1:NX_CHAR[11] = D. Gavillet
+            @tag = author
+          author_2:NX_CHAR[13] = J.R. Weertman
+            @tag = author
+    sassample:NXsample
+      @NX_class = NXsample
+      @canSAS_name = sassample
+      @canSAS_class = SASsample
+      ID:NX_CHAR[35] = AF1410-hf (AF1410 steel aged 0.5 h)
+      details:NX_CHAR[128] = 
+        transverse saturation magnetic field (1.6 T) applied in horizontal direction to clear magnetic domain scattering
+      
+  AF1410_qu:NXentry
+    @NX_class = NXentry
+    @canSAS_name = AF1410:qu
+    @canSAS_class = SASentry
+    @default = AF1410_aqu
+    definition:NX_CHAR[8] = NXcanSAS
+    run_0:NX_CHAR[14] = nuclear sector
+      @name = AF1410:qu
+    run_1:NX_CHAR[23] = nuclear+magnetic sector
+      @name = AF1410:qu
+    title:NX_CHAR[36] = AF1410-qu (AF1410 steel aged 0.25 h)
+    AF1410_aqu:NXdata
+      @NX_class = NXdata
+      @canSAS_name = AF1410-aqu
+      @canSAS_class = SASdata
+      @signal = I
+      @I_axes = Q
+      @I_uncertainties = Idev
+      I:NX_FLOAT64[73] = [29.783000900000001, 25.494001399999998, 20.804000899999998, '...', 0.049299999999999997]
+        @units = 1/cm
+        @uncertainties = Idev
+      Idev:NX_FLOAT64[73] = [1.4780126, 1.1333709999999999, 0.87006320000000004, '...', 0.01086]
+        @units = 1/cm
+      Q:NX_FLOAT64[73] = [0.017675, 0.018835999999999999, 0.019997000000000001, '...', 0.10441]
+        @units = 1/A
+    AF1410_bqu:NXdata
+      @NX_class = NXdata
+      @canSAS_name = AF1410-bqu
+      @canSAS_class = SASdata
+      @signal = I
+      @I_axes = Q
+      @I_uncertainties = Idev
+      I:NX_FLOAT64[74] = [42.770000500000002, 35.841999100000002, 29.495998400000001, '...', 0.090200000000000002]
+        @units = 1/cm
+        @uncertainties = Idev
+      Idev:NX_FLOAT64[74] = [2.1243823000000002, 1.5351039, 1.140449, '...', 0.0107005]
+        @units = 1/cm
+      Q:NX_FLOAT64[74] = [0.017675, 0.018835999999999999, 0.019997000000000001, '...', 0.10441]
+        @units = 1/A
+    sasinstrument:NXinstrument
+      @NX_class = NXinstrument
+      @canSAS_name = sasinstrument
+      @canSAS_class = SASinstrument
+      name:NX_CHAR[14] = NIST/CNRF SANS
+      sascollimation:NXcollimator
+        @NX_class = NXcollimator
+        @canSAS_name = sascollimation
+        @canSAS_class = SAScollimation
+      sasdetector:NXdetector
+        @NX_class = NXdetector
+        @canSAS_name = sasdetector
+        @canSAS_class = SASdetector
+        name:NX_CHAR[4] = area
+      sassource:NXsource
+        @NX_class = NXsource
+        @canSAS_name = sassource
+        @canSAS_class = SASsource
+        incident_wavelength:NX_FLOAT64 = 0.85
+          @units = nm
+        radiation:NX_CHAR[7] = neutron
+        wavelength_spread:NX_FLOAT64 = 25.0
+          @units = percent
+    sasnote:NXnote
+      @NX_class = NXnote
+      @canSAS_name = sasnote
+      @canSAS_class = SASnote
+      citation:NXcollection
+        @NX_class = NXcollection
+        @canSAS_name = citation
+        @tag = citation
+        journal:NX_CHAR[11] = Acta Metall
+          @tag = journal
+        pages:NX_CHAR[9] = 1869-1884
+          @tag = pages
+        title:NX_CHAR[92] = Small-Angle Neutron Scattering Studies of Carbide Precipitation in Ultrahigh-Strength Steels
+          @tag = title
+        volume:NX_CHAR[2] = 41
+          @tag = volume
+        year:NX_CHAR[4] = 1993
+          @tag = year
+        authors:NXcollection
+          @NX_class = NXcollection
+          @canSAS_name = authors
+          @tag = authors
+          author_0:NX_CHAR[10] = A.J. Allen
+            @tag = author
+          author_1:NX_CHAR[11] = D. Gavillet
+            @tag = author
+          author_2:NX_CHAR[13] = J.R. Weertman
+            @tag = author
+    sassample:NXsample
+      @NX_class = NXsample
+      @canSAS_name = sassample
+      @canSAS_class = SASsample
+      ID:NX_CHAR[36] = AF1410-qu (AF1410 steel aged 0.25 h)
+      details:NX_CHAR[128] = 
+        transverse saturation magnetic field (1.6 T) applied in horizontal direction to clear magnetic domain scattering
+      

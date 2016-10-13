@@ -1,0 +1,158 @@
+C:\Users\Pete\Documents\eclipse\canSAS\NXcanSAS_examples\1d_standard\1998spheres.h5 : NeXus data file
+  @creator = xml2hdf5.py
+  @default = sasentry_0
+  sasentry_0:NXentry
+    @NX_class = NXentry
+    @canSAS_name = sasentry_0
+    @canSAS_class = SASentry
+    @default = sasdata
+    definition:NX_CHAR[8] = NXcanSAS
+    run:NX_CHAR[17] = scan2.dat, scan 5
+    title:NX_CHAR[17] = 255 nm PS spheres
+    sasdata:NXdata
+      @NX_class = NXdata
+      @canSAS_name = sasdata
+      @canSAS_class = SASdata
+      @signal = I
+      @I_axes = Q
+      @I_uncertainties = Idev
+      I:NX_FLOAT64[1824] = [18.8978, 15.9975, 12.519600000000001, '...', 0.00032973699999999998]
+        @units = 1/cm
+        @uncertainties = Idev
+      Idev:NX_FLOAT64[1824] = [0.13378100000000001, 0.076805100000000001, 0.062571299999999996, '...', 3.6421100000000001e-06]
+        @units = 1/cm
+      Q:NX_FLOAT64[1824] = [0.00016451399999999999, 0.00019104899999999999, 0.00020873899999999999, '...', 0.042584299999999999]
+        @units = 1/A
+    sasinstrument:NXinstrument
+      @NX_class = NXinstrument
+      @canSAS_name = sasinstrument
+      @canSAS_class = SASinstrument
+      name:NX_CHAR[24] = NIST X23A3 USAXS at NSLS
+      Bonse_Hart__slit__length____0_045_1_A:NXcollimator
+        @NX_class = NXcollimator
+        @canSAS_name = Bonse-Hart (slit) length ?= 0.045 1/A
+        @canSAS_class = SAScollimation
+      sasdetector:NXdetector
+        @NX_class = NXdetector
+        @canSAS_name = sasdetector
+        @canSAS_class = SASdetector
+        SDD:NX_FLOAT64 = 300.0
+          @units = mm
+          @comment = Distance between sample and detector
+        name:NX_CHAR[10] = photodiode
+        slit_length:NX_FLOAT64 = 0.045
+          @units = 1/A
+          @comment = Slit length of the instrument for this detector, expressed in the same units as Q
+        x_pixel_size:NX_FLOAT64 = 5.5
+          @units = mm
+      sassource:NXsource
+        @NX_class = NXsource
+        @canSAS_name = sassource
+        @canSAS_class = SASsource
+        radiation:NX_CHAR[17] = synchrotron X-ray
+    sasnote:NXnote
+      @NX_class = NXnote
+      @canSAS_name = sasnote
+      @canSAS_class = SASnote
+      SASnote:NX_CHAR[32] = data recovered from NSLS archive
+        @tag = SASnote
+    sassample:NXsample
+      @NX_class = NXsample
+      @canSAS_name = sassample
+      @canSAS_class = SASsample
+      ID:NX_CHAR[7] = ps255nm
+      details:NX_CHAR[422] = 
+				Duke latex polystyrene spheres, 255 nm, dried cake on tape
+				DATAFILE=scan2.dat
+				EPOCH=913077933
+				SCAN_N=5
+				SECONDS=2995904978
+				DATE=Mon, 07 Dec 1998
+				SlitLength=NaN but estimated to be 0.045 1/A
+				SpecCommand=uascan  ar 11.59 11.5114 8 0.0002  1.2 150 5
+				SpecScan=spec5
+				USAXSDataFolder=root:USAXS:scan2:S5_
+				RawFolder=root:raw:scan2:spec5:
+				UserSampleName=S5_
+				Wname=AR_encoder
+			
+  sasentry_1:NXentry
+    @NX_class = NXentry
+    @canSAS_name = sasentry_1
+    @canSAS_class = SASentry
+    @default = sasdata
+    definition:NX_CHAR[8] = NXcanSAS
+    run:NX_CHAR[18] = scan1.dat, scan 67
+    title:NX_CHAR[17] = 460 nm PS spheres
+    sasdata:NXdata
+      @NX_class = NXdata
+      @canSAS_name = sasdata
+      @canSAS_class = SASdata
+      @signal = I
+      @I_axes = Q
+      @I_uncertainties = Idev
+      I:NX_FLOAT64[3689] = [1.3979900000000001, 1.3435600000000001, 1.2598800000000001, '...', 1.2517199999999999e-05]
+        @units = 1/cm
+        @uncertainties = Idev
+      Idev:NX_FLOAT64[3689] = [0.00649864, 0.0057174900000000004, 0.0047334300000000003, '...', 2.8589500000000001e-07]
+        @units = 1/cm
+      Q:NX_FLOAT64[3689] = [0.00020166300000000001, 0.000219352, 0.00024588700000000003, '...', 0.067917400000000003]
+        @units = 1/A
+    sasinstrument:NXinstrument
+      @NX_class = NXinstrument
+      @canSAS_name = sasinstrument
+      @canSAS_class = SASinstrument
+      name:NX_CHAR[24] = NIST X23A3 USAXS at NSLS
+      Bonse_Hart__slit__length____0_045_1_A:NXcollimator
+        @NX_class = NXcollimator
+        @canSAS_name = Bonse-Hart (slit) length ?= 0.045 1/A
+        @canSAS_class = SAScollimation
+      sasdetector:NXdetector
+        @NX_class = NXdetector
+        @canSAS_name = sasdetector
+        @canSAS_class = SASdetector
+        SDD:NX_FLOAT64 = 300.0
+          @units = mm
+          @comment = Distance between sample and detector
+        name:NX_CHAR[10] = photodiode
+        slit_length:NX_FLOAT64 = 0.045
+          @units = 1/A
+          @comment = Slit length of the instrument for this detector, expressed in the same units as Q
+        x_pixel_size:NX_FLOAT64 = 5.5
+          @units = mm
+      sassource:NXsource
+        @NX_class = NXsource
+        @canSAS_name = sassource
+        @canSAS_class = SASsource
+        radiation:NX_CHAR[17] = synchrotron X-ray
+    sasnote:NXnote
+      @NX_class = NXnote
+      @canSAS_name = sasnote
+      @canSAS_class = SASnote
+      SASnote:NX_CHAR[32] = data recovered from NSLS archive
+        @tag = SASnote
+    sassample:NXsample
+      @NX_class = NXsample
+      @canSAS_name = sassample
+      @canSAS_class = SASsample
+      ID:NX_CHAR[7] = ps460nm
+      details:NX_CHAR[566] = 
+				Duke latex polystyrene spheres, 460 nm, dried cake on tape
+				DATAFILE=scan1.dat
+				DATE=Sat, 05 Dec 1998
+				EPOCH=912728266
+				NumberOfSteps=4800
+				RawFolder=root:raw:scan1:spec67:
+				SCAN_N=67
+				SDDistance=300
+				SECONDS=2995743922
+				SlitLength=NaN but estimated to be 0.045 1/A
+				SpecCommand=uascan  ar 11.59 11.5112 10.59 0.0002  1 4800 5
+				SpecComment=
+				SpecScan=spec67
+				SpecSourceFileName=scan1.dat
+				USAXSDataFolder=root:USAXS:reduced:'460nm spheres':
+				UserSampleName='460nm spheres'
+				Wavelength=NaN
+				Wname=AR_encoder
+			

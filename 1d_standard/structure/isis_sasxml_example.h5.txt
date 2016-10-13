@@ -1,0 +1,129 @@
+C:\Users\Pete\Documents\eclipse\canSAS\NXcanSAS_examples\1d_standard\isis_sasxml_example.h5 : NeXus data file
+  @creator = xml2hdf5.py
+  @default = sasentry
+  sasentry:NXentry
+    @NX_class = NXentry
+    @canSAS_name = sasentry
+    @canSAS_class = SASentry
+    @default = sasdata
+    definition:NX_CHAR[8] = NXcanSAS
+    run:NX_CHAR[9] =    34064 
+    title:NX_CHAR[25] = LOQ TK49 Standard 12mm C9
+    COLETTE:NXprocess
+      @NX_class = NXprocess
+      @canSAS_name = COLETTE
+      @canSAS_class = SASprocess
+      date:NX_CHAR[20] = 14-DEC-2006 22:54:06
+      name:NX_CHAR[7] = COLETTE
+      term_0:NX_CHAR[5] = 15852
+        @name = Count_time
+        @units = frames
+      term_1:NX_CHAR[8] = estimate
+        @name = Q_resolution
+      term_2:NX_CHAR[4] = 38.0
+        @name = radius_min
+        @units = mm
+      term_3:NX_CHAR[5] = 419.0
+        @name = radius_max
+        @units = mm
+      term_4:NX_CHAR[3] = 3.0
+        @name = radialstep
+        @units = mm
+      term_5:NX_CHAR[5] = 180.0
+        @name = sector_width
+        @units = deg
+      term_6:NX_CHAR[6] = 1.4751
+        @name = I_scale_factor
+        @units = a.u.
+      _01:NXnote
+        @NX_class = NXnote
+        @canSAS_name = 01
+        @canSAS_class = SASprocessnote
+        @name = 01
+        SASprocessnote_0:NX_CHAR[13] = USER:MASK.COM
+          @tag = SASprocessnote
+      _02:NXnote
+        @NX_class = NXnote
+        @canSAS_name = 02
+        @canSAS_class = SASprocessnote
+        @name = 02
+        SASprocessnote_0:NX_CHAR[1] = 
+          @tag = SASprocessnote
+      _03:NXnote
+        @NX_class = NXnote
+        @canSAS_name = 03
+        @canSAS_class = SASprocessnote
+        @name = 03
+        SASprocessnote_0:NX_CHAR[1] = 
+          @tag = SASprocessnote
+      _04:NXnote
+        @NX_class = NXnote
+        @canSAS_name = 04
+        @canSAS_class = SASprocessnote
+        @name = 04
+        SASprocessnote_0:NX_CHAR[1] = 
+          @tag = SASprocessnote
+    LOQ:NXinstrument
+      @NX_class = NXinstrument
+      @canSAS_name = LOQ
+      @canSAS_class = SASinstrument
+      sascollimation:NXcollimator
+        @NX_class = NXcollimator
+        @canSAS_name = sascollimation
+        @canSAS_class = SAScollimation
+        length:NX_FLOAT64 = 11.0
+          @units = m
+          @comment = Amount/length of collimation inserted (on a SANS instrument)
+      sasdetector:NXdetector
+        @NX_class = NXdetector
+        @canSAS_name = sasdetector
+        @canSAS_class = SASdetector
+        SDD:NX_FLOAT64 = 4.15
+          @units = m
+          @comment = Distance between sample and detector
+        beam_center_x:NX_FLOAT64 = 322.64
+          @units = mm
+        beam_center_y:NX_FLOAT64 = 327.68
+          @units = mm
+        name:NX_CHAR[1] = 
+        x_pixel_size:NX_FLOAT64 = 5.0
+          @units = mm
+        y_pixel_size:NX_FLOAT64 = 5.0
+          @units = mm
+      sassource:NXsource
+        @NX_class = NXsource
+        @canSAS_name = sassource
+        @canSAS_class = SASsource
+        beam_shape:NX_CHAR[4] = disc
+        beam_size_x:NX_FLOAT64 = 12.0
+          @units = mm
+        beam_size_y:NX_FLOAT64 = 12.0
+          @units = mm
+        radiation:NX_CHAR[7] = neutron
+        wavelength_max:NX_FLOAT64 = 1.0
+          @units = nm
+        wavelength_min:NX_FLOAT64 = 0.22
+          @units = nm
+    sasdata:NXdata
+      @NX_class = NXdata
+      @canSAS_name = sasdata
+      @canSAS_class = SASdata
+      @signal = I
+      @I_axes = Q
+      @I_uncertainties = Idev
+      I:NX_FLOAT64[140] = [57.039999999999999, 49.439999999999998, 44.520000000000003, '...', 0.26939999999999997]
+        @units = 1/cm
+        @uncertainties = Idev
+      Idev:NX_FLOAT64[140] = [0.60999999999999999, 0.42999999999999999, 0.34000000000000002, '...', 2.2000000000000002]
+        @units = 1/cm
+      Q:NX_FLOAT64[140] = [0.0089999999999999993, 0.010999999999999999, 0.012999999999999999, '...', 0.28699999999999998]
+        @units = 1/A
+        @uncertainties = Qdev
+      Qdev:NX_FLOAT64[140] = [0.0, 0.0, 0.0, '...', 0.0]
+        @units = 1/A
+    sassample:NXsample
+      @NX_class = NXsample
+      @canSAS_name = sassample
+      @canSAS_class = SASsample
+      thickness:NX_FLOAT64 = 1.03
+        @units = mm

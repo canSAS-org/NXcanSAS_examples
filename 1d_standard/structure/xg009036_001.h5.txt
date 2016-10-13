@@ -1,0 +1,147 @@
+C:\Users\Pete\Documents\eclipse\canSAS\NXcanSAS_examples\1d_standard\xg009036_001.h5 : NeXus data file
+  @creator = xml2hdf5.py
+  @default = sasentry
+  sasentry:NXentry
+    @NX_class = NXentry
+    @canSAS_name = sasentry
+    @canSAS_class = SASentry
+    @default = sasdata
+    Count_time_secs:NX_CHAR[7] = 886.200
+      @xml_namespace = ILL-data
+    Flux_monitor:NX_CHAR[4] = 1.00
+      @xml_namespace = ILL-data
+    Q_resolution:NX_CHAR[11] = "estimated"
+      @xml_namespace = ILL-data
+    Run_extension:NX_CHAR[3] = 001
+      @xml_namespace = ILL-data
+    Source_file:NX_CHAR[13] = "g009036.001"
+      @xml_namespace = ILL-data
+    definition:NX_CHAR[8] = NXcanSAS
+    run:NX_CHAR[6] = 009036
+    title:NX_CHAR[12] = det corrn 5m
+    sasdata:NXdata
+      @NX_class = NXdata
+      @canSAS_name = sasdata
+      @canSAS_class = SASdata
+      @signal = I
+      @I_axes = Q
+      @I_uncertainties = Idev
+      I:NX_FLOAT64[68] = [0.0, 0.0, 0.0, '...', 0.0]
+        @units = 1/cm
+        @uncertainties = Idev
+      Idev:NX_FLOAT64[68] = [0.0, 0.0, 0.0, '...', 0.0]
+        @units = 1/cm-1
+      Q:NX_FLOAT64[68] = [0.0, 0.0012600000000000001, 0.0025100000000000001, '...', 0.084199999999999997]
+        @units = 1/A
+        @uncertainties = Qdev
+      Qdev:NX_FLOAT64[68] = [0.0, 0.0016999999999999999, 0.0016999999999999999, '...', 0.0040000000000000001]
+        @units = 1/A
+    sasinstrument:NXinstrument
+      @NX_class = NXinstrument
+      @canSAS_name = sasinstrument
+      @canSAS_class = SASinstrument
+      name:NX_CHAR[3] = D22
+      sascollimation:NXcollimator
+        @NX_class = NXcollimator
+        @canSAS_name = sascollimation
+        @canSAS_class = SAScollimation
+        sample:NXaperture
+          @NX_class = NXaperture
+          @canSAS_name = sample
+          @canSAS_class = aperture
+          distance:NX_FLOAT64 = 0.0
+            @units = m
+          shape:NX_CHAR[4] = disc
+          x_gap:NX_FLOAT64 = 0.8
+            @units = mm
+          y_gap:NX_FLOAT64 = 0.0
+            @units = mm
+        source:NXaperture
+          @NX_class = NXaperture
+          @canSAS_name = source
+          @canSAS_class = aperture
+          distance:NX_FLOAT64 = 5.6
+            @units = m
+          shape:NX_CHAR[4] = disc
+          x_gap:NX_FLOAT64 = 3.0
+            @units = mm
+          y_gap:NX_FLOAT64 = 0.0
+            @units = mm
+      sasdetector:NXdetector
+        @NX_class = NXdetector
+        @canSAS_name = sasdetector
+        @canSAS_class = SASdetector
+        SDD:NX_FLOAT64 = 5.0
+          @units = m
+          @comment = Distance between sample and detector
+        beam_center_x:NX_FLOAT64 = 473.63
+          @units = mm
+        beam_center_y:NX_FLOAT64 = 478.88
+          @units = mm
+        name:NX_CHAR[1] = 
+        x_pixel_size:NX_FLOAT64 = 0.75
+          @units = mm
+        y_pixel_size:NX_FLOAT64 = 0.75
+          @units = mm
+        yaw:NX_FLOAT64 = 0.0
+          @units = degree
+      sassource:NXsource
+        @NX_class = NXsource
+        @canSAS_name = sassource
+        @canSAS_class = SASsource
+        incident_wavelength:NX_FLOAT64 = 10.0
+          @units = A
+        radiation:NX_CHAR[7] = neutron
+        wavelength_spread:NX_FLOAT64 = 0.1
+          @units = percent
+    sasnote:NXnote
+      @NX_class = NXnote
+      @canSAS_name = sasnote
+      @canSAS_class = SASnote
+      SASnote:NX_CHAR[1] = 
+        @tag = SASnote
+    sassample:NXsample
+      @NX_class = NXsample
+      @canSAS_name = sassample
+      @canSAS_class = SASsample
+      ID:NX_CHAR[1] = 
+      temperature:NX_FLOAT64 = 0.0
+        @units = C
+      thickness:NX_FLOAT64 = 0.0
+        @units = mm
+      transmission:NX_FLOAT64 = 0.0
+        @units = dimensionless
+      yaw:NX_FLOAT64 = -0.1
+        @units = degree
+    spol:NXprocess
+      @NX_class = NXprocess
+      @canSAS_name = spol
+      @canSAS_class = SASprocess
+      date:NX_CHAR[20] = 23-Apr-1999 11:40:24
+      term_0:NX_CHAR[1] = 
+        @name = radialstep
+        @units = mm
+      term_1:NX_CHAR[1] = 
+        @name = sector_width
+        @units = deg
+      term_2:NX_CHAR[1] = 
+        @name = sector_orient
+        @units = deg
+      sasprocessnote_0:NXnote
+        @NX_class = NXnote
+        @canSAS_name = sasprocessnote_0
+        @canSAS_class = SASprocessnote
+        SASprocessnote_0:NX_CHAR[79] = AvA1 0.0000E+00 AsA2 4.6060E-01 XvA3 0.0000E+00 XsA4 1.0000E+00 XfA5 0.0000E+00
+          @tag = SASprocessnote
+      sasprocessnote_1:NXnote
+        @NX_class = NXnote
+        @canSAS_name = sasprocessnote_1
+        @canSAS_class = SASprocessnote
+        SASprocessnote_0:NX_CHAR[76] = S...  9036  0  2.00E+02 H2O             Sbak  9035  0  2.00E+02 cellule vide
+          @tag = SASprocessnote
+      sasprocessnote_2:NXnote
+        @NX_class = NXnote
+        @canSAS_name = sasprocessnote_2
+        @canSAS_class = SASprocessnote
+        SASprocessnote_0:NX_CHAR[27] = Cd/E  9034  0  1.00E+02 B4C
+          @tag = SASprocessnote

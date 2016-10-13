@@ -1,0 +1,57 @@
+C:\Users\Pete\Documents\eclipse\canSAS\NXcanSAS_examples\1d_standard\gc14-dls-i22.h5 : NeXus data file
+  @creator = xml2hdf5.py
+  @default = sasentry
+  sasentry:NXentry
+    @NX_class = NXentry
+    @canSAS_name = sasentry
+    @canSAS_class = SASentry
+    @default = sasdata
+    definition:NX_CHAR[8] = NXcanSAS
+    run:NX_CHAR[43] = glassy carbon C14 at Diamond I22 at 8.9keV 
+    title:NX_CHAR[42] = glassy carbon C14 at Diamond I22 at 8.9keV
+    sasdata:NXdata
+      @NX_class = NXdata
+      @canSAS_name = sasdata
+      @canSAS_class = SASdata
+      @signal = I
+      @I_axes = Q
+      @I_uncertainties = Idev
+      I:NX_FLOAT64[244] = [0.0021854999999999999, 0.0021941, 0.0021949000000000001, '...', 0.00067259000000000004]
+        @units = electrons/nm3
+        @uncertainties = Idev
+      Q:NX_FLOAT64[244] = [0.0097199999999999995, 0.010500000000000001, 0.0112, '...', 0.191]
+        @units = 1/A
+    sasinstrument:NXinstrument
+      @NX_class = NXinstrument
+      @canSAS_name = sasinstrument
+      @canSAS_class = SASinstrument
+      name:NX_CHAR[35] = Diamond Light Source, I22 at 8.9keV
+      sascollimation:NXcollimator
+        @NX_class = NXcollimator
+        @canSAS_name = sascollimation
+        @canSAS_class = SAScollimation
+      sasdetector:NXdetector
+        @NX_class = NXdetector
+        @canSAS_name = sasdetector
+        @canSAS_class = SASdetector
+        name:NX_CHAR[3] = I22
+      sassource:NXsource
+        @NX_class = NXsource
+        @canSAS_name = sassource
+        @canSAS_class = SASsource
+        incident_wavelength:NX_FLOAT64 = 1.393
+          @units = A
+        radiation:NX_CHAR[17] = X-ray synchrotron
+    sasnote:NXnote
+      @NX_class = NXnote
+      @canSAS_name = sasnote
+      @canSAS_class = SASnote
+      SASnote:NX_CHAR[69] = http://www.smallangles.net/wgwiki/index.php/Glassy_Carbon_Round_Robin
+        @tag = SASnote
+    sassample:NXsample
+      @NX_class = NXsample
+      @canSAS_name = sassample
+      @canSAS_class = SASsample
+      ID:NX_CHAR[42] = glassy carbon C14 at Diamond I22 at 8.9keV
+      thickness:NX_FLOAT64 = 1.0
+        @units = mm

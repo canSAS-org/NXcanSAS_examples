@@ -611,13 +611,11 @@ class canSAS1D_to_NXcanSAS(object):
         copy a set of x,y,z (or roll,pitch,yaw) as floats to nx_parent
         '''
         #rotations = dict(roll='z', pitch='x', yaw='y')
-        rotations = dict(roll='polar_angle', pitch='x_axis_rotation', yaw='azimuthal_angle')
+        rotations = 'roll pitch yaw'.split()
         for axisnode in xml_parent:
             if isinstance(axisnode.tag, str):
                 nm = ns_strip(axisnode)
-                if nm in rotations:
-                    nm = rotations[nm]  # name substitution for roll, pitch, and yaw
-                else:
+                if nm not in rotations:
                     nm = template % nm
                 self.field_float(axisnode, nx_parent, node_name=nm)
 

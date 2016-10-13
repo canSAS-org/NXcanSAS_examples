@@ -1,0 +1,151 @@
+C:\Users\Pete\Documents\eclipse\canSAS\NXcanSAS_examples\1d_standard\ISIS_SANS_Example.h5 : NeXus data file
+  @creator = xml2hdf5.py
+  @default = sasentry
+  sasentry:NXentry
+    @NX_class = NXentry
+    @canSAS_name = sasentry
+    @canSAS_class = SASentry
+    @default = sasdata
+    definition:NX_CHAR[8] = NXcanSAS
+    run:NX_CHAR[6] =  39068
+    title:NX_CHAR[22] = standard can 12mm SANS
+    sasdata:NXdata
+      @NX_class = NXdata
+      @canSAS_name = sasdata
+      @canSAS_class = SASdata
+      @signal = I
+      @I_axes = Q
+      @I_uncertainties = Idev
+      I:NX_FLOAT64[140] = [65.111999999999995, 57.0, 50.784999999999997, '...', 0.38983000000000001]
+        @units = 1/cm
+        @uncertainties = Idev
+      Idev:NX_FLOAT64[140] = [0.56999999999999995, 0.40999999999999998, 0.32000000000000001, '...', 2.0]
+        @units = 1/cm
+      Q:NX_FLOAT64[140] = [0.0089999999999999993, 0.010999999999999999, 0.012999999999999999, '...', 0.28699999999999998]
+        @units = 1/A
+        @uncertainties = Qdev
+      Qdev:NX_FLOAT64[140] = [0.0, 0.0, 0.0, '...', 0.0]
+        @units = 1/A
+    sasinstrument:NXinstrument
+      @NX_class = NXinstrument
+      @canSAS_name = sasinstrument
+      @canSAS_class = SASinstrument
+      name:NX_CHAR[6] = LOQ___
+      fixed:NXcollimator
+        @NX_class = NXcollimator
+        @canSAS_name = fixed
+        @canSAS_class = SAScollimation
+        length:NX_FLOAT64 = 10.995
+          @units = m
+          @comment = Amount/length of collimation inserted (on a SANS instrument)
+        A2:NXaperture
+          @NX_class = NXaperture
+          @canSAS_name = A2
+          @canSAS_class = aperture
+          distance:NX_FLOAT64 = 10.5
+            @units = m
+          shape:NX_CHAR[7] = pinhole
+          x_gap:NX_FLOAT64 = 12.0
+            @units = mm
+          y_gap:NX_FLOAT64 = 12.0
+            @units = mm
+      sasdetector_0:NXdetector
+        @NX_class = NXdetector
+        @canSAS_name = sasdetector_0
+        @canSAS_class = SASdetector
+        SDD:NX_FLOAT64 = 4.155
+          @units = m
+          @comment = Distance between sample and detector
+        beam_center_x:NX_FLOAT64 = 324.45
+          @units = mm
+        beam_center_y:NX_FLOAT64 = 325.55
+          @units = mm
+        name:NX_CHAR[12] = ORDELA 2661N
+        x_pixel_size:NX_FLOAT64 = 5.0
+          @units = mm
+        y_pixel_size:NX_FLOAT64 = 5.0
+          @units = mm
+      sasdetector_1:NXdetector
+        @NX_class = NXdetector
+        @canSAS_name = sasdetector_1
+        @canSAS_class = SASdetector
+        SDD:NX_FLOAT64 = 0.587
+          @units = m
+          @comment = Distance between sample and detector
+        beam_center_x:NX_FLOAT64 = 324.45
+          @units = mm
+        beam_center_y:NX_FLOAT64 = 325.55
+          @units = mm
+        name:NX_CHAR[8] = ISIS HAB
+        x_pixel_size:NX_FLOAT64 = 12.0
+          @units = mm
+        y_pixel_size:NX_FLOAT64 = 12.0
+          @units = mm
+      sassource:NXsource
+        @NX_class = NXsource
+        @canSAS_name = sassource
+        @canSAS_class = SASsource
+        beam_shape:NX_CHAR[12] = disc________
+        beam_size_x:NX_FLOAT64 = 12.0
+          @units = mm
+        beam_size_y:NX_FLOAT64 = 12.0
+          @units = mm
+        radiation:NX_CHAR[7] = neutron
+        wavelength_max:NX_FLOAT64 = 1.0
+          @units = nm
+        wavelength_min:NX_FLOAT64 = 0.22
+          @units = nm
+    sasnote:NXnote
+      @NX_class = NXnote
+      @canSAS_name = sasnote
+      @canSAS_class = SASnote
+      SASnote:NX_CHAR[1] = 
+        @tag = SASnote
+    sasprocess:NXprocess
+      @NX_class = NXprocess
+      @canSAS_name = sasprocess
+      @canSAS_class = SASprocess
+      date:NX_CHAR[20] = 09-MAR-2008 10:22:32
+      name:NX_CHAR[7] = COLETTE
+      term_0:NX_CHAR[13] = USER:MASK.COM
+        @name = mask_file
+      term_1:NX_CHAR[6] = 1.7270
+        @name = scale_factor
+        @units = a.u.
+      term_2:NX_CHAR[4] = 38.0
+        @name = radius_min
+        @units = mm
+      term_3:NX_CHAR[5] = 419.0
+        @name = radius_max
+        @units = mm
+      term_4:NX_CHAR[3] = 3.0
+        @name = radialstep
+        @units = mm
+      term_5:NX_CHAR[5] = 180.0
+        @name = sector_width
+        @units = degree
+      term_6:NX_CHAR[5] = 21610
+        @name = count_time
+        @units = frame
+      file_written:NXnote
+        @NX_class = NXnote
+        @canSAS_name = file_written
+        @canSAS_class = SASprocessnote
+        @name = file_written
+        SASprocessnote_0:NX_CHAR[23] = 17-MAR-2008 18:02:17.84
+          @tag = SASprocessnote
+      q_resolution:NXnote
+        @NX_class = NXnote
+        @canSAS_name = q_resolution
+        @canSAS_class = SASprocessnote
+        @name = q_resolution
+        SASprocessnote_0:NX_CHAR[8] = estimate
+          @tag = SASprocessnote
+    sassample:NXsample
+      @NX_class = NXsample
+      @canSAS_name = sassample
+      @canSAS_class = SASsample
+      ID:NX_CHAR[22] = standard can 12mm SANS
+      details:NX_CHAR[21] =  Perez-Mendez,Rodrigu
+      thickness:NX_FLOAT64 = 1.03
+        @units = mm

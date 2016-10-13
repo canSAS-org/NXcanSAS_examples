@@ -1,0 +1,145 @@
+C:\Users\Pete\Documents\eclipse\canSAS\NXcanSAS_examples\1d_standard\ill_sasxml_example.h5 : NeXus data file
+  @creator = xml2hdf5.py
+  @default = sasentry
+  sasentry:NXentry
+    @NX_class = NXentry
+    @canSAS_name = sasentry
+    @canSAS_class = SASentry
+    @default = sasdata
+    definition:NX_CHAR[8] = NXcanSAS
+    run:NX_CHAR[11] = g009346.001
+    title:NX_CHAR[24] = ILL-D22 example: 7D1 2mm
+    sasdata:NXdata
+      @NX_class = NXdata
+      @canSAS_name = sasdata
+      @canSAS_class = SASdata
+      @signal = I
+      @I_axes = Q
+      @I_uncertainties = Idev
+      I:NX_FLOAT64[69] = [0.0, 0.0, 0.0, '...', 0.0]
+        @units = 1/cm
+        @uncertainties = Idev
+      Idev:NX_FLOAT64[69] = [0.0, 0.0, 0.0, '...', 0.0]
+        @units = 1/cm
+      Q:NX_FLOAT64[69] = [0.0, 0.00078539820000000005, 0.001570796, '...', 0.053407080000000003]
+        @units = 1/A
+        @uncertainties = Qdev
+      Qdev:NX_FLOAT64[69] = [0.0, 0.00052905189999999998, 0.00054626410000000001, '...', 0.0053666959999999998]
+        @units = 1/A
+    sasinstrument:NXinstrument
+      @NX_class = NXinstrument
+      @canSAS_name = sasinstrument
+      @canSAS_class = SASinstrument
+      name:NX_CHAR[3] = D22
+      sascollimation:NXcollimator
+        @NX_class = NXcollimator
+        @canSAS_name = sascollimation
+        @canSAS_class = SAScollimation
+        length:NX_FLOAT64 = 11.2
+          @units = m
+          @comment = Amount/length of collimation inserted (on a SANS instrument)
+      sasdetector:NXdetector
+        @NX_class = NXdetector
+        @canSAS_name = sasdetector
+        @canSAS_class = SASdetector
+        SDD:NX_FLOAT64 = 10.0
+          @units = m
+          @comment = Distance between sample and detector
+        beam_center_x:NX_FLOAT64 = 47.03
+          @units = cm
+        beam_center_y:NX_FLOAT64 = 47.78
+          @units = cm
+        name:NX_CHAR[1] = 
+        roll:NX_FLOAT64 = 0.0
+          @units = degree
+        x_pixel_size:NX_FLOAT64 = 7.5
+          @units = mm
+        y_pixel_size:NX_FLOAT64 = 7.5
+          @units = mm
+      sassource:NXsource
+        @NX_class = NXsource
+        @canSAS_name = sassource
+        @canSAS_class = SASsource
+        beam_size_x:NX_FLOAT64 = 30.0
+          @units = mm
+        beam_size_y:NX_FLOAT64 = 0.0
+          @units = mm
+        incident_wavelength:NX_FLOAT64 = 8.0
+          @units = A
+        radiation:NX_CHAR[7] = neutron
+        wavelength_spread:NX_FLOAT64 = 0.1
+          @units = fraction 
+    sasnote:NXnote
+      @NX_class = NXnote
+      @canSAS_name = sasnote
+      @canSAS_class = SASnote
+      SASnote:NX_CHAR[1] = 
+        @tag = SASnote
+    sassample:NXsample
+      @NX_class = NXsample
+      @canSAS_name = sassample
+      @canSAS_class = SASsample
+      ID:NX_CHAR[7] = 7D1 2mm
+      sample_offset_angle_deg:NX_CHAR[12] =       0.000 
+        @xml_namespace = urn:ILL:D22
+      temperature:NX_FLOAT64 = 0.0
+        @units = C
+      thickness:NX_FLOAT64 = 0.0
+        @units = mm
+      transmission:NX_FLOAT64 = 0.0
+        @units = dimensionless
+      x_position:NX_FLOAT64 = 8.0
+        @units = mm
+      y_position:NX_FLOAT64 = 0.0
+        @units = mm
+    spol:NXprocess
+      @NX_class = NXprocess
+      @canSAS_name = spol
+      @canSAS_class = SASprocess
+      date:NX_CHAR[19] = 1-Jul-1998 14:57:37
+      name:NX_CHAR[4] = spol
+      term_0:NX_CHAR[4] = 1.00
+        @name = Flux_monitor
+        @units = none
+      term_1:NX_CHAR[7] = 100.000
+        @name = Count_time
+        @units = s
+      term_2:NX_CHAR[9] = estimated
+        @name = Q_resolution
+      term_3:NX_CHAR[5] = 1.000
+        @name = radialstep
+        @units = cm
+      term_4:NX_CHAR[5] = 180.0
+        @name = sector_width
+        @units = deg
+      term_5:NX_CHAR[3] = 0.0
+        @name = sector_orient
+        @units = deg
+      _01:NXnote
+        @NX_class = NXnote
+        @canSAS_name = 01
+        @canSAS_class = SASprocessnote
+        @name = 01
+        SASprocessnote_0:NX_CHAR[79] = AvA1 4.8700E-01 AsA2 9.2700E-01 XvA3 4.3800E-02 XsA4 1.6360E-01 XfA5 0.0000E+00
+          @tag = SASprocessnote
+      _02:NXnote
+        @NX_class = NXnote
+        @canSAS_name = 02
+        @canSAS_class = SASprocessnote
+        @name = 02
+        SASprocessnote_0:NX_CHAR[71] = S...  9346  0  2.23E+01 7D1 2mm         Sbak  9345  0  2.23E+01 D2O 2mm
+          @tag = SASprocessnote
+      _03:NXnote
+        @NX_class = NXnote
+        @canSAS_name = 03
+        @canSAS_class = SASprocessnote
+        @name = 03
+        SASprocessnote_0:NX_CHAR[71] = Vbak  9343  0  2.23E+01 Empty Qtz Cell  V...  9342  0  2.23E+01 H2O 1mm
+          @tag = SASprocessnote
+      _04:NXnote
+        @NX_class = NXnote
+        @canSAS_name = 04
+        @canSAS_class = SASprocessnote
+        @name = 04
+        SASprocessnote_0:NX_CHAR[32] = Cd/E  9340  0  2.23E+01 Cd - Bgd
+          @tag = SASprocessnote

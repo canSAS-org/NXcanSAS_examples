@@ -1,0 +1,363 @@
+C:\Users\Pete\Documents\eclipse\canSAS\NXcanSAS_examples\1d_standard\cs_rr_polymers.h5 : NeXus data file
+  @creator = xml2hdf5.py
+  @default = rr_polymer_A
+  rr_polymer_A:NXentry
+    @NX_class = NXentry
+    @canSAS_name = rr-polymer-A
+    @canSAS_class = SASentry
+    @default = not_desmeared
+    definition:NX_CHAR[8] = NXcanSAS
+    run:NX_CHAR[19] = 1999-08-13 07:51:39
+      @name = rr-polymer-A
+    title:NX_CHAR[21] = Round Robin Polymer A
+    not_desmeared:NXdata
+      @NX_class = NXdata
+      @canSAS_name = not-desmeared
+      @canSAS_class = SASdata
+      @signal = I
+      @I_axes = Q
+      @I_uncertainties = Idev
+      I:NX_FLOAT64[119] = [1789.01, 825.75, 1117.47, '...', 0.15856200000000001]
+        @units = 1/cm
+        @uncertainties = Idev
+      Idev:NX_FLOAT64[119] = [152.983, 80.527799999999999, 49.749400000000001, '...', 0.0034644099999999998]
+        @units = 1/cm
+      Q:NX_FLOAT64[119] = [0.000167522, 0.00019132, 0.000215193, '...', 0.29710500000000001]
+        @units = 1/A
+    raw_IgorPro_wavenote:NXnote
+      @NX_class = NXnote
+      @canSAS_name = raw IgorPro wavenote
+      @canSAS_class = SASnote
+      @name = raw IgorPro wavenote
+      SASnote:NX_CHAR[775] = DATAFILE=friday_barnes.dat;EPOCH=934538182;TZ=-5;SCAN_N=9;SECONDS=3017375499;DATE=Fri, Aug 13, 1999;HOUR=07:51:39;COMMENT=Round Robin Polymer sample A, 8985 eV;
+SpecCommand=uascan  ar 12.7497 12.7432 9 0.0002  -24.5 285 1.2 150 5;SpecComment=Round Robin Polymer sample A, 8985 eV;SpecScan=spec9;
+  USAXSDataFolder=root:USAXS:friday_barnes:'S9_Round Robin Polymer A':;RawFolder=root:raw:friday_barnes:spec9:;UserSampleName='S9_Round Robin Polymer A';Wname=SMR_Int;Wavelength=1.3799;
+SlitLength=0.053282;NumberOfSteps=150;SDDistance=235;SampleThickness=1;SampleTransmission=0.52485;SampleTransmissionPeakToPeak=0.52485;UseMSAXSCorrection=0;MSAXSCorrection=1;Units=cm-1;
+  BlankComment=blank, 8985 eV;BlankFolder=root:USAXS:friday_barnes:'S11_blank, 8985 eV';Kfactor=3.6476e-19;
+        @tag = SASnote
+    sasinstrument:NXinstrument
+      @NX_class = NXinstrument
+      @canSAS_name = sasinstrument
+      @canSAS_class = SASinstrument
+      name:NX_CHAR[26] = UNICAT 33ID-D USAXS at APS
+      sascollimation:NXcollimator
+        @NX_class = NXcollimator
+        @canSAS_name = sascollimation
+        @canSAS_class = SAScollimation
+      sasdetector:NXdetector
+        @NX_class = NXdetector
+        @canSAS_name = sasdetector
+        @canSAS_class = SASdetector
+        SDD:NX_FLOAT64 = 235.0
+          @units = mm
+          @comment = Distance between sample and detector
+        name:NX_CHAR[16] = USAXS photodiode
+        slit_length:NX_FLOAT64 = 0.053282
+          @units = 1/A
+          @comment = Slit length of the instrument for this detector, expressed in the same units as Q
+        x_pixel_size:NX_FLOAT64 = 5.5
+          @units = mm
+      sassource:NXsource
+        @NX_class = NXsource
+        @canSAS_name = sassource
+        @canSAS_class = SASsource
+        beam_shape:NX_CHAR[9] = rectangle
+        beam_size_x:NX_FLOAT64 = 0.2
+          @units = mm
+        beam_size_y:NX_FLOAT64 = 0.2
+          @units = mm
+        incident_wavelength:NX_FLOAT64 = 1.37991
+          @units = A
+        radiation:NX_CHAR[17] = X-ray synchrotron
+    sasprocess:NXprocess
+      @NX_class = NXprocess
+      @canSAS_name = sasprocess
+      @canSAS_class = SASprocess
+      sasprocessnote:NXnote
+        @NX_class = NXnote
+        @canSAS_name = sasprocessnote
+        @canSAS_class = SASprocessnote
+        SASprocessnote:NX_CHAR[1] = 
+          @tag = SASprocessnote
+    sassample:NXsample
+      @NX_class = NXsample
+      @canSAS_name = sassample
+      @canSAS_class = SASsample
+      ID:NX_CHAR[37] = Round Robin Polymer sample A, 8985 eV
+      details:NX_CHAR[101] = 
+				Part of a set of 4 polymer samples for round-robin SAS measurement from John D. Barnes, NIST
+			
+      thickness:NX_FLOAT64 = 1.0
+        @units = mm
+      transmission:NX_FLOAT64 = 0.52485
+        @units = dimensionless
+  rr_polymer_B:NXentry
+    @NX_class = NXentry
+    @canSAS_name = rr-polymer-B
+    @canSAS_class = SASentry
+    @default = not_desmeared
+    definition:NX_CHAR[8] = NXcanSAS
+    run:NX_CHAR[35] = 1999-08-13 08:10:25 (not desmeared)
+      @name = rr-polymer-B
+    title:NX_CHAR[21] = Round Robin Polymer B
+    not_desmeared:NXdata
+      @NX_class = NXdata
+      @canSAS_name = not-desmeared
+      @canSAS_class = SASdata
+      @signal = I
+      @I_axes = Q
+      @I_uncertainties = Idev
+      I:NX_FLOAT64[120] = [37359.800000000003, 31972.299999999999, 23155.599999999999, '...', 0.155024]
+        @units = 1/cm
+        @uncertainties = Idev
+      Idev:NX_FLOAT64[120] = [925.32000000000005, 741.37900000000002, 524.46000000000004, '...', 0.00334198]
+        @units = 1/cm
+      Q:NX_FLOAT64[120] = [0.00016044400000000001, 0.00017636, 0.00020811500000000001, '...', 0.29712899999999998]
+        @units = 1/A
+    raw_IgorPro_wavenote:NXnote
+      @NX_class = NXnote
+      @canSAS_name = raw IgorPro wavenote
+      @canSAS_class = SASnote
+      @name = raw IgorPro wavenote
+      SASnote:NX_CHAR[780] = DATAFILE=friday_barnes.dat;EPOCH=934538182;TZ=-5;SCAN_N=10;SECONDS=3017376625;DATE=Fri, Aug 13, 1999;HOUR=08:10:25;COMMENT=Round Robin Polymer sample B, 8985 eV;
+SpecCommand=uascan  ar 12.7497 12.7432 9 0.0002  -24.5 285 1.2 150 5;SpecComment=Round Robin Polymer sample B, 8985 eV;SpecScan=spec10;
+  USAXSDataFolder=root:USAXS:friday_barnes:'S10_Round Robin Polymer B':;RawFolder=root:raw:friday_barnes:spec10:;UserSampleName='S10_Round Robin Polymer B';Wname=SMR_Int;Wavelength=1.3799;
+SlitLength=0.053282;NumberOfSteps=150;SDDistance=235;Units=cm-1;BlankComment=blank, 8985 eV;BlankFolder=root:USAXS:friday_barnes:'S11_blank, 8985 eV';Kfactor=3.6476e-19;SampleThickness=1;
+  SampleTransmission=0.49141;SampleTransmissionPeakToPeak=0.49141;UseMSAXSCorrection=0;MSAXSCorrection=1;
+        @tag = SASnote
+    sasinstrument:NXinstrument
+      @NX_class = NXinstrument
+      @canSAS_name = sasinstrument
+      @canSAS_class = SASinstrument
+      name:NX_CHAR[26] = UNICAT 33ID-D USAXS at APS
+      sascollimation:NXcollimator
+        @NX_class = NXcollimator
+        @canSAS_name = sascollimation
+        @canSAS_class = SAScollimation
+      sasdetector:NXdetector
+        @NX_class = NXdetector
+        @canSAS_name = sasdetector
+        @canSAS_class = SASdetector
+        SDD:NX_FLOAT64 = 235.0
+          @units = mm
+          @comment = Distance between sample and detector
+        name:NX_CHAR[16] = USAXS photodiode
+        slit_length:NX_FLOAT64 = 0.053282
+          @units = 1/A
+          @comment = Slit length of the instrument for this detector, expressed in the same units as Q
+        x_pixel_size:NX_FLOAT64 = 5.5
+          @units = mm
+      sassource:NXsource
+        @NX_class = NXsource
+        @canSAS_name = sassource
+        @canSAS_class = SASsource
+        beam_shape:NX_CHAR[9] = rectangle
+        beam_size_x:NX_FLOAT64 = 0.2
+          @units = mm
+        beam_size_y:NX_FLOAT64 = 0.2
+          @units = mm
+        incident_wavelength:NX_FLOAT64 = 1.37991
+          @units = A
+        radiation:NX_CHAR[17] = X-ray synchrotron
+    sasprocess:NXprocess
+      @NX_class = NXprocess
+      @canSAS_name = sasprocess
+      @canSAS_class = SASprocess
+      sasprocessnote:NXnote
+        @NX_class = NXnote
+        @canSAS_name = sasprocessnote
+        @canSAS_class = SASprocessnote
+        SASprocessnote:NX_CHAR[1] = 
+          @tag = SASprocessnote
+    sassample:NXsample
+      @NX_class = NXsample
+      @canSAS_name = sassample
+      @canSAS_class = SASsample
+      ID:NX_CHAR[37] = Round Robin Polymer sample B, 8985 eV
+      details:NX_CHAR[101] = 
+				Part of a set of 4 polymer samples for round-robin SAS measurement from John D. Barnes, NIST
+			
+      thickness:NX_FLOAT64 = 1.0
+        @units = mm
+      transmission:NX_FLOAT64 = 0.49141
+        @units = dimensionless
+  rr_polymer_C:NXentry
+    @NX_class = NXentry
+    @canSAS_name = rr-polymer-C
+    @canSAS_class = SASentry
+    @default = not_desmeared
+    definition:NX_CHAR[8] = NXcanSAS
+    run:NX_CHAR[19] = 1999-08-13 08:47:48
+      @name = rr-polymer-C
+    title:NX_CHAR[21] = Round Robin Polymer C
+    not_desmeared:NXdata
+      @NX_class = NXdata
+      @canSAS_name = not-desmeared
+      @canSAS_class = SASdata
+      @signal = I
+      @I_axes = Q
+      @I_uncertainties = Idev
+      I:NX_FLOAT64[120] = [12434.799999999999, 10596.700000000001, 8071.4899999999998, '...', 0.15085200000000001]
+        @units = 1/cm
+        @uncertainties = Idev
+      Idev:NX_FLOAT64[120] = [398.37599999999998, 301.56599999999997, 221.63800000000001, '...', 0.0032397599999999999]
+        @units = 1/cm
+      Q:NX_FLOAT64[120] = [0.00016291, 0.000178825, 0.000202623, '...', 0.29713200000000001]
+        @units = 1/A
+    raw_IgorPro_wavenote:NXnote
+      @NX_class = NXnote
+      @canSAS_name = raw IgorPro wavenote
+      @canSAS_class = SASnote
+      @name = raw IgorPro wavenote
+      SASnote:NX_CHAR[780] = DATAFILE=friday_barnes.dat;EPOCH=934538182;TZ=-5;SCAN_N=12;SECONDS=3017378868;DATE=Fri, Aug 13, 1999;HOUR=08:47:48;COMMENT=Round Robin Polymer sample C, 8985 eV;
+SpecCommand=uascan  ar 12.7497 12.7432 9 0.0002  -24.5 285 1.2 150 5;SpecComment=Round Robin Polymer sample C, 8985 eV;SpecScan=spec12;
+  USAXSDataFolder=root:USAXS:friday_barnes:'S12_Round Robin Polymer C':;RawFolder=root:raw:friday_barnes:spec12:;UserSampleName='S12_Round Robin Polymer C';Wname=SMR_Int;Wavelength=1.3799;
+SlitLength=0.053282;NumberOfSteps=150;SDDistance=235;Units=cm-1;BlankComment=blank, 8985 eV;BlankFolder=root:USAXS:friday_barnes:'S11_blank, 8985 eV';Kfactor=3.6476e-19;SampleThickness=1;
+  SampleTransmission=0.49128;SampleTransmissionPeakToPeak=0.49128;UseMSAXSCorrection=0;MSAXSCorrection=1;
+        @tag = SASnote
+    sasinstrument:NXinstrument
+      @NX_class = NXinstrument
+      @canSAS_name = sasinstrument
+      @canSAS_class = SASinstrument
+      name:NX_CHAR[26] = UNICAT 33ID-D USAXS at APS
+      sascollimation:NXcollimator
+        @NX_class = NXcollimator
+        @canSAS_name = sascollimation
+        @canSAS_class = SAScollimation
+      sasdetector:NXdetector
+        @NX_class = NXdetector
+        @canSAS_name = sasdetector
+        @canSAS_class = SASdetector
+        SDD:NX_FLOAT64 = 235.0
+          @units = mm
+          @comment = Distance between sample and detector
+        name:NX_CHAR[16] = USAXS photodiode
+        slit_length:NX_FLOAT64 = 0.053282
+          @units = 1/A
+          @comment = Slit length of the instrument for this detector, expressed in the same units as Q
+        x_pixel_size:NX_FLOAT64 = 5.5
+          @units = mm
+      sassource:NXsource
+        @NX_class = NXsource
+        @canSAS_name = sassource
+        @canSAS_class = SASsource
+        beam_shape:NX_CHAR[9] = rectangle
+        beam_size_x:NX_FLOAT64 = 0.2
+          @units = mm
+        beam_size_y:NX_FLOAT64 = 0.2
+          @units = mm
+        incident_wavelength:NX_FLOAT64 = 1.37991
+          @units = A
+        radiation:NX_CHAR[17] = X-ray synchrotron
+    sasprocess:NXprocess
+      @NX_class = NXprocess
+      @canSAS_name = sasprocess
+      @canSAS_class = SASprocess
+      sasprocessnote:NXnote
+        @NX_class = NXnote
+        @canSAS_name = sasprocessnote
+        @canSAS_class = SASprocessnote
+        SASprocessnote:NX_CHAR[1] = 
+          @tag = SASprocessnote
+    sassample:NXsample
+      @NX_class = NXsample
+      @canSAS_name = sassample
+      @canSAS_class = SASsample
+      ID:NX_CHAR[37] = Round Robin Polymer sample C, 8985 eV
+      details:NX_CHAR[101] = 
+				Part of a set of 4 polymer samples for round-robin SAS measurement from John D. Barnes, NIST
+			
+      thickness:NX_FLOAT64 = 1.0
+        @units = mm
+      transmission:NX_FLOAT64 = 0.49128
+        @units = dimensionless
+  rr_polymer_D:NXentry
+    @NX_class = NXentry
+    @canSAS_name = rr-polymer-D
+    @canSAS_class = SASentry
+    @default = not_desmeared
+    definition:NX_CHAR[8] = NXcanSAS
+    run:NX_CHAR[19] = 1999-08-13 09:06:30
+      @name = rr-polymer-D
+    title:NX_CHAR[21] = Round Robin Polymer D
+    not_desmeared:NXdata
+      @NX_class = NXdata
+      @canSAS_name = not-desmeared
+      @canSAS_class = SASdata
+      @signal = I
+      @I_axes = Q
+      @I_uncertainties = Idev
+      I:NX_FLOAT64[120] = [3488.6100000000001, 1082.8800000000001, 444.43599999999998, '...', 0.14999699999999999]
+        @units = 1/cm
+        @uncertainties = Idev
+      Idev:NX_FLOAT64[120] = [222.739, 110.262, 66.207800000000006, '...', 0.0032314599999999998]
+        @units = 1/cm
+      Q:NX_FLOAT64[120] = [0.00016190200000000001, 0.000177818, 0.00020161499999999999, '...', 0.29713000000000001]
+        @units = 1/A
+    raw_IgorPro_wavenote:NXnote
+      @NX_class = NXnote
+      @canSAS_name = raw IgorPro wavenote
+      @canSAS_class = SASnote
+      @name = raw IgorPro wavenote
+      SASnote:NX_CHAR[778] = DATAFILE=friday_barnes.dat;EPOCH=934538182;TZ=-5;SCAN_N=13;SECONDS=3017379990;DATE=Fri, Aug 13, 1999;HOUR=09:06:30;COMMENT=Round Robin Polymer sample D, 8985 eV;
+SpecCommand=uascan  ar 12.7497 12.7432 9 0.0002  -24.5 285 1.2 150 5;SpecComment=Round Robin Polymer sample D, 8985 eV;SpecScan=spec13;
+  USAXSDataFolder=root:USAXS:friday_barnes:'S13_Round Robin Polymer D':;RawFolder=root:raw:friday_barnes:spec13:;UserSampleName='S13_Round Robin Polymer D';Wname=SMR_Int;Wavelength=1.3799;
+SlitLength=0.053282;NumberOfSteps=150;SDDistance=235;Units=cm-1;BlankComment=blank, 8985 eV;BlankFolder=root:USAXS:friday_barnes:'S11_blank, 8985 eV';Kfactor=3.6476e-19;SampleThickness=1;
+  SampleTransmission=0.4972;SampleTransmissionPeakToPeak=0.4972;UseMSAXSCorrection=0;MSAXSCorrection=1;
+        @tag = SASnote
+    sasinstrument:NXinstrument
+      @NX_class = NXinstrument
+      @canSAS_name = sasinstrument
+      @canSAS_class = SASinstrument
+      name:NX_CHAR[26] = UNICAT 33ID-D USAXS at APS
+      sascollimation:NXcollimator
+        @NX_class = NXcollimator
+        @canSAS_name = sascollimation
+        @canSAS_class = SAScollimation
+      sasdetector:NXdetector
+        @NX_class = NXdetector
+        @canSAS_name = sasdetector
+        @canSAS_class = SASdetector
+        SDD:NX_FLOAT64 = 235.0
+          @units = mm
+          @comment = Distance between sample and detector
+        name:NX_CHAR[16] = USAXS photodiode
+        slit_length:NX_FLOAT64 = 0.053282
+          @units = 1/A
+          @comment = Slit length of the instrument for this detector, expressed in the same units as Q
+        x_pixel_size:NX_FLOAT64 = 5.5
+          @units = mm
+      sassource:NXsource
+        @NX_class = NXsource
+        @canSAS_name = sassource
+        @canSAS_class = SASsource
+        beam_shape:NX_CHAR[9] = rectangle
+        beam_size_x:NX_FLOAT64 = 0.2
+          @units = mm
+        beam_size_y:NX_FLOAT64 = 0.2
+          @units = mm
+        incident_wavelength:NX_FLOAT64 = 1.37991
+          @units = A
+        radiation:NX_CHAR[17] = X-ray synchrotron
+    sasprocess:NXprocess
+      @NX_class = NXprocess
+      @canSAS_name = sasprocess
+      @canSAS_class = SASprocess
+      sasprocessnote:NXnote
+        @NX_class = NXnote
+        @canSAS_name = sasprocessnote
+        @canSAS_class = SASprocessnote
+        SASprocessnote:NX_CHAR[1] = 
+          @tag = SASprocessnote
+    sassample:NXsample
+      @NX_class = NXsample
+      @canSAS_name = sassample
+      @canSAS_class = SASsample
+      ID:NX_CHAR[37] = Round Robin Polymer sample D, 8985 eV
+      details:NX_CHAR[101] = 
+				Part of a set of 4 polymer samples for round-robin SAS measurement from John D. Barnes, NIST
+			
+      thickness:NX_FLOAT64 = 1.0
+        @units = mm
+      transmission:NX_FLOAT64 = 0.4972
+        @units = dimensionless

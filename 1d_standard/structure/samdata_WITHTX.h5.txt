@@ -1,0 +1,108 @@
+C:\Users\Pete\Documents\eclipse\canSAS\NXcanSAS_examples\1d_standard\samdata_WITHTX.h5 : NeXus data file
+  @creator = xml2hdf5.py
+  @default = _13444rear_1D_1_75_12_5
+  _13444rear_1D_1_75_12_5:NXentry
+    @NX_class = NXentry
+    @canSAS_name = 13444rear_1D_1.75_12.5
+    @canSAS_class = SASentry
+    @default = sasdata
+    definition:NX_CHAR[8] = NXcanSAS
+    run:NX_CHAR[5] = 13432
+      @name = 13444rear_1D_1.75_12.5
+    title:NX_CHAR[34] = PS3 0.025% Sample C_1mm_SANS/TRANS
+    sasdata:NXdata
+      @NX_class = NXdata
+      @canSAS_name = sasdata
+      @canSAS_class = SASdata
+      @signal = I
+      @I_axes = Q
+      @I_uncertainties = Idev
+      I:NX_FLOAT64[106] = [510.76900000000001, 623.23099999999999, 440.00099999999998, '...', 0.0]
+        @units = 1/cm
+        @uncertainties = Idev
+      Idev:NX_FLOAT64[106] = [180.00700000000001, 117.358, 75.072299999999998, '...', 0.0]
+        @units = 1/cm
+      Q:NX_FLOAT64[106] = [0.00159011, 0.0016696199999999999, 0.0017531000000000001, '...', 0.26687300000000003]
+        @units = 1/A
+        @uncertainties = Qdev
+      Qdev:NX_FLOAT64[106] = [0.0, 0.0, 0.0, '...', 0.0]
+        @units = 1/A
+    sasinstrument:NXinstrument
+      @NX_class = NXinstrument
+      @canSAS_name = sasinstrument
+      @canSAS_class = SASinstrument
+      name:NX_CHAR[6] = SANS2D
+      sascollimation:NXcollimator
+        @NX_class = NXcollimator
+        @canSAS_name = sascollimation
+        @canSAS_class = SAScollimation
+      sasdetector_0:NXdetector
+        @NX_class = NXdetector
+        @canSAS_name = sasdetector_0
+        @canSAS_class = SASdetector
+        name:NX_CHAR[20] = Rear:  ORDELA 21000N
+      sasdetector_1:NXdetector
+        @NX_class = NXdetector
+        @canSAS_name = sasdetector_1
+        @canSAS_class = SASdetector
+        name:NX_CHAR[20] = Front: ORDELA 21000N
+      sassource:NXsource
+        @NX_class = NXsource
+        @canSAS_name = sassource
+        @canSAS_class = SASsource
+        radiation:NX_CHAR[25] = Spallation Neutron Source
+    sasnote:NXnote
+      @NX_class = NXnote
+      @canSAS_name = sasnote
+      @canSAS_class = SASnote
+      SASnote:NX_CHAR[1] = 
+        @tag = SASnote
+    sasprocess:NXprocess
+      @NX_class = NXprocess
+      @canSAS_name = sasprocess
+      @canSAS_class = SASprocess
+      date:NX_CHAR[20] = 12-Jun-2012 17:08:43
+      name:NX_CHAR[29] = Mantid generated CanSAS1D XML
+      term_0:NX_CHAR[7] = 2.1.493
+        @name = svn
+      term_1:NX_CHAR[35] = Z:/Masks/MASKSANS2D_121T_12m_M1.txt
+        @name = user_file
+      sasprocessnote:NXnote
+        @NX_class = NXnote
+        @canSAS_name = sasprocessnote
+        @canSAS_class = SASprocessnote
+        SASprocessnote:NX_CHAR[1] = 
+          @tag = SASprocessnote
+    sassample:NXsample
+      @NX_class = NXsample
+      @canSAS_name = sassample
+      @canSAS_class = SASsample
+      ID:NX_CHAR[34] = PS3 0.025% Sample C_1mm_SANS/TRANS
+    transmission_spectrum_0:NXdata
+      @NX_class = NXdata
+      @canSAS_class = SAStransmission_spectrum
+      @name = sample
+      @signal = T
+      @T_axes = Lambda
+      @T_uncertainties = Tdev
+      Lambda:NX_FLOAT64[86] = [1.8125, 1.9375, 2.0625, '...', 12.4375]
+        @units = A
+      T:NX_FLOAT64[86] = [0.89590000000000003, 0.89354999999999996, 0.89676999999999996, '...', 0.88819000000000004]
+        @units = none
+        @uncertainties = Tdev
+      Tdev:NX_FLOAT64[86] = [0.0072199999999999999, 0.0065300000000000002, 0.0059699999999999996, '...', 0.0189]
+        @units = none
+    transmission_spectrum_1:NXdata
+      @NX_class = NXdata
+      @canSAS_class = SAStransmission_spectrum
+      @name = can
+      @signal = T
+      @T_axes = Lambda
+      @T_uncertainties = Tdev
+      Lambda:NX_FLOAT64[86] = [1.8125, 1.9375, 2.0625, '...', 12.4375]
+        @units = A
+      T:NX_FLOAT64[86] = [0.90546000000000004, 0.91161000000000003, 0.90266999999999997, '...', 0.91325999999999996]
+        @units = none
+        @uncertainties = Tdev
+      Tdev:NX_FLOAT64[86] = [0.00728, 0.0066299999999999996, 0.0060099999999999997, '...', 0.019300000000000001]
+        @units = none

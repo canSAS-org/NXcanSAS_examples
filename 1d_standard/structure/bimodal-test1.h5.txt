@@ -1,0 +1,464 @@
+C:\Users\Pete\Documents\eclipse\canSAS\NXcanSAS_examples\1d_standard\bimodal-test1.h5 : NeXus data file
+  @creator = xml2hdf5.py
+  @default = sasentry
+  sasentry:NXentry
+    @NX_class = NXentry
+    @canSAS_name = sasentry
+    @canSAS_class = SASentry
+    @default = sasdata
+    definition:NX_CHAR[8] = NXcanSAS
+    run:NX_CHAR[4] = 1992
+    title:NX_CHAR[17] = SAS bimodal test1
+    sasdata:NXdata
+      @NX_class = NXdata
+      @canSAS_name = sasdata
+      @canSAS_class = SASdata
+      @signal = I
+      @I_axes = Q
+      @I_uncertainties = Idev
+      I:NX_FLOAT64[91] = [3497.473, 3340.0030000000002, 3322.4740000000002, '...', 0.110684]
+        @units = 1/cm
+        @uncertainties = Idev
+      Idev:NX_FLOAT64[91] = [90.728160000000003, 84.953140000000005, 79.631330000000005, '...', 0.010393647000000001]
+        @units = 1/cm
+      Q:NX_FLOAT64[91] = [0.0040157138999999996, 0.0045408653000000004, 0.0050095972000000002, '...', 0.38502960000000003]
+        @units = 1/A
+    sasinstrument:NXinstrument
+      @NX_class = NXinstrument
+      @canSAS_name = sasinstrument
+      @canSAS_class = SASinstrument
+      name:NX_CHAR[25] = simulated SAS calculation
+      sascollimation:NXcollimator
+        @NX_class = NXcollimator
+        @canSAS_name = sascollimation
+        @canSAS_class = SAScollimation
+      sasdetector:NXdetector
+        @NX_class = NXdetector
+        @canSAS_name = sasdetector
+        @canSAS_class = SASdetector
+        name:NX_CHAR[11] = calculation
+      sassource:NXsource
+        @NX_class = NXsource
+        @canSAS_name = sassource
+        @canSAS_class = SASsource
+        incident_wavelength:NX_FLOAT64 = 1.0
+          @units = A
+        radiation:NX_CHAR[10] = artificial
+    sasnote:NXnote
+      @NX_class = NXnote
+      @canSAS_name = sasnote
+      @canSAS_class = SASnote
+      initial_size_distribution:NXcollection
+        @NX_class = NXcollection
+        @canSAS_name = initial size distribution
+        @name = initial size distribution
+        @tag = sizeDist
+        row_0:NXcollection
+          @NX_class = NXcollection
+          @canSAS_name = row_0
+          @tag = row
+          @unit = 1/A
+          D:NX_CHAR[2] = 25
+            @tag = D
+          f:NX_CHAR[13] = 9.0795246E-11
+            @tag = f
+        row_1:NXcollection
+          @NX_class = NXcollection
+          @canSAS_name = row_1
+          @tag = row
+          @unit = 1/A
+          D:NX_CHAR[4] = 61.5
+            @tag = D
+          f:NX_CHAR[13] = 7.7381284E-09
+            @tag = f
+        row_10:NXcollection
+          @NX_class = NXcollection
+          @canSAS_name = row_10
+          @tag = row
+          @unit = 1/A
+          D:NX_CHAR[8] = 181.8346
+            @tag = D
+          f:NX_CHAR[13] = 1.0369369E-04
+            @tag = f
+        row_11:NXcollection
+          @NX_class = NXcollection
+          @canSAS_name = row_11
+          @tag = row
+          @unit = 1/A
+          D:NX_CHAR[8] = 197.2897
+            @tag = D
+          f:NX_CHAR[13] = 6.7638539E-05
+            @tag = f
+        row_12:NXcollection
+          @NX_class = NXcollection
+          @canSAS_name = row_12
+          @tag = row
+          @unit = 1/A
+          D:NX_CHAR[8] = 213.2083
+            @tag = D
+          f:NX_CHAR[13] = 4.1756277E-05
+            @tag = f
+        row_13:NXcollection
+          @NX_class = NXcollection
+          @canSAS_name = row_13
+          @tag = row
+          @unit = 1/A
+          D:NX_CHAR[8] = 229.6046
+            @tag = D
+          f:NX_CHAR[13] = 2.7263761E-05
+            @tag = f
+        row_14:NXcollection
+          @NX_class = NXcollection
+          @canSAS_name = row_14
+          @tag = row
+          @unit = 1/A
+          D:NX_CHAR[8] = 246.4927
+            @tag = D
+          f:NX_CHAR[13] = 2.1251402E-05
+            @tag = f
+        row_15:NXcollection
+          @NX_class = NXcollection
+          @canSAS_name = row_15
+          @tag = row
+          @unit = 1/A
+          D:NX_CHAR[8] = 263.8875
+            @tag = D
+          f:NX_CHAR[13] = 2.0186611E-05
+            @tag = f
+        row_16:NXcollection
+          @NX_class = NXcollection
+          @canSAS_name = row_16
+          @tag = row
+          @unit = 1/A
+          D:NX_CHAR[8] = 281.8041
+            @tag = D
+          f:NX_CHAR[13] = 2.1413107E-05
+            @tag = f
+        row_17:NXcollection
+          @NX_class = NXcollection
+          @canSAS_name = row_17
+          @tag = row
+          @unit = 1/A
+          D:NX_CHAR[8] = 300.2583
+            @tag = D
+          f:NX_CHAR[13] = 2.3320796E-05
+            @tag = f
+        row_18:NXcollection
+          @NX_class = NXcollection
+          @canSAS_name = row_18
+          @tag = row
+          @unit = 1/A
+          D:NX_CHAR[7] = 319.266
+            @tag = D
+          f:NX_CHAR[13] = 2.5052674E-05
+            @tag = f
+        row_19:NXcollection
+          @NX_class = NXcollection
+          @canSAS_name = row_19
+          @tag = row
+          @unit = 1/A
+          D:NX_CHAR[7] = 338.844
+            @tag = D
+          f:NX_CHAR[13] = 2.6200381E-05
+            @tag = f
+        row_2:NXcollection
+          @NX_class = NXcollection
+          @canSAS_name = row_2
+          @tag = row
+          @unit = 1/A
+          D:NX_CHAR[6] = 73.345
+            @tag = D
+          f:NX_CHAR[13] = 2.6583055E-07
+            @tag = f
+        row_20:NXcollection
+          @NX_class = NXcollection
+          @canSAS_name = row_20
+          @tag = row
+          @unit = 1/A
+          D:NX_CHAR[8] = 359.0093
+            @tag = D
+          f:NX_CHAR[13] = 2.6606949E-05
+            @tag = f
+        row_21:NXcollection
+          @NX_class = NXcollection
+          @canSAS_name = row_21
+          @tag = row
+          @unit = 1/A
+          D:NX_CHAR[8] = 379.7796
+            @tag = D
+          f:NX_CHAR[13] = 2.6259249E-05
+            @tag = f
+        row_22:NXcollection
+          @NX_class = NXcollection
+          @canSAS_name = row_22
+          @tag = row
+          @unit = 1/A
+          D:NX_CHAR[7] = 401.173
+            @tag = D
+          f:NX_CHAR[13] = 2.5229976E-05
+            @tag = f
+        row_23:NXcollection
+          @NX_class = NXcollection
+          @canSAS_name = row_23
+          @tag = row
+          @unit = 1/A
+          D:NX_CHAR[8] = 423.2082
+            @tag = D
+          f:NX_CHAR[13] = 2.3642069E-05
+            @tag = f
+        row_24:NXcollection
+          @NX_class = NXcollection
+          @canSAS_name = row_24
+          @tag = row
+          @unit = 1/A
+          D:NX_CHAR[8] = 445.9044
+            @tag = D
+          f:NX_CHAR[13] = 2.1643085E-05
+            @tag = f
+        row_25:NXcollection
+          @NX_class = NXcollection
+          @canSAS_name = row_25
+          @tag = row
+          @unit = 1/A
+          D:NX_CHAR[8] = 469.2816
+            @tag = D
+          f:NX_CHAR[13] = 1.9385372E-05
+            @tag = f
+        row_26:NXcollection
+          @NX_class = NXcollection
+          @canSAS_name = row_26
+          @tag = row
+          @unit = 1/A
+          D:NX_CHAR[6] = 493.36
+            @tag = D
+          f:NX_CHAR[13] = 1.7011183E-05
+            @tag = f
+        row_27:NXcollection
+          @NX_class = NXcollection
+          @canSAS_name = row_27
+          @tag = row
+          @unit = 1/A
+          D:NX_CHAR[8] = 518.1608
+            @tag = D
+          f:NX_CHAR[13] = 1.4642664E-05
+            @tag = f
+        row_28:NXcollection
+          @NX_class = NXcollection
+          @canSAS_name = row_28
+          @tag = row
+          @unit = 1/A
+          D:NX_CHAR[8] = 543.7056
+            @tag = D
+          f:NX_CHAR[13] = 1.2376397E-05
+            @tag = f
+        row_29:NXcollection
+          @NX_class = NXcollection
+          @canSAS_name = row_29
+          @tag = row
+          @unit = 1/A
+          D:NX_CHAR[8] = 570.0168
+            @tag = D
+          f:NX_CHAR[13] = 1.0281848E-05
+            @tag = f
+        row_3:NXcollection
+          @NX_class = NXcollection
+          @canSAS_name = row_3
+          @tag = row
+          @unit = 1/A
+          D:NX_CHAR[8] = 85.54535
+            @tag = D
+          f:NX_CHAR[13] = 3.0988890E-06
+            @tag = f
+        row_30:NXcollection
+          @NX_class = NXcollection
+          @canSAS_name = row_30
+          @tag = row
+          @unit = 1/A
+          D:NX_CHAR[8] = 597.1173
+            @tag = D
+          f:NX_CHAR[13] = 8.4027670E-06
+            @tag = f
+        row_31:NXcollection
+          @NX_class = NXcollection
+          @canSAS_name = row_31
+          @tag = row
+          @unit = 1/A
+          D:NX_CHAR[8] = 625.0308
+            @tag = D
+          f:NX_CHAR[13] = 6.7605470E-06
+            @tag = f
+        row_32:NXcollection
+          @NX_class = NXcollection
+          @canSAS_name = row_32
+          @tag = row
+          @unit = 1/A
+          D:NX_CHAR[8] = 653.7817
+            @tag = D
+          f:NX_CHAR[13] = 5.3585918E-06
+            @tag = f
+        row_33:NXcollection
+          @NX_class = NXcollection
+          @canSAS_name = row_33
+          @tag = row
+          @unit = 1/A
+          D:NX_CHAR[8] = 683.3952
+            @tag = D
+          f:NX_CHAR[13] = 4.1869780E-06
+            @tag = f
+        row_34:NXcollection
+          @NX_class = NXcollection
+          @canSAS_name = row_34
+          @tag = row
+          @unit = 1/A
+          D:NX_CHAR[7] = 713.897
+            @tag = D
+          f:NX_CHAR[13] = 3.2268470E-06
+            @tag = f
+        row_35:NXcollection
+          @NX_class = NXcollection
+          @canSAS_name = row_35
+          @tag = row
+          @unit = 1/A
+          D:NX_CHAR[7] = 745.314
+            @tag = D
+          f:NX_CHAR[13] = 2.4541828E-06
+            @tag = f
+        row_36:NXcollection
+          @NX_class = NXcollection
+          @canSAS_name = row_36
+          @tag = row
+          @unit = 1/A
+          D:NX_CHAR[8] = 777.6734
+            @tag = D
+          f:NX_CHAR[13] = 1.8428482E-06
+            @tag = f
+        row_37:NXcollection
+          @NX_class = NXcollection
+          @canSAS_name = row_37
+          @tag = row
+          @unit = 1/A
+          D:NX_CHAR[8] = 811.0036
+            @tag = D
+          f:NX_CHAR[13] = 1.3668206E-06
+            @tag = f
+        row_38:NXcollection
+          @NX_class = NXcollection
+          @canSAS_name = row_38
+          @tag = row
+          @unit = 1/A
+          D:NX_CHAR[8] = 845.3337
+            @tag = D
+          f:NX_CHAR[13] = 1.0017092E-06
+            @tag = f
+        row_39:NXcollection
+          @NX_class = NXcollection
+          @canSAS_name = row_39
+          @tag = row
+          @unit = 1/A
+          D:NX_CHAR[8] = 880.6937
+            @tag = D
+          f:NX_CHAR[13] = 7.2566161E-07
+            @tag = f
+        row_4:NXcollection
+          @NX_class = NXcollection
+          @canSAS_name = row_4
+          @tag = row
+          @unit = 1/A
+          D:NX_CHAR[8] = 98.11171
+            @tag = D
+          f:NX_CHAR[13] = 1.6785392E-05
+            @tag = f
+        row_5:NXcollection
+          @NX_class = NXcollection
+          @canSAS_name = row_5
+          @tag = row
+          @unit = 1/A
+          D:NX_CHAR[8] = 111.0551
+            @tag = D
+          f:NX_CHAR[13] = 5.1623330E-05
+            @tag = f
+        row_6:NXcollection
+          @NX_class = NXcollection
+          @canSAS_name = row_6
+          @tag = row
+          @unit = 1/A
+          D:NX_CHAR[8] = 124.3867
+            @tag = D
+          f:NX_CHAR[13] = 1.0311999E-04
+            @tag = f
+        row_7:NXcollection
+          @NX_class = NXcollection
+          @canSAS_name = row_7
+          @tag = row
+          @unit = 1/A
+          D:NX_CHAR[8] = 138.1183
+            @tag = D
+          f:NX_CHAR[13] = 1.4698226E-04
+            @tag = f
+        row_8:NXcollection
+          @NX_class = NXcollection
+          @canSAS_name = row_8
+          @tag = row
+          @unit = 1/A
+          D:NX_CHAR[8] = 152.2619
+            @tag = D
+          f:NX_CHAR[13] = 1.6008070E-04
+            @tag = f
+        row_9:NXcollection
+          @NX_class = NXcollection
+          @canSAS_name = row_9
+          @tag = row
+          @unit = 1/A
+          D:NX_CHAR[8] = 166.8297
+            @tag = D
+          f:NX_CHAR[13] = 1.4039918E-04
+            @tag = f
+    sasprocess:NXprocess
+      @NX_class = NXprocess
+      @canSAS_name = sasprocess
+      @canSAS_class = SASprocess
+      date:NX_CHAR[10] = 1992-01-31
+      name:NX_CHAR[19] = create the SAS data
+      term_0:NX_CHAR[7] = spheres
+        @name = shape
+      term_1:NX_CHAR[6] = 100E20
+        @name = contrast
+        @units = 1/cm^4
+      term_2:NX_CHAR[3] = 0.1
+        @name = Background
+        @units = 1/cm
+      term_3:NX_CHAR[6] = 1000.0
+        @name = sMult
+        @units = cts/cm
+      term_4:NX_CHAR[4] = 0.25
+        @name = sNoise
+        @units = fraction
+      sasprocessnote:NXnote
+        @NX_class = NXnote
+        @canSAS_name = sasprocessnote
+        @canSAS_class = SASprocessnote
+        SASprocessnote:NX_CHAR[1] = 
+          @tag = SASprocessnote
+    sassample:NXsample
+      @NX_class = NXsample
+      @canSAS_name = sassample
+      @canSAS_class = SASsample
+      ID:NX_CHAR[13] = bimodal-test1
+      details:NX_CHAR[1091] =  # ------------------------------------------------------------------------  
+ #	  Calculated (bimodal) test distribution.			      
+ #	  created 31 January 1992 by Pete R. Jemian			      
+ # ------------------------------------------------------------------------  
+ # Model consists of a bimodal, log-normal volume fraction		      
+ #   size distribution.  Parameters are as follows:			      
+ #	  PARAMETER ( contrast = 100.0 )  ! * 10^20, 1/cm^4		      
+ #	  PARAMETER ( Background = 0.1 )  ! 1/cm			      
+ #	  PARAMETER ( sMult = 1000. )	  ! counts per 1/cm (for shot noise)  
+ #	  PARAMETER ( sNoise = 0.025 )    ! minimum level		      
+ # ------------------------------------------------------------------------  
+ #	  !		 Vf	    rBar(A)   sDev(A)			      
+ #	  PARAMETER ( a1 = 0.012, c1 =  75., s1 = 15. ) 		      
+ #	  PARAMETER ( a2 = 0.008, c2 = 180., s2 = 60. ) 		      
+ #	  !	  Vf   : volume fraction				      
+ #	  !	  rBar : peak center (A)				      
+ #	  !	  sDev : peak half-width (A)				      
+ # ------------------------------------------------------------------------  
