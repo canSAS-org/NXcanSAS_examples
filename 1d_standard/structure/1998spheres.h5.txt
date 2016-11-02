@@ -1,4 +1,4 @@
-C:\Users\Pete\Documents\eclipse\canSAS\NXcanSAS_examples\1d_standard\1998spheres.h5 : NeXus data file
+/home/prjemian/Documents/eclipse/NXcanSAS_examples/1d_standard/1998spheres.h5 : NeXus data file
   @creator = xml2hdf5.py
   @default = sasentry_0
   sasentry_0:NXentry
@@ -15,7 +15,6 @@ C:\Users\Pete\Documents\eclipse\canSAS\NXcanSAS_examples\1d_standard\1998spheres
       @canSAS_class = SASdata
       @signal = I
       @I_axes = Q
-      @I_uncertainties = Idev
       I:NX_FLOAT64[1824] = [18.8978, 15.9975, 12.519600000000001, '...', 0.00032973699999999998]
         @units = 1/cm
         @uncertainties = Idev
@@ -90,7 +89,6 @@ C:\Users\Pete\Documents\eclipse\canSAS\NXcanSAS_examples\1d_standard\1998spheres
       @canSAS_class = SASdata
       @signal = I
       @I_axes = Q
-      @I_uncertainties = Idev
       I:NX_FLOAT64[3689] = [1.3979900000000001, 1.3435600000000001, 1.2598800000000001, '...', 1.2517199999999999e-05]
         @units = 1/cm
         @uncertainties = Idev

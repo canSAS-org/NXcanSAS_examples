@@ -1,4 +1,4 @@
-C:\Users\Pete\Documents\eclipse\canSAS\NXcanSAS_examples\1d_standard\gc14-dls-i22.h5 : NeXus data file
+/home/prjemian/Documents/eclipse/NXcanSAS_examples/1d_standard/gc14-dls-i22.h5 : NeXus data file
   @creator = xml2hdf5.py
   @default = sasentry
   sasentry:NXentry
@@ -15,7 +15,6 @@ C:\Users\Pete\Documents\eclipse\canSAS\NXcanSAS_examples\1d_standard\gc14-dls-i2
       @canSAS_class = SASdata
       @signal = I
       @I_axes = Q
-      @I_uncertainties = Idev
       I:NX_FLOAT64[244] = [0.0021854999999999999, 0.0021941, 0.0021949000000000001, '...', 0.00067259000000000004]
         @units = electrons/nm3
         @uncertainties = Idev

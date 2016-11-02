@@ -189,7 +189,6 @@ class canSAS1D_to_NXcanSAS(object):
                 if 'Q' in data:
                     eznx.addAttributes(nxdata, I_axes='Q')        # NeXus
                 if 'Idev' in data:
-                    eznx.addAttributes(nxdata, I_uncertainties='Idev')      # canSAS
                     eznx.addAttributes(nx_obj['I'], uncertainties='Idev')   # NeXus
                 if 'Qdev' in data:
                     eznx.addAttributes(nx_obj['Q'], uncertainties='Qdev')   # NeXus
@@ -257,7 +256,6 @@ class canSAS1D_to_NXcanSAS(object):
                 if 'Lambda' in data:
                     eznx.addAttributes(nxdata, T_axes='Lambda')        # NeXus
                 if 'Tdev' in data:
-                    eznx.addAttributes(nxdata, T_uncertainties='Tdev')        # canSAS
                     eznx.addAttributes(nx_obj['T'], uncertainties='Tdev')     # NeXus
 
         return nx_node_list
@@ -277,23 +275,23 @@ class canSAS1D_to_NXcanSAS(object):
         
         details = []    # report all *details* in a single multi-line string
         for xmlnode in xml_parent:
-            if xmlnode.tag.endswith('}ID'):
+            if str(xmlnode.tag).endswith('}ID'):
                 if xmlnode.text is None:
                     text = ''
                 else:
                     text = xmlnode.text.strip()
                 eznx.makeDataset(nxsample, 'ID', text)
-            elif xmlnode.tag.endswith('}thickness'):
+            elif str(xmlnode.tag).endswith('}thickness'):
                 self.field_float(xmlnode, nxsample, default_units='none')
-            elif xmlnode.tag.endswith('}transmission'):
+            elif str(xmlnode.tag).endswith('}transmission'):
                 self.field_float(xmlnode, nxsample, default_units='dimensionless')
-            elif xmlnode.tag.endswith('}temperature'):
+            elif str(xmlnode.tag).endswith('}temperature'):
                 self.field_float(xmlnode, nxsample, default_units='unknown')
-            elif xmlnode.tag.endswith('}position'):
+            elif str(xmlnode.tag).endswith('}position'):
                 self.axis_values(xmlnode, nxsample, '%s_position')
-            elif xmlnode.tag.endswith('}orientation'):
+            elif str(xmlnode.tag).endswith('}orientation'):
                 self.axis_values(xmlnode, nxsample)
-            elif xmlnode.tag.endswith('}details'):
+            elif str(xmlnode.tag).endswith('}details'):
                 details.append(xmlnode.text)
             else:
                 self.process_unexpected_xml_element(xmlnode, nxsample)
@@ -669,7 +667,7 @@ def ns_split(xmlnode):
     '''
     split text into full XML namespace and tag
     '''
-    return xmlnode.tag[1:].split('}')
+    return str(xmlnode.tag)[1:].split('}')
 
 
 def ns_strip(xmlnode):

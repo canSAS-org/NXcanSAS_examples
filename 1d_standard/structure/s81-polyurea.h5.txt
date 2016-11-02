@@ -1,4 +1,4 @@
-C:\Users\Pete\Documents\eclipse\canSAS\NXcanSAS_examples\1d_standard\s81-polyurea.h5 : NeXus data file
+/home/prjemian/Documents/eclipse/NXcanSAS_examples/1d_standard/s81-polyurea.h5 : NeXus data file
   @creator = xml2hdf5.py
   @default = S7_Neat_Polyurea
   S7_Neat_Polyurea:NXentry
@@ -539,7 +539,6 @@ C:\Users\Pete\Documents\eclipse\canSAS\NXcanSAS_examples\1d_standard\s81-polyure
       @canSAS_class = SASdata
       @signal = I
       @I_axes = Q
-      @I_uncertainties = Idev
       I:NX_FLOAT64[113] = [10139000.0, 8834800.0, 6517900.0, '...', 0.50124999999999997]
         @units = 1/cm
         @uncertainties = Idev

@@ -1,4 +1,4 @@
-C:\Users\Pete\Documents\eclipse\canSAS\NXcanSAS_examples\1d_standard\cs_af1410.h5 : NeXus data file
+/home/prjemian/Documents/eclipse/NXcanSAS_examples/1d_standard/cs_af1410.h5 : NeXus data file
   @creator = xml2hdf5.py
   @default = AF1410_10
   AF1410_10:NXentry
@@ -18,7 +18,6 @@ C:\Users\Pete\Documents\eclipse\canSAS\NXcanSAS_examples\1d_standard\cs_af1410.h
       @canSAS_class = SASdata
       @signal = I
       @I_axes = Q
-      @I_uncertainties = Idev
       I:NX_FLOAT64[77] = [78.270004299999997, 64.069999699999997, 56.179996500000001, '...', 0.25723000000000001]
         @units = 1/cm
         @uncertainties = Idev
@@ -32,7 +31,6 @@ C:\Users\Pete\Documents\eclipse\canSAS\NXcanSAS_examples\1d_standard\cs_af1410.h
       @canSAS_class = SASdata
       @signal = I
       @I_axes = Q
-      @I_uncertainties = Idev
       I:NX_FLOAT64[76] = [122.98999790000001, 100.8500061, 83.160003700000004, '...', 0.25972000000000001]
         @units = 1/cm
         @uncertainties = Idev
@@ -116,7 +114,6 @@ C:\Users\Pete\Documents\eclipse\canSAS\NXcanSAS_examples\1d_standard\cs_af1410.h
       @canSAS_class = SASdata
       @signal = I
       @I_axes = Q
-      @I_uncertainties = Idev
       I:NX_FLOAT64[76] = [33.666000400000001, 28.5240002, 23.7290001, '...', 0.092268000000000003]
         @units = 1/cm
         @uncertainties = Idev
@@ -130,7 +127,6 @@ C:\Users\Pete\Documents\eclipse\canSAS\NXcanSAS_examples\1d_standard\cs_af1410.h
       @canSAS_class = SASdata
       @signal = I
       @I_axes = Q
-      @I_uncertainties = Idev
       I:NX_FLOAT64[70] = [67.240005499999995, 55.170001999999997, 44.450000799999998, '...', 0.19348000000000001]
         @units = 1/cm
         @uncertainties = Idev
@@ -212,7 +208,6 @@ C:\Users\Pete\Documents\eclipse\canSAS\NXcanSAS_examples\1d_standard\cs_af1410.h
       @canSAS_class = SASdata
       @signal = I
       @I_axes = Q
-      @I_uncertainties = Idev
       I:NX_FLOAT64[73] = [100.68999479999999, 85.889999399999994, 68.6799927, '...', 0.2838]
         @units = 1/cm
         @uncertainties = Idev
@@ -296,7 +291,6 @@ C:\Users\Pete\Documents\eclipse\canSAS\NXcanSAS_examples\1d_standard\cs_af1410.h
       @canSAS_class = SASdata
       @signal = I
       @I_axes = Q
-      @I_uncertainties = Idev
       I:NX_FLOAT64[73] = [32.823001900000001, 27.597002, 23.343000400000001, '...', 0.21879999999999999]
         @units = 1/cm
         @uncertainties = Idev
@@ -310,7 +304,6 @@ C:\Users\Pete\Documents\eclipse\canSAS\NXcanSAS_examples\1d_standard\cs_af1410.h
       @canSAS_class = SASdata
       @signal = I
       @I_axes = Q
-      @I_uncertainties = Idev
       I:NX_FLOAT64[72] = [63.319999699999997, 51.869998899999999, 42.612999000000002, '...', 0.1981]
         @units = 1/cm
         @uncertainties = Idev
@@ -394,7 +387,6 @@ C:\Users\Pete\Documents\eclipse\canSAS\NXcanSAS_examples\1d_standard\cs_af1410.h
       @canSAS_class = SASdata
       @signal = I
       @I_axes = Q
-      @I_uncertainties = Idev
       I:NX_FLOAT64[69] = [87.120002700000001, 74.5, 62.619998899999999, '...', 0.34989999999999999]
         @units = 1/cm
         @uncertainties = Idev
@@ -408,7 +400,6 @@ C:\Users\Pete\Documents\eclipse\canSAS\NXcanSAS_examples\1d_standard\cs_af1410.h
       @canSAS_class = SASdata
       @signal = I
       @I_axes = Q
-      @I_uncertainties = Idev
       I:NX_FLOAT64[71] = [102.609993, 88.260002099999994, 70.330001800000005, '...', 0.2364]
         @units = 1/cm
         @uncertainties = Idev
@@ -492,7 +483,6 @@ C:\Users\Pete\Documents\eclipse\canSAS\NXcanSAS_examples\1d_standard\cs_af1410.h
       @canSAS_class = SASdata
       @signal = I
       @I_axes = Q
-      @I_uncertainties = Idev
       I:NX_FLOAT64[75] = [45.529998800000001, 37.548999799999997, 30.0680008, '...', 0.18108399999999999]
         @units = 1/cm
         @uncertainties = Idev
@@ -506,7 +496,6 @@ C:\Users\Pete\Documents\eclipse\canSAS\NXcanSAS_examples\1d_standard\cs_af1410.h
       @canSAS_class = SASdata
       @signal = I
       @I_axes = Q
-      @I_uncertainties = Idev
       I:NX_FLOAT64[75] = [86.550003099999998, 71.159996000000007, 59.049999200000002, '...', 0.27856999999999998]
         @units = 1/cm
         @uncertainties = Idev
@@ -590,7 +579,6 @@ C:\Users\Pete\Documents\eclipse\canSAS\NXcanSAS_examples\1d_standard\cs_af1410.h
       @canSAS_class = SASdata
       @signal = I
       @I_axes = Q
-      @I_uncertainties = Idev
       I:NX_FLOAT64[72] = [58.470001199999999, 50.510002100000001, 43.080001799999998, '...', 0.30530000000000002]
         @units = 1/cm
         @uncertainties = Idev
@@ -604,7 +592,6 @@ C:\Users\Pete\Documents\eclipse\canSAS\NXcanSAS_examples\1d_standard\cs_af1410.h
       @canSAS_class = SASdata
       @signal = I
       @I_axes = Q
-      @I_uncertainties = Idev
       I:NX_FLOAT64[71] = [96.430000300000003, 81.470001199999999, 68.099998499999998, '...', 0.29849999999999999]
         @units = 1/cm
         @uncertainties = Idev
@@ -688,7 +675,6 @@ C:\Users\Pete\Documents\eclipse\canSAS\NXcanSAS_examples\1d_standard\cs_af1410.h
       @canSAS_class = SASdata
       @signal = I
       @I_axes = Q
-      @I_uncertainties = Idev
       I:NX_FLOAT64[71] = [90.940002399999997, 75.809997600000003, 62.009998299999999, '...', 0.22270000000000001]
         @units = 1/cm
         @uncertainties = Idev
@@ -702,7 +688,6 @@ C:\Users\Pete\Documents\eclipse\canSAS\NXcanSAS_examples\1d_standard\cs_af1410.h
       @canSAS_class = SASdata
       @signal = I
       @I_axes = Q
-      @I_uncertainties = Idev
       I:NX_FLOAT64[71] = [103.1199951, 85.160003700000004, 71.480003400000001, '...', 0.23569999999999999]
         @units = 1/cm
         @uncertainties = Idev
@@ -786,7 +771,6 @@ C:\Users\Pete\Documents\eclipse\canSAS\NXcanSAS_examples\1d_standard\cs_af1410.h
       @canSAS_class = SASdata
       @signal = I
       @I_axes = Q
-      @I_uncertainties = Idev
       I:NX_FLOAT64[73] = [25.817998899999999, 21.6040001, 18.263999900000002, '...', 0.068455500000000002]
         @units = 1/cm
         @uncertainties = Idev
@@ -800,7 +784,6 @@ C:\Users\Pete\Documents\eclipse\canSAS\NXcanSAS_examples\1d_standard\cs_af1410.h
       @canSAS_class = SASdata
       @signal = I
       @I_axes = Q
-      @I_uncertainties = Idev
       I:NX_FLOAT64[70] = [44.669998200000002, 37.715000199999999, 30.600997899999999, '...', 0.1178]
         @units = 1/cm
         @uncertainties = Idev
@@ -884,7 +867,6 @@ C:\Users\Pete\Documents\eclipse\canSAS\NXcanSAS_examples\1d_standard\cs_af1410.h
       @canSAS_class = SASdata
       @signal = I
       @I_axes = Q
-      @I_uncertainties = Idev
       I:NX_FLOAT64[73] = [29.783000900000001, 25.494001399999998, 20.804000899999998, '...', 0.049299999999999997]
         @units = 1/cm
         @uncertainties = Idev
@@ -898,7 +880,6 @@ C:\Users\Pete\Documents\eclipse\canSAS\NXcanSAS_examples\1d_standard\cs_af1410.h
       @canSAS_class = SASdata
       @signal = I
       @I_axes = Q
-      @I_uncertainties = Idev
       I:NX_FLOAT64[74] = [42.770000500000002, 35.841999100000002, 29.495998400000001, '...', 0.090200000000000002]
         @units = 1/cm
         @uncertainties = Idev

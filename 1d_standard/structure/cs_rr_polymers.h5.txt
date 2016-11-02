@@ -1,4 +1,4 @@
-C:\Users\Pete\Documents\eclipse\canSAS\NXcanSAS_examples\1d_standard\cs_rr_polymers.h5 : NeXus data file
+/home/prjemian/Documents/eclipse/NXcanSAS_examples/1d_standard/cs_rr_polymers.h5 : NeXus data file
   @creator = xml2hdf5.py
   @default = rr_polymer_A
   rr_polymer_A:NXentry
@@ -16,7 +16,6 @@ C:\Users\Pete\Documents\eclipse\canSAS\NXcanSAS_examples\1d_standard\cs_rr_polym
       @canSAS_class = SASdata
       @signal = I
       @I_axes = Q
-      @I_uncertainties = Idev
       I:NX_FLOAT64[119] = [1789.01, 825.75, 1117.47, '...', 0.15856200000000001]
         @units = 1/cm
         @uncertainties = Idev
@@ -106,7 +105,6 @@ SlitLength=0.053282;NumberOfSteps=150;SDDistance=235;SampleThickness=1;SampleTra
       @canSAS_class = SASdata
       @signal = I
       @I_axes = Q
-      @I_uncertainties = Idev
       I:NX_FLOAT64[120] = [37359.800000000003, 31972.299999999999, 23155.599999999999, '...', 0.155024]
         @units = 1/cm
         @uncertainties = Idev
@@ -196,7 +194,6 @@ SlitLength=0.053282;NumberOfSteps=150;SDDistance=235;Units=cm-1;BlankComment=bla
       @canSAS_class = SASdata
       @signal = I
       @I_axes = Q
-      @I_uncertainties = Idev
       I:NX_FLOAT64[120] = [12434.799999999999, 10596.700000000001, 8071.4899999999998, '...', 0.15085200000000001]
         @units = 1/cm
         @uncertainties = Idev
@@ -286,7 +283,6 @@ SlitLength=0.053282;NumberOfSteps=150;SDDistance=235;Units=cm-1;BlankComment=bla
       @canSAS_class = SASdata
       @signal = I
       @I_axes = Q
-      @I_uncertainties = Idev
       I:NX_FLOAT64[120] = [3488.6100000000001, 1082.8800000000001, 444.43599999999998, '...', 0.14999699999999999]
         @units = 1/cm
         @uncertainties = Idev

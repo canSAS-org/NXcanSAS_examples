@@ -1,4 +1,4 @@
-C:\Users\Pete\Documents\eclipse\canSAS\NXcanSAS_examples\1d_standard\GLASSYC_C4G8G9_no_TL.h5 : NeXus data file
+/home/prjemian/Documents/eclipse/NXcanSAS_examples/1d_standard/GLASSYC_C4G8G9_no_TL.h5 : NeXus data file
   @creator = xml2hdf5.py
   @default = Workspace_2
   Workspace_2:NXentry
@@ -16,7 +16,6 @@ C:\Users\Pete\Documents\eclipse\canSAS\NXcanSAS_examples\1d_standard\GLASSYC_C4G
       @canSAS_class = SASdata
       @signal = I
       @I_axes = Q
-      @I_uncertainties = Idev
       I:NX_FLOAT64[140] = [6.4779, 6.1109999999999998, 6.3139000000000003, '...', 0.59997]
         @units = 1/cm
         @uncertainties = Idev
@@ -185,7 +184,6 @@ C:\Users\Pete\Documents\eclipse\canSAS\NXcanSAS_examples\1d_standard\GLASSYC_C4G
       @canSAS_class = SASdata
       @signal = I
       @I_axes = Q
-      @I_uncertainties = Idev
       I:NX_FLOAT64[113] = [4.0387000000000004, 3.7538999999999998, 3.4171999999999998, '...', 0.086415000000000006]
         @units = 1/cm
         @uncertainties = Idev
@@ -354,7 +352,6 @@ C:\Users\Pete\Documents\eclipse\canSAS\NXcanSAS_examples\1d_standard\GLASSYC_C4G
       @canSAS_class = SASdata
       @signal = I
       @I_axes = Q
-      @I_uncertainties = Idev
       I:NX_FLOAT64[140] = [6.8606999999999996, 6.3034999999999997, 6.4611999999999998, '...', 0.58789000000000002]
         @units = 1/cm
         @uncertainties = Idev
@@ -523,7 +520,6 @@ C:\Users\Pete\Documents\eclipse\canSAS\NXcanSAS_examples\1d_standard\GLASSYC_C4G
       @canSAS_class = SASdata
       @signal = I
       @I_axes = Q
-      @I_uncertainties = Idev
       I:NX_FLOAT64[113] = [4.0246000000000004, 3.778, 3.4681000000000002, '...', 0.081611000000000003]
         @units = 1/cm
         @uncertainties = Idev
@@ -692,7 +688,6 @@ C:\Users\Pete\Documents\eclipse\canSAS\NXcanSAS_examples\1d_standard\GLASSYC_C4G
       @canSAS_class = SASdata
       @signal = I
       @I_axes = Q
-      @I_uncertainties = Idev
       I:NX_FLOAT64[140] = [6.8855000000000004, 6.3051000000000004, 6.4637000000000002, '...', 0.60746999999999995]
         @units = 1/cm
         @uncertainties = Idev
@@ -861,7 +856,6 @@ C:\Users\Pete\Documents\eclipse\canSAS\NXcanSAS_examples\1d_standard\GLASSYC_C4G
       @canSAS_class = SASdata
       @signal = I
       @I_axes = Q
-      @I_uncertainties = Idev
       I:NX_FLOAT64[113] = [3.9683000000000002, 3.7423999999999999, 3.4811000000000001, '...', 0.094940999999999998]
         @units = 1/cm
         @uncertainties = Idev

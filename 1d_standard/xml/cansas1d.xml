@@ -6,8 +6,8 @@
   xsi:schemaLocation="urn:cansas1d:1.1 http://www.cansas.org/formats/1.1/cansas1d.xsd"
   >
   <SASentry>
-    <Title></Title>
-    <Run></Run>
+    <Title>title</Title>
+    <Run>run</Run>
     <SASdata>
       <Idata>
   	<Q unit="1/A">0.02</Q>
@@ -15,7 +15,7 @@
   	<Idev unit="1/cm">3</Idev>
   	<Qdev unit="1/A">0.01</Qdev>
   	<Qmean unit="1/A"><!-- Qmean is optional --></Qmean>
-  	<Shadowfactor><!-- Shadowfactor is optional --></Shadowfactor>
+  	<Shadowfactor>1<!-- Shadowfactor is optional --></Shadowfactor>
       </Idata>
     </SASdata>
     <SASsample>
@@ -31,10 +31,7 @@
   	<roll unit="degree">22.5<!-- was: sample_orientation --></roll>
   	<pitch unit="degree">0.020<!-- was: sample_offset_angle --></pitch>
       </orientation>
-      <details>
-  	<!-- was: sample_prep -->
-  	http://chemtools.chem.soton.ac.uk/projects/blog/blogs.php/bit_id/2720
-      </details>
+      <details>http://chemtools.chem.soton.ac.uk/projects/blog/blogs.php/bit_id/2720</details>
     </SASsample>
     <SASinstrument>
       <name>canSAS instrument</name>
@@ -67,8 +64,8 @@
       </SAScollimation>
       <SASdetector>
   	<name>fictional hybrid</name>
+  	<!-- SDD: sample-to-detector distance -->
   	<SDD unit="m">
-  	  <!-- sample-to-detector distance -->
   	  4.150
   	</SDD>
   	<orientation>

@@ -1,0 +1,192 @@
+/home/prjemian/Documents/eclipse/NXcanSAS_examples/1d_standard/cansas1d.h5 : NeXus data file
+  @creator = xml2hdf5.py
+  @default = sasentry
+  sasentry:NXentry
+    @NX_class = NXentry
+    @canSAS_name = sasentry
+    @canSAS_class = SASentry
+    @default = sasdata
+    definition:NX_CHAR[8] = NXcanSAS
+    run:NX_CHAR[3] = run
+    title:NX_CHAR[5] = title
+    sasdata:NXdata
+      @NX_class = NXdata
+      @canSAS_name = sasdata
+      @canSAS_class = SASdata
+      @signal = I
+      @I_axes = Q
+      I:NX_FLOAT64 = 1000.0
+        @units = 1/cm
+        @uncertainties = Idev
+      Idev:NX_FLOAT64 = 3.0
+        @units = 1/cm
+      Q:NX_FLOAT64 = 0.02
+        @units = 1/A
+        @uncertainties = Qdev
+      Qdev:NX_FLOAT64 = 0.01
+        @units = 1/A
+      Shadowfactor:NX_FLOAT64 = 1.0
+        @units = none
+    sasinstrument:NXinstrument
+      @NX_class = NXinstrument
+      @canSAS_name = sasinstrument
+      @canSAS_class = SASinstrument
+      name:NX_CHAR[17] = canSAS instrument
+      sascollimation:NXcollimator
+        @NX_class = NXcollimator
+        @canSAS_name = sascollimation
+        @canSAS_class = SAScollimation
+        sample:NXaperture
+          @NX_class = NXaperture
+          @canSAS_name = sample
+          @canSAS_class = aperture
+          shape:NX_CHAR[6] = radius
+          x_gap:NX_FLOAT64 = 0.0
+            @units = mm
+        source:NXaperture
+          @NX_class = NXaperture
+          @canSAS_name = source
+          @canSAS_class = aperture
+          distance:NX_FLOAT64 = 11.0
+            @units = m
+          shape:NX_CHAR[6] = radius
+          x_gap:NX_FLOAT64 = 50.0
+            @units = mm
+      sasdetector:NXdetector
+        @NX_class = NXdetector
+        @canSAS_name = sasdetector
+        @canSAS_class = SASdetector
+        SDD:NX_FLOAT64 = 4.15
+          @units = m
+          @comment = Distance between sample and detector
+        beam_center_x:NX_FLOAT64 = 322.64
+          @units = mm
+        beam_center_y:NX_FLOAT64 = 327.68
+          @units = mm
+        name:NX_CHAR[16] = fictional hybrid
+        pitch:NX_FLOAT64 = 0.0
+          @units = degree
+        roll:NX_FLOAT64 = 0.0
+          @units = degree
+        x_pixel_size:NX_FLOAT64 = 5.0
+          @units = mm
+        y_pixel_size:NX_FLOAT64 = 5.0
+          @units = mm
+        yaw:NX_FLOAT64 = 0.0
+          @units = degree
+      sassource:NXsource
+        @NX_class = NXsource
+        @canSAS_name = sassource
+        @canSAS_class = SASsource
+        beam_shape:NX_CHAR[4] = disc
+        beam_size_x:NX_FLOAT64 = 12.0
+          @units = mm
+        beam_size_y:NX_FLOAT64 = 12.0
+          @units = mm
+        incident_wavelength:NX_FLOAT64 = 6.0
+          @units = A
+        radiation:NX_CHAR[7] = neutron
+        wavelength_max:NX_FLOAT64 = 1.0
+          @units = nm
+        wavelength_min:NX_FLOAT64 = 0.22
+          @units = nm
+        wavelength_spread:NX_FLOAT64 = 14.3
+          @units = percent
+    sasnote:NXnote
+      @NX_class = NXnote
+      @canSAS_name = sasnote
+      @canSAS_class = SASnote
+      SASnote:NX_CHAR[1] = 
+        @tag = SASnote
+    sasprocess_0:NXprocess
+      @NX_class = NXprocess
+      @canSAS_name = sasprocess_0
+      @canSAS_class = SASprocess
+      date:NX_CHAR[20] = 04-Sep-2007 18:35:02
+      name:NX_CHAR[4] = spol
+      term_0:NX_CHAR[6] = 10.000
+        @name = radialstep
+        @units = mm
+      term_1:NX_CHAR[5] = 180.0
+        @name = sector_width
+        @units = degree
+      term_2:NX_CHAR[3] = 0.0
+        @name = sector_orient
+        @units = degree
+      term_3:NX_CHAR[13] = USER:MASK.COM
+        @name = MASK_file
+      sasprocessnote_0:NXnote
+        @NX_class = NXnote
+        @canSAS_name = sasprocessnote_0
+        @canSAS_class = SASprocessnote
+        SASprocessnote_0:NX_CHAR[82] = AvA1 0.0000E+00 AsA2 1.0000E+00 XvA3 1.0526E+03 XsA4
+  	5.2200E-02 XfA5 0.0000E+00
+          @tag = SASprocessnote
+      sasprocessnote_1:NXnote
+        @NX_class = NXnote
+        @canSAS_name = sasprocessnote_1
+        @canSAS_class = SASprocessnote
+        SASprocessnote_0:NX_CHAR[70] = S... 13597 0 2.26E+02 2A 5mM 0%D2O Sbak 13594 0 1.13E+02
+  	H2O Buffer
+          @tag = SASprocessnote
+      sasprocessnote_2:NXnote
+        @NX_class = NXnote
+        @canSAS_name = sasprocessnote_2
+        @canSAS_class = SASprocessnote
+        SASprocessnote_0:NX_CHAR[27] = V... 13552 3 1.00E+00 H2O5m
+          @tag = SASprocessnote
+    sasprocess_1:NXprocess
+      @NX_class = NXprocess
+      @canSAS_name = sasprocess_1
+      @canSAS_class = SASprocess
+      date:NX_CHAR[20] = 03-SEP-2006 11:42:47
+      description:NX_CHAR[1] = 
+      name:NX_CHAR[9] = NCNR-IGOR
+      term_0:NX_CHAR[8] = Circular
+        @name = average_type
+      term_1:NX_CHAR[21] = SEP06064.SA3_AJJ_L205
+        @name = SAM_file
+      term_2:NX_CHAR[21] = SEP06064.SA3_AJJ_L205
+        @name = BKD_file
+      term_3:NX_CHAR[21] = SEP06064.SA3_AJJ_L205
+        @name = EMP_file
+      term_4:NX_CHAR[21] = SEP06064.SA3_AJJ_L205
+        @name = DIV_file
+      term_5:NX_CHAR[21] = SEP06064.SA3_AJJ_L205
+        @name = MASK_file
+      term_6:NX_CHAR[1] = 1
+        @name = ABS:TSTAND
+      term_7:NX_CHAR[1] = 1
+        @name = ABS:DSTAND
+        @units = mm
+      term_8:NX_CHAR[6] = 230.09
+        @name = ABS:IZERO
+      term_9:NX_CHAR[1] = 1
+        @name = ABS:XSECT
+        @units = mm
+      sasprocessnote:NXnote
+        @NX_class = NXnote
+        @canSAS_name = sasprocessnote
+        @canSAS_class = SASprocessnote
+        SASprocessnote:NX_CHAR[1] = 
+          @tag = SASprocessnote
+    sassample:NXsample
+      @NX_class = NXsample
+      @canSAS_name = sassample
+      @canSAS_class = SASsample
+      ID:NX_CHAR[14] = SI600-new-long
+      details:NX_CHAR[69] = http://chemtools.chem.soton.ac.uk/projects/blog/blogs.php/bit_id/2720
+      pitch:NX_FLOAT64 = 0.02
+        @units = degree
+      roll:NX_FLOAT64 = 22.5
+        @units = degree
+      temperature:NX_FLOAT64 = 0.0
+        @units = C
+      thickness:NX_FLOAT64 = 1.03
+        @units = mm
+      transmission:NX_FLOAT64 = 0.327
+        @units = dimensionless
+      x_position:NX_FLOAT64 = 10.0
+        @units = mm
+      y_position:NX_FLOAT64 = 0.0
+        @units = mm

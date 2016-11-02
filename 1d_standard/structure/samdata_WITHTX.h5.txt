@@ -1,4 +1,4 @@
-C:\Users\Pete\Documents\eclipse\canSAS\NXcanSAS_examples\1d_standard\samdata_WITHTX.h5 : NeXus data file
+/home/prjemian/Documents/eclipse/NXcanSAS_examples/1d_standard/samdata_WITHTX.h5 : NeXus data file
   @creator = xml2hdf5.py
   @default = _13444rear_1D_1_75_12_5
   _13444rear_1D_1_75_12_5:NXentry
@@ -16,7 +16,6 @@ C:\Users\Pete\Documents\eclipse\canSAS\NXcanSAS_examples\1d_standard\samdata_WIT
       @canSAS_class = SASdata
       @signal = I
       @I_axes = Q
-      @I_uncertainties = Idev
       I:NX_FLOAT64[106] = [510.76900000000001, 623.23099999999999, 440.00099999999998, '...', 0.0]
         @units = 1/cm
         @uncertainties = Idev
@@ -84,7 +83,6 @@ C:\Users\Pete\Documents\eclipse\canSAS\NXcanSAS_examples\1d_standard\samdata_WIT
       @name = sample
       @signal = T
       @T_axes = Lambda
-      @T_uncertainties = Tdev
       Lambda:NX_FLOAT64[86] = [1.8125, 1.9375, 2.0625, '...', 12.4375]
         @units = A
       T:NX_FLOAT64[86] = [0.89590000000000003, 0.89354999999999996, 0.89676999999999996, '...', 0.88819000000000004]
@@ -98,7 +96,6 @@ C:\Users\Pete\Documents\eclipse\canSAS\NXcanSAS_examples\1d_standard\samdata_WIT
       @name = can
       @signal = T
       @T_axes = Lambda
-      @T_uncertainties = Tdev
       Lambda:NX_FLOAT64[86] = [1.8125, 1.9375, 2.0625, '...', 12.4375]
         @units = A
       T:NX_FLOAT64[86] = [0.90546000000000004, 0.91161000000000003, 0.90266999999999997, '...', 0.91325999999999996]

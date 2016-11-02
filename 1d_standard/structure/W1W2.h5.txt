@@ -1,4 +1,4 @@
-C:\Users\Pete\Documents\eclipse\canSAS\NXcanSAS_examples\1d_standard\W1W2.h5 : NeXus data file
+/home/prjemian/Documents/eclipse/NXcanSAS_examples/1d_standard/W1W2.h5 : NeXus data file
   @creator = xml2hdf5.py
   @default = W1
   W1:NXentry
@@ -16,7 +16,6 @@ C:\Users\Pete\Documents\eclipse\canSAS\NXcanSAS_examples\1d_standard\W1W2.h5 : N
       @canSAS_class = SASdata
       @signal = I
       @I_axes = Q
-      @I_uncertainties = Idev
       I:NX_FLOAT64[140] = [65.111999999999995, 57.0, 50.784999999999997, '...', 0.38983000000000001]
         @units = 1/cm
         @uncertainties = Idev
@@ -159,7 +158,6 @@ C:\Users\Pete\Documents\eclipse\canSAS\NXcanSAS_examples\1d_standard\W1W2.h5 : N
       @canSAS_class = SASdata
       @signal = I
       @I_axes = Q
-      @I_uncertainties = Idev
       I:NX_FLOAT64[140] = [13.346, 6.5871000000000004, 3.802, '...', 0.46884999999999999]
         @units = 1/cm
         @uncertainties = Idev
