@@ -468,12 +468,19 @@ def example_09_1D_time():
 
 
 if __name__ == "__main__":
-    example_01_1D_I_Q()
-    example_02_2D_image()
-    example_03_2D_image_and_uncertainties()
-    example_04_2D_vector()
-    example_05_2D_SAS_WAS()
-    example_06_2D_Masked()
-    example_07_2D_as_1D()
-    example_08_SANS_SAXS()
-    example_09_1D_time()
+    methods = [
+        example_01_1D_I_Q,
+        example_02_2D_image,
+        example_03_2D_image_and_uncertainties,
+        example_04_2D_vector,
+        example_05_2D_SAS_WAS,
+        example_06_2D_Masked,
+        example_07_2D_as_1D,
+        example_08_SANS_SAXS,
+        example_09_1D_time,
+    ]
+    for func in methods:
+        funcname = str(func).split()[1]
+        funcdoc = func.__doc__.strip().splitlines()[0]
+        print funcname + ': ' + funcdoc
+        func()
