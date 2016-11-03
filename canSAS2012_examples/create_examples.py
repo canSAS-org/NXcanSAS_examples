@@ -16,7 +16,7 @@ import os
 import sys
 
 
-def basic_setup(filename):
+def basic_setup():
     '''
     Create the HDF5 file and basic structure, return the nxdata object
     
@@ -53,7 +53,21 @@ def basic_setup(filename):
     use of the format while reducing the file size of the example.
     
     A "units" attribute is recommended for all numerical datasets (fields).
+    
+    Additional metadata about these examples are stored in "run" and "title".
+    In NXcanSAS, these are fields (datasets).
+    
+    =====  ======  =======================================================
+    term   type    description
+    =====  ======  =======================================================
+    run    string  name of the function to create this example
+    title  string  one line summary of the function to create this example
+    =====  ======  =======================================================
     '''
+    stack = inspect.stack()
+    function_name = stack[1][3]
+    filename = function_name + ".h5"
+
     nxroot = h5py.File(filename, "w")
     nxroot.attrs['file_name'] = filename
     nxroot.attrs['HDF5_Version'] = h5py.version.hdf5_version
@@ -73,7 +87,17 @@ def basic_setup(filename):
     nxdata.attrs["SAS_class"] = "SASdata"
     nxdata.attrs["signal"] = "I"
     nxdata.attrs["axes"] = "Q" 
-       
+
+    # additional metadata about these examples:
+    # save the name of the function as "run"
+    nxentry.create_dataset('run', data=function_name)
+
+    # save the 1st doc string of the function as "title"
+    module_members = dict(inspect.getmembers(inspect.getmodule(basic_setup)))
+    func = module_members[function_name]
+    doc = inspect.getdoc(func).strip().splitlines()[0]
+    nxentry.create_dataset('title', data=doc)
+
     return nxdata
 
 
@@ -97,18 +121,9 @@ def fake_data(*dimensions):
     return numpy.random.rand(*dimensions)
 
 
-def get_method_name():
-    '''
-    return the name of the method from which this method has been called
-    '''
-    stack = inspect.stack()
-    mname = stack[1][3]
-    return mname
-
-
 def example_01_1D_I_Q():
     '''
-    The most common SAS data is I(|Q|), a one-dimensional set of data.
+    I(|Q|): The most common SAS data, a one-dimensional set of data.
     
     structural model::
     
@@ -119,7 +134,7 @@ def example_01_1D_I_Q():
               Q: float[10]
 
     '''
-    nxdata = basic_setup(get_method_name() + ".h5")
+    nxdata = basic_setup()
     nxdata.attrs["Q_indices"] = 0
 
     n = 10
@@ -133,7 +148,7 @@ def example_01_1D_I_Q():
 
 def example_02_2D_image():
     '''
-    Analysis of 2-D images is common
+    I(|Q|): Analysis of 2-D images is common
     
     The "Q_indices" attribute indicates the dependency relationship 
     of the Q field with one or more dimensions of the plottable "I" data.
@@ -151,8 +166,8 @@ def example_02_2D_image():
               Q: float[10, 50]
 
     '''
-    nxdata = basic_setup(get_method_name() + ".h5")
-    nxdata.attrs["axes"] = ["Q", "Q"]
+    nxdata = basic_setup()
+    nxdata.attrs["axes"] = "Q Q".split()
     nxdata.attrs["Q_indices"] = [0, 1]
 
     h = 10
@@ -167,7 +182,7 @@ def example_02_2D_image():
 
 def example_03_2D_image_and_uncertainties():
     '''
-    Uncertainties (a.k.a "errors") may be identified.
+    I(|Q|) +/- sigma(|Q|): Uncertainties (a.k.a "errors") may be identified.
 
     The mechanism is to provide a dataset of the same shape as "I",
     and identify its name in the "uncertainties" attribute.
@@ -191,8 +206,8 @@ def example_03_2D_image_and_uncertainties():
               Idev: float[10, 50]
 
     '''
-    nxdata = basic_setup(get_method_name() + ".h5")
-    nxdata.attrs["axes"] = "Q Q".strip()        # same as ["Q", "Q"]
+    nxdata = basic_setup()
+    nxdata.attrs["axes"] = "Q Q".strip()
     nxdata.attrs["Q_indices"] = [0, 1]
 
     h = 10
@@ -210,7 +225,7 @@ def example_03_2D_image_and_uncertainties():
 
 def example_04_2D_vector():
     '''
-    Q may be represented as a vector
+    I(Q): Q may be represented as a vector
     
     The canSAS interpretation of the "axes" attribute differs from NeXus.
     In canSAS, "Q" when used as a vector is recognized as a value of the
@@ -228,7 +243,7 @@ def example_04_2D_vector():
               Qz: float[10, 50]
 
     '''
-    nxdata = basic_setup(get_method_name() + ".h5")
+    nxdata = basic_setup()
     nxdata.attrs["axes"] = "Qx Qy".strip()
     nxdata.attrs["Qx_indices"] = 0
     nxdata.attrs["Qy_indices"] = 1
@@ -249,7 +264,7 @@ def example_04_2D_vector():
 
 def example_05_2D_SAS_WAS():
     '''
-    common multi-method technique: small and wide angle scattering
+    I(|Q|): common multi-method technique: small and wide angle scattering
     
     WAS is not in the scope of the NXcanSAS definition.
     Still, it is useful to demonstrate how WAS might be included in
@@ -269,7 +284,7 @@ def example_05_2D_SAS_WAS():
           Q: float[25, 25]
 
     '''
-    nxdata = basic_setup(get_method_name() + ".h5")
+    nxdata = basic_setup()
     nxdata.attrs["axes"] = "Q Q".strip()
     nxdata.attrs["Q_indices"] = [0, 1]
 
@@ -302,7 +317,7 @@ def example_05_2D_SAS_WAS():
 
 def example_06_2D_Masked():
     '''
-    Data masks are possible in analysis of SAS
+    I(|Q|) and mask: Data masks are possible in analysis of SAS
     
     NeXus has defined a 32-bit integer "pixel_mask" field to describe
     various possible reasons for masking a specific pixel, as a bit map.
@@ -321,7 +336,7 @@ def example_06_2D_Masked():
               Mask: int[10, 50]
 
     '''
-    nxdata = basic_setup(get_method_name() + ".h5")
+    nxdata = basic_setup()
     nxdata.attrs["axes"] = "Q Q".strip()
     nxdata.attrs["Q_indices"] = [0, 1]
 
@@ -339,7 +354,7 @@ def example_06_2D_Masked():
 
 def example_07_2D_as_1D():
     '''
-    Mapping of 2D data into 1D is common
+    I(|Q|): Mapping of 2D data into 1D is common
     
     This is used to describe radial averaged I(Q) data.
     It may also be used to describe data combined from several measurements.
@@ -353,7 +368,7 @@ def example_07_2D_as_1D():
               Q: float[10*50]
 
     '''
-    nxdata = basic_setup(get_method_name() + ".h5")
+    nxdata = basic_setup()
     nxdata.attrs["Q_indices"] = 0
 
     h = 10
@@ -368,7 +383,7 @@ def example_07_2D_as_1D():
 
 def example_08_SANS_SAXS():
     '''
-    Complementary technique.
+    I(|Q|): Complementary SANS & SAXS techniques.
     
     This example shows where to place the I(Q) data.
     It could be improved by showing the placement of the additional
@@ -400,7 +415,7 @@ def example_08_SANS_SAXS():
     The example code below shows an h5py technique to rename the
     "sasdata" group to "sans".  This adds clarity to the example data file.
     '''
-    nxdata = basic_setup(get_method_name() + ".h5")
+    nxdata = basic_setup()
     nxdata.attrs["probe_type"] = "neutron"
     nxdata.attrs["Q_indices"] = 0
 
@@ -431,7 +446,7 @@ def example_08_SANS_SAXS():
 
 def example_09_1D_time():
     '''
-    A time-series of 1D I(Q) data
+    I(t,|Q|): A time-series of 1D I(Q) data
     
     This is another example of how to apply the "AXISNAME_indices"
     attributes.  "Time" is used with the first index of "I",
@@ -450,7 +465,7 @@ def example_09_1D_time():
               I: float[nTime,10]
 
     '''
-    nxdata = basic_setup(get_method_name() + ".h5")
+    nxdata = basic_setup()
     nxdata.attrs["axes"] = "Time Q".split()
     nxdata.attrs["Time_indices"] = 0
     nxdata.attrs["Q_indices"] = 1
@@ -467,20 +482,250 @@ def example_09_1D_time():
     nxdata.file.close()
 
 
+def example_10_1D_time_Q():
+    '''
+    I(t,|Q(t)|): A time-series of 1D I(Q) data where Q is a function of time
+    
+    This is another example of how to apply the "AXISNAME_indices"
+    attributes.  "Time" is used with the first index of "I",
+    "Q" with both.
+
+    structural model::
+
+        SASroot
+          SASentry
+            SASdata
+              @Q_indices=0,1
+              @Time_indices=0
+              @I_axes=Time,Q
+              I: float[nTime,10]
+              Q: float[nTime,10]
+              Time: float[nTime]
+
+    '''
+    nxdata = basic_setup()
+    nxdata.attrs["axes"] = "Time Q".split()
+    nxdata.attrs["Time_indices"] = 0
+    nxdata.attrs["Q_indices"] = [0, 1]
+
+    n = 10
+    nTime = 5
+    ds = nxdata.create_dataset("I", data=fake_data(nTime, n))
+    ds.attrs["units"] = "1/m"
+    ds = nxdata.create_dataset("Q", data=fake_data(nTime, n))
+    ds.attrs["units"] = "1/nm"
+    ds = nxdata.create_dataset("Time", data=fake_data(nTime))
+    ds.attrs["units"] = "s"
+
+    nxdata.file.close()
+
+
+def example_11_1D_time_Q_and_uncertainties():
+    '''
+    I(t,|Q|) +/- sigma(t,|Q|): A time-series of 1D I(Q) data with uncertainties where Q is a function of time
+    
+    This is another example of how to apply the "AXISNAME_indices"
+    attributes.  "Time" is used with the first index of "I",
+    "Q" with both.
+
+    structural model::
+
+        SASroot
+          SASentry
+            SASdata
+              @Q_indices=0,1
+              @Time_indices=0
+              @I_axes=Time,Q
+              I: float[nTime,10]
+                @uncertainties=Idev
+              Q: float[nTime,10]
+              Time: float[nTime]
+
+    '''
+    nxdata = basic_setup()
+    nxdata.attrs["axes"] = "Time Q".split()
+    nxdata.attrs["Time_indices"] = 0
+    nxdata.attrs["Q_indices"] = [0, 1]
+
+    n = 10
+    nTime = 5
+    ds = nxdata.create_dataset("I", data=fake_data(nTime, n))
+    ds.attrs["units"] = "1/m"
+    ds.attrs["uncertainties"] = "Idev"
+    ds = nxdata.create_dataset("Q", data=fake_data(nTime, n))
+    ds.attrs["units"] = "1/nm"
+    ds = nxdata.create_dataset("Time", data=fake_data(nTime))
+    ds.attrs["units"] = "s"
+    ds = nxdata.create_dataset("Idev", data=fake_data(nTime, n))
+    ds.attrs["units"] = "1/m"
+
+    nxdata.file.close()
+
+
+def example_12_2D_vector_time():
+    '''
+    I(t,Q): A time-series of 2D I(Q) data, where Q is a vector
+    
+    see: *example_04_2D_vector*
+
+    structural model::
+
+        SASroot
+          SASentry
+            SASdata
+              @Qx_indices=1
+              @Qy_indices=2
+              @Time_indices=0
+              @I_axes=Time,Qx,Qy
+              I: float[nTime,10,50]
+              Qx: float[10,50]
+              Qy: float[10,50]
+              Qz: float[10,50]
+              Time: float[nTime]
+
+    '''
+    nxdata = basic_setup()
+    nxdata.attrs["axes"] = "Time Qx Qy".split()
+    nxdata.attrs["Time_indices"] = 0
+    nxdata.attrs["Qx_indices"] = 1
+    nxdata.attrs["Qy_indices"] = 2
+
+    h = 10
+    v = 50
+    nTime = 5
+    ds = nxdata.create_dataset("I", data=fake_data(nTime, h, v))
+    ds.attrs["units"] = "1/m"
+    ds = nxdata.create_dataset("Qx", data=fake_data(h, v))
+    ds.attrs["units"] = "1/nm"
+    ds = nxdata.create_dataset("Qy", data=fake_data(h, v))
+    ds.attrs["units"] = "1/nm"
+    ds = nxdata.create_dataset("Qz", data=fake_data(h, v))
+    ds.attrs["units"] = "1/nm"
+    ds = nxdata.create_dataset("Time", data=fake_data(nTime))
+    ds.attrs["units"] = "s"
+
+    nxdata.file.close()
+
+
+def example_13_varied_parameters_Q_time():
+    '''
+    I(T,t,P,Q(t)): several varied parameters
+    
+    Additional parameters are temperature, time, and pressure.
+    Only Q depends on time.  
+    
+    structural model::
+
+        SASroot
+          SASentry
+            SASdata
+              @Temperature_indices=0
+              @Time_indices=1
+              @Pressure_indices=2
+              @Qx_indices=1,3
+              @Qy_indices=1,4
+              @I_axes=Temperature,Time,Pressure,Qx,Qy
+              I: float[nTemperature,nTime,nPressure,10,50]
+              Qx: float[nTime,10,50]
+              Qy: float[nTime,10,50]
+              Qz: float[nTime,10,50]
+              Time: float[nTime]
+              Temperature: float[nTemperature]
+              Pressure: float[nPressure]
+
+    '''
+    nxdata = basic_setup()
+    nxdata.attrs["axes"] = "Temperature Time Pressure Qx Qy".split()
+    nxdata.attrs["Temperature_indices"] = 0
+    nxdata.attrs["Time_indices"] = 1
+    nxdata.attrs["Pressure_indices"] = 2
+    nxdata.attrs["Qx_indices"] = [1, 3]
+    nxdata.attrs["Qy_indices"] = [1, 4]
+
+    h = 10
+    v = 50
+    nTime = 5
+    nTemperature = 7
+    nPressure = 3
+    ds = nxdata.create_dataset("I", data=fake_data(nTemperature, nTime, nPressure, h, v))
+    ds.attrs["units"] = "1/m"
+    ds = nxdata.create_dataset("Qx", data=fake_data(nTime, h, v))
+    ds.attrs["units"] = "1/nm"
+    ds = nxdata.create_dataset("Qy", data=fake_data(nTime, h, v))
+    ds.attrs["units"] = "1/nm"
+    ds = nxdata.create_dataset("Qz", data=fake_data(nTime, h, v))
+    ds.attrs["units"] = "1/nm"
+    ds = nxdata.create_dataset("Temperature", data=fake_data(nTemperature))
+    ds.attrs["units"] = "K"
+    ds = nxdata.create_dataset("Time", data=fake_data(nTime))
+    ds.attrs["units"] = "s"
+    ds = nxdata.create_dataset("Pressure", data=fake_data(nPressure))
+    ds.attrs["units"] = "MPa"
+
+    nxdata.file.close()
+
+
+def example_14_varied_parameters_all_time():
+    '''
+    I(t,T,P,Q(t,T,P)): several varied parameters
+    
+    All Q (vector) are different for each combination of time, temperature, and pressure.
+    
+    structural model::
+
+        SASroot
+          SASentry
+            SASdata
+              @Time_indices=0
+              @Temperature_indices=1
+              @Pressure_indices=2
+              @Qx_indices=0,1,2,3
+              @I_axes=Time,Temperature,Pressure,Qx
+              I: float[nTime,nTemperature,nPressure,10*50]
+              Qx: float[nTime,nTemperature,nPressure,10*50]
+              Qy: float[nTime,nTemperature,nPressure,10*50]
+              Qz: float[nTime,nTemperature,nPressure,10*50]
+              Time: float[nTime]
+              Temperature: float[nTemperature]
+              Pressure: float[nPressure]
+
+    '''
+    nxdata = basic_setup()
+    nxdata.attrs["axes"] = "Temperature Time Pressure Qx".split()
+    nxdata.attrs["Temperature_indices"] = 0
+    nxdata.attrs["Time_indices"] = 1
+    nxdata.attrs["Pressure_indices"] = 2
+    nxdata.attrs["Qx_indices"] = [0, 1, 2, 3]
+
+    h = 10
+    v = 50
+    nTime = 5
+    nTemperature = 7
+    nPressure = 3
+    ds = nxdata.create_dataset("I", data=fake_data(nTime, nTemperature, nPressure, h*v))
+    ds.attrs["units"] = "1/m"
+    ds = nxdata.create_dataset("Qx", data=fake_data(nTime, nTemperature, nPressure, h*v))
+    ds.attrs["units"] = "1/nm"
+    ds = nxdata.create_dataset("Qy", data=fake_data(nTime, nTemperature, nPressure, h*v))
+    ds.attrs["units"] = "1/nm"
+    ds = nxdata.create_dataset("Qz", data=fake_data(nTime, nTemperature, nPressure, h*v))
+    ds.attrs["units"] = "1/nm"
+    ds = nxdata.create_dataset("Temperature", data=fake_data(nTemperature))
+    ds.attrs["units"] = "K"
+    ds = nxdata.create_dataset("Time", data=fake_data(nTime))
+    ds.attrs["units"] = "s"
+    ds = nxdata.create_dataset("Pressure", data=fake_data(nPressure))
+    ds.attrs["units"] = "MPa"
+
+    nxdata.file.close()
+
+
 if __name__ == "__main__":
-    methods = [
-        example_01_1D_I_Q,
-        example_02_2D_image,
-        example_03_2D_image_and_uncertainties,
-        example_04_2D_vector,
-        example_05_2D_SAS_WAS,
-        example_06_2D_Masked,
-        example_07_2D_as_1D,
-        example_08_SANS_SAXS,
-        example_09_1D_time,
-    ]
-    for func in methods:
-        funcname = str(func).split()[1]
+    # get a list of the example functions, then document and run each
+    g_dict = dict(globals())    # keep separate from next line
+    examples = sorted([f for f in g_dict if f.startswith("example_")])
+    for funcname in examples:
+        func = g_dict[funcname]
         funcdoc = func.__doc__.strip().splitlines()[0]
         print funcname + ': ' + funcdoc
         func()
