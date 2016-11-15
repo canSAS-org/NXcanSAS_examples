@@ -612,7 +612,7 @@ def example_13_varied_parameters_Q_time():
     I(T,t,P,Q(t)): several varied parameters
     
     Additional parameters are temperature, time, and pressure.
-    Only Q depends on time.  
+    Only Q depends on time.
     
     structural model::
 
@@ -622,9 +622,7 @@ def example_13_varied_parameters_Q_time():
               @Temperature_indices=0
               @Time_indices=1
               @Pressure_indices=2
-              @Qx_indices=1,3
-              @Qy_indices=1,4
-              @I_axes=Temperature,Time,Pressure,Qx,Qy
+              @I_axes=Temperature,Time,Pressure,.,.
               I: float[nTemperature,nTime,nPressure,10,50]
               Qx: float[nTime,10,50]
               Qy: float[nTime,10,50]
@@ -635,12 +633,10 @@ def example_13_varied_parameters_Q_time():
 
     '''
     nxdata = basic_setup()
-    nxdata.attrs["axes"] = "Temperature Time Pressure Qx Qy".split()
+    nxdata.attrs["axes"] = "Temperature Time Pressure . .".split()
     nxdata.attrs["Temperature_indices"] = 0
     nxdata.attrs["Time_indices"] = 1
     nxdata.attrs["Pressure_indices"] = 2
-    nxdata.attrs["Qx_indices"] = [1, 3]
-    nxdata.attrs["Qy_indices"] = [1, 4]
 
     h = 10
     v = 50
@@ -679,8 +675,7 @@ def example_14_varied_parameters_all_time():
               @Time_indices=0
               @Temperature_indices=1
               @Pressure_indices=2
-              @Qx_indices=0,1,2,3
-              @I_axes=Time,Temperature,Pressure,Qx
+              @I_axes=Time,Temperature,Pressure,.
               I: float[nTime,nTemperature,nPressure,10*50]
               Qx: float[nTime,nTemperature,nPressure,10*50]
               Qy: float[nTime,nTemperature,nPressure,10*50]
@@ -691,11 +686,10 @@ def example_14_varied_parameters_all_time():
 
     '''
     nxdata = basic_setup()
-    nxdata.attrs["axes"] = "Temperature Time Pressure Qx".split()
+    nxdata.attrs["axes"] = "Temperature Time Pressure .".split()
     nxdata.attrs["Temperature_indices"] = 0
     nxdata.attrs["Time_indices"] = 1
     nxdata.attrs["Pressure_indices"] = 2
-    nxdata.attrs["Qx_indices"] = [0, 1, 2, 3]
 
     h = 10
     v = 50
@@ -727,5 +721,5 @@ if __name__ == "__main__":
     for funcname in examples:
         func = g_dict[funcname]
         funcdoc = func.__doc__.strip().splitlines()[0]
-        print funcname + ': ' + funcdoc
+        print(funcname + ': ' + funcdoc)
         func()
