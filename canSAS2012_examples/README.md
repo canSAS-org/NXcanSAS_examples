@@ -1,5 +1,11 @@
 # Models
 
+## note: 2016-11-15,prj
+
+  These notes are not consistent with the examples created.
+  For **all** examples, consult the documentation in the
+  python code that created the example.
+
 ## Common cases
 
 ### 1-D I(Q)
