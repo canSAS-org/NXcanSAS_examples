@@ -1,4 +1,4 @@
-/home/prjemian/Documents/eclipse/NXcanSAS_examples/1d_standard/samdata_WITHTX.h5 : NeXus data file
+samdata_WITHTX.h5 : NeXus data file
   @creator = xml2hdf5.py
   @default = _13444rear_1D_1_75_12_5
   _13444rear_1D_1_75_12_5:NXentry
@@ -23,7 +23,7 @@
         @units = 1/cm
       Q:NX_FLOAT64[106] = [0.00159011, 0.0016696199999999999, 0.0017531000000000001, '...', 0.26687300000000003]
         @units = 1/A
-        @uncertainties = Qdev
+        @resolution = Qdev
       Qdev:NX_FLOAT64[106] = [0.0, 0.0, 0.0, '...', 0.0]
         @units = 1/A
     sasinstrument:NXinstrument
@@ -35,14 +35,14 @@
         @NX_class = NXcollimator
         @canSAS_name = sascollimation
         @canSAS_class = SAScollimation
-      sasdetector_0:NXdetector
+      sasdetector:NXdetector
         @NX_class = NXdetector
-        @canSAS_name = sasdetector_0
+        @canSAS_name = sasdetector
         @canSAS_class = SASdetector
         name:NX_CHAR[20] = Rear:  ORDELA 21000N
       sasdetector_1:NXdetector
         @NX_class = NXdetector
-        @canSAS_name = sasdetector_1
+        @canSAS_name = sasdetector
         @canSAS_class = SASdetector
         name:NX_CHAR[20] = Front: ORDELA 21000N
       sassource:NXsource

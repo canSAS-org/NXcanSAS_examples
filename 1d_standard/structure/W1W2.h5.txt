@@ -1,4 +1,4 @@
-/home/prjemian/Documents/eclipse/NXcanSAS_examples/1d_standard/W1W2.h5 : NeXus data file
+W1W2.h5 : NeXus data file
   @creator = xml2hdf5.py
   @default = W1
   W1:NXentry
@@ -43,9 +43,9 @@
             @units = mm
           y_gap:NX_FLOAT64 = 12.0
             @units = mm
-      sasdetector_0:NXdetector
+      sasdetector:NXdetector
         @NX_class = NXdetector
-        @canSAS_name = sasdetector_0
+        @canSAS_name = sasdetector
         @canSAS_class = SASdetector
         SDD:NX_FLOAT64 = 4.155
           @units = m
@@ -61,7 +61,7 @@
           @units = mm
       sasdetector_1:NXdetector
         @NX_class = NXdetector
-        @canSAS_name = sasdetector_1
+        @canSAS_name = sasdetector
         @canSAS_class = SASdetector
         SDD:NX_FLOAT64 = 0.587
           @units = m
@@ -185,9 +185,9 @@
             @units = mm
           y_gap:NX_FLOAT64 = 12.0
             @units = mm
-      sasdetector_0:NXdetector
+      sasdetector:NXdetector
         @NX_class = NXdetector
-        @canSAS_name = sasdetector_0
+        @canSAS_name = sasdetector
         @canSAS_class = SASdetector
         SDD:NX_FLOAT64 = 4.155
           @units = m
@@ -203,7 +203,7 @@
           @units = mm
       sasdetector_1:NXdetector
         @NX_class = NXdetector
-        @canSAS_name = sasdetector_1
+        @canSAS_name = sasdetector
         @canSAS_class = SASdetector
         SDD:NX_FLOAT64 = 0.587
           @units = m

@@ -1,4 +1,4 @@
-/home/prjemian/Documents/eclipse/NXcanSAS_examples/1d_standard/1998spheres.h5 : NeXus data file
+1998spheres.h5 : NeXus data file
   @creator = xml2hdf5.py
   @default = sasentry_0
   sasentry_0:NXentry

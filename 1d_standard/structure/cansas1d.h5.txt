@@ -1,4 +1,4 @@
-/home/prjemian/Documents/eclipse/NXcanSAS_examples/1d_standard/cansas1d.h5 : NeXus data file
+cansas1d.h5 : NeXus data file
   @creator = xml2hdf5.py
   @default = sasentry
   sasentry:NXentry
@@ -22,7 +22,7 @@
         @units = 1/cm
       Q:NX_FLOAT64 = 0.02
         @units = 1/A
-        @uncertainties = Qdev
+        @resolution = Qdev
       Qdev:NX_FLOAT64 = 0.01
         @units = 1/A
       Shadowfactor:NX_FLOAT64 = 1.0

@@ -1,4 +1,4 @@
-/home/prjemian/Documents/eclipse/NXcanSAS_examples/1d_standard/cs_af1410.h5 : NeXus data file
+cs_af1410.h5 : NeXus data file
   @creator = xml2hdf5.py
   @default = AF1410_10
   AF1410_10:NXentry

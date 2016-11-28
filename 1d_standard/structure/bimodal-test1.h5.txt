@@ -1,4 +1,4 @@
-/home/prjemian/Documents/eclipse/NXcanSAS_examples/1d_standard/bimodal-test1.h5 : NeXus data file
+bimodal-test1.h5 : NeXus data file
   @creator = xml2hdf5.py
   @default = sasentry
   sasentry:NXentry

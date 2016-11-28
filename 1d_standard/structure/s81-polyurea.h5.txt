@@ -1,4 +1,4 @@
-/home/prjemian/Documents/eclipse/NXcanSAS_examples/1d_standard/s81-polyurea.h5 : NeXus data file
+s81-polyurea.h5 : NeXus data file
   @creator = xml2hdf5.py
   @default = S7_Neat_Polyurea
   S7_Neat_Polyurea:NXentry

@@ -1,4 +1,4 @@
-/home/prjemian/Documents/eclipse/NXcanSAS_examples/1d_standard/cs_rr_polymers.h5 : NeXus data file
+cs_rr_polymers.h5 : NeXus data file
   @creator = xml2hdf5.py
   @default = rr_polymer_A
   rr_polymer_A:NXentry

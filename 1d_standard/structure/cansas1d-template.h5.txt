@@ -1,0 +1,182 @@
+cansas1d-template.h5 : NeXus data file
+  @creator = xml2hdf5.py
+  @default = this_name_is_optional
+  this_name_is_optional:NXentry
+    @NX_class = NXentry
+    @canSAS_name = this name is optional
+    @canSAS_class = SASentry
+    @default = this_name_is_optional
+    @name = this name is optional
+    Run_extension:NX_CHAR[4] = 
+			
+      @xml_namespace = ILL
+    SB_USAXS:NX_CHAR[4] = 
+			
+      @xml_namespace = USAXS/APS/32ID
+    definition:NX_CHAR[8] = NXcanSAS
+    run:NX_CHAR[25] = Could be a number or text
+      @name = this name is optional
+    title:NX_CHAR[28] = Title of the scan goes here.
+    sasinstrument:NXinstrument
+      @NX_class = NXinstrument
+      @canSAS_name = sasinstrument
+      @canSAS_class = SASinstrument
+      name:NX_CHAR[17] = canSAS instrument
+      sasdetector:NXdetector
+        @NX_class = NXdetector
+        @canSAS_name = sasdetector
+        @canSAS_class = SASdetector
+        SDD:NX_FLOAT64 = 4.15
+          @units = m
+          @comment = Distance between sample and detector
+        beam_center_x:NX_FLOAT64 = 322.64
+          @units = mm
+        beam_center_y:NX_FLOAT64 = 327.68
+          @units = mm
+        name:NX_CHAR[25] = fictional hybrid detector
+        pitch:NX_FLOAT64 = 0.0
+          @units = degree
+        roll:NX_FLOAT64 = 0.0
+          @units = degree
+        slit_length:NX_FLOAT64 = 0.05
+          @units = 1/A
+          @comment = Slit length of the instrument for this detector, expressed in the same units as Q
+        x_pixel_size:NX_FLOAT64 = 5.0
+          @units = mm
+        x_position:NX_FLOAT64 = 322.64
+          @units = mm
+        y_pixel_size:NX_FLOAT64 = 5.0
+          @units = mm
+        y_position:NX_FLOAT64 = 327.68
+          @units = mm
+        yaw:NX_FLOAT64 = 0.0
+          @units = degree
+        z_position:NX_FLOAT64 = 0.0
+          @units = mm
+      sassource:NXsource
+        @NX_class = NXsource
+        @canSAS_name = sassource
+        @canSAS_class = SASsource
+        beam_shape:NX_CHAR[4] = disc
+        beam_size_x:NX_FLOAT64 = 12.0
+          @units = mm
+        beam_size_y:NX_FLOAT64 = 12.0
+          @units = mm
+        incident_wavelength:NX_FLOAT64 = 6.0
+          @units = A
+        radiation:NX_CHAR[7] = neutron
+        wavelength_max:NX_FLOAT64 = 1.0
+          @units = nm
+        wavelength_min:NX_FLOAT64 = 0.22
+          @units = nm
+        wavelength_spread:NX_FLOAT64 = 14.3
+          @units = percent
+      this_name_is_optional:NXcollimator
+        @NX_class = NXcollimator
+        @canSAS_name = this name is optional
+        @canSAS_class = SAScollimation
+        length:NX_FLOAT64 = 255.0
+          @units = mm
+          @comment = Amount/length of collimation inserted (on a SANS instrument)
+        source:NXaperture
+          @NX_class = NXaperture
+          @canSAS_name = source
+          @canSAS_class = aperture
+          distance:NX_FLOAT64 = 11.0
+            @units = m
+          shape:NX_CHAR[6] = radius
+          x_gap:NX_FLOAT64 = 50.0
+            @units = mm
+          y_gap:NX_FLOAT64 = 2.1
+            @units = mm
+    this_name_is_optional:NXdata
+      @NX_class = NXdata
+      @canSAS_name = this name is optional
+      @canSAS_class = SASdata
+      @signal = I
+      @I_axes = Q
+      I:NX_FLOAT64[3] = [1000.0, 989.0, 989.0]
+        @units = 1/cm
+        @uncertainties = Idev
+      Idev:NX_FLOAT64[3] = [3.0, 3.0, 3.0]
+        @units = 1/cm
+      Q:NX_FLOAT64[3] = [0.02, 0.029999999999999999, 0.029999999999999999]
+        @units = 1/A
+        @resolution = Qdev
+      Qdev:NX_FLOAT64[2] = [0.01, 0.01]
+        @units = 1/A
+      dQl:NX_FLOAT64 = 0.01
+        @units = 1/A
+      dQw:NX_FLOAT64 = 0.01
+        @units = 1/A
+    this_name_is_optional_1:NXprocess
+      @NX_class = NXprocess
+      @canSAS_name = this name is optional
+      @canSAS_class = SASprocess
+      date:NX_CHAR[20] = 04-Sep-2007 18:35:02
+      description:NX_CHAR[43] = free form description of processing routine
+      name:NX_CHAR[4] = spol
+      term_0:NX_CHAR[6] = 10.000
+        @name = calibration
+        @units = a.u./cm
+      term_1:NX_CHAR[13] = USER:MASK.COM
+        @name = MASK_file
+      this_name_is_optional:NXnote
+        @NX_class = NXnote
+        @canSAS_name = this name is optional
+        @canSAS_class = SASprocessnote
+        @name = this name is optional
+        SASprocessnote_0:NX_CHAR[35] = free form description of processing
+          @tag = SASprocessnote
+      this_name_is_optional_1:NXnote
+        @NX_class = NXnote
+        @canSAS_name = this name is optional
+        @canSAS_class = SASprocessnote
+        @name = this name is optional
+        SASprocessnote_0:NX_CHAR[22] = Use as many as needed.
+          @tag = SASprocessnote
+      this_name_is_optional_2:NXnote
+        @NX_class = NXnote
+        @canSAS_name = this name is optional
+        @canSAS_class = SASprocessnote
+        @name = this name is optional
+        SASprocessnote_0:NX_CHAR[80] = AvA1 0.0000E+00 AsA2 1.0000E+00 XvA3 1.0526E+03 XsA4  5.2200E-02 XfA5 0.0000E+00
+          @tag = SASprocessnote
+    this_name_is_optional_2:NXnote
+      @NX_class = NXnote
+      @canSAS_name = this name is optional
+      @canSAS_class = SASnote
+      @name = this name is optional
+      SASnote_0:NX_CHAR[35] = free form description of processing
+        @tag = SASnote
+    this_name_is_optional_3:NXnote
+      @NX_class = NXnote
+      @canSAS_name = this name is optional
+      @canSAS_class = SASnote
+      @name = this name is optional
+      SASnote_0:NX_CHAR[21] = Use as many as needed
+        @tag = SASnote
+    this_name_is_optional_4:NXsample
+      @NX_class = NXsample
+      @canSAS_name = this name is optional
+      @canSAS_class = SASsample
+      ID:NX_CHAR[14] = SI600-new-long
+      details:NX_CHAR[78] = 
+				http://chemtools.chem.soton.ac.uk/projects/blog/blogs.php/bit_id/2720
+			
+      pitch:NX_FLOAT64 = 0.02
+        @units = degree
+      roll:NX_FLOAT64 = 22.5
+        @units = degree
+      temperature:NX_FLOAT64 = 22.0
+        @units = C
+      thickness:NX_FLOAT64 = 1.03
+        @units = mm
+      transmission:NX_FLOAT64 = 0.327
+        @units = dimensionless
+      x_position:NX_FLOAT64 = 10.0
+        @units = mm
+      y_position:NX_FLOAT64 = 0.0
+        @units = mm
+      yaw:NX_FLOAT64 = 0.02
+        @units = degree

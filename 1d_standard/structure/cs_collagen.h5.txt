@@ -1,4 +1,4 @@
-/home/prjemian/Documents/eclipse/NXcanSAS_examples/1d_standard/cs_collagen.h5 : NeXus data file
+cs_collagen.h5 : NeXus data file
   @creator = xml2hdf5.py
   @default = sasentry
   sasentry:NXentry
@@ -22,7 +22,7 @@
         @units = a.u.
       Q:NX_FLOAT64[125] = [0.022755999999999998, 0.023296000000000001, 0.023837000000000001, '...', 0.090716000000000005]
         @units = 1/A
-        @uncertainties = Qdev
+        @resolution = Qdev
       Qdev:NX_FLOAT64[125] = [0.00055000000000000003, 0.00055000000000000003, 0.00055000000000000003, '...', 0.00055000000000000003]
         @units = 1/A
     sasinstrument:NXinstrument

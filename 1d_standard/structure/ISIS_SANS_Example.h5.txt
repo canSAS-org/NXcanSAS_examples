@@ -1,4 +1,4 @@
-/home/prjemian/Documents/eclipse/NXcanSAS_examples/1d_standard/ISIS_SANS_Example.h5 : NeXus data file
+ISIS_SANS_Example.h5 : NeXus data file
   @creator = xml2hdf5.py
   @default = sasentry
   sasentry:NXentry
@@ -22,7 +22,7 @@
         @units = 1/cm
       Q:NX_FLOAT64[140] = [0.0089999999999999993, 0.010999999999999999, 0.012999999999999999, '...', 0.28699999999999998]
         @units = 1/A
-        @uncertainties = Qdev
+        @resolution = Qdev
       Qdev:NX_FLOAT64[140] = [0.0, 0.0, 0.0, '...', 0.0]
         @units = 1/A
     sasinstrument:NXinstrument
@@ -48,9 +48,9 @@
             @units = mm
           y_gap:NX_FLOAT64 = 12.0
             @units = mm
-      sasdetector_0:NXdetector
+      sasdetector:NXdetector
         @NX_class = NXdetector
-        @canSAS_name = sasdetector_0
+        @canSAS_name = sasdetector
         @canSAS_class = SASdetector
         SDD:NX_FLOAT64 = 4.155
           @units = m
@@ -66,7 +66,7 @@
           @units = mm
       sasdetector_1:NXdetector
         @NX_class = NXdetector
-        @canSAS_name = sasdetector_1
+        @canSAS_name = sasdetector
         @canSAS_class = SASdetector
         SDD:NX_FLOAT64 = 0.587
           @units = m
