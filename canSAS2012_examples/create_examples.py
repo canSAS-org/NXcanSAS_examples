@@ -15,6 +15,8 @@ import numpy
 import os
 import sys
 
+import punx.h5structure
+
 
 def basic_setup():
     '''
@@ -723,3 +725,13 @@ if __name__ == "__main__":
         funcdoc = func.__doc__.strip().splitlines()[0]
         print(funcname + ': ' + funcdoc)
         func()
+        
+        h5_file = funcname + '.h5'
+        structure_file = os.path.join('structure', h5_file + '.txt')
+        mc = punx.h5structure.h5structure(h5_file)
+        mc.array_items_shown = 0
+        structure = mc.report()
+        fp = open(structure_file, 'w')
+        fp.write('\n'.join(structure or ''))
+        fp.write('\n')
+        fp.close()
