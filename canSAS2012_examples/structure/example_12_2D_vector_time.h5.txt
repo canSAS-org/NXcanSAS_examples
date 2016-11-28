@@ -1,0 +1,32 @@
+example_12_2D_vector_time.h5 : NeXus data file
+  @file_name = example_12_2D_vector_time.h5
+  @HDF5_Version = 1.8.15
+  @h5py_version = 2.6.0
+  @file_time = 2016-11-27 21:30:42.962000
+  @producer = C:\Users\Pete\Documents\eclipse\canSAS\NXcanSAS_examples\canSAS2012_examples\create_examples.py
+  @default = sasentry
+  sasentry:NXentry
+    @NX_class = NXentry
+    @SAS_class = SASentry
+    @default = sasdata
+    definition:NX_CHAR = NXcanSAS
+    run:NX_CHAR = example_12_2D_vector_time
+    title:NX_CHAR = I(t,Q): A time-series of 2D I(Q) data, where Q is a vector
+    sasdata:NXdata
+      @NX_class = NXdata
+      @SAS_class = SASdata
+      @signal = I
+      @axes = ['Time' 'Qx' 'Qy']
+      @Time_indices = 0
+      @Qx_indices = 1
+      @Qy_indices = 2
+      I:NX_FLOAT64[5,10,50] = [ ... ]
+        @units = 1/m
+      Qx:NX_FLOAT64[10,50] = [ ... ]
+        @units = 1/nm
+      Qy:NX_FLOAT64[10,50] = [ ... ]
+        @units = 1/nm
+      Qz:NX_FLOAT64[10,50] = [ ... ]
+        @units = 1/nm
+      Time:NX_FLOAT64[5] = [ ... ]
+        @units = s

@@ -1,0 +1,36 @@
+example_14_varied_parameters_all_time.h5 : NeXus data file
+  @file_name = example_14_varied_parameters_all_time.h5
+  @HDF5_Version = 1.8.15
+  @h5py_version = 2.6.0
+  @file_time = 2016-11-27 21:30:43.082000
+  @producer = C:\Users\Pete\Documents\eclipse\canSAS\NXcanSAS_examples\canSAS2012_examples\create_examples.py
+  @default = sasentry
+  sasentry:NXentry
+    @NX_class = NXentry
+    @SAS_class = SASentry
+    @default = sasdata
+    definition:NX_CHAR = NXcanSAS
+    run:NX_CHAR = example_14_varied_parameters_all_time
+    title:NX_CHAR = I(t,T,P,Q(t,T,P)): several varied parameters
+    sasdata:NXdata
+      @NX_class = NXdata
+      @SAS_class = SASdata
+      @signal = I
+      @Temperature_indices = 0
+      @axes = ['Temperature' 'Time' 'Pressure' '.']
+      @Time_indices = 1
+      @Pressure_indices = 2
+      I:NX_FLOAT64[5,7,3,500] = [ ... ]
+        @units = 1/m
+      Pressure:NX_FLOAT64[3] = [ ... ]
+        @units = MPa
+      Qx:NX_FLOAT64[5,7,3,500] = [ ... ]
+        @units = 1/nm
+      Qy:NX_FLOAT64[5,7,3,500] = [ ... ]
+        @units = 1/nm
+      Qz:NX_FLOAT64[5,7,3,500] = [ ... ]
+        @units = 1/nm
+      Temperature:NX_FLOAT64[7] = [ ... ]
+        @units = K
+      Time:NX_FLOAT64[5] = [ ... ]
+        @units = s

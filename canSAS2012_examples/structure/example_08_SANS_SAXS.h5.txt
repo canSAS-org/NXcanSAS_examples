@@ -1,0 +1,33 @@
+example_08_SANS_SAXS.h5 : NeXus data file
+  @file_name = example_08_SANS_SAXS.h5
+  @HDF5_Version = 1.8.15
+  @h5py_version = 2.6.0
+  @file_time = 2016-11-27 21:30:42.848000
+  @producer = C:\Users\Pete\Documents\eclipse\canSAS\NXcanSAS_examples\canSAS2012_examples\create_examples.py
+  @default = sasentry
+  sasentry:NXentry
+    @NX_class = NXentry
+    @SAS_class = SASentry
+    @default = sans
+    definition:NX_CHAR = NXcanSAS
+    run:NX_CHAR = example_08_SANS_SAXS
+    title:NX_CHAR = I(|Q|): Complementary SANS & SAXS techniques.
+    sans:NXdata
+      @NX_class = NXdata
+      @SAS_class = SASdata
+      @signal = I
+      @axes = Q
+      @probe_type = neutron
+      @Q_indices = 0
+      I:NX_FLOAT64[10] = [ ... ]
+        @units = 1/m
+      Q:NX_FLOAT64[10] = [ ... ]
+        @units = 1/nm
+    saxs:NXdata
+      @NX_class = NXdata
+      @SAS_class = SASdata
+      @probe_type = xray
+      I:NX_FLOAT64[25] = [ ... ]
+        @units = 1/m
+      Q:NX_FLOAT64[25] = [ ... ]
+        @units = 1/nm

@@ -1,0 +1,27 @@
+example_10_1D_time_Q.h5 : NeXus data file
+  @file_name = example_10_1D_time_Q.h5
+  @HDF5_Version = 1.8.15
+  @h5py_version = 2.6.0
+  @file_time = 2016-11-27 21:30:42.912000
+  @producer = C:\Users\Pete\Documents\eclipse\canSAS\NXcanSAS_examples\canSAS2012_examples\create_examples.py
+  @default = sasentry
+  sasentry:NXentry
+    @NX_class = NXentry
+    @SAS_class = SASentry
+    @default = sasdata
+    definition:NX_CHAR = NXcanSAS
+    run:NX_CHAR = example_10_1D_time_Q
+    title:NX_CHAR = I(t,|Q(t)|): A time-series of 1D I(Q) data where Q is a function of time
+    sasdata:NXdata
+      @NX_class = NXdata
+      @SAS_class = SASdata
+      @signal = I
+      @axes = ['Time' 'Q']
+      @Time_indices = 0
+      @Q_indices = [0 1]
+      I:NX_FLOAT64[5,10] = [ ... ]
+        @units = 1/m
+      Q:NX_FLOAT64[5,10] = [ ... ]
+        @units = 1/nm
+      Time:NX_FLOAT64[5] = [ ... ]
+        @units = s

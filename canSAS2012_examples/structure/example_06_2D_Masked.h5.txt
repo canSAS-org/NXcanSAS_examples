@@ -1,0 +1,25 @@
+example_06_2D_Masked.h5 : NeXus data file
+  @file_name = example_06_2D_Masked.h5
+  @HDF5_Version = 1.8.15
+  @h5py_version = 2.6.0
+  @file_time = 2016-11-27 21:30:42.728000
+  @producer = C:\Users\Pete\Documents\eclipse\canSAS\NXcanSAS_examples\canSAS2012_examples\create_examples.py
+  @default = sasentry
+  sasentry:NXentry
+    @NX_class = NXentry
+    @SAS_class = SASentry
+    @default = sasdata
+    definition:NX_CHAR = NXcanSAS
+    run:NX_CHAR = example_06_2D_Masked
+    title:NX_CHAR = I(|Q|) and mask: Data masks are possible in analysis of SAS
+    sasdata:NXdata
+      @NX_class = NXdata
+      @SAS_class = SASdata
+      @signal = I
+      @axes = Q Q
+      @Q_indices = [0 1]
+      I:NX_FLOAT64[10,50] = [ ... ]
+        @units = 1/m
+      Mask:NX_INT32[10,50] = [ ... ]
+      Q:NX_FLOAT64[10,50] = [ ... ]
+        @units = 1/nm
