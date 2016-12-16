@@ -102,7 +102,7 @@ cansas1d-template.h5 : NeXus data file
         @units = 1/cm
       Q:NX_FLOAT64[3] = [0.02, 0.029999999999999999, 0.029999999999999999]
         @units = 1/A
-        @resolution = Qdev
+        @resolutions = Qdev
       Qdev:NX_FLOAT64[2] = [0.01, 0.01]
         @units = 1/A
       dQl:NX_FLOAT64 = 0.01

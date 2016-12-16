@@ -22,7 +22,7 @@ cs_collagen_full.h5 : NeXus data file
         @units = a.u.
       Q:NX_FLOAT64[331] = [0.022755999999999998, 0.023296000000000001, 0.023837000000000001, '...', 0.20583000000000001]
         @units = 1/A
-        @resolution = Qdev
+        @resolutions = Qdev
       Qdev:NX_FLOAT64[331] = [0.00055000000000000003, 0.00055000000000000003, 0.00055000000000000003, '...', 0.00055000000000000003]
         @units = 1/A
     sasinstrument:NXinstrument

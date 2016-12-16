@@ -22,7 +22,7 @@ cansas1d.h5 : NeXus data file
         @units = 1/cm
       Q:NX_FLOAT64 = 0.02
         @units = 1/A
-        @resolution = Qdev
+        @resolutions = Qdev
       Qdev:NX_FLOAT64 = 0.01
         @units = 1/A
       Shadowfactor:NX_FLOAT64 = 1.0

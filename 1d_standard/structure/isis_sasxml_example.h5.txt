@@ -117,7 +117,7 @@ isis_sasxml_example.h5 : NeXus data file
         @units = 1/cm
       Q:NX_FLOAT64[140] = [0.0089999999999999993, 0.010999999999999999, 0.012999999999999999, '...', 0.28699999999999998]
         @units = 1/A
-        @resolution = Qdev
+        @resolutions = Qdev
       Qdev:NX_FLOAT64[140] = [0.0, 0.0, 0.0, '...', 0.0]
         @units = 1/A
     sassample:NXsample
