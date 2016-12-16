@@ -194,12 +194,12 @@ class canSAS1D_to_NXcanSAS(object):
                 if 'Idev' in data:
                     eznx.addAttributes(nx_obj['I'], uncertainties='Idev')   # NeXus
                 if 'Qdev' in data:
-                    eznx.addAttributes(nx_obj['Q'], resolution='Qdev')   # NeXus
+                    eznx.addAttributes(nx_obj['Q'], resolutions='Qdev')   # NeXus
                 if 'dQw' in data and 'dQl' in data: # not a common occurrence
                     # consider: Qdev or dQw & dQl
                     # http://cansas-org.github.io/canSAS2012/notation.html?highlight=uncertainty
                     if 'Qdev' not in data:  # canSAS1d rules say either Qdev OR (dQw, dQl), not both
-                        eznx.addAttributes(nx_obj['Q'], resolution=['dQw', 'dQl'])
+                        eznx.addAttributes(nx_obj['Q'], resolutions=['dQw', 'dQl'])
 
         return nx_node_list
 
