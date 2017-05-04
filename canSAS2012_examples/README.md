@@ -1,26 +1,19 @@
+# Models
 
-######
-Models
-######
+note: 2016-11-15,prj
 
-.. note: 2016-11-15,prj
+These notes are not consistent with the examples created.
+For **all** examples, consult the documentation in the
+python code that created the example.
 
-  These notes are not consistent with the examples created.
-  For **all** examples, consult the documentation in the
-  python code that created the example.
+## Common cases
 
-Common cases
-=============
-
-1-D I(Q)
-+++++++++
-
+### 1-D I(Q)
 
 This model could describe data stored in the the canSAS1d/1.0 format (with the addition of 
 *uncertainty* data and some additional metadata).
 
-::
-
+```
     SASroot
       SASentry
         SASdata
@@ -28,13 +21,11 @@ This model could describe data stored in the the canSAS1d/1.0 format (with the a
           @I_axes=Q
           I: float[100]
           Q: float[100]
+```
 
+### 2-D image
 
-
-
-2-D image
-+++++++++
-
+```
     SASroot
       SASentry
         SASdata
@@ -44,13 +35,11 @@ This model could describe data stored in the the canSAS1d/1.0 format (with the a
           Qx: float[100, 512]
           Qy: float[100, 512]
           Qz: float[100, 512]
+```
 
+### 2-D (image)  I(|Q|) +/- sigma(|Q|)
 
-
-2-D (image)  I(|Q|) +/- sigma(|Q|)
-++++++++++++++++++++++++++++++++++++
-
-
+```
     SASroot
       SASentry
         SASdata
@@ -60,10 +49,9 @@ This model could describe data stored in the the canSAS1d/1.0 format (with the a
             @uncertainty=Idev
           Q: float[300, 300]
           Idev: float[300, 300]
+```
 
-
-2-D SAS/WAS images
-++++++++++++++++++
+### 2-D SAS/WAS images
 
 Consider the multi-technique experiment that produces 
 small-angle and wide-angle scattering data images.  
@@ -73,7 +61,7 @@ several detectors  for an alternative).
 Here the SAS data image is 100 x 512 pixels.  
 The WAS data (not covered by this canSAS standard) is 256 x 256 pixels.
     
-
+```
     SASroot
       SASentry
         SASdata
@@ -92,12 +80,11 @@ The WAS data (not covered by this canSAS standard) is 256 x 256 pixels.
           Qx: float[256, 256]
           Qy: float[256, 256]
           Qz: float[256, 256]
+```
 
+### 2-D masked image
 
-2-D masked image
-++++++++++++++++++
-  
-
+```
     SASroot
       SASentry
         SASdata
@@ -109,21 +96,21 @@ The WAS data (not covered by this canSAS standard) is 256 x 256 pixels.
           Qy: float[100, 512]
           Qz: float[100, 512]
           Mask: int[100, 512]
+```
 
+### 2-D generic I(Q)
 
-2-D generic I(Q)
-++++++++++++++++++
-
-Could use this model, for example, to describe data from multiple detectors (by listing individual 
-pixels from all detectors retained after any masking).  Or, could describe data from one detector 
+Could use this model, for example, to describe data from 
+multiple detectors (by listing individual 
+pixels from all detectors retained after any masking).  
+Or, could describe data from one detector 
 of any geometry.  This is the most flexible.
 
 Examples:     
 :download:`HDF5 <../../examples/hdf5/generic2dcase.h5>`
 :download:`XML <../../examples/xml/generic2dcase.xml>`
 
-  
-
+```
     SASroot
       SASentry
         SASdata
@@ -133,10 +120,9 @@ Examples:
           Qx: float[100*512]
           Qy: float[100*512]
           Qz: float[100*512]
+```
 
-
-2-D SANS and SAXS
-++++++++++++++++++
+### 2-D SANS and SAXS
 
 Consider the multi-technique experiment that produces 
 small-angle neutron and X-ray scattering data. 
@@ -145,7 +131,7 @@ the SAXS data is 256 x 256 pixels.  (Normally, you will
 need more metadata for each probe, such as wavelength, to
 make a full analysis using both datasets.)
 
-  
+```
     SASroot
       SASentry
         SASdata
@@ -166,10 +152,9 @@ make a full analysis using both datasets.)
           Qx: float[256*256]
           Qy: float[256*256]
           Qz: float[256*256]
+```
 
-
-several detectors
-++++++++++++++++++
+### several detectors
 
 Here, the data are appended to a common ``I`` data object.
 This hypothetical case has reduced data derived from 
@@ -177,21 +162,20 @@ three detectors, I_a(Q), I_b(Q), and I_c(Q).
 Also, a certain number of pixels (``nDiscardedPixels``) have been discarded
 previously from the data for various reasons.
   
-  .. tip::  Typical data might have fewer useful pixels due to various
-    detector artifacts such as zingers, streaks, and dead spots, as well
-    as an applied intensity mask.  There is no need to write such useless pixels
-    to the data objects.
+.. tip::  Typical data might have fewer useful pixels due to various
+  detector artifacts such as zingers, streaks, and dead spots, as well
+  as an applied intensity mask.  There is no need to write such useless pixels
+  to the data objects.
 
-  ==============  ========   ====================
-  intensity       detector   shape
-  ==============  ========   ====================
-  :math:`I_a(Q)`  2-D        100 x 512 pixels
-  :math:`I_b(Q)`  1-D        2000 pixels
-  :math:`I_c(Q)`  2-D        256 x 256 pixels
-  ==============  ========   ====================
+intensity | detector | shape
+----------|----------|--------
+`I_a(Q)`  | 2-D      | 100 x 512 pixels
+`I_b(Q)`  | 1-D      | 2000 pixels
+`I_c(Q)`  | 2-D      | 256 x 256 pixels
 
-  Data from a SAXS/MAXS/WAXS instrument might be represented thus.
+Data from a SAXS/MAXS/WAXS instrument might be represented thus.
 
+```
     SASroot
       SASentry
         SASdata
@@ -201,14 +185,13 @@ previously from the data for various reasons.
           Qx: float[100*512 + 2000 + 256*256 - nDiscardedPixels]
           Qy: float[100*512 + 2000 + 256*256 - nDiscardedPixels]
           Qz: float[100*512 + 2000 + 256*256 - nDiscardedPixels]
+```
 
+## I(t,Q) models with time-dependence
 
-I(t,Q) models with time-dependence
-==================================
+### 1-D I(t,Q)
 
-1-D I(t,Q)
-++++++++++++++++++
-  
+```
     SASroot
       SASentry
         SASdata
@@ -218,14 +201,13 @@ I(t,Q) models with time-dependence
           Time: float[nTime]  
           Q: float[100]
           I: float[nTime,100]
+```
 
+### 1-D I(t,Q(t))
 
-1-D I(t,Q(t))
-++++++++++++++++++
+This example is slightly more complex, showing data where `Q` is also time-dependent.
 
-This example is slightly more complex, showing data where :math:`Q` is also time-dependent.
-
-    
+```
     SASroot
       SASentry
         SASdata
@@ -235,16 +217,16 @@ This example is slightly more complex, showing data where :math:`Q` is also time
           I: float[nTime,100]
           Q: float[nTime,100]
           Time: float[nTime]
-
+```
 
 .. _1D SAS data in a time series I(t,Q(t)) +/- Idev(t,Q(t)):
 
-1-D I(t,Q(t))\pm\sigma(t,Q(t))
-++++++++++++++++++++++++++++++++++++
+### 1-D I(t,Q(t)) +/- sigma(t,Q(t))
 
 Now, provide the uncertainties (where ``Idev`` represents 
-\sigma(t,Q(t)) ) of the intensities:
+sigma(t,Q(t)) ) of the intensities:
 
+```
     SASroot
       SASentry
         SASdata
@@ -256,13 +238,11 @@ Now, provide the uncertainties (where ``Idev`` represents
           Idev: float[nTime,100]
           Q: float[nTime,100]
           Time: float[nTime]
+```
 
-
-
-2-D I(t,Q)
-++++++++++++++++++
+### 2-D I(t,Q)
   
-
+```
     SASroot
       SASentry
         SASdata
@@ -274,15 +254,15 @@ Now, provide the uncertainties (where ``Idev`` represents
           Qy: float[100*512]
           Qz: float[100*512]
           Time: float[nTime]
-
+```
 
 .. _2-D I(t,Q(t)):
 
-2-D I(t,Q(t))
-++++++++++++++++++
+### 2-D I(t,Q(t))
 
-This example is slightly more complex, showing data where :math:`Q` is also time-dependent.
+This example is slightly more complex, showing data where `Q` is also time-dependent.
 
+```
     SASroot
       SASentry
         SASdata
@@ -294,15 +274,15 @@ This example is slightly more complex, showing data where :math:`Q` is also time
           Qy: float[nTime,100*512]
           Qz: float[nTime,100*512]
           Time: float[nTime]
-
+```
 
 .. _2-D.time-dependent.masked.image:
 
-2-D I(t,Q(t)) masked image
-+++++++++++++++++++++++++++
+### 2-D I(t,Q(t)) masked image
 
 This example explores a bit more complexity, adding a mask that is time-dependent.
 
+```
     SASroot
       SASentry
         SASdata
@@ -316,19 +296,16 @@ This example explores a bit more complexity, adding a mask that is time-dependen
           Qz: float[nTime,100,512]
           Time: float[nTime]
           Mask: int[100,512]
+```
 
+## models with several varied parameters
 
-
-
-models with several varied parameters
-======================================
-
-2-D I(t,T,P,Q(t,T,P))
-+++++++++++++++++++++++++++
+### 2-D I(t,T,P,Q(t,T,P))
 
 Complex case of I(t,T,P,Q(t,T,P))
-where all :math:`Q` values are different for each combination of time, temperature, and pressure.
+where all `Q` values are different for each combination of time, temperature, and pressure.
 
+```
     SASroot
       SASentry
         SASdata
@@ -344,14 +321,14 @@ where all :math:`Q` values are different for each combination of time, temperatu
           Time: float[nTime]
           Temperature: float[nTemperature]
           Pressure: float[nPressure]
+```
 
+### 2-D  I(T,t,P,Q(t)) images
 
-2-D  I(T,t,P,Q(t)) images
-+++++++++++++++++++++++++++
+Slightly less complex than previous, now `I(T,t,P,Q(t))`
+where `Q` only depends on time.
 
-Slightly less complex than previous, now :math:`I(T,t,P,Q(t))`
-where :math:`Q` only depends on time.
-
+```
     SASroot
       SASentry
         SASdata
@@ -367,11 +344,9 @@ where :math:`Q` only depends on time.
           Time: float[nTime]
           Temperature: float[nTemperature]
           Pressure: float[nPressure]
+```
 
-
-
-Complicated Uncertainties
-============================
+## Complicated Uncertainties
 
 The uncertainties might be derived from several factors, or there may even be
 several uncertainties contributing.  In practical terms, these are special 
@@ -379,8 +354,7 @@ cases for analysis software.  In the interest of completeness, it is
 interesting to describe how they might be represented.
 
 
-Representing Uncertainty Components
-++++++++++++++++++++++++++++++++++++
+### Representing Uncertainty Components
 
 It is possible to represent the components that contribute
 to the uncertainty by use of a subgroup.  Add a *@components* attribute
@@ -393,6 +367,7 @@ As with all uncertainties, each component should have the same *shape*
 Note that a *@basis* attribute indicates how this uncertainty was determined.
 The values are expected to be a short list, as yet unspecified.
 
+```
     SASroot
       SASentry
         SASdata
@@ -410,12 +385,9 @@ The values are expected to be a short list, as yet unspecified.
                 @basis="shot noise"
              secondary_standard: float[nI]
                 @basis="esd"
+```
 
-
-
-
-Representing Multiple Uncertainties
-++++++++++++++++++++++++++++++++++++
+### Representing Multiple Uncertainties
 
 .. note::  This is just a proposition.  It is based on the assumption
    that some analysis method might actually know how to handle this case.
@@ -428,6 +400,7 @@ The first member in this list would be the principal uncertainty.
 The *@basis* attribute can be used to further describe each uncertainty.
 One example be: 
 
+```
     SASroot
       SASentry
         SASdata
@@ -440,22 +413,19 @@ One example be:
             @basis="esd"
           Ierr : float[nI]
             @basis="absolute intensity calibration"
+```
 
+## Unhandled Cases
 
-Unhandled Cases
-================
-
-2-D image with Q_x & Q_y vectors
-++++++++++++++++++++++++++++++++++++
+### 2-D image with Q_x & Q_y vectors
 
 This model is outside the scope of this format.  The method of addressing 
-the :math:`Q` values is different than for the other models.
+the `Q` values is different than for the other models.
 
 .. Is this really true?
 .. This usage seems quite common and should be able to be handled.
 
-    
-
+```
     SASroot
       SASentry
         SASdata
@@ -464,7 +434,7 @@ the :math:`Q` values is different than for the other models.
           I: float[100, 512]
           Qx: float[100]
           Qy: float[512]
-
+```
 
 Instead, use either the model titled: 
 `2-D image <simple 2-D (image) I(Q)>`_
