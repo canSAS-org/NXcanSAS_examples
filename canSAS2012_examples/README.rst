@@ -15,7 +15,7 @@
   *uncertainty* data and some additional metadata).
 
 
-
+```
   SASroot
     SASentry
       SASdata
@@ -23,12 +23,14 @@
         @I_axes=Q
         I: float[100]
         Q: float[100]
+```
 
 
 
 ### 2-D image
 
   
+```
   SASroot
     SASentry
       SASdata
@@ -38,10 +40,12 @@
         Qx: float[100, 512]
         Qy: float[100, 512]
         Qz: float[100, 512]
+```
 
 
 ### 2-D (image)  I(|Q|) +/- sigma(|Q|)
 
+```
   SASroot
     SASentry
       SASdata
@@ -51,6 +55,7 @@
           @uncertainty=Idev
         Q: float[300, 300]
         Idev: float[300, 300]
+```
 
 ### 2-D SAS/WAS images
 
@@ -62,6 +67,7 @@ several detectors  for an alternative).
 Here the SAS data image is 100 x 512 pixels.  
 The WAS data (not covered by this canSAS standard) is 256 x 256 pixels.
     
+```
   SASroot
     SASentry
       SASdata
@@ -80,9 +86,11 @@ The WAS data (not covered by this canSAS standard) is 256 x 256 pixels.
         Qx: float[256, 256]
         Qy: float[256, 256]
         Qz: float[256, 256]
+```
 
 ### 2-D masked image
   
+```
   SASroot
     SASentry
       SASdata
@@ -94,7 +102,7 @@ The WAS data (not covered by this canSAS standard) is 256 x 256 pixels.
         Qy: float[100, 512]
         Qz: float[100, 512]
         Mask: int[100, 512]
-
+```
 
 
 
@@ -109,6 +117,7 @@ Examples:
 :download:`XML <../../examples/xml/generic2dcase.xml>`
 
   
+```
   SASroot
     SASentry
       SASdata
@@ -118,6 +127,7 @@ Examples:
         Qx: float[100*512]
         Qy: float[100*512]
         Qz: float[100*512]
+```
 
 ### 2-D SANS and SAXS
 
@@ -129,6 +139,7 @@ need more metadata for each probe, such as wavelength, to
 make a full analysis using both datasets.)
 
   
+```
   SASroot
     SASentry
       SASdata
@@ -149,6 +160,7 @@ make a full analysis using both datasets.)
         Qx: float[256*256]
         Qy: float[256*256]
         Qz: float[256*256]
+```
 
 
 
@@ -175,7 +187,8 @@ previously from the data for various reasons.
 
   Data from a SAXS/MAXS/WAXS instrument might be represented thus.
 
-    
+
+```
   SASroot
     SASentry
       SASdata
@@ -185,6 +198,7 @@ previously from the data for various reasons.
         Qx: float[100*512 + 2000 + 256*256 - nDiscardedPixels]
         Qy: float[100*512 + 2000 + 256*256 - nDiscardedPixels]
         Qz: float[100*512 + 2000 + 256*256 - nDiscardedPixels]
+```
 
 
 
@@ -192,6 +206,7 @@ previously from the data for various reasons.
 
 ### 1-D I(t,Q)
   
+```
   SASroot
     SASentry
       SASdata
@@ -201,12 +216,14 @@ previously from the data for various reasons.
         Time: float[nTime]  
         Q: float[100]
         I: float[nTime,100]
+```
 
 ### 1-D I(t,Q(t))
 
 This example is slightly more complex, showing data where :math:`Q` is also time-dependent.
 
     
+```
   SASroot
     SASentry
       SASdata
@@ -216,6 +233,7 @@ This example is slightly more complex, showing data where :math:`Q` is also time
         I: float[nTime,100]
         Q: float[nTime,100]
         Time: float[nTime]
+```
 
 .. _1D SAS data in a time series I(t,Q(t)) +/- Idev(t,Q(t)):
 
@@ -225,6 +243,7 @@ Now, provide the uncertainties (where ``Idev`` represents
 \sigma(t,Q(t)) ) of the intensities:
 
     
+```
   SASroot
     SASentry
       SASdata
@@ -236,10 +255,12 @@ Now, provide the uncertainties (where ``Idev`` represents
         Idev: float[nTime,100]
         Q: float[nTime,100]
         Time: float[nTime]
+```
 
 
 ### 2-D I(t,Q)
   
+```
   SASroot
     SASentry
       SASdata
@@ -251,6 +272,7 @@ Now, provide the uncertainties (where ``Idev`` represents
         Qy: float[100*512]
         Qz: float[100*512]
         Time: float[nTime]
+```
 
 .. _2-D I(t,Q(t)):
 
@@ -259,6 +281,7 @@ Now, provide the uncertainties (where ``Idev`` represents
 This example is slightly more complex, showing data where :math:`Q` is also time-dependent.
 
   
+```
   SASroot
     SASentry
       SASdata
@@ -270,6 +293,7 @@ This example is slightly more complex, showing data where :math:`Q` is also time
         Qy: float[nTime,100*512]
         Qz: float[nTime,100*512]
         Time: float[nTime]
+```
 
 .. _2-D.time-dependent.masked.image:
 
@@ -278,6 +302,7 @@ This example is slightly more complex, showing data where :math:`Q` is also time
 This example explores a bit more complexity, adding a mask that is time-dependent.
 
   
+```
   SASroot
     SASentry
       SASdata
@@ -291,6 +316,7 @@ This example explores a bit more complexity, adding a mask that is time-dependen
         Qz: float[nTime,100,512]
         Time: float[nTime]
         Mask: int[100,512]
+```
 
 
 
@@ -302,6 +328,7 @@ Complex case of I(t,T,P,Q(t,T,P))
 where all :math:`Q` values are different for each combination of time, temperature, and pressure.
 
     
+```
   SASroot
     SASentry
       SASdata
@@ -317,6 +344,7 @@ where all :math:`Q` values are different for each combination of time, temperatu
         Time: float[nTime]
         Temperature: float[nTemperature]
         Pressure: float[nPressure]
+```
 
 
 ### 2-D  I(T,t,P,Q(t)) images
@@ -325,6 +353,7 @@ Slightly less complex than previous, now :math:`I(T,t,P,Q(t))`
 where :math:`Q` only depends on time.
 
   
+```
   SASroot
     SASentry
       SASdata
@@ -340,6 +369,7 @@ where :math:`Q` only depends on time.
         Time: float[nTime]
         Temperature: float[nTemperature]
         Pressure: float[nPressure]
+```
 
 
 ## Complicated Uncertainties
@@ -364,6 +394,7 @@ Note that a *@basis* attribute indicates how this uncertainty was determined.
 The values are expected to be a short list, as yet unspecified.
 
 
+```
   SASroot
     SASentry
       SASdata
@@ -381,6 +412,7 @@ The values are expected to be a short list, as yet unspecified.
               @basis="shot noise"
            secondary_standard: float[nI]
               @basis="esd"
+```
 
 
 
@@ -398,6 +430,7 @@ The *@basis* attribute can be used to further describe each uncertainty.
 One example be: 
 
 
+```
   SASroot
     SASentry
       SASdata
@@ -410,6 +443,7 @@ One example be:
           @basis="esd"
         Ierr : float[nI]
           @basis="absolute intensity calibration"
+```
 
 
 
@@ -425,6 +459,7 @@ the :math:`Q` values is different than for the other models.
 .. This usage seems quite common and should be able to be handled.
 
     
+```
   SASroot
     SASentry
       SASdata
@@ -433,6 +468,7 @@ the :math:`Q` values is different than for the other models.
         I: float[100, 512]
         Qx: float[100]
         Qy: float[512]
+```
 
 Instead, use either the model titled: 
 `2-D image <simple 2-D (image) I(Q)>`_

@@ -7,14 +7,15 @@ to have been written to the [NXcanSAS standard](http://download.nexusformat.org/
 * 1d_standard/
 * canSAS2012_examples/
 
- Examples in other directories are not guaranteed to conform.
+Examples in the `others` directory are not guaranteed to conform
+to the NXcanSAS standard.
 
 ## NXcanSAS: a NeXus application definition
 The NXcanSAS application definition was ratified by the NIAC at their 2016 meeting
 and is now part of the NeXus standard.
 
 
-## Recommendation
+## File validation
 It is recommended that any NXcanSAS example data file deposited here
 be checked using a validation tool called 
 **punx** (Python Utilities for NeXus).
