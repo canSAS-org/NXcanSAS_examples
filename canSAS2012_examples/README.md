@@ -1,10 +1,11 @@
 # Models
 
-note: 2016-11-15,prj
+note: 2017-05-03,prj
 
 These notes are not consistent with the examples created.
 For **all** examples, consult the documentation in the
-python code that created the example.
+python code that created the example or the 
+[NXcanSAS documentation](http://download.nexusformat.org/doc/html/classes/applications/NXcanSAS.html#nxcansas).
 
 ## Common cases
 
@@ -46,7 +47,7 @@ This model could describe data stored in the the canSAS1d/1.0 format (with the a
           @Q_indices=0,1
           @I_axes=Q,Q
           I: float[300, 300]
-            @uncertainty=Idev
+            @uncertainties=Idev
           Q: float[300, 300]
           Idev: float[300, 300]
 ```
@@ -234,7 +235,7 @@ sigma(t,Q(t)) ) of the intensities:
           @Time_indices=0
           @I_axes=Time,Q
           I: float[nTime,100]
-            @uncertainty=Idev
+            @uncertainties=Idev
           Idev: float[nTime,100]
           Q: float[nTime,100]
           Time: float[nTime]
@@ -375,7 +376,7 @@ The values are expected to be a short list, as yet unspecified.
           @I_axes=Q
           Q : float[nI]
           I : float[nI]
-             @uncertainty=Idev
+             @uncertainties=Idev
           Idev : float[nI]
              @components=I_uncertainties
           I_uncertainties:
@@ -408,7 +409,7 @@ One example be:
           @I_axes=Q
           Q : float[nI]
           I : float[nI]
-            @uncertainty=Idev,Ierr
+            @uncertainties=Idev,Ierr
           Idev : float[nI]
             @basis="esd"
           Ierr : float[nI]
