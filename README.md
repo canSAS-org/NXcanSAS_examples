@@ -2,24 +2,16 @@
 example data files written to the NXcanSAS standard
 
 In this repository, the example files in these directories are known
-to have been written to the NXcanSAS standard (draft as of 2016-11-27):
+to have been written to the [NXcanSAS standard](http://download.nexusformat.org/doc/html/classes/applications/NXcanSAS.html ):
 
 * 1d_standard/
 * canSAS2012_examples/
 
  Examples in other directories are not guaranteed to conform.
 
-## NXcanSAS: a NeXus contributed definition
-In NeXus, *contributed definitions* are in an *incubation*
-status, during which review and revision occur by both the
-proposal team and members of the NIAC.  The process to **ratify** the
-NXcanSAS will move it to become one of the NeXus *application definitions*
-so that it becomes a permanent part of the NeXus standard.
-
-The NXcanSAS application definition was ratified by the NIAC at their 2016 meeting.
-The canSAS Data Formats Working Group is finalizing the details in the specification.
-See the issue here: "move NXcanSAS to applications" at
-https://github.com/nexusformat/definitions/issues/492
+## NXcanSAS: a NeXus application definition
+The NXcanSAS application definition was ratified by the NIAC at their 2016 meeting
+and is now part of the NeXus standard.
 
 
 ## Recommendation
