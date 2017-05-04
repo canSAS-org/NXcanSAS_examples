@@ -16,9 +16,10 @@ Common cases
 +++++++++
 
 
-  This model could describe data stored in the the canSAS1d/1.0 format (with the addition of 
-  *uncertainty* data and some additional metadata).
+This model could describe data stored in the the canSAS1d/1.0 format (with the addition of 
+*uncertainty* data and some additional metadata).
 
+::
 
     SASroot
       SASentry
