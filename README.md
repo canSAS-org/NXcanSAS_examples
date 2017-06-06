@@ -5,7 +5,9 @@ In this repository, the example files in these directories are known
 to have been written to the [NXcanSAS standard](http://download.nexusformat.org/doc/html/classes/applications/NXcanSAS.html ):
 
 * 1d_standard/
+  * These examples are from SAS measurements of actual or simulated samples.
 * canSAS2012_examples/
+  * These examples use random numbers to fill the I and Q data arrays
 
 Examples in the `others` directory are not guaranteed to conform
 to the NXcanSAS standard.
