@@ -1,11 +1,11 @@
-s81-polyurea.h5 : NeXus data file
+/home/mintadmin/Documents/eclipse/NXcanSAS_examples/1d_standard/s81-polyurea.h5 : NeXus data file
   @creator = xml2hdf5.py
-  @default = S7_Neat_Polyurea
-  S7_Neat_Polyurea:NXentry
+  @default = S7 Neat Polyurea
+  S7 Neat Polyurea:NXentry
     @NX_class = NXentry
     @canSAS_name = S7 Neat Polyurea
     @canSAS_class = SASentry
-    @default = slit_smeared
+    @default = slit-smeared
     definition:NX_CHAR[8] = NXcanSAS
     run:NX_CHAR[2] = 81
       @name = S7 Neat Polyurea
@@ -249,7 +249,7 @@ s81-polyurea.h5 : NeXus data file
             @tag = Gain5
           Vfc:NX_CHAR[6] = 100000
             @tag = Vfc
-        local_variables:NXcollection
+        local variables:NXcollection
           @NX_class = NXcollection
           @canSAS_name = local variables
           @name = local variables
@@ -533,12 +533,12 @@ s81-polyurea.h5 : NeXus data file
         @units = mm
       y_position:NX_FLOAT64 = 173.0
         @units = mm
-    slit_smeared:NXdata
+    slit-smeared:NXdata
       @NX_class = NXdata
       @canSAS_name = slit-smeared
       @canSAS_class = SASdata
       @signal = I
-      @I_axes = Q
+      @axes = Q
       I:NX_FLOAT64[113] = [10139000.0, 8834800.0, 6517900.0, '...', 0.50124999999999997]
         @units = 1/cm
         @uncertainties = Idev

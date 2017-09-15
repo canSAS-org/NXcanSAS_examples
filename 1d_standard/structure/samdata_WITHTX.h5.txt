@@ -1,7 +1,7 @@
-samdata_WITHTX.h5 : NeXus data file
+/home/mintadmin/Documents/eclipse/NXcanSAS_examples/1d_standard/samdata_WITHTX.h5 : NeXus data file
   @creator = xml2hdf5.py
-  @default = _13444rear_1D_1_75_12_5
-  _13444rear_1D_1_75_12_5:NXentry
+  @default = 13444rear_1D_1.75_12.5
+  13444rear_1D_1.75_12.5:NXentry
     @NX_class = NXentry
     @canSAS_name = 13444rear_1D_1.75_12.5
     @canSAS_class = SASentry
@@ -15,7 +15,7 @@ samdata_WITHTX.h5 : NeXus data file
       @canSAS_name = sasdata
       @canSAS_class = SASdata
       @signal = I
-      @I_axes = Q
+      @axes = Q
       I:NX_FLOAT64[106] = [510.76900000000001, 623.23099999999999, 440.00099999999998, '...', 0.0]
         @units = 1/cm
         @uncertainties = Idev
@@ -40,7 +40,7 @@ samdata_WITHTX.h5 : NeXus data file
         @canSAS_name = sasdetector
         @canSAS_class = SASdetector
         name:NX_CHAR[20] = Rear:  ORDELA 21000N
-      sasdetector_1:NXdetector
+      sasdetector_0:NXdetector
         @NX_class = NXdetector
         @canSAS_name = sasdetector
         @canSAS_class = SASdetector
@@ -82,7 +82,7 @@ samdata_WITHTX.h5 : NeXus data file
       @canSAS_class = SAStransmission_spectrum
       @name = sample
       @signal = T
-      @T_axes = Lambda
+      @axes = Lambda
       Lambda:NX_FLOAT64[86] = [1.8125, 1.9375, 2.0625, '...', 12.4375]
         @units = A
       T:NX_FLOAT64[86] = [0.89590000000000003, 0.89354999999999996, 0.89676999999999996, '...', 0.88819000000000004]
@@ -95,7 +95,7 @@ samdata_WITHTX.h5 : NeXus data file
       @canSAS_class = SAStransmission_spectrum
       @name = can
       @signal = T
-      @T_axes = Lambda
+      @axes = Lambda
       Lambda:NX_FLOAT64[86] = [1.8125, 1.9375, 2.0625, '...', 12.4375]
         @units = A
       T:NX_FLOAT64[86] = [0.90546000000000004, 0.91161000000000003, 0.90266999999999997, '...', 0.91325999999999996]

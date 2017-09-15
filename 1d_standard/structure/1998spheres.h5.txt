@@ -1,4 +1,4 @@
-1998spheres.h5 : NeXus data file
+/home/mintadmin/Documents/eclipse/NXcanSAS_examples/1d_standard/1998spheres.h5 : NeXus data file
   @creator = xml2hdf5.py
   @default = sasentry_0
   sasentry_0:NXentry
@@ -14,7 +14,7 @@
       @canSAS_name = sasdata
       @canSAS_class = SASdata
       @signal = I
-      @I_axes = Q
+      @axes = Q
       I:NX_FLOAT64[1824] = [18.8978, 15.9975, 12.519600000000001, '...', 0.00032973699999999998]
         @units = 1/cm
         @uncertainties = Idev
@@ -27,10 +27,11 @@
       @canSAS_name = sasinstrument
       @canSAS_class = SASinstrument
       name:NX_CHAR[24] = NIST X23A3 USAXS at NSLS
-      Bonse_Hart__slit__length____0_045_1_A:NXcollimator
-        @NX_class = NXcollimator
-        @canSAS_name = Bonse-Hart (slit) length ?= 0.045 1/A
-        @canSAS_class = SAScollimation
+      Bonse-Hart (slit) length ?= 0.045 1
+        A:NXcollimator
+          @NX_class = NXcollimator
+          @canSAS_name = Bonse-Hart (slit) length ?= 0.045 1/A
+          @canSAS_class = SAScollimation
       sasdetector:NXdetector
         @NX_class = NXdetector
         @canSAS_name = sasdetector
@@ -88,7 +89,7 @@
       @canSAS_name = sasdata
       @canSAS_class = SASdata
       @signal = I
-      @I_axes = Q
+      @axes = Q
       I:NX_FLOAT64[3689] = [1.3979900000000001, 1.3435600000000001, 1.2598800000000001, '...', 1.2517199999999999e-05]
         @units = 1/cm
         @uncertainties = Idev
@@ -101,10 +102,11 @@
       @canSAS_name = sasinstrument
       @canSAS_class = SASinstrument
       name:NX_CHAR[24] = NIST X23A3 USAXS at NSLS
-      Bonse_Hart__slit__length____0_045_1_A:NXcollimator
-        @NX_class = NXcollimator
-        @canSAS_name = Bonse-Hart (slit) length ?= 0.045 1/A
-        @canSAS_class = SAScollimation
+      Bonse-Hart (slit) length ?= 0.045 1
+        A:NXcollimator
+          @NX_class = NXcollimator
+          @canSAS_name = Bonse-Hart (slit) length ?= 0.045 1/A
+          @canSAS_class = SAScollimation
       sasdetector:NXdetector
         @NX_class = NXdetector
         @canSAS_name = sasdetector

@@ -1,23 +1,23 @@
-cs_af1410.h5 : NeXus data file
+/home/mintadmin/Documents/eclipse/NXcanSAS_examples/1d_standard/cs_af1410.h5 : NeXus data file
   @creator = xml2hdf5.py
-  @default = AF1410_10
-  AF1410_10:NXentry
+  @default = AF1410:10
+  AF1410:10:NXentry
     @NX_class = NXentry
     @canSAS_name = AF1410:10
     @canSAS_class = SASentry
-    @default = AF1410_a10
+    @default = AF1410-a10
     definition:NX_CHAR[8] = NXcanSAS
     run_0:NX_CHAR[14] = nuclear sector
       @name = AF1410:10
     run_1:NX_CHAR[23] = nuclear+magnetic sector
       @name = AF1410:10
     title:NX_CHAR[34] = AF1410-10 (AF1410 steel aged 10 h)
-    AF1410_a10:NXdata
+    AF1410-a10:NXdata
       @NX_class = NXdata
       @canSAS_name = AF1410-a10
       @canSAS_class = SASdata
       @signal = I
-      @I_axes = Q
+      @axes = Q
       I:NX_FLOAT64[77] = [78.270004299999997, 64.069999699999997, 56.179996500000001, '...', 0.25723000000000001]
         @units = 1/cm
         @uncertainties = Idev
@@ -25,12 +25,12 @@ cs_af1410.h5 : NeXus data file
         @units = 1/cm
       Q:NX_FLOAT64[77] = [0.016514000000000001, 0.017675, 0.018964999999999999, '...', 0.10441]
         @units = 1/A
-    AF1410_b10:NXdata
+    AF1410-b10:NXdata
       @NX_class = NXdata
       @canSAS_name = AF1410-b10
       @canSAS_class = SASdata
       @signal = I
-      @I_axes = Q
+      @axes = Q
       I:NX_FLOAT64[76] = [122.98999790000001, 100.8500061, 83.160003700000004, '...', 0.25972000000000001]
         @units = 1/cm
         @uncertainties = Idev
@@ -97,23 +97,23 @@ cs_af1410.h5 : NeXus data file
       details:NX_CHAR[128] = 
         transverse saturation magnetic field (1.6 T) applied in horizontal direction to clear magnetic domain scattering
       
-  AF1410_1h:NXentry
+  AF1410:1h:NXentry
     @NX_class = NXentry
     @canSAS_name = AF1410:1h
     @canSAS_class = SASentry
-    @default = AF1410_a1h
+    @default = AF1410-a1h
     definition:NX_CHAR[8] = NXcanSAS
     run_0:NX_CHAR[14] = nuclear sector
       @name = AF1410:1h
     run_1:NX_CHAR[23] = nuclear+magnetic sector
       @name = AF1410:1h
     title:NX_CHAR[33] = AF1410-1h (AF1410 steel aged 1 h)
-    AF1410_a1h:NXdata
+    AF1410-a1h:NXdata
       @NX_class = NXdata
       @canSAS_name = AF1410-a1h
       @canSAS_class = SASdata
       @signal = I
-      @I_axes = Q
+      @axes = Q
       I:NX_FLOAT64[76] = [33.666000400000001, 28.5240002, 23.7290001, '...', 0.092268000000000003]
         @units = 1/cm
         @uncertainties = Idev
@@ -121,12 +121,12 @@ cs_af1410.h5 : NeXus data file
         @units = 1/cm
       Q:NX_FLOAT64[76] = [0.016514000000000001, 0.017675, 0.018964999999999999, '...', 0.10634]
         @units = 1/A
-    AF1410_b1h:NXdata
+    AF1410-b1h:NXdata
       @NX_class = NXdata
       @canSAS_name = AF1410-b1h
       @canSAS_class = SASdata
       @signal = I
-      @I_axes = Q
+      @axes = Q
       I:NX_FLOAT64[70] = [67.240005499999995, 55.170001999999997, 44.450000799999998, '...', 0.19348000000000001]
         @units = 1/cm
         @uncertainties = Idev
@@ -193,21 +193,21 @@ cs_af1410.h5 : NeXus data file
       details:NX_CHAR[128] = 
         transverse saturation magnetic field (1.6 T) applied in horizontal direction to clear magnetic domain scattering
       
-  AF1410_20:NXentry
+  AF1410:20:NXentry
     @NX_class = NXentry
     @canSAS_name = AF1410:20
     @canSAS_class = SASentry
-    @default = AF1410_b20
+    @default = AF1410-b20
     definition:NX_CHAR[8] = NXcanSAS
     run:NX_CHAR[23] = nuclear+magnetic sector
       @name = AF1410:20
     title:NX_CHAR[34] = AF1410-20 (AF1410 steel aged 20 h)
-    AF1410_b20:NXdata
+    AF1410-b20:NXdata
       @NX_class = NXdata
       @canSAS_name = AF1410-b20
       @canSAS_class = SASdata
       @signal = I
-      @I_axes = Q
+      @axes = Q
       I:NX_FLOAT64[73] = [100.68999479999999, 85.889999399999994, 68.6799927, '...', 0.2838]
         @units = 1/cm
         @uncertainties = Idev
@@ -274,23 +274,23 @@ cs_af1410.h5 : NeXus data file
       details:NX_CHAR[128] = 
         transverse saturation magnetic field (1.6 T) applied in horizontal direction to clear magnetic domain scattering
       
-  AF1410_2h:NXentry
+  AF1410:2h:NXentry
     @NX_class = NXentry
     @canSAS_name = AF1410:2h
     @canSAS_class = SASentry
-    @default = AF1410_a2h
+    @default = AF1410-a2h
     definition:NX_CHAR[8] = NXcanSAS
     run_0:NX_CHAR[14] = nuclear sector
       @name = AF1410:2h
     run_1:NX_CHAR[23] = nuclear+magnetic sector
       @name = AF1410:2h
     title:NX_CHAR[33] = AF1410-2h (AF1410 steel aged 2 h)
-    AF1410_a2h:NXdata
+    AF1410-a2h:NXdata
       @NX_class = NXdata
       @canSAS_name = AF1410-a2h
       @canSAS_class = SASdata
       @signal = I
-      @I_axes = Q
+      @axes = Q
       I:NX_FLOAT64[73] = [32.823001900000001, 27.597002, 23.343000400000001, '...', 0.21879999999999999]
         @units = 1/cm
         @uncertainties = Idev
@@ -298,12 +298,12 @@ cs_af1410.h5 : NeXus data file
         @units = 1/cm
       Q:NX_FLOAT64[73] = [0.017675, 0.018835999999999999, 0.019997000000000001, '...', 0.10441]
         @units = 1/A
-    AF1410_b2h:NXdata
+    AF1410-b2h:NXdata
       @NX_class = NXdata
       @canSAS_name = AF1410-b2h
       @canSAS_class = SASdata
       @signal = I
-      @I_axes = Q
+      @axes = Q
       I:NX_FLOAT64[72] = [63.319999699999997, 51.869998899999999, 42.612999000000002, '...', 0.1981]
         @units = 1/cm
         @uncertainties = Idev
@@ -370,23 +370,23 @@ cs_af1410.h5 : NeXus data file
       details:NX_CHAR[128] = 
         transverse saturation magnetic field (1.6 T) applied in horizontal direction to clear magnetic domain scattering
       
-  AF1410_50:NXentry
+  AF1410:50:NXentry
     @NX_class = NXentry
     @canSAS_name = AF1410:50
     @canSAS_class = SASentry
-    @default = AF1410_a50
+    @default = AF1410-a50
     definition:NX_CHAR[8] = NXcanSAS
     run_0:NX_CHAR[14] = nuclear sector
       @name = AF1410:50
     run_1:NX_CHAR[23] = nuclear+magnetic sector
       @name = AF1410:50
     title:NX_CHAR[34] = AF1410-50 (AF1410 steel aged 50 h)
-    AF1410_a50:NXdata
+    AF1410-a50:NXdata
       @NX_class = NXdata
       @canSAS_name = AF1410-a50
       @canSAS_class = SASdata
       @signal = I
-      @I_axes = Q
+      @axes = Q
       I:NX_FLOAT64[69] = [87.120002700000001, 74.5, 62.619998899999999, '...', 0.34989999999999999]
         @units = 1/cm
         @uncertainties = Idev
@@ -394,12 +394,12 @@ cs_af1410.h5 : NeXus data file
         @units = 1/cm
       Q:NX_FLOAT64[69] = [0.017675, 0.018835999999999999, 0.019997000000000001, '...', 0.094245999999999996]
         @units = 1/A
-    AF1410_b50:NXdata
+    AF1410-b50:NXdata
       @NX_class = NXdata
       @canSAS_name = AF1410-b50
       @canSAS_class = SASdata
       @signal = I
-      @I_axes = Q
+      @axes = Q
       I:NX_FLOAT64[71] = [102.609993, 88.260002099999994, 70.330001800000005, '...', 0.2364]
         @units = 1/cm
         @uncertainties = Idev
@@ -466,23 +466,23 @@ cs_af1410.h5 : NeXus data file
       details:NX_CHAR[128] = 
         transverse saturation magnetic field (1.6 T) applied in horizontal direction to clear magnetic domain scattering
       
-  AF1410_5h:NXentry
+  AF1410:5h:NXentry
     @NX_class = NXentry
     @canSAS_name = AF1410:5h
     @canSAS_class = SASentry
-    @default = AF1410_a5h
+    @default = AF1410-a5h
     definition:NX_CHAR[8] = NXcanSAS
     run_0:NX_CHAR[14] = nuclear sector
       @name = AF1410:5h
     run_1:NX_CHAR[23] = nuclear+magnetic sector
       @name = AF1410:5h
     title:NX_CHAR[33] = AF1410-5h (AF1410 steel aged 5 h)
-    AF1410_a5h:NXdata
+    AF1410-a5h:NXdata
       @NX_class = NXdata
       @canSAS_name = AF1410-a5h
       @canSAS_class = SASdata
       @signal = I
-      @I_axes = Q
+      @axes = Q
       I:NX_FLOAT64[75] = [45.529998800000001, 37.548999799999997, 30.0680008, '...', 0.18108399999999999]
         @units = 1/cm
         @uncertainties = Idev
@@ -490,12 +490,12 @@ cs_af1410.h5 : NeXus data file
         @units = 1/cm
       Q:NX_FLOAT64[75] = [0.016514000000000001, 0.017675, 0.018964999999999999, '...', 0.10441]
         @units = 1/A
-    AF1410_b5h:NXdata
+    AF1410-b5h:NXdata
       @NX_class = NXdata
       @canSAS_name = AF1410-b5h
       @canSAS_class = SASdata
       @signal = I
-      @I_axes = Q
+      @axes = Q
       I:NX_FLOAT64[75] = [86.550003099999998, 71.159996000000007, 59.049999200000002, '...', 0.27856999999999998]
         @units = 1/cm
         @uncertainties = Idev
@@ -562,23 +562,23 @@ cs_af1410.h5 : NeXus data file
       details:NX_CHAR[128] = 
         transverse saturation magnetic field (1.6 T) applied in horizontal direction to clear magnetic domain scattering
       
-  AF1410_8h:NXentry
+  AF1410:8h:NXentry
     @NX_class = NXentry
     @canSAS_name = AF1410:8h
     @canSAS_class = SASentry
-    @default = AF1410_a8h
+    @default = AF1410-a8h
     definition:NX_CHAR[8] = NXcanSAS
     run_0:NX_CHAR[14] = nuclear sector
       @name = AF1410:8h
     run_1:NX_CHAR[23] = nuclear+magnetic sector
       @name = AF1410:8h
     title:NX_CHAR[33] = AF1410-8h (AF1410 steel aged 8 h)
-    AF1410_a8h:NXdata
+    AF1410-a8h:NXdata
       @NX_class = NXdata
       @canSAS_name = AF1410-a8h
       @canSAS_class = SASdata
       @signal = I
-      @I_axes = Q
+      @axes = Q
       I:NX_FLOAT64[72] = [58.470001199999999, 50.510002100000001, 43.080001799999998, '...', 0.30530000000000002]
         @units = 1/cm
         @uncertainties = Idev
@@ -586,12 +586,12 @@ cs_af1410.h5 : NeXus data file
         @units = 1/cm
       Q:NX_FLOAT64[72] = [0.017675, 0.018835999999999999, 0.019997000000000001, '...', 0.10236000000000001]
         @units = 1/A
-    AF1410_b8h:NXdata
+    AF1410-b8h:NXdata
       @NX_class = NXdata
       @canSAS_name = AF1410-b8h
       @canSAS_class = SASdata
       @signal = I
-      @I_axes = Q
+      @axes = Q
       I:NX_FLOAT64[71] = [96.430000300000003, 81.470001199999999, 68.099998499999998, '...', 0.29849999999999999]
         @units = 1/cm
         @uncertainties = Idev
@@ -658,23 +658,23 @@ cs_af1410.h5 : NeXus data file
       details:NX_CHAR[128] = 
         transverse saturation magnetic field (1.6 T) applied in horizontal direction to clear magnetic domain scattering
       
-  AF1410_cc:NXentry
+  AF1410:cc:NXentry
     @NX_class = NXentry
     @canSAS_name = AF1410:cc
     @canSAS_class = SASentry
-    @default = AF1410_acc
+    @default = AF1410-acc
     definition:NX_CHAR[8] = NXcanSAS
     run_0:NX_CHAR[14] = nuclear sector
       @name = AF1410:cc
     run_1:NX_CHAR[23] = nuclear+magnetic sector
       @name = AF1410:cc
     title:NX_CHAR[35] = AF1410-cc (AF1410 steel aged 100 h)
-    AF1410_acc:NXdata
+    AF1410-acc:NXdata
       @NX_class = NXdata
       @canSAS_name = AF1410-acc
       @canSAS_class = SASdata
       @signal = I
-      @I_axes = Q
+      @axes = Q
       I:NX_FLOAT64[71] = [90.940002399999997, 75.809997600000003, 62.009998299999999, '...', 0.22270000000000001]
         @units = 1/cm
         @uncertainties = Idev
@@ -682,12 +682,12 @@ cs_af1410.h5 : NeXus data file
         @units = 1/cm
       Q:NX_FLOAT64[71] = [0.017675, 0.018835999999999999, 0.019997000000000001, '...', 0.10236000000000001]
         @units = 1/A
-    AF1410_bcc:NXdata
+    AF1410-bcc:NXdata
       @NX_class = NXdata
       @canSAS_name = AF1410-bcc
       @canSAS_class = SASdata
       @signal = I
-      @I_axes = Q
+      @axes = Q
       I:NX_FLOAT64[71] = [103.1199951, 85.160003700000004, 71.480003400000001, '...', 0.23569999999999999]
         @units = 1/cm
         @uncertainties = Idev
@@ -754,23 +754,23 @@ cs_af1410.h5 : NeXus data file
       details:NX_CHAR[128] = 
         transverse saturation magnetic field (1.6 T) applied in horizontal direction to clear magnetic domain scattering
       
-  AF1410_hf:NXentry
+  AF1410:hf:NXentry
     @NX_class = NXentry
     @canSAS_name = AF1410:hf
     @canSAS_class = SASentry
-    @default = AF1410_ahf
+    @default = AF1410-ahf
     definition:NX_CHAR[8] = NXcanSAS
     run_0:NX_CHAR[14] = nuclear sector
       @name = AF1410:hf
     run_1:NX_CHAR[23] = nuclear+magnetic sector
       @name = AF1410:hf
     title:NX_CHAR[35] = AF1410-hf (AF1410 steel aged 0.5 h)
-    AF1410_ahf:NXdata
+    AF1410-ahf:NXdata
       @NX_class = NXdata
       @canSAS_name = AF1410-ahf
       @canSAS_class = SASdata
       @signal = I
-      @I_axes = Q
+      @axes = Q
       I:NX_FLOAT64[73] = [25.817998899999999, 21.6040001, 18.263999900000002, '...', 0.068455500000000002]
         @units = 1/cm
         @uncertainties = Idev
@@ -778,12 +778,12 @@ cs_af1410.h5 : NeXus data file
         @units = 1/cm
       Q:NX_FLOAT64[73] = [0.017675, 0.018835999999999999, 0.019997000000000001, '...', 0.10236000000000001]
         @units = 1/A
-    AF1410_bhf:NXdata
+    AF1410-bhf:NXdata
       @NX_class = NXdata
       @canSAS_name = AF1410-bhf
       @canSAS_class = SASdata
       @signal = I
-      @I_axes = Q
+      @axes = Q
       I:NX_FLOAT64[70] = [44.669998200000002, 37.715000199999999, 30.600997899999999, '...', 0.1178]
         @units = 1/cm
         @uncertainties = Idev
@@ -850,23 +850,23 @@ cs_af1410.h5 : NeXus data file
       details:NX_CHAR[128] = 
         transverse saturation magnetic field (1.6 T) applied in horizontal direction to clear magnetic domain scattering
       
-  AF1410_qu:NXentry
+  AF1410:qu:NXentry
     @NX_class = NXentry
     @canSAS_name = AF1410:qu
     @canSAS_class = SASentry
-    @default = AF1410_aqu
+    @default = AF1410-aqu
     definition:NX_CHAR[8] = NXcanSAS
     run_0:NX_CHAR[14] = nuclear sector
       @name = AF1410:qu
     run_1:NX_CHAR[23] = nuclear+magnetic sector
       @name = AF1410:qu
     title:NX_CHAR[36] = AF1410-qu (AF1410 steel aged 0.25 h)
-    AF1410_aqu:NXdata
+    AF1410-aqu:NXdata
       @NX_class = NXdata
       @canSAS_name = AF1410-aqu
       @canSAS_class = SASdata
       @signal = I
-      @I_axes = Q
+      @axes = Q
       I:NX_FLOAT64[73] = [29.783000900000001, 25.494001399999998, 20.804000899999998, '...', 0.049299999999999997]
         @units = 1/cm
         @uncertainties = Idev
@@ -874,12 +874,12 @@ cs_af1410.h5 : NeXus data file
         @units = 1/cm
       Q:NX_FLOAT64[73] = [0.017675, 0.018835999999999999, 0.019997000000000001, '...', 0.10441]
         @units = 1/A
-    AF1410_bqu:NXdata
+    AF1410-bqu:NXdata
       @NX_class = NXdata
       @canSAS_name = AF1410-bqu
       @canSAS_class = SASdata
       @signal = I
-      @I_axes = Q
+      @axes = Q
       I:NX_FLOAT64[74] = [42.770000500000002, 35.841999100000002, 29.495998400000001, '...', 0.090200000000000002]
         @units = 1/cm
         @uncertainties = Idev

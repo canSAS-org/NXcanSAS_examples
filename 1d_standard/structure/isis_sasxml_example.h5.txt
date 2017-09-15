@@ -1,4 +1,4 @@
-isis_sasxml_example.h5 : NeXus data file
+/home/mintadmin/Documents/eclipse/NXcanSAS_examples/1d_standard/isis_sasxml_example.h5 : NeXus data file
   @creator = xml2hdf5.py
   @default = sasentry
   sasentry:NXentry
@@ -35,28 +35,28 @@ isis_sasxml_example.h5 : NeXus data file
       term_6:NX_CHAR[6] = 1.4751
         @name = I_scale_factor
         @units = a.u.
-      _01:NXnote
+      01:NXnote
         @NX_class = NXnote
         @canSAS_name = 01
         @canSAS_class = SASprocessnote
         @name = 01
         SASprocessnote_0:NX_CHAR[13] = USER:MASK.COM
           @tag = SASprocessnote
-      _02:NXnote
+      02:NXnote
         @NX_class = NXnote
         @canSAS_name = 02
         @canSAS_class = SASprocessnote
         @name = 02
         SASprocessnote_0:NX_CHAR[1] = 
           @tag = SASprocessnote
-      _03:NXnote
+      03:NXnote
         @NX_class = NXnote
         @canSAS_name = 03
         @canSAS_class = SASprocessnote
         @name = 03
         SASprocessnote_0:NX_CHAR[1] = 
           @tag = SASprocessnote
-      _04:NXnote
+      04:NXnote
         @NX_class = NXnote
         @canSAS_name = 04
         @canSAS_class = SASprocessnote
@@ -109,7 +109,7 @@ isis_sasxml_example.h5 : NeXus data file
       @canSAS_name = sasdata
       @canSAS_class = SASdata
       @signal = I
-      @I_axes = Q
+      @axes = Q
       I:NX_FLOAT64[140] = [57.039999999999999, 49.439999999999998, 44.520000000000003, '...', 0.26939999999999997]
         @units = 1/cm
         @uncertainties = Idev

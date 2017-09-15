@@ -1,4 +1,4 @@
-bimodal-test1.h5 : NeXus data file
+/home/mintadmin/Documents/eclipse/NXcanSAS_examples/1d_standard/bimodal-test1.h5 : NeXus data file
   @creator = xml2hdf5.py
   @default = sasentry
   sasentry:NXentry
@@ -14,7 +14,7 @@ bimodal-test1.h5 : NeXus data file
       @canSAS_name = sasdata
       @canSAS_class = SASdata
       @signal = I
-      @I_axes = Q
+      @axes = Q
       I:NX_FLOAT64[91] = [3497.473, 3340.0030000000002, 3322.4740000000002, '...', 0.110684]
         @units = 1/cm
         @uncertainties = Idev
@@ -47,7 +47,7 @@ bimodal-test1.h5 : NeXus data file
       @NX_class = NXnote
       @canSAS_name = sasnote
       @canSAS_class = SASnote
-      initial_size_distribution:NXcollection
+      initial size distribution:NXcollection
         @NX_class = NXcollection
         @canSAS_name = initial size distribution
         @name = initial size distribution
