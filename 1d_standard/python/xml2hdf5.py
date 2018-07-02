@@ -18,6 +18,7 @@ to the NXcanSAS application definition (currently a contributed definition).
 import os
 import sys
 import lxml.etree
+import re
 from spec2nexus import eznx, utils
 
 
@@ -670,22 +671,30 @@ class canSAS1D_to_NXcanSAS(object):
         return nm
     
     def unique_name(self, suggestion, nx_parent):
-		"""
-		return a name, based on suggestion, that is not in the parent group
-		
-		USAGE::
-		
-		            nm_clean = self.unique_name(nm, nx_parent)
-		
-		"""
-		if suggestion not in nx_parent:
-			return suggestion
-		avoid_these = [a for a in nx_parent if a.startswith(suggestion)]
-		for i in range(len(avoid_these)):
-			nm = "%s_%d" % (suggestion, i)
-			if nm not in nx_parent:
-				return nm
-		return None		# should never happen
+        """
+        return a name, based on suggestion, that is not in the parent group
+        
+        USAGE::
+        
+                    nm_clean = self.unique_name(nm, nx_parent)
+        
+        Remove any characters that are non allowed by NeXus: `[A-Za-z_][\w_]*`
+        """
+        pattern = "[A-Za-z_][\w_]*"
+        while re.match("^" + pattern + "$", suggestion) is None:
+            m = re.match("^" + pattern, suggestion)
+            p = m.regs[0][1]
+            ch = suggestion[p]
+            suggestion = suggestion.replace(ch, "_")
+
+        if suggestion not in nx_parent:
+        	return suggestion
+        avoid_these = [a for a in nx_parent if a.startswith(suggestion)]
+        for i in range(len(avoid_these)):
+        	nm = "%s_%d" % (suggestion, i)
+        	if nm not in nx_parent:
+        		return nm
+        return None		# should never happen
 
 
 def ns_split(xmlnode):
