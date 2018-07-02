@@ -184,7 +184,7 @@ class canSAS1D_to_NXcanSAS(object):
                                                   nm, 
                                                   map(float, data[nm]), 
                                                   units=units[nm])
-                except TypeError, _exc:
+                except TypeError as _exc:
                     pass
             
             # set the NeXus plottable data attributes
@@ -238,7 +238,7 @@ class canSAS1D_to_NXcanSAS(object):
                         for xmldata in xmlnode:
                             try:
                                 tag = ns_strip(xmldata)
-                            except AttributeError, _exc:
+                            except AttributeError as _exc:
                                 continue        # an XML comment triggered this
                             if tag not in data:
                                 data[tag] = []
@@ -252,7 +252,7 @@ class canSAS1D_to_NXcanSAS(object):
             for nm, arr in data.items():
                 try:
                     nx_obj[nm] = eznx.makeDataset(nxdata, nm, map(float, data[nm]), units=units[nm])
-                except TypeError, _exc:
+                except TypeError as _exc:
                     pass
             
             # set the NeXus plottable data attributes
@@ -683,6 +683,8 @@ class canSAS1D_to_NXcanSAS(object):
         pattern = "[A-Za-z_][\w_]*"
         while re.match("^" + pattern + "$", suggestion) is None:
             m = re.match("^" + pattern, suggestion)
+            if not hasattr(m, "regs"):
+                break
             p = m.regs[0][1]
             ch = suggestion[p]
             suggestion = suggestion.replace(ch, "_")
@@ -727,9 +729,9 @@ def developer():
             converter.write_HDF5(hdf5File)
             
             mc = h5toText.H5toText(hdf5File)
-            print '-'*30
-            print fname
-            print '\n'.join(mc.report() or '')
+            print('-'*30)
+            print(fname)
+            print('\n'.join(mc.report() or ''))
 
 
 def main():
@@ -737,7 +739,7 @@ def main():
     simple command line interface
     '''
     if len(sys.argv) == 1:
-        print 'usage: xml2hdf5 xmlfile [xmlfile [xmlfile [...]]]'
+        print('usage: xml2hdf5 xmlfile [xmlfile [xmlfile [...]]]')
     else:
         for xmlFile in sys.argv[1:]:
             converter = canSAS1D_to_NXcanSAS()
@@ -748,4 +750,5 @@ def main():
 
 if __name__ == "__main__":
     #developer()
+    # sys.argv.append("../xml/cs_af1410.xml")
     main()
